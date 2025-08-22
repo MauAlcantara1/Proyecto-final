@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 0b6dad5f5c01ed148986c94dae6ca105
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7936989997084700529
+    second: logofes_0_0
+  - first:
+      213: -5357061389461504706
+    second: logofes_0_1
+  - first:
+      213: -4530293638659105066
+    second: logofes_0_2
+  - first:
+      213: -3982634599472240247
+    second: logofes_0_3
+  - first:
+      213: 1804523901974201867
+    second: logofes_0_4
+  - first:
+      213: -7609690146161142879
+    second: logofes_0_5
+  - first:
+      213: -7238877551284691239
+    second: logofes_0_6
+  - first:
+      213: -652598223021854732
+    second: logofes_0_7
+  - first:
+      213: -8485097783649909265
+    second: logofes_0_8
+  - first:
+      213: 4973287204599050772
+    second: logofes_0_9
+  - first:
+      213: -1095192323312977545
+    second: logofes_0_10
+  - first:
+      213: 5910867092343825188
+    second: logofes_0_11
+  - first:
+      213: 2902526458205138111
+    second: logofes_0_12
+  - first:
+      213: -5139960510604307519
+    second: logofes_0_13
+  - first:
+      213: 1073671103857063217
+    second: logofes_0_14
+  - first:
+      213: -4869858561689599068
+    second: logofes_0_15
+  - first:
+      213: -2018473857184030931
+    second: logofes_0_16
+  - first:
+      213: -406664907458851276
+    second: logofes_0_17
+  - first:
+      213: -5971702868910182886
+    second: logofes_0_18
+  - first:
+      213: -1790194037273143007
+    second: logofes_0_19
+  - first:
+      213: -6382446978504381436
+    second: logofes_0_20
+  - first:
+      213: -1217050457801325542
+    second: logofes_0_21
+  - first:
+      213: -3243884800919665719
+    second: logofes_0_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: logofes_0_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 93
+        width: 37
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8010fd46a52ad190800000000000000
+      internalID: -7936989997084700529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofes_0_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 90
+        width: 42
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3dbf299c05e7a5b0800000000000000
+      internalID: -5357061389461504706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofes_0_2
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 97
+        width: 15
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6de138b20f92121c0800000000000000
+      internalID: -4530293638659105066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofes_0_3
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 85
+        width: 19
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 989e644cee6dab8c0800000000000000
+      internalID: -3982634599472240247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofes_0_4
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 97
+        width: 12
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b06cfd59de4fa0910800000000000000
+      internalID: 1804523901974201867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofes_0_5
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 93
+        width: 28
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a356434123f46690800000000000000
+      internalID: -7609690146161142879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofes_0_6
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 97
+        width: 45
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9de502768375a8b90800000000000000
+      internalID: -7238877551284691239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofes_0_7
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 383
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ff2bbfaf5181f6f0800000000000000
+      internalID: -652598223021854732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofes_0_8
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 384
+        width: 43
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe5c7119580ee3a80800000000000000
+      internalID: -8485097783649909265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofes_0_9
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 384
+        width: 51
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4123f1cec5aa40540800000000000000
+      internalID: 4973287204599050772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofes_0_10
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 384
+        width: 62
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 779f13072681dc0f0800000000000000
+      internalID: -1095192323312977545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofes_0_11
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 306
+        width: 33
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42323b9ad4e970250800000000000000
+      internalID: 5910867092343825188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofes_0_12
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 139
+        width: 217
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc6d7c7f68d74820800000000000000
+      internalID: 2902526458205138111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofes_0_13
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 247
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c315e5f5213ba8b0800000000000000
+      internalID: -5139960510604307519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofes_0_14
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 186
+        width: 40
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 135700f2e2276ee00800000000000000
+      internalID: 1073671103857063217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofes_0_15
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 97
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a3c8149079ca6cb0800000000000000
+      internalID: -4869858561689599068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofes_0_16
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 135
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2f1222a8b0fcf3e0800000000000000
+      internalID: -2018473857184030931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofes_0_17
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 97
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43e4c48db6c3b5af0800000000000000
+      internalID: -406664907458851276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofes_0_18
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 96
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1e6d6251ef302da0800000000000000
+      internalID: -5971702868910182886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofes_0_19
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 84
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 129df490204f727e0800000000000000
+      internalID: -1790194037273143007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofes_0_20
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 96
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40c2b78e94efc67a0800000000000000
+      internalID: -6382446978504381436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofes_0_21
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 97
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a14860d8e0b2c1fe0800000000000000
+      internalID: -1217050457801325542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofes_0_22
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 59
+        width: 232
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c305ecd5f76bf2d0800000000000000
+      internalID: -3243884800919665719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      logofes_0_0: -7936989997084700529
+      logofes_0_1: -5357061389461504706
+      logofes_0_10: -1095192323312977545
+      logofes_0_11: 5910867092343825188
+      logofes_0_12: 2902526458205138111
+      logofes_0_13: -5139960510604307519
+      logofes_0_14: 1073671103857063217
+      logofes_0_15: -4869858561689599068
+      logofes_0_16: -2018473857184030931
+      logofes_0_17: -406664907458851276
+      logofes_0_18: -5971702868910182886
+      logofes_0_19: -1790194037273143007
+      logofes_0_2: -4530293638659105066
+      logofes_0_20: -6382446978504381436
+      logofes_0_21: -1217050457801325542
+      logofes_0_22: -3243884800919665719
+      logofes_0_3: -3982634599472240247
+      logofes_0_4: 1804523901974201867
+      logofes_0_5: -7609690146161142879
+      logofes_0_6: -7238877551284691239
+      logofes_0_7: -652598223021854732
+      logofes_0_8: -8485097783649909265
+      logofes_0_9: 4973287204599050772
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
