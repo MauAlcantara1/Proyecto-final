@@ -1,31 +1,25 @@
 fileFormatVersion: 2
-guid: 3d5793b500e45674db12f82f2fae5e5c
+guid: 9bd9c9987f915ab40b0cb51299212d94
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1941915448414793547
-    second: "84 sin t\xEDtulo_20250922155550_0"
+      213: 2511215530714182424
+    second: "89 sin t\xEDtulo_20250927012919_0"
   - first:
-      213: 7927340853827437078
-    second: "84 sin t\xEDtulo_20250922155550_1"
+      213: -1331673059172773378
+    second: "89 sin t\xEDtulo_20250927012919_1"
   - first:
-      213: 4329463709859233780
-    second: "84 sin t\xEDtulo_20250922155550_2"
+      213: 9139597885720474854
+    second: "89 sin t\xEDtulo_20250927012919_2"
   - first:
-      213: 3457346919723305367
-    second: "84 sin t\xEDtulo_20250922155550_3"
+      213: -5270117974076571580
+    second: "89 sin t\xEDtulo_20250927012919_3"
   - first:
-      213: -6054156935537884332
-    second: "84 sin t\xEDtulo_20250922155550_4"
+      213: 2042252836085077182
+    second: "89 sin t\xEDtulo_20250927012919_4"
   - first:
-      213: -6018872711753480780
-    second: "84 sin t\xEDtulo_20250922155550_5"
-  - first:
-      213: 8063903124253509003
-    second: "84 sin t\xEDtulo_20250922155550_6"
-  - first:
-      213: -2873566573563584593
-    second: "84 sin t\xEDtulo_20250922155550_7"
+      213: -8149837192127258409
+    second: "89 sin t\xEDtulo_20250927012919_5"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 2
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -93,10 +87,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -160,155 +154,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "84 sin t\xEDtulo_20250922155550_0"
+      name: "89 sin t\xEDtulo_20250927012919_0"
       rect:
         serializedVersion: 2
-        x: 9
-        y: 0
-        width: 27
-        height: 221
+        x: 0
+        y: 35
+        width: 1017
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b4f6b96cfc113fa10800000000000000
-      internalID: 1941915448414793547
+      spriteID: 813b9ae5831a9d220800000000000000
+      internalID: 2511215530714182424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "84 sin t\xEDtulo_20250922155550_1"
+      name: "89 sin t\xEDtulo_20250927012919_1"
       rect:
         serializedVersion: 2
-        x: 40
-        y: 0
-        width: 27
-        height: 201
+        x: 1018
+        y: 103
+        width: 251
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 61283d57182930e60800000000000000
-      internalID: 7927340853827437078
+      spriteID: ef19c0f7862f48de0800000000000000
+      internalID: -1331673059172773378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "84 sin t\xEDtulo_20250922155550_2"
+      name: "89 sin t\xEDtulo_20250927012919_2"
       rect:
         serializedVersion: 2
-        x: 71
-        y: 0
-        width: 27
-        height: 160
+        x: 1270
+        y: 39
+        width: 514
+        height: 98
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ffba1e3e48551c30800000000000000
-      internalID: 4329463709859233780
+      spriteID: 6e4b7487adf56de70800000000000000
+      internalID: 9139597885720474854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "84 sin t\xEDtulo_20250922155550_3"
+      name: "89 sin t\xEDtulo_20250927012919_3"
       rect:
         serializedVersion: 2
-        x: 103
-        y: 0
-        width: 26
-        height: 117
+        x: 1018
+        y: 68
+        width: 251
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7990667a4b6faff20800000000000000
-      internalID: 3457346919723305367
+      spriteID: 440c3c6ff97ccd6b0800000000000000
+      internalID: -5270117974076571580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "84 sin t\xEDtulo_20250922155550_4"
+      name: "89 sin t\xEDtulo_20250927012919_4"
       rect:
         serializedVersion: 2
-        x: 133
-        y: 0
-        width: 27
-        height: 82
+        x: 1018
+        y: 33
+        width: 251
+        height: 31
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4530ccae7505bfba0800000000000000
-      internalID: -6054156935537884332
+      spriteID: eb49264522a875c10800000000000000
+      internalID: 2042252836085077182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "84 sin t\xEDtulo_20250922155550_5"
+      name: "89 sin t\xEDtulo_20250927012919_5"
       rect:
         serializedVersion: 2
-        x: 165
+        x: 1018
         y: 0
-        width: 26
-        height: 62
+        width: 251
+        height: 29
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4b544a3782ba87ca0800000000000000
-      internalID: -6018872711753480780
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "84 sin t\xEDtulo_20250922155550_6"
-      rect:
-        serializedVersion: 2
-        x: 196
-        y: 0
-        width: 29
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b850b48ca2db8ef60800000000000000
-      internalID: 8063903124253509003
+      spriteID: 7d0ecf1e046f5ee80800000000000000
+      internalID: -8149837192127258409
       vertices: []
       indices: 
       edges: []
@@ -317,7 +289,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8eb2688ac9eb4ec45b6620679cddbf1d
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -327,14 +299,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "84 sin t\xEDtulo_20250922155550_0": 1941915448414793547
-      "84 sin t\xEDtulo_20250922155550_1": 7927340853827437078
-      "84 sin t\xEDtulo_20250922155550_2": 4329463709859233780
-      "84 sin t\xEDtulo_20250922155550_3": 3457346919723305367
-      "84 sin t\xEDtulo_20250922155550_4": -6054156935537884332
-      "84 sin t\xEDtulo_20250922155550_5": -6018872711753480780
-      "84 sin t\xEDtulo_20250922155550_6": 8063903124253509003
-      "84 sin t\xEDtulo_20250922155550_7": -2873566573563584593
+      "89 sin t\xEDtulo_20250927012919_0": 2511215530714182424
+      "89 sin t\xEDtulo_20250927012919_1": -1331673059172773378
+      "89 sin t\xEDtulo_20250927012919_2": 9139597885720474854
+      "89 sin t\xEDtulo_20250927012919_3": -5270117974076571580
+      "89 sin t\xEDtulo_20250927012919_4": 2042252836085077182
+      "89 sin t\xEDtulo_20250927012919_5": -8149837192127258409
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
