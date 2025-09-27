@@ -2589,9 +2589,9 @@ TextureImporter:
       name: "88 sin t\xEDtulo_20250924110838_244"
       rect:
         serializedVersion: 2
-        x: 9
+        x: 10
         y: 1514
-        width: 24
+        width: 23
         height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2633,9 +2633,9 @@ TextureImporter:
       name: "88 sin t\xEDtulo_20250924110838_246"
       rect:
         serializedVersion: 2
-        x: 61
+        x: 62
         y: 1514
-        width: 25
+        width: 23
         height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2655,9 +2655,9 @@ TextureImporter:
       name: "88 sin t\xEDtulo_20250924110838_247"
       rect:
         serializedVersion: 2
-        x: 89
+        x: 90
         y: 1514
-        width: 39
+        width: 38
         height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2677,9 +2677,9 @@ TextureImporter:
       name: "88 sin t\xEDtulo_20250924110838_248"
       rect:
         serializedVersion: 2
-        x: 131
+        x: 132
         y: 1517
-        width: 46
+        width: 45
         height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2699,9 +2699,9 @@ TextureImporter:
       name: "88 sin t\xEDtulo_20250924110838_249"
       rect:
         serializedVersion: 2
-        x: 179
+        x: 180
         y: 1517
-        width: 46
+        width: 44
         height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
