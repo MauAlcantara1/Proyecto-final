@@ -1,48 +1,51 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class MovimientoPers : MonoBehaviour
 {
-    public float speed = 5f;        // Velocidad de movimiento
-    public float jumpForce = 10f;   // Fuerza del salto
+    public float speed = 5f;
+    public float jumpForce = 10f;
     private Rigidbody2D rb;
 
-    private bool isGrounded = true; // Para saber si est� en el suelo
+    private bool isGrounded = true;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        if (rb == null)
+            Debug.LogError("No se encontró Rigidbody2D en el personaje!");
     }
 
     void Update()
     {
         // Movimiento horizontal
-        float move = Input.GetAxis("Horizontal");
+        float move = 0f;
+        if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)
+            move = -1f;
+        if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed)
+            move = 1f;
+
+        // Se reemplaza velocity por linearVelocity
         rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
 
-        // Saltar
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        // Salto
+        if (Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded)
         {
+            Debug.Log("Saltó");
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             isGrounded = false;
         }
-
-        // Agacharse (placeholder: solo escalarlo)
-        if (Input.GetKey(KeyCode.LeftControl))
-        {
-            transform.localScale = new Vector3(0.5f, 0.5f, 1f);
-        }
-        else
-        {
-            transform.localScale = new Vector3(0.5f, 1f, 1f);
-        }
     }
 
-    // Detectar si toca el suelo
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.contacts[0].normal.y > 0.5f) // Detecta si choca con algo debajo
+        foreach (ContactPoint2D contact in collision.contacts)
         {
-            isGrounded = true;
+            if (contact.normal.y > 0.5f)
+            {
+                isGrounded = true;
+                break;
+            }
         }
     }
 }
