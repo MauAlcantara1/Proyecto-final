@@ -7,36 +7,25 @@ using UnityEngine.SceneManagement;
 public class VidasPlayer : MonoBehaviour
 {
     public static int vida;
-    public Image[] vidas;
+    public static int puntuacion = 0; // 👈 Puntuación global
+
+    public Image barraVida;
     private bool haMuerto;
-    public GameObject gameOver;
 
     void Start()
     {
         haMuerto = false;
         vida = 5;
-        DibujarVidas(vida);
-        gameOver.SetActive(false);
-    }
-
-    void Update()
-    {
-        
+        ActualizarBarraVida();
     }
 
     public void TomarDaño(int daño)
     {
-        if (MovimientoPlayer.dirIdle == 1)
-        {
-            GetComponent<Animator>().SetTrigger("daño");
-        }
-        else if (MovimientoPlayer.dirIdle == -1)
-        {
-            GetComponent<Animator>().SetTrigger("dañoIzq");
-        }
+        // Si quieres animaciones de daño según dirección, puedes comentar estas líneas
+        // GetComponent<Animator>().SetTrigger("daño");
 
         vida -= daño;
-        DibujarVidas(vida);
+        ActualizarBarraVida();
 
         if (vida <= 0 && !haMuerto)
         {
@@ -46,22 +35,18 @@ public class VidasPlayer : MonoBehaviour
         }
     }
 
-    public void DibujarVidas(int n)
+    private void ActualizarBarraVida()
     {
-        for (int i = 0; i < vidas.Length; i++)
+        if (barraVida != null)
         {
-            vidas[i].enabled = false;
-        }
-        for (int i = 0; i < n; i++)
-        {
-            vidas[i].enabled = true;
+            barraVida.fillAmount = (float)vida / 5f;
         }
     }
 
     IEnumerator EjecutarMuerte()
     {
         yield return new WaitForSeconds(2.1f);
-        gameOver.SetActive(true);
+        Debug.Log("Puntuación final: " + puntuacion);
         StartCoroutine(RegresaMenu());
     }
 

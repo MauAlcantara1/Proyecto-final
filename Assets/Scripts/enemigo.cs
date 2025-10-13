@@ -5,119 +5,122 @@ using UnityEngine;
 public class Enemigo : MonoBehaviour
 {
     private Animator anim;
-    public Rigidbody2D rb;
-    public Transform jugador;
+    private Rigidbody2D rb;
+    private Transform jugador;
     private bool mirandoderecha = false;
 
     [Header("Vida")]
-    public int vida_INI;
+    public int vida_INI = 3;
     private int vida;
-    public GameObject barraVida;
 
     [Header("Ataque")]
     public Transform controladorAtaque;
-    public float radioAtaque;
-    public int dañoAtaque;
-    public float tiempoEntreAtaques, tiempoEntreGiros;
-    public float tiempoSigAtaque, tiempoSigGiro;
+    public float radioAtaque = 0.5f;
+    public int dañoAtaque = 1;
+    [SerializeField] private float dSeguimiento = 6f, velSeguimiento = 2f;
+
+    [Header("Patrullaje")]
+    public float rangoPatrulla = 4f; // Rango máximo a cada lado
+    private float puntoInicial;
+    private int direccion = 1; // 1 = derecha, -1 = izquierda
+
+    [Header("Puntuación")]
+    public int puntosPorMuerte = 100; // 👈 Editable en el Inspector
+
     public static float distanciaEnemigoJugador;
-    [SerializeField] private float dAtaque, dSeguimiento, velSeguimiento;
 
     void Start()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         jugador = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        tiempoSigGiro = tiempoEntreGiros; // Empieza a girar para ver donde está el personaje
         vida = vida_INI;
+        puntoInicial = transform.position.x;
     }
 
     void Update()
     {
-        if (tiempoSigGiro > 0)
-        {
-            tiempoSigGiro -= Time.deltaTime;
-        }
-        else
-        {
-            MirarJugador();
-            tiempoSigGiro = tiempoEntreGiros;
-        }
-
         distanciaEnemigoJugador = Vector2.Distance(transform.position, jugador.position);
         anim.SetFloat("DistanciaJugador", distanciaEnemigoJugador);
-
-        //Determina que accion realizar en contra del jugador
         DeterminaAccion(distanciaEnemigoJugador);
     }
 
-private void DeterminaAccion(float d)
-{
+    private void DeterminaAccion(float d)
+    {
         ResetAnimsEnemigo();
+
         if (d <= radioAtaque)
         {
-            // Enemigo ataca
             Ataque();
             anim.SetBool("atacando", true);
         }
-
         else if (d > radioAtaque && d <= dSeguimiento)
         {
-            // Seguir al player
+            // Seguir al jugador
             transform.position = Vector3.MoveTowards(
                 transform.position,
                 new Vector2(jugador.position.x, transform.position.y),
-                velSeguimiento / 1000
+                velSeguimiento * Time.deltaTime
             );
+            anim.SetBool("caminando", true);
         }
         else
         {
-            // Estático
+            // Patrullar cuando no detecta al jugador
+            Patrullar();
         }
-}
-private void ResetAnimsEnemigo()
-{
-    anim.SetBool("atacando", false);
-    anim.SetBool("caminando", false);
-}
+    }
 
+    private void Patrullar()
+    {
+        anim.SetBool("caminando", true);
+        transform.Translate(Vector2.right * direccion * velSeguimiento * Time.deltaTime);
+
+        if (transform.position.x >= puntoInicial + rangoPatrulla)
+        {
+            direccion = -1;
+            Girar();
+        }
+        else if (transform.position.x <= puntoInicial - rangoPatrulla)
+        {
+            direccion = 1;
+            Girar();
+        }
+    }
+
+    private void Girar()
+    {
+        mirandoderecha = !mirandoderecha;
+        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
+    }
+
+    private void ResetAnimsEnemigo()
+    {
+        anim.SetBool("atacando", false);
+        anim.SetBool("caminando", false);
+    }
 
     public void TomarDaño(int daño)
     {
         vida -= daño;
-        DibujaBarra(vida);
 
         if (vida <= 0)
         {
             anim.SetTrigger("Muerte");
+            VidasPlayer.puntuacion += puntosPorMuerte; // 👈 Usa el valor del inspector
             StartCoroutine(EliminaEnemigo());
         }
     }
 
     IEnumerator EliminaEnemigo()
     {
-        yield return new WaitForSeconds(1.2f); // Anim de 1.2 segs antes de que lo destruyamos
-        Muerte();
-    }
-
-    private void Muerte()
-    {
+        yield return new WaitForSeconds(1.2f);
         Destroy(this.gameObject);
-    }
-
-    public void MirarJugador()
-    {
-        if ((jugador.position.x > transform.position.x && !mirandoderecha) ||
-            (jugador.position.x < transform.position.x && mirandoderecha))
-        {
-            mirandoderecha = !mirandoderecha;
-            transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
-        }
     }
 
     private void Ataque()
     {
-        Collider2D[] objs = Physics2D.OverlapCircleAll(controladorAtaque.position, radioAtaque); 
+        Collider2D[] objs = Physics2D.OverlapCircleAll(controladorAtaque.position, radioAtaque);
         foreach (Collider2D colisionador in objs)
         {
             if (colisionador.CompareTag("Player"))
@@ -127,8 +130,18 @@ private void ResetAnimsEnemigo()
         }
     }
 
-    private void DibujaBarra(float n)
+    private void OnDrawGizmosSelected()
     {
-        barraVida.transform.localScale = new Vector2(0.73f * n / vida_INI, barraVida.transform.localScale.y);
+        if (controladorAtaque != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(controladorAtaque.position, radioAtaque);
+        }
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawLine(
+            new Vector2(transform.position.x - rangoPatrulla, transform.position.y),
+            new Vector2(transform.position.x + rangoPatrulla, transform.position.y)
+        );
     }
 }
