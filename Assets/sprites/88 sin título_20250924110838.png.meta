@@ -4609,6 +4609,358 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: salto
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1754
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d229104a2b68e4fa40858ec007c3ae
+      internalID: 7397262602347419523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salto1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1754
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7f6a0282a3007458d5224ee8981c8c
+      internalID: -6294901268139457209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salto2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1754
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13ed1aa7910e61c4ba172274d40c01a0
+      internalID: 2206526653379270642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salto3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1754
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c351660549b314fb1eae8f9e232162
+      internalID: -9061789110613980782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salto4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1754
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04536f12ca707244905d7e675798426
+      internalID: 6179794458276131013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salto5
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 1754
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 478c13401962a3c4db2cdd784133047b
+      internalID: -7869294877210522776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: saltot
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1778
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d4e60c780ed584b8372b1ad41b9c0e
+      internalID: 222555272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: saltot1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1778
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225a53d3692c2324c8283aaf72cfde70
+      internalID: -1277418025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: saltot2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1778
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94caffc38725a734f88f467eda19a431
+      internalID: 1561747203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: saltot3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1778
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a7b1c79698b584296a02ad3852bc9a
+      internalID: 2085109183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: saltot4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1778
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa609454af40b3b4bb943ccc7f427eb9
+      internalID: 822251152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: saltot5
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1778
+        width: 18
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261d2f69c5c018c418973d077cc413ee
+      internalID: -938713500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "88 sin t\xEDtulo_20250924110838_7"
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 2249
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ced26b70e205241b0be3986ed64a29
+      internalID: 1136937363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "88 sin t\xEDtulo_20250924110838_13"
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 2249
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29599d71ed712b044a20acc94bffbce3
+      internalID: 13313076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "88 sin t\xEDtulo_20250924110838_14"
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 2249
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b981e789d8072343b4d3fe3dbf2505f
+      internalID: -305128097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "88 sin t\xEDtulo_20250924110838_15"
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 2249
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba462b14736cc9f459e5d5ff39cbb3fd
+      internalID: 1125933786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -4658,7 +5010,7 @@ TextureImporter:
       "88 sin t\xEDtulo_20250924110838_127": 5896322993227230361
       "88 sin t\xEDtulo_20250924110838_128": -4213198636296961249
       "88 sin t\xEDtulo_20250924110838_129": 1591403489692166961
-      "88 sin t\xEDtulo_20250924110838_13": -6294901268139457209
+      "88 sin t\xEDtulo_20250924110838_13": 13313076
       "88 sin t\xEDtulo_20250924110838_130": -5683504091702892493
       "88 sin t\xEDtulo_20250924110838_131": -54521876545383111
       "88 sin t\xEDtulo_20250924110838_132": 541757833246468708
@@ -4669,7 +5021,7 @@ TextureImporter:
       "88 sin t\xEDtulo_20250924110838_137": 3558723758883835356
       "88 sin t\xEDtulo_20250924110838_138": 5343544583607540649
       "88 sin t\xEDtulo_20250924110838_139": -3624302951034254670
-      "88 sin t\xEDtulo_20250924110838_14": 2206526653379270642
+      "88 sin t\xEDtulo_20250924110838_14": -305128097
       "88 sin t\xEDtulo_20250924110838_140": -1711866793104410740
       "88 sin t\xEDtulo_20250924110838_141": 6630139082730866489
       "88 sin t\xEDtulo_20250924110838_142": -6430478934116384065
@@ -4680,7 +5032,7 @@ TextureImporter:
       "88 sin t\xEDtulo_20250924110838_147": -4034902704889293161
       "88 sin t\xEDtulo_20250924110838_148": -5611333241669284490
       "88 sin t\xEDtulo_20250924110838_149": 5790859942872467382
-      "88 sin t\xEDtulo_20250924110838_15": -9061789110613980782
+      "88 sin t\xEDtulo_20250924110838_15": 1125933786
       "88 sin t\xEDtulo_20250924110838_150": -597045369621088715
       "88 sin t\xEDtulo_20250924110838_151": 8265563966078291669
       "88 sin t\xEDtulo_20250924110838_152": -2797633711314897031
@@ -4691,7 +5043,6 @@ TextureImporter:
       "88 sin t\xEDtulo_20250924110838_157": 3229838107619752848
       "88 sin t\xEDtulo_20250924110838_158": 4755489282354150970
       "88 sin t\xEDtulo_20250924110838_159": 589928073490777845
-      "88 sin t\xEDtulo_20250924110838_16": 6179794458276131013
       "88 sin t\xEDtulo_20250924110838_160": -2179056347305792637
       "88 sin t\xEDtulo_20250924110838_161": -3721328689565613365
       "88 sin t\xEDtulo_20250924110838_162": -8605779455505359764
@@ -4702,7 +5053,6 @@ TextureImporter:
       "88 sin t\xEDtulo_20250924110838_167": 3796943815739634592
       "88 sin t\xEDtulo_20250924110838_168": 4978901840410614579
       "88 sin t\xEDtulo_20250924110838_169": 1256211061091921607
-      "88 sin t\xEDtulo_20250924110838_17": -7869294877210522776
       "88 sin t\xEDtulo_20250924110838_170": 4817950009927453608
       "88 sin t\xEDtulo_20250924110838_171": 1964211753379060963
       "88 sin t\xEDtulo_20250924110838_172": -8839888205282031036
@@ -5063,7 +5413,7 @@ TextureImporter:
       "88 sin t\xEDtulo_20250924110838_67": -645520982549038925
       "88 sin t\xEDtulo_20250924110838_68": -7875116374888645949
       "88 sin t\xEDtulo_20250924110838_69": -2636285567647266989
-      "88 sin t\xEDtulo_20250924110838_7": 7397262602347419523
+      "88 sin t\xEDtulo_20250924110838_7": 1136937363
       "88 sin t\xEDtulo_20250924110838_70": -2907511079271815751
       "88 sin t\xEDtulo_20250924110838_71": -259975087064397290
       "88 sin t\xEDtulo_20250924110838_72": 3875464141167069529
@@ -5096,6 +5446,18 @@ TextureImporter:
       "88 sin t\xEDtulo_20250924110838_97": -1027453677783313121
       "88 sin t\xEDtulo_20250924110838_98": -1060660724157238906
       "88 sin t\xEDtulo_20250924110838_99": 2279177806049616403
+      salto: 7397262602347419523
+      salto1: -6294901268139457209
+      salto2: 2206526653379270642
+      salto3: -9061789110613980782
+      salto4: 6179794458276131013
+      salto5: -7869294877210522776
+      saltot: 222555272
+      saltot1: -1277418025
+      saltot2: 1561747203
+      saltot3: 2085109183
+      saltot4: 822251152
+      saltot5: -938713500
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

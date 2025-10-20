@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4945062237604583218}
   - component: {fileID: 7161578623872023924}
   - component: {fileID: 6130748836009210114}
+  - component: {fileID: 626461682388806613}
   m_Layer: 0
   m_Name: torso
   m_TagString: Untagged
@@ -27,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 1682269107091547678}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1529, y: -0.4967, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.1529, y: -0.521, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 55}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1948157158106881826}
@@ -113,6 +114,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &626461682388806613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682269107091547678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14c01ccd1fa8d3428002f2514259c3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &3545568782127296053
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,8 +156,8 @@ Transform:
   m_GameObject: {fileID: 3545568782127296053}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.39, y: 1.47, z: 0}
-  m_LocalScale: {x: 4.5, y: 4.5, z: 5}
+  m_LocalPosition: {x: -7.47, y: 3.6599998, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4945062237604583218}
@@ -306,7 +319,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.103534676, y: -0.54246724}
+  m_Offset: {x: -0.048461914, y: -0.7704624}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -316,7 +329,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.19493099, y: 0.36371732}
+  m_Size: {x: 1.0866451, y: 1.7722199}
   m_EdgeRadius: 0
 --- !u!1 &7683501009680060616
 GameObject:
@@ -329,6 +342,7 @@ GameObject:
   - component: {fileID: 7669322391356435386}
   - component: {fileID: 2613643281772433767}
   - component: {fileID: 1014054625735310604}
+  - component: {fileID: 4322500364429507985}
   m_Layer: 0
   m_Name: piernas
   m_TagString: Untagged
@@ -345,8 +359,8 @@ Transform:
   m_GameObject: {fileID: 7683501009680060616}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.103, y: -0.642, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.07, y: -1.26, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1948157158106881826}
@@ -431,3 +445,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4322500364429507985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7683501009680060616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7356da7355eb4c241a117927aea5a49b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
