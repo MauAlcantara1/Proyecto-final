@@ -62,6 +62,14 @@ public class Enemigo : MonoBehaviour
                 new Vector2(jugador.position.x, transform.position.y),
                 velSeguimiento * Time.deltaTime
             );
+
+            // 🔁 Girar hacia el jugador
+            if ((jugador.position.x > transform.position.x && !mirandoderecha) ||
+                (jugador.position.x < transform.position.x && mirandoderecha))
+            {
+                Girar();
+            }
+
             anim.SetBool("caminando", true);
         }
         else
@@ -91,7 +99,9 @@ public class Enemigo : MonoBehaviour
     private void Girar()
     {
         mirandoderecha = !mirandoderecha;
-        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
+        Vector3 escala = transform.localScale;
+        escala.x *= -1;   // 👈 invierte el eje X sin afectar rotación
+        transform.localScale = escala;
     }
 
     private void ResetAnimsEnemigo()
@@ -107,7 +117,7 @@ public class Enemigo : MonoBehaviour
         if (vida <= 0)
         {
             anim.SetTrigger("Muerte");
-            VidasPlayer.puntuacion += puntosPorMuerte; // 👈 Usa el valor del inspector
+            VidasPlayer.puntuacion += puntosPorMuerte;
             StartCoroutine(EliminaEnemigo());
         }
     }
