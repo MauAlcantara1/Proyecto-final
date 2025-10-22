@@ -1,0 +1,1846 @@
+fileFormatVersion: 2
+guid: d99e7c497d8e07645834785cb65e695f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6636556131482270156
+    second: "4 sin t\xEDtulo_20251008095638_0"
+  - first:
+      213: 3456719790095466574
+    second: "4 sin t\xEDtulo_20251008095638_1"
+  - first:
+      213: -4443421463154215517
+    second: "4 sin t\xEDtulo_20251008095638_2"
+  - first:
+      213: -1261280783451036931
+    second: "4 sin t\xEDtulo_20251008095638_3"
+  - first:
+      213: 2981249781112700503
+    second: "4 sin t\xEDtulo_20251008095638_4"
+  - first:
+      213: 9159647511434572507
+    second: "4 sin t\xEDtulo_20251008095638_5"
+  - first:
+      213: 2505953010044783880
+    second: "4 sin t\xEDtulo_20251008095638_6"
+  - first:
+      213: 9036689717677288799
+    second: "4 sin t\xEDtulo_20251008095638_7"
+  - first:
+      213: 6928687106474033379
+    second: "4 sin t\xEDtulo_20251008095638_8"
+  - first:
+      213: 3358381173192922829
+    second: "4 sin t\xEDtulo_20251008095638_9"
+  - first:
+      213: 2230282944141697396
+    second: "4 sin t\xEDtulo_20251008095638_10"
+  - first:
+      213: 9108150772330991997
+    second: "4 sin t\xEDtulo_20251008095638_11"
+  - first:
+      213: 6808900742770911120
+    second: "4 sin t\xEDtulo_20251008095638_12"
+  - first:
+      213: 7318377665403367507
+    second: "4 sin t\xEDtulo_20251008095638_13"
+  - first:
+      213: 7446409808268024086
+    second: "4 sin t\xEDtulo_20251008095638_14"
+  - first:
+      213: 3818607777426968583
+    second: "4 sin t\xEDtulo_20251008095638_15"
+  - first:
+      213: -1879923030402652018
+    second: "4 sin t\xEDtulo_20251008095638_16"
+  - first:
+      213: 3414208675160930146
+    second: "4 sin t\xEDtulo_20251008095638_17"
+  - first:
+      213: 4452325720736358577
+    second: "4 sin t\xEDtulo_20251008095638_18"
+  - first:
+      213: -7835965029057976417
+    second: "4 sin t\xEDtulo_20251008095638_19"
+  - first:
+      213: -3623288917959658702
+    second: "4 sin t\xEDtulo_20251008095638_20"
+  - first:
+      213: -1708780923578284499
+    second: "4 sin t\xEDtulo_20251008095638_21"
+  - first:
+      213: 3727465289025562625
+    second: "4 sin t\xEDtulo_20251008095638_22"
+  - first:
+      213: 3985241302612241599
+    second: "4 sin t\xEDtulo_20251008095638_23"
+  - first:
+      213: -8252243172741374619
+    second: "4 sin t\xEDtulo_20251008095638_24"
+  - first:
+      213: 3452127966813139309
+    second: "4 sin t\xEDtulo_20251008095638_25"
+  - first:
+      213: -4257613858417953258
+    second: "4 sin t\xEDtulo_20251008095638_26"
+  - first:
+      213: -4598769105462392922
+    second: "4 sin t\xEDtulo_20251008095638_27"
+  - first:
+      213: -4999308833938783567
+    second: "4 sin t\xEDtulo_20251008095638_28"
+  - first:
+      213: -1546788694721254373
+    second: "4 sin t\xEDtulo_20251008095638_29"
+  - first:
+      213: -721454596668754424
+    second: "4 sin t\xEDtulo_20251008095638_30"
+  - first:
+      213: -8932640291090927367
+    second: "4 sin t\xEDtulo_20251008095638_31"
+  - first:
+      213: -3294203502953827041
+    second: "4 sin t\xEDtulo_20251008095638_32"
+  - first:
+      213: -5011198839424683107
+    second: "4 sin t\xEDtulo_20251008095638_33"
+  - first:
+      213: -2464195125056782474
+    second: "4 sin t\xEDtulo_20251008095638_34"
+  - first:
+      213: -7743596855960715269
+    second: "4 sin t\xEDtulo_20251008095638_35"
+  - first:
+      213: 5241896225814561264
+    second: "4 sin t\xEDtulo_20251008095638_36"
+  - first:
+      213: -335632243052394496
+    second: "4 sin t\xEDtulo_20251008095638_37"
+  - first:
+      213: 8327862597028558030
+    second: "4 sin t\xEDtulo_20251008095638_38"
+  - first:
+      213: -9219502851597524483
+    second: "4 sin t\xEDtulo_20251008095638_39"
+  - first:
+      213: -8958490175022768915
+    second: "4 sin t\xEDtulo_20251008095638_40"
+  - first:
+      213: -2500019763381600595
+    second: "4 sin t\xEDtulo_20251008095638_41"
+  - first:
+      213: -1735828003856950543
+    second: "4 sin t\xEDtulo_20251008095638_42"
+  - first:
+      213: 5150976145450869436
+    second: "4 sin t\xEDtulo_20251008095638_43"
+  - first:
+      213: 5564476282883648048
+    second: "4 sin t\xEDtulo_20251008095638_44"
+  - first:
+      213: -3251767816485001396
+    second: "4 sin t\xEDtulo_20251008095638_45"
+  - first:
+      213: -8664480135121900827
+    second: "4 sin t\xEDtulo_20251008095638_46"
+  - first:
+      213: -3574318812410621407
+    second: "4 sin t\xEDtulo_20251008095638_47"
+  - first:
+      213: -4219984710750635412
+    second: "4 sin t\xEDtulo_20251008095638_48"
+  - first:
+      213: 4710173962923976548
+    second: "4 sin t\xEDtulo_20251008095638_49"
+  - first:
+      213: 7372018281895310290
+    second: "4 sin t\xEDtulo_20251008095638_50"
+  - first:
+      213: 6610205510510852599
+    second: "4 sin t\xEDtulo_20251008095638_51"
+  - first:
+      213: -2597315078699617995
+    second: "4 sin t\xEDtulo_20251008095638_52"
+  - first:
+      213: -4791613295430015293
+    second: "4 sin t\xEDtulo_20251008095638_53"
+  - first:
+      213: -5208440383988341133
+    second: "4 sin t\xEDtulo_20251008095638_54"
+  - first:
+      213: 6564890141137795480
+    second: "4 sin t\xEDtulo_20251008095638_55"
+  - first:
+      213: 4929802267460236089
+    second: "4 sin t\xEDtulo_20251008095638_56"
+  - first:
+      213: -6624119974294263998
+    second: "4 sin t\xEDtulo_20251008095638_57"
+  - first:
+      213: 5919194309830923796
+    second: "4 sin t\xEDtulo_20251008095638_58"
+  - first:
+      213: -8757724668851561824
+    second: "4 sin t\xEDtulo_20251008095638_59"
+  - first:
+      213: 5836680242553510101
+    second: "4 sin t\xEDtulo_20251008095638_60"
+  - first:
+      213: 8153171685078565170
+    second: "4 sin t\xEDtulo_20251008095638_61"
+  - first:
+      213: 9016335529466268752
+    second: "4 sin t\xEDtulo_20251008095638_62"
+  - first:
+      213: 8045200583864902666
+    second: "4 sin t\xEDtulo_20251008095638_63"
+  - first:
+      213: -7197384338805448534
+    second: "4 sin t\xEDtulo_20251008095638_64"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_0"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2097
+        width: 71
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4360f034c5736e3a0800000000000000
+      internalID: -6636556131482270156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_1"
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 2097
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4004b8a55cb8ff20800000000000000
+      internalID: 3456719790095466574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_2"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1998
+        width: 75
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a5b855b8bbc552c0800000000000000
+      internalID: -4443421463154215517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_3"
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1998
+        width: 75
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2ef5c5fc70f7ee0800000000000000
+      internalID: -1261280783451036931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_4"
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 1998
+        width: 74
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75efeed61e68f5920800000000000000
+      internalID: 2981249781112700503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_5"
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1998
+        width: 75
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd239dab1ea9d1f70800000000000000
+      internalID: 9159647511434572507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_6"
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1998
+        width: 75
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80d4a8b4cfee6c220800000000000000
+      internalID: 2505953010044783880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_7"
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 1998
+        width: 75
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5d64977b65c86d70800000000000000
+      internalID: 9036689717677288799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_8"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1899
+        width: 75
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0c63da634a72060800000000000000
+      internalID: 6928687106474033379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_9"
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1899
+        width: 75
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc6168032ed5b9e20800000000000000
+      internalID: 3358381173192922829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_10"
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 1899
+        width: 75
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 471ad2a658e83fe10800000000000000
+      internalID: 2230282944141697396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_11"
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1899
+        width: 75
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d711d71ded6a66e70800000000000000
+      internalID: 9108150772330991997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_12"
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1900
+        width: 75
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 097e0c386231e7e50800000000000000
+      internalID: 6808900742770911120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_13"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1899
+        width: 75
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 350358656b9109560800000000000000
+      internalID: 7318377665403367507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_14"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1801
+        width: 75
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 619dcc19446f65760800000000000000
+      internalID: 7446409808268024086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_15"
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1801
+        width: 75
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 700141eaa8b6ef430800000000000000
+      internalID: 3818607777426968583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_16"
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1802
+        width: 74
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8826cfc6fb29e5e0800000000000000
+      internalID: -1879923030402652018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_17"
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 1801
+        width: 75
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 267360863b4b16f20800000000000000
+      internalID: 3414208675160930146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_18"
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 1801
+        width: 75
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b063d057a6d9cd30800000000000000
+      internalID: 4452325720736358577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_19"
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 1802
+        width: 75
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f97ad92a25f014390800000000000000
+      internalID: -7835965029057976417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_20"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1691
+        width: 70
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 233b7661ded77bdc0800000000000000
+      internalID: -3623288917959658702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_21"
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1692
+        width: 70
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d260723bdc03948e0800000000000000
+      internalID: -1708780923578284499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_22"
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1691
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108a7f07eed9ab330800000000000000
+      internalID: 3727465289025562625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_23"
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1691
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbcea6a99db6e4730800000000000000
+      internalID: 3985241302612241599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_24"
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 1691
+        width: 66
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56d9b908e842a7d80800000000000000
+      internalID: -8252243172741374619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_25"
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 1691
+        width: 58
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d61b61d781c68ef20800000000000000
+      internalID: 3452127966813139309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_26"
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1691
+        width: 66
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 616b73ae0cae9e4c0800000000000000
+      internalID: -4257613858417953258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_27"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1592
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a78fd82dd3ed20c0800000000000000
+      internalID: -4598769105462392922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_28"
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1592
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b24b9e5a13ee9ab0800000000000000
+      internalID: -4999308833938783567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_29"
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1592
+        width: 70
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1cac8c90e3b88ae0800000000000000
+      internalID: -1546788694721254373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_30"
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1592
+        width: 70
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8067cf3edd0ecf5f0800000000000000
+      internalID: -721454596668754424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_31"
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1488
+        width: 76
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0fe2f7bf2e80480800000000000000
+      internalID: -8932640291090927367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_32"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1488
+        width: 75
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f15f6941e53a842d0800000000000000
+      internalID: -3294203502953827041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_33"
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1488
+        width: 76
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d93fd3db435a47ab0800000000000000
+      internalID: -5011198839424683107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_34"
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 1488
+        width: 76
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67fbdb1f69b6dcdd0800000000000000
+      internalID: -2464195125056782474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_35"
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1488
+        width: 75
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff31a4dfa7398490800000000000000
+      internalID: -7743596855960715269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_36"
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1488
+        width: 75
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f1432938d4feb840800000000000000
+      internalID: 5241896225814561264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_37"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1387
+        width: 76
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 008c1b1d048975bf0800000000000000
+      internalID: -335632243052394496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_38"
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1287
+        width: 76
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4362ab8e2829370800000000000000
+      internalID: 8327862597028558030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_39"
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1287
+        width: 76
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df124d4e00fbd0080800000000000000
+      internalID: -9219502851597524483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_40"
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 1287
+        width: 76
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: decd0f166ac0da380800000000000000
+      internalID: -8958490175022768915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_41"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1287
+        width: 75
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daefe2855452e4dd0800000000000000
+      internalID: -2500019763381600595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_42"
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 1287
+        width: 75
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fa5ee690a919e7e0800000000000000
+      internalID: -1735828003856950543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_43"
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1287
+        width: 76
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb22c146381fb7740800000000000000
+      internalID: 5150976145450869436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_44"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1188
+        width: 75
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03aad5a82bdf83d40800000000000000
+      internalID: 5564476282883648048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_45"
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1188
+        width: 75
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c472d5646666fd2d0800000000000000
+      internalID: -3251767816485001396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_46"
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 1188
+        width: 74
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ea61a6393591c780800000000000000
+      internalID: -8664480135121900827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_47"
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1188
+        width: 75
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 122d4484af7756ec0800000000000000
+      internalID: -3574318812410621407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_48"
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1188
+        width: 75
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6af026934a9f65c0800000000000000
+      internalID: -4219984710750635412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_49"
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 1188
+        width: 76
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 467a0628346ed5140800000000000000
+      internalID: 4710173962923976548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_50"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1085
+        width: 72
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d33e0a919bae4660800000000000000
+      internalID: 7372018281895310290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_51"
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1085
+        width: 71
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f93452b3ea2cbb50800000000000000
+      internalID: 6610205510510852599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_52"
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 1085
+        width: 75
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 531f75472bb74fbd0800000000000000
+      internalID: -2597315078699617995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_53"
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 1085
+        width: 75
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c6ead84815c08db0800000000000000
+      internalID: -4791613295430015293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_54"
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1085
+        width: 81
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3766396f017e7b7b0800000000000000
+      internalID: -5208440383988341133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_55"
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1085
+        width: 72
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8997bf31dcc2b1b50800000000000000
+      internalID: 6564890141137795480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_56"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 990
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 933f1e40b0d2a6440800000000000000
+      internalID: 4929802267460236089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_57"
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 899
+        width: 77
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 247ee9ebaf56214a0800000000000000
+      internalID: -6624119974294263998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_58"
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 899
+        width: 82
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4165cf11dd3352250800000000000000
+      internalID: 5919194309830923796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_59"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 899
+        width: 74
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aa5d6860df467680800000000000000
+      internalID: -8757724668851561824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_60"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 899
+        width: 77
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d851fca1cd000150800000000000000
+      internalID: 5836680242553510101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_61"
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 899
+        width: 90
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23181e14372e52170800000000000000
+      internalID: 8153171685078565170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_62"
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 899
+        width: 90
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05c0299b465702d70800000000000000
+      internalID: 9016335529466268752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_63"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 782
+        width: 74
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0468044e4b46af60800000000000000
+      internalID: 8045200583864902666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "4 sin t\xEDtulo_20251008095638_64"
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 782
+        width: 74
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa0aa85c311cd1c90800000000000000
+      internalID: -7197384338805448534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 41490feeef949634b8a22135a617e146
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "4 sin t\xEDtulo_20251008095638_0": -6636556131482270156
+      "4 sin t\xEDtulo_20251008095638_1": 3456719790095466574
+      "4 sin t\xEDtulo_20251008095638_10": 2230282944141697396
+      "4 sin t\xEDtulo_20251008095638_11": 9108150772330991997
+      "4 sin t\xEDtulo_20251008095638_12": 6808900742770911120
+      "4 sin t\xEDtulo_20251008095638_13": 7318377665403367507
+      "4 sin t\xEDtulo_20251008095638_14": 7446409808268024086
+      "4 sin t\xEDtulo_20251008095638_15": 3818607777426968583
+      "4 sin t\xEDtulo_20251008095638_16": -1879923030402652018
+      "4 sin t\xEDtulo_20251008095638_17": 3414208675160930146
+      "4 sin t\xEDtulo_20251008095638_18": 4452325720736358577
+      "4 sin t\xEDtulo_20251008095638_19": -7835965029057976417
+      "4 sin t\xEDtulo_20251008095638_2": -4443421463154215517
+      "4 sin t\xEDtulo_20251008095638_20": -3623288917959658702
+      "4 sin t\xEDtulo_20251008095638_21": -1708780923578284499
+      "4 sin t\xEDtulo_20251008095638_22": 3727465289025562625
+      "4 sin t\xEDtulo_20251008095638_23": 3985241302612241599
+      "4 sin t\xEDtulo_20251008095638_24": -8252243172741374619
+      "4 sin t\xEDtulo_20251008095638_25": 3452127966813139309
+      "4 sin t\xEDtulo_20251008095638_26": -4257613858417953258
+      "4 sin t\xEDtulo_20251008095638_27": -4598769105462392922
+      "4 sin t\xEDtulo_20251008095638_28": -4999308833938783567
+      "4 sin t\xEDtulo_20251008095638_29": -1546788694721254373
+      "4 sin t\xEDtulo_20251008095638_3": -1261280783451036931
+      "4 sin t\xEDtulo_20251008095638_30": -721454596668754424
+      "4 sin t\xEDtulo_20251008095638_31": -8932640291090927367
+      "4 sin t\xEDtulo_20251008095638_32": -3294203502953827041
+      "4 sin t\xEDtulo_20251008095638_33": -5011198839424683107
+      "4 sin t\xEDtulo_20251008095638_34": -2464195125056782474
+      "4 sin t\xEDtulo_20251008095638_35": -7743596855960715269
+      "4 sin t\xEDtulo_20251008095638_36": 5241896225814561264
+      "4 sin t\xEDtulo_20251008095638_37": -335632243052394496
+      "4 sin t\xEDtulo_20251008095638_38": 8327862597028558030
+      "4 sin t\xEDtulo_20251008095638_39": -9219502851597524483
+      "4 sin t\xEDtulo_20251008095638_4": 2981249781112700503
+      "4 sin t\xEDtulo_20251008095638_40": -8958490175022768915
+      "4 sin t\xEDtulo_20251008095638_41": -2500019763381600595
+      "4 sin t\xEDtulo_20251008095638_42": -1735828003856950543
+      "4 sin t\xEDtulo_20251008095638_43": 5150976145450869436
+      "4 sin t\xEDtulo_20251008095638_44": 5564476282883648048
+      "4 sin t\xEDtulo_20251008095638_45": -3251767816485001396
+      "4 sin t\xEDtulo_20251008095638_46": -8664480135121900827
+      "4 sin t\xEDtulo_20251008095638_47": -3574318812410621407
+      "4 sin t\xEDtulo_20251008095638_48": -4219984710750635412
+      "4 sin t\xEDtulo_20251008095638_49": 4710173962923976548
+      "4 sin t\xEDtulo_20251008095638_5": 9159647511434572507
+      "4 sin t\xEDtulo_20251008095638_50": 7372018281895310290
+      "4 sin t\xEDtulo_20251008095638_51": 6610205510510852599
+      "4 sin t\xEDtulo_20251008095638_52": -2597315078699617995
+      "4 sin t\xEDtulo_20251008095638_53": -4791613295430015293
+      "4 sin t\xEDtulo_20251008095638_54": -5208440383988341133
+      "4 sin t\xEDtulo_20251008095638_55": 6564890141137795480
+      "4 sin t\xEDtulo_20251008095638_56": 4929802267460236089
+      "4 sin t\xEDtulo_20251008095638_57": -6624119974294263998
+      "4 sin t\xEDtulo_20251008095638_58": 5919194309830923796
+      "4 sin t\xEDtulo_20251008095638_59": -8757724668851561824
+      "4 sin t\xEDtulo_20251008095638_6": 2505953010044783880
+      "4 sin t\xEDtulo_20251008095638_60": 5836680242553510101
+      "4 sin t\xEDtulo_20251008095638_61": 8153171685078565170
+      "4 sin t\xEDtulo_20251008095638_62": 9016335529466268752
+      "4 sin t\xEDtulo_20251008095638_63": 8045200583864902666
+      "4 sin t\xEDtulo_20251008095638_64": -7197384338805448534
+      "4 sin t\xEDtulo_20251008095638_7": 9036689717677288799
+      "4 sin t\xEDtulo_20251008095638_8": 6928687106474033379
+      "4 sin t\xEDtulo_20251008095638_9": 3358381173192922829
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
