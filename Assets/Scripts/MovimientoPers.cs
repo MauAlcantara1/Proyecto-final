@@ -18,23 +18,27 @@ public class MovimientoPers : MonoBehaviour
 
     void Update()
     {
-        // Movimiento horizontal
         float move = 0f;
         if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)
             move = -1f;
         if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed)
             move = 1f;
 
-        // Se reemplaza velocity por linearVelocity
         rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
 
-        // Salto
         if (Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded)
         {
             Debug.Log("Saltó");
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             isGrounded = false;
         }
+
+        // Voltear personaje
+        if (rb.linearVelocity.x < -0.1f)
+            transform.localScale = new Vector3(-1, 1, 1);
+        else if (rb.linearVelocity.x > 0.1f)
+            transform.localScale = new Vector3(1, 1, 1);
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

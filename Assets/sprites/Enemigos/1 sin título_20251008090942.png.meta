@@ -685,9 +685,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 1241
+        y: 1242
         width: 42
-        height: 40
+        height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -707,9 +707,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 45
-        y: 1241
+        y: 1242
         width: 42
-        height: 40
+        height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -729,7 +729,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 88
-        y: 1241
+        y: 1242
         width: 41
         height: 39
       alignment: 0
@@ -751,9 +751,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 130
-        y: 1241
+        y: 1242
         width: 42
-        height: 40
+        height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -773,9 +773,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 1201
+        y: 1202
         width: 36
-        height: 39
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -795,9 +795,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 39
-        y: 1201
+        y: 1202
         width: 39
-        height: 39
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -817,9 +817,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 79
-        y: 1206
+        y: 1202
         width: 44
-        height: 33
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -839,9 +839,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 124
-        y: 1203
+        y: 1202
         width: 44
-        height: 35
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -883,9 +883,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 209
-        y: 1201
+        y: 1202
         width: 37
-        height: 39
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -905,9 +905,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 247
-        y: 1201
+        y: 1202
         width: 36
-        height: 39
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -929,7 +929,7 @@ TextureImporter:
         x: 284
         y: 1202
         width: 40
-        height: 38
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -949,9 +949,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 325
-        y: 1207
+        y: 1202
         width: 42
-        height: 32
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -971,9 +971,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 368
-        y: 1204
+        y: 1202
         width: 40
-        height: 34
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1015,9 +1015,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 449
-        y: 1201
+        y: 1202
         width: 37
-        height: 39
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1033,57 +1033,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caminar13
+      name: agachar1
       rect:
         serializedVersion: 2
         x: 2
-        y: 1160
-        width: 41
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a750591dd1b7edc70800000000000000
-      internalID: 8997764473533302138
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: caminar14
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 1160
-        width: 42
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f69313d9d135a4a90800000000000000
-      internalID: -7328954056935655057
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: apuntar1
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 1073
+        y: 1074
         width: 49
-        height: 36
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1099,13 +1055,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: apuntar2
+      name: agachar2
       rect:
         serializedVersion: 2
         x: 52
-        y: 1073
+        y: 1074
         width: 49
-        height: 30
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1121,13 +1077,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: apuntar3
+      name: agachar3
       rect:
         serializedVersion: 2
         x: 102
-        y: 1073
+        y: 1074
         width: 50
-        height: 28
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1143,13 +1099,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: apuntar4
+      name: agachar4
       rect:
         serializedVersion: 2
         x: 154
-        y: 1073
+        y: 1074
         width: 45
-        height: 28
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1165,13 +1121,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: apuntar5
+      name: agachar5
       rect:
         serializedVersion: 2
         x: 201
-        y: 1073
+        y: 1074
         width: 41
-        height: 29
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1187,13 +1143,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: apuntar6
+      name: agachar6
       rect:
         serializedVersion: 2
         x: 243
-        y: 1073
+        y: 1074
         width: 41
-        height: 29
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1209,13 +1165,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: apuntar7
+      name: agachar7
       rect:
         serializedVersion: 2
         x: 285
-        y: 1073
+        y: 1074
         width: 40
-        height: 28
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1231,13 +1187,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: apuntar8
+      name: agachar8
       rect:
         serializedVersion: 2
         x: 326
-        y: 1073
+        y: 1074
         width: 41
-        height: 29
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1253,13 +1209,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: recargar1
+      name: cambladopar1
       rect:
         serializedVersion: 2
         x: 2
-        y: 1026
+        y: 1027
         width: 41
-        height: 40
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1275,13 +1231,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: recargar2
+      name: cambladopar2
       rect:
         serializedVersion: 2
         x: 44
-        y: 1026
+        y: 1027
         width: 36
-        height: 40
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1297,13 +1253,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: recargar3
+      name: cambladopar3
       rect:
         serializedVersion: 2
         x: 81
-        y: 1026
+        y: 1027
         width: 30
-        height: 45
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1319,13 +1275,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: recargar4
+      name: cambladopar4
       rect:
         serializedVersion: 2
         x: 112
-        y: 1026
+        y: 1027
         width: 28
-        height: 46
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1341,13 +1297,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: recargar5
+      name: cambladopar5
       rect:
         serializedVersion: 2
         x: 141
-        y: 1026
+        y: 1027
         width: 30
-        height: 45
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1363,13 +1319,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: recargar6
+      name: cambladopar6
       rect:
         serializedVersion: 2
         x: 172
-        y: 1026
+        y: 1027
         width: 36
-        height: 40
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1385,13 +1341,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: recargar7
+      name: cambladopar7
       rect:
         serializedVersion: 2
         x: 209
-        y: 1026
+        y: 1027
         width: 41
-        height: 40
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1407,13 +1363,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: recargar8
+      name: cambladoaga1
       rect:
         serializedVersion: 2
         x: 253
-        y: 1026
+        y: 1027
         width: 42
-        height: 29
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1429,13 +1385,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: recargar9
+      name: cambladoaga2
       rect:
         serializedVersion: 2
         x: 296
-        y: 1026
+        y: 1027
         width: 37
-        height: 33
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1451,13 +1407,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: recargar10
+      name: cambladoaga3
       rect:
         serializedVersion: 2
         x: 334
-        y: 1026
+        y: 1027
         width: 31
-        height: 38
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1473,13 +1429,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: recargar11
+      name: cambladoaga4
       rect:
         serializedVersion: 2
         x: 366
-        y: 1026
+        y: 1027
         width: 26
-        height: 39
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1495,13 +1451,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: recargar12
+      name: cambladoaga5
       rect:
         serializedVersion: 2
         x: 393
-        y: 1026
+        y: 1027
         width: 31
-        height: 38
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1517,13 +1473,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: recargar13
+      name: cambladoaga6
       rect:
         serializedVersion: 2
         x: 425
-        y: 1026
+        y: 1027
         width: 37
-        height: 33
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1539,13 +1495,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: recargar14
+      name: cambladoaga7
       rect:
         serializedVersion: 2
         x: 2
-        y: 996
+        y: 997
         width: 42
-        height: 29
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1561,13 +1517,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: apuntar9
+      name: disparoyrec1
       rect:
         serializedVersion: 2
         x: 2
-        y: 946
+        y: 947
         width: 46
-        height: 40
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1583,13 +1539,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: apuntar10
+      name: disparoyrec2
       rect:
         serializedVersion: 2
-        x: 49
-        y: 946
+        x: 50
+        y: 947
         width: 50
-        height: 40
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1605,13 +1561,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: apuntar11
+      name: disparoyrec3
       rect:
         serializedVersion: 2
         x: 100
-        y: 946
+        y: 947
         width: 49
-        height: 40
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1627,13 +1583,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: apuntar12
+      name: disparoyrec4
       rect:
         serializedVersion: 2
         x: 151
-        y: 946
+        y: 947
         width: 44
-        height: 42
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1649,13 +1605,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: apuntar13
+      name: disparoyrec5
       rect:
         serializedVersion: 2
-        x: 194
-        y: 937
-        width: 50
-        height: 58
+        x: 196
+        y: 947
+        width: 43
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1671,13 +1627,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: apuntar14
+      name: disparoyrec6
       rect:
         serializedVersion: 2
         x: 239
-        y: 946
+        y: 947
         width: 43
-        height: 49
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1693,11 +1649,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: apuntar15
+      name: disparoyrec7
       rect:
         serializedVersion: 2
         x: 283
-        y: 946
+        y: 947
         width: 45
         height: 46
       alignment: 0
@@ -1715,13 +1671,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: apuntar16
+      name: disparoyrec8
       rect:
         serializedVersion: 2
         x: 329
-        y: 946
+        y: 947
         width: 49
-        height: 40
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1737,13 +1693,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: apuntar17
+      name: disparoyrec9
       rect:
         serializedVersion: 2
         x: 379
-        y: 946
+        y: 947
         width: 48
-        height: 40
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1759,13 +1715,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: apuntar18
+      name: disparoyrec110
       rect:
         serializedVersion: 2
         x: 428
-        y: 946
+        y: 947
         width: 42
-        height: 40
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1807,9 +1763,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 803
+        y: 804
         width: 41
-        height: 40
+        height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1829,9 +1785,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 44
-        y: 803
+        y: 804
         width: 40
-        height: 40
+        height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1851,7 +1807,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 85
-        y: 803
+        y: 804
         width: 45
         height: 39
       alignment: 0
@@ -1873,9 +1829,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 131
-        y: 803
+        y: 804
         width: 48
-        height: 37
+        height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1895,9 +1851,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 180
-        y: 803
+        y: 804
         width: 48
-        height: 37
+        height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1913,13 +1869,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: agachado1
+      name: disparoyrecagachado1
       rect:
         serializedVersion: 2
         x: 2
-        y: 766
+        y: 767
         width: 45
-        height: 28
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1935,13 +1891,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: agachado2
+      name: disparoyrecagachado2
       rect:
         serializedVersion: 2
         x: 48
-        y: 766
+        y: 767
         width: 49
-        height: 28
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1957,16 +1913,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: agachado3
+      name: disparoyrecagachado3
       rect:
         serializedVersion: 2
-        x: 95
-        y: 756
-        width: 51
-        height: 38
+        x: 97
+        y: 767
+        width: 49
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 1, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -1979,13 +1935,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: agachado4
+      name: disparoyrecagachado4
       rect:
         serializedVersion: 2
         x: 147
-        y: 766
+        y: 767
         width: 43
-        height: 31
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2001,13 +1957,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: agachado5
+      name: disparoyrecagachado5
       rect:
         serializedVersion: 2
         x: 191
-        y: 766
+        y: 767
         width: 43
-        height: 36
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2023,13 +1979,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: agachado6
+      name: disparoyrecagachado6
       rect:
         serializedVersion: 2
         x: 235
-        y: 766
+        y: 767
         width: 43
-        height: 36
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2045,13 +2001,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: agachado7
+      name: disparoyrecagachado7
       rect:
         serializedVersion: 2
         x: 279
-        y: 766
+        y: 767
         width: 45
-        height: 33
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2067,13 +2023,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: agachado8
+      name: disparoyrecagachado8
       rect:
         serializedVersion: 2
         x: 325
-        y: 766
+        y: 767
         width: 49
-        height: 28
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2089,13 +2045,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: agachado9
+      name: disparoyrecagachado9
       rect:
         serializedVersion: 2
         x: 375
-        y: 766
+        y: 767
         width: 42
-        height: 28
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2111,13 +2067,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: agachado10
+      name: disparoyrecagachado10
       rect:
         serializedVersion: 2
         x: 418
-        y: 766
+        y: 767
         width: 36
-        height: 30
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2133,13 +2089,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: agachado11
+      name: disparoyrecagachado11
       rect:
         serializedVersion: 2
         x: 455
-        y: 766
+        y: 767
         width: 36
-        height: 30
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2181,9 +2137,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 392
+        y: 415
         width: 40
-        height: 62
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2203,9 +2159,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 43
-        y: 414
+        y: 415
         width: 40
-        height: 46
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2225,9 +2181,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 84
-        y: 414
+        y: 415
         width: 40
-        height: 49
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2247,9 +2203,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 125
-        y: 414
+        y: 415
         width: 40
-        height: 50
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2269,9 +2225,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 166
-        y: 414
+        y: 415
         width: 40
-        height: 50
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2291,9 +2247,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 207
-        y: 414
+        y: 415
         width: 40
-        height: 49
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2459,40 +2415,33 @@ TextureImporter:
       "1 sin t\xEDtulo_20251008090942_97": 1543055054909531288
       "1 sin t\xEDtulo_20251008090942_98": 5551492814415162532
       "1 sin t\xEDtulo_20251008090942_99": 5161353099204983587
-      agachado1: 2311325622970455030
-      agachado10: 3022357910237115172
-      agachado11: 4937591644489922379
-      agachado2: 5228413079878282899
-      agachado3: 105935761304241988
-      agachado4: 1276910789032632577
-      agachado5: -1953931525767025107
-      agachado6: 8401107288876100747
-      agachado7: -4997503040978210826
-      agachado8: 4647250367240301129
-      agachado9: 2008265501827576245
-      apuntar1: 4006741182138791457
-      apuntar10: 5648808420949672816
-      apuntar11: 8411882755534139358
-      apuntar12: -2871250368528701227
-      apuntar13: -4191324046161504314
-      apuntar14: 1143589737432956445
-      apuntar15: -6935552592796084853
-      apuntar16: 1964577344369793303
-      apuntar17: 6234046328926311467
-      apuntar18: 764684501757596735
-      apuntar2: 8862251150433155337
-      apuntar3: -2103062012946038735
-      apuntar4: -6667333461845015998
-      apuntar5: -5775973535533205999
-      apuntar6: -2656258291015669114
-      apuntar7: -4327644215739111189
-      apuntar8: 95027495783557393
-      apuntar9: 940640811298935841
+      agachar1: 4006741182138791457
+      agachar2: 8862251150433155337
+      agachar3: -2103062012946038735
+      agachar4: -6667333461845015998
+      agachar5: -5775973535533205999
+      agachar6: -2656258291015669114
+      agachar7: -4327644215739111189
+      agachar8: 95027495783557393
       cac1: -5761244965741473015
       cac2: 5882086847096638851
       cac3: 6336803887722589244
       cac4: 5417316570851449330
       cac5: 2308175929847044442
+      cambladoaga1: 2036158286892228687
+      cambladoaga2: -1642809373793074996
+      cambladoaga3: 8571592574922112885
+      cambladoaga4: -22608176649832351
+      cambladoaga5: 6029769740789550872
+      cambladoaga6: 3374922943320207042
+      cambladoaga7: -606341168756001485
+      cambladopar1: 5551302874846818464
+      cambladopar2: -5031313436665090161
+      cambladopar3: -5190274848579367011
+      cambladopar4: 6981384452024894129
+      cambladopar5: 9159317395761949572
+      cambladopar6: 3942569148704366728
+      cambladopar7: 7246849161688845843
       caminar1: 4922514097764196975
       caminar10: -1301128975243270510
       caminar11: -8344522642919377844
@@ -2507,6 +2456,27 @@ TextureImporter:
       caminar7: 8357013434270063944
       caminar8: 1976595800053362898
       caminar9: -9113822197656546999
+      disparoyrec1: 940640811298935841
+      disparoyrec110: 764684501757596735
+      disparoyrec2: 5648808420949672816
+      disparoyrec3: 8411882755534139358
+      disparoyrec4: -2871250368528701227
+      disparoyrec5: -4191324046161504314
+      disparoyrec6: 1143589737432956445
+      disparoyrec7: -6935552592796084853
+      disparoyrec8: 1964577344369793303
+      disparoyrec9: 6234046328926311467
+      disparoyrecagachado1: 2311325622970455030
+      disparoyrecagachado10: 3022357910237115172
+      disparoyrecagachado11: 4937591644489922379
+      disparoyrecagachado2: 5228413079878282899
+      disparoyrecagachado3: 105935761304241988
+      disparoyrecagachado4: 1276910789032632577
+      disparoyrecagachado5: -1953931525767025107
+      disparoyrecagachado6: 8401107288876100747
+      disparoyrecagachado7: -4997503040978210826
+      disparoyrecagachado8: 4647250367240301129
+      disparoyrecagachado9: 2008265501827576245
       festejo1: 8140526828892125725
       festejo2: 7984271184465851314
       festejo3: -4218902599954379837
@@ -2517,20 +2487,6 @@ TextureImporter:
       idle2: -649164587940861178
       idle3: -2394899201135950486
       idle4: -2246800681987107115
-      recargar1: 5551302874846818464
-      recargar10: 8571592574922112885
-      recargar11: -22608176649832351
-      recargar12: 6029769740789550872
-      recargar13: 3374922943320207042
-      recargar14: -606341168756001485
-      recargar2: -5031313436665090161
-      recargar3: -5190274848579367011
-      recargar4: 6981384452024894129
-      recargar5: 9159317395761949572
-      recargar6: 3942569148704366728
-      recargar7: 7246849161688845843
-      recargar8: 2036158286892228687
-      recargar9: -1642809373793074996
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
