@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemigo : MonoBehaviour
+public class EnemTanque2 : MonoBehaviour
 {
     private Animator anim;
     private Rigidbody2D rb;
