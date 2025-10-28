@@ -328,7 +328,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -363,6 +363,19 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -375,7 +388,33 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Standalone
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -2561,103 +2600,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       98 sin t: -8500760921923256956
-      98 sin t: -4683761042763692229
-      98 sin t: 966109950488512
-      98 sin t: 4112099336251086137
-      98 sin t: -2705142047471383898
-      98 sin t: -2992376032287180183
-      98 sin t: -4175099204907340147
-      98 sin t: -3011960966171246199
-      98 sin t: 596722375968129084
-      98 sin t: -8395681157299511858
-      98 sin t: -5273522665105404564
-      98 sin t: 657679179639322826
-      98 sin t: -1130275991324898042
-      98 sin t: 7799596143202025008
-      98 sin t: 3847487568349099087
-      98 sin t: 1223436987925989640
-      98 sin t: -2405968255198511304
-      98 sin t: -6583388942324779561
-      98 sin t: -5611433870590845442
-      98 sin t: 962058173376949001
-      98 sin t: -3666206553932297601
-      98 sin t: -920222663220973436
-      98 sin t: -4964791542676781325
-      98 sin t: -8156079599588439785
-      98 sin t: 4379994961397926371
-      98 sin t: 8161038995297609447
-      98 sin t: 3263176569707093883
-      98 sin t: 6015530906801035748
-      98 sin t: -6412575597992650779
-      98 sin t: 6577954238314360494
-      98 sin t: 2574658906876638930
-      98 sin t: 7410276471945462523
-      98 sin t: -593119794734100989
-      98 sin t: 2504865748391595605
-      98 sin t: -2062543331220331300
-      98 sin t: -1982335448877366613
-      98 sin t: -8387215652345227967
-      98 sin t: 3991764472022364550
-      98 sin t: 4766062983449837083
-      98 sin t: 7706680558738876877
-      98 sin t: -4679659886457737031
-      98 sin t: -2054831045902915309
-      98 sin t: -7415355151102100135
-      98 sin t: -5935913408035483407
-      98 sin t: 2871523685730111014
-      98 sin t: 625277787371222327
-      98 sin t: -4592667497762929569
-      98 sin t: 5616837412613438608
-      98 sin t: -1063665171697343418
-      98 sin t: 2361653676384130497
-      98 sin t: -6188723017751068429
-      98 sin t: 2187281412321732810
-      98 sin t: -8492125797507870677
-      98 sin t: -4180430558526829651
-      98 sin t: 8811504372438745718
-      98 sin t: -662950322522760842
-      98 sin t: 9109789199050497152
-      98 sin t: -6679538672606046400
-      98 sin t: 1789600198157752373
-      98 sin t: -4638585554956304387
-      98 sin t: -8886198145437350231
-      98 sin t: -2296536928380410270
-      98 sin t: -1160371215910132056
-      98 sin t: -8130188836500395904
-      98 sin t: -3668005180787742974
-      98 sin t: -6552832214533136307
-      98 sin t: -466590150492513334
-      98 sin t: 2094588495860539452
-      98 sin t: 5866603251143403200
-      98 sin t: 2788131195690246168
-      98 sin t: 9145101235507567180
-      98 sin t: 7145449258042624778
-      98 sin t: -7961782388142949254
-      98 sin t: -6863028834269524633
-      98 sin t: -6272573905251794056
-      98 sin t: 254177574787080974
-      98 sin t: 3732171554382878517
-      98 sin t: 8368149205269340531
-      98 sin t: 3033076628835836577
-      98 sin t: 9188592860039716938
-      98 sin t: 2135028368477886514
-      98 sin t: -1399739678809713725
-      98 sin t: 1041121198955250616
-      98 sin t: 494494902587723709
-      98 sin t: -3403966212543760213
-      98 sin t: -8111757089584790661
-      98 sin t: -4217544910252305248
-      98 sin t: 1816758424622161635
-      98 sin t: -7394829732715888960
-      98 sin t: -5300242875308924957
-      98 sin t: 2655945490186797230
-      98 sin t: 2054432284806392612
-      98 sin t: -3584291887028577637
-      98 sin t: -7844250504342352501
-      98 sin t: 4150983641522593280
-      98 sin t: 9199108492926155118
-      98 sin t: 4365263982667486601
-      98 sin t: -7715898751962452021
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

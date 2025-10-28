@@ -63,12 +63,7 @@ public class Enemigo : MonoBehaviour
                 velSeguimiento * Time.deltaTime
             );
 
-            // 🔁 Girar hacia el jugador
-            if ((jugador.position.x > transform.position.x && !mirandoderecha) ||
-                (jugador.position.x < transform.position.x && mirandoderecha))
-            {
-                Girar();
-            }
+            //  Girar hacia el jugador
 
             anim.SetBool("caminando", true);
         }
@@ -84,24 +79,15 @@ public class Enemigo : MonoBehaviour
         anim.SetBool("caminando", true);
         transform.Translate(Vector2.right * direccion * velSeguimiento * Time.deltaTime);
 
-        if (transform.position.x >= puntoInicial + rangoPatrulla)
-        {
-            direccion = -1;
-            Girar();
-        }
-        else if (transform.position.x <= puntoInicial - rangoPatrulla)
-        {
-            direccion = 1;
-            Girar();
-        }
+        if (rb.linearVelocity.x < -0.1f)
+            transform.localScale = new Vector3(-1, 1, 1);
+        else if (rb.linearVelocity.x > 0.1f)
+            transform.localScale = new Vector3(1, 1, 1);
     }
 
     private void Girar()
     {
-        mirandoderecha = !mirandoderecha;
-        Vector3 escala = transform.localScale;
-        escala.x *= -1;   // 👈 invierte el eje X sin afectar rotación
-        transform.localScale = escala;
+        
     }
 
     private void ResetAnimsEnemigo()

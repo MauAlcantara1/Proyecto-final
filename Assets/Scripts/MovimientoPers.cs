@@ -9,6 +9,14 @@ public class MovimientoPers : MonoBehaviour
 
     private bool isGrounded = true;
 
+    public animacionesPiernasJugador animPiernas;
+    public animacionesTorsoJugador animTorso;
+
+    private float tiempoDisparo = 0f;
+    private float duracionDisparo = 0.2f;
+    private float duracionArriba = 0.2f;
+    private float tiempoArriba = 0;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -33,11 +41,38 @@ public class MovimientoPers : MonoBehaviour
             isGrounded = false;
         }
 
-        // Voltear personaje
         if (rb.linearVelocity.x < -0.1f)
             transform.localScale = new Vector3(-1, 1, 1);
         else if (rb.linearVelocity.x > 0.1f)
             transform.localScale = new Vector3(1, 1, 1);
+
+        float velocidadAbs = Mathf.Abs(rb.linearVelocity.x);
+        animPiernas?.ActualizarMovimiento(velocidadAbs);
+        animTorso?.ActualizarMovimiento(velocidadAbs);
+
+        if (Keyboard.current.wKey.wasPressedThisFrame)
+            tiempoArriba = duracionArriba;
+
+        if (Keyboard.current.wKey.isPressed)
+            tiempoArriba = duracionArriba; 
+    
+        if (Keyboard.current.jKey.wasPressedThisFrame)
+            tiempoDisparo = duracionDisparo;
+
+        if (Keyboard.current.jKey.isPressed)
+        tiempoDisparo = duracionDisparo;
+
+        if (tiempoDisparo > 0)
+            tiempoDisparo -= Time.deltaTime;
+
+        if (tiempoArriba > 0)
+            tiempoArriba -= Time.deltaTime;
+
+        bool Arriba = tiempoArriba > 0;
+        animTorso?.ActualizarPosicion(Arriba);
+
+        bool Disparo = tiempoDisparo > 0;
+        animTorso?.ActualizarDisparo(Disparo);
 
     }
 
