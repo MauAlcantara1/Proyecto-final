@@ -298,7 +298,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -333,10 +333,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -370,19 +370,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_0"
+      name: idle1
       rect:
         serializedVersion: 2
         x: 9
-        y: 1753
+        y: 1754
         width: 32
-        height: 53
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -396,15 +409,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_1"
+      name: idle2
       rect:
         serializedVersion: 2
         x: 44
-        y: 1753
+        y: 1754
         width: 32
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -418,15 +431,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_2"
+      name: idle3
       rect:
         serializedVersion: 2
         x: 79
-        y: 1753
+        y: 1754
         width: 32
-        height: 46
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -440,15 +453,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_3"
+      name: idle4
       rect:
         serializedVersion: 2
         x: 114
-        y: 1753
+        y: 1754
         width: 32
-        height: 47
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -462,15 +475,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_4"
+      name: idle5
       rect:
         serializedVersion: 2
         x: 149
-        y: 1753
+        y: 1754
         width: 32
-        height: 47
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -484,15 +497,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_5"
+      name: idle6
       rect:
         serializedVersion: 2
         x: 184
-        y: 1753
+        y: 1754
         width: 32
-        height: 46
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -506,15 +519,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_6"
+      name: idle7
       rect:
         serializedVersion: 2
         x: 219
-        y: 1753
+        y: 1754
         width: 32
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -528,15 +541,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_7"
+      name: idle8
       rect:
         serializedVersion: 2
         x: 255
-        y: 1753
+        y: 1754
         width: 32
-        height: 44
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -550,15 +563,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_8"
+      name: caminar1
       rect:
         serializedVersion: 2
         x: 9
-        y: 1687
+        y: 1688
         width: 40
-        height: 45
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -572,15 +585,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_9"
+      name: caminar2
       rect:
         serializedVersion: 2
         x: 52
-        y: 1687
+        y: 1688
         width: 33
-        height: 45
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -594,15 +607,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_10"
+      name: caminar3
       rect:
         serializedVersion: 2
         x: 88
-        y: 1687
+        y: 1688
         width: 33
-        height: 46
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -616,15 +629,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_11"
+      name: caminar4
       rect:
         serializedVersion: 2
-        x: 124
-        y: 1687
+        x: 125
+        y: 1688
         width: 33
-        height: 46
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -638,15 +651,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_12"
+      name: caminar5
       rect:
         serializedVersion: 2
         x: 160
-        y: 1687
+        y: 1688
         width: 33
-        height: 46
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -660,15 +673,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_13"
+      name: caminar6
       rect:
         serializedVersion: 2
         x: 196
-        y: 1687
+        y: 1688
         width: 38
-        height: 46
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -682,15 +695,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_14"
+      name: caminar7
       rect:
         serializedVersion: 2
         x: 237
-        y: 1687
+        y: 1688
         width: 38
-        height: 46
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -704,15 +717,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_15"
+      name: caminar8
       rect:
         serializedVersion: 2
         x: 278
-        y: 1687
+        y: 1688
         width: 36
-        height: 45
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -726,15 +739,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_16"
+      name: caminar9
       rect:
         serializedVersion: 2
         x: 317
-        y: 1687
+        y: 1688
         width: 35
         height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -748,15 +761,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_17"
+      name: caminar10
       rect:
         serializedVersion: 2
         x: 355
-        y: 1687
+        y: 1688
         width: 32
-        height: 45
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -770,15 +783,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_18"
+      name: caminar11
       rect:
         serializedVersion: 2
         x: 390
-        y: 1687
+        y: 1688
         width: 32
-        height: 46
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -792,15 +805,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_19"
+      name: caminar12
       rect:
         serializedVersion: 2
         x: 425
-        y: 1687
+        y: 1688
         width: 32
-        height: 46
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -814,15 +827,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_20"
+      name: caminar13
       rect:
         serializedVersion: 2
         x: 460
-        y: 1687
+        y: 1688
         width: 36
-        height: 45
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -836,15 +849,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_21"
+      name: caminar14
       rect:
         serializedVersion: 2
         x: 499
-        y: 1687
+        y: 1688
         width: 46
         height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -858,15 +871,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_22"
+      name: caminar15
       rect:
         serializedVersion: 2
         x: 9
-        y: 1627
+        y: 1628
         width: 30
         height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -880,15 +893,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_23"
+      name: caminar16
       rect:
         serializedVersion: 2
         x: 43
-        y: 1627
+        y: 1628
         width: 34
         height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -902,15 +915,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_24"
+      name: detecar1
       rect:
         serializedVersion: 2
         x: 9
-        y: 1558
+        y: 1559
         width: 32
-        height: 43
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -924,15 +937,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_25"
+      name: detecar2
       rect:
         serializedVersion: 2
         x: 44
-        y: 1558
+        y: 1559
         width: 33
-        height: 42
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -946,15 +959,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_26"
+      name: detecar3
       rect:
         serializedVersion: 2
         x: 80
-        y: 1558
+        y: 1559
         width: 32
-        height: 43
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -968,15 +981,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_27"
+      name: detecar4
       rect:
         serializedVersion: 2
         x: 115
-        y: 1558
+        y: 1559
         width: 32
-        height: 44
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -990,15 +1003,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_28"
+      name: deteca5
       rect:
         serializedVersion: 2
         x: 150
-        y: 1558
+        y: 1559
         width: 32
-        height: 45
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1012,15 +1025,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_29"
+      name: deteca6
       rect:
         serializedVersion: 2
-        x: 185
-        y: 1558
+        x: 186
+        y: 1559
         width: 32
         height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1034,15 +1047,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_30"
+      name: deteca7
       rect:
         serializedVersion: 2
         x: 220
-        y: 1558
+        y: 1559
         width: 32
-        height: 47
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1056,15 +1069,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_31"
+      name: deteca8
       rect:
         serializedVersion: 2
         x: 255
-        y: 1558
+        y: 1559
         width: 33
-        height: 48
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1078,15 +1091,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_32"
+      name: deteca9
       rect:
         serializedVersion: 2
         x: 291
-        y: 1558
+        y: 1559
         width: 37
-        height: 48
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1100,15 +1113,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_33"
+      name: deteca10
       rect:
         serializedVersion: 2
         x: 331
-        y: 1558
+        y: 1559
         width: 40
-        height: 48
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1122,15 +1135,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_34"
+      name: detecar11
       rect:
         serializedVersion: 2
         x: 374
-        y: 1558
+        y: 1559
         width: 44
-        height: 48
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1144,15 +1157,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_35"
+      name: detecar12
       rect:
         serializedVersion: 2
         x: 421
-        y: 1558
+        y: 1559
         width: 45
-        height: 48
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1166,15 +1179,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_36"
+      name: detecar13
       rect:
         serializedVersion: 2
         x: 469
-        y: 1558
+        y: 1559
         width: 45
-        height: 48
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1188,15 +1201,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_37"
+      name: detecar14
       rect:
         serializedVersion: 2
         x: 517
-        y: 1558
+        y: 1559
         width: 44
-        height: 48
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1210,15 +1223,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_38"
+      name: detecar15
       rect:
         serializedVersion: 2
         x: 564
-        y: 1558
+        y: 1559
         width: 45
-        height: 48
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1232,15 +1245,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_39"
+      name: detecar16
       rect:
         serializedVersion: 2
         x: 612
-        y: 1558
+        y: 1559
         width: 44
         height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1254,15 +1267,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_40"
+      name: detecar17
       rect:
         serializedVersion: 2
         x: 659
-        y: 1558
+        y: 1559
         width: 41
-        height: 38
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1276,15 +1289,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_41"
+      name: detecar18
       rect:
         serializedVersion: 2
         x: 9
-        y: 1518
+        y: 1519
         width: 39
-        height: 37
+        height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1298,15 +1311,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_42"
+      name: detecar19
       rect:
         serializedVersion: 2
         x: 51
-        y: 1518
+        y: 1519
         width: 39
-        height: 36
+        height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1320,15 +1333,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_43"
+      name: detecar20
       rect:
         serializedVersion: 2
         x: 93
-        y: 1518
+        y: 1519
         width: 39
-        height: 36
+        height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1342,15 +1355,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_44"
+      name: detecar21
       rect:
         serializedVersion: 2
         x: 135
-        y: 1518
+        y: 1519
         width: 39
-        height: 36
+        height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1364,15 +1377,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_45"
+      name: detecar22
       rect:
         serializedVersion: 2
         x: 177
-        y: 1518
+        y: 1519
         width: 39
-        height: 37
+        height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1386,15 +1399,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_46"
+      name: detecar23
       rect:
         serializedVersion: 2
         x: 219
-        y: 1518
+        y: 1519
         width: 39
-        height: 36
+        height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1408,15 +1421,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_47"
+      name: detecar24
       rect:
         serializedVersion: 2
         x: 261
-        y: 1518
+        y: 1519
         width: 39
-        height: 36
+        height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1430,15 +1443,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_48"
+      name: preparar1
       rect:
         serializedVersion: 2
         x: 9
-        y: 1443
+        y: 1444
         width: 34
-        height: 43
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1452,15 +1465,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_49"
+      name: preparar2
       rect:
         serializedVersion: 2
         x: 46
-        y: 1443
+        y: 1444
         width: 37
-        height: 42
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1474,15 +1487,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_50"
+      name: preparar3
       rect:
         serializedVersion: 2
         x: 86
-        y: 1443
+        y: 1444
         width: 38
-        height: 43
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1496,15 +1509,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_51"
+      name: preparar4
       rect:
         serializedVersion: 2
         x: 127
-        y: 1443
+        y: 1444
         width: 36
         height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1518,15 +1531,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_52"
+      name: preparar5
       rect:
         serializedVersion: 2
         x: 166
-        y: 1443
+        y: 1444
         width: 34
-        height: 45
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1540,15 +1553,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_53"
+      name: preparar6
       rect:
         serializedVersion: 2
         x: 203
-        y: 1443
+        y: 1444
         width: 37
-        height: 45
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1562,15 +1575,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_54"
+      name: preparar7
       rect:
         serializedVersion: 2
         x: 243
-        y: 1443
+        y: 1444
         width: 36
-        height: 45
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1584,15 +1597,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_55"
+      name: preparar8
       rect:
         serializedVersion: 2
         x: 282
-        y: 1443
+        y: 1444
         width: 35
         height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1606,15 +1619,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_56"
+      name: preparar9
       rect:
         serializedVersion: 2
         x: 320
-        y: 1443
+        y: 1444
         width: 35
         height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1628,15 +1641,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_57"
+      name: preparar10
       rect:
         serializedVersion: 2
         x: 358
-        y: 1443
+        y: 1444
         width: 35
         height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1650,15 +1663,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_58"
+      name: preparar11
       rect:
         serializedVersion: 2
         x: 396
-        y: 1443
+        y: 1444
         width: 36
         height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1672,15 +1685,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_59"
+      name: preparar12
       rect:
         serializedVersion: 2
         x: 436
-        y: 1443
+        y: 1444
         width: 36
         height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1694,15 +1707,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_60"
+      name: preparar13
       rect:
         serializedVersion: 2
         x: 475
-        y: 1443
+        y: 1444
         width: 36
         height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1716,15 +1729,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_61"
+      name: preparar14
       rect:
         serializedVersion: 2
         x: 514
-        y: 1443
+        y: 1444
         width: 36
-        height: 45
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1738,15 +1751,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_62"
+      name: ataque1
       rect:
         serializedVersion: 2
         x: 553
-        y: 1443
+        y: 1444
         width: 71
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1760,15 +1773,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_63"
+      name: ataque2
       rect:
         serializedVersion: 2
         x: 627
-        y: 1443
+        y: 1444
         width: 70
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1782,15 +1795,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_64"
+      name: ataque3
       rect:
         serializedVersion: 2
         x: 700
-        y: 1443
+        y: 1444
         width: 70
-        height: 36
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1804,15 +1817,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_65"
+      name: ataque4
       rect:
         serializedVersion: 2
         x: 9
-        y: 1366
+        y: 1367
         width: 70
-        height: 37
+        height: 41
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1826,15 +1839,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_66"
+      name: ataque5
       rect:
         serializedVersion: 2
         x: 82
-        y: 1366
+        y: 1367
         width: 69
-        height: 40
+        height: 41
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1848,15 +1861,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_67"
+      name: ataque6
       rect:
         serializedVersion: 2
         x: 154
-        y: 1366
+        y: 1367
         width: 60
-        height: 43
+        height: 41
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1870,15 +1883,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_68"
+      name: ataque7
       rect:
         serializedVersion: 2
         x: 217
-        y: 1366
+        y: 1367
         width: 42
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1892,15 +1905,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_69"
+      name: ataque8
       rect:
         serializedVersion: 2
         x: 262
-        y: 1366
+        y: 1367
         width: 42
-        height: 53
+        height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1914,15 +1927,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_70"
+      name: ataque9
       rect:
         serializedVersion: 2
         x: 307
-        y: 1366
+        y: 1367
         width: 37
-        height: 45
+        height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1936,15 +1949,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_71"
+      name: derrota1
       rect:
         serializedVersion: 2
         x: 9
-        y: 1294
+        y: 1295
         width: 59
-        height: 53
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1958,15 +1971,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_72"
+      name: derrota2
       rect:
         serializedVersion: 2
         x: 71
-        y: 1294
+        y: 1295
         width: 60
-        height: 54
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1980,15 +1993,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_73"
+      name: derrota3
       rect:
         serializedVersion: 2
         x: 134
-        y: 1294
+        y: 1295
         width: 62
         height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2002,15 +2015,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_74"
+      name: derrota4
       rect:
         serializedVersion: 2
         x: 199
-        y: 1294
+        y: 1295
         width: 60
-        height: 56
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2024,15 +2037,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_75"
+      name: derrota5
       rect:
         serializedVersion: 2
         x: 262
-        y: 1294
+        y: 1295
         width: 58
         height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2046,15 +2059,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_76"
+      name: derrota6
       rect:
         serializedVersion: 2
         x: 323
-        y: 1294
+        y: 1295
         width: 54
-        height: 53
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2068,15 +2081,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_77"
+      name: derrota7
       rect:
         serializedVersion: 2
-        x: 380
-        y: 1294
+        x: 379
+        y: 1295
         width: 53
-        height: 47
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2090,15 +2103,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_78"
+      name: derrota8
       rect:
         serializedVersion: 2
         x: 436
-        y: 1294
+        y: 1295
         width: 50
-        height: 39
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2112,15 +2125,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_79"
+      name: derrota9
       rect:
         serializedVersion: 2
-        x: 489
-        y: 1294
+        x: 490
+        y: 1295
         width: 50
-        height: 38
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2134,15 +2147,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_80"
+      name: derrota10
       rect:
         serializedVersion: 2
         x: 542
-        y: 1294
+        y: 1295
         width: 52
-        height: 41
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2156,15 +2169,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_81"
+      name: derrota11
       rect:
         serializedVersion: 2
         x: 597
-        y: 1294
+        y: 1295
         width: 53
-        height: 40
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2178,15 +2191,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_82"
+      name: derrota12
       rect:
         serializedVersion: 2
         x: 653
-        y: 1294
+        y: 1295
         width: 54
-        height: 37
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2200,15 +2213,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_83"
+      name: derrota13
       rect:
         serializedVersion: 2
         x: 710
-        y: 1294
+        y: 1295
         width: 53
-        height: 34
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2222,15 +2235,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_84"
+      name: derrota14
       rect:
         serializedVersion: 2
         x: 9
-        y: 1253
+        y: 1260
         width: 51
-        height: 38
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2244,15 +2257,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_85"
+      name: derrota15
       rect:
         serializedVersion: 2
         x: 63
-        y: 1259
+        y: 1260
         width: 50
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2266,15 +2279,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "3 sin t\xEDtulo_20251008093815_86"
+      name: derrota16
       rect:
         serializedVersion: 2
         x: 116
-        y: 1259
+        y: 1260
         width: 50
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2296,7 +2309,7 @@ TextureImporter:
         width: 8
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2313,7 +2326,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7c3b375d107ec4e47abb1ca53a778f54
     internalID: 0
     vertices: []
     indices: 
@@ -2323,94 +2336,95 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "3 sin t\xEDtulo_20251008093815_0": -3618381114797325057
-      "3 sin t\xEDtulo_20251008093815_1": -5521685499404161390
-      "3 sin t\xEDtulo_20251008093815_10": -8423420942385485705
-      "3 sin t\xEDtulo_20251008093815_11": 3766889926806295189
-      "3 sin t\xEDtulo_20251008093815_12": -3078431459547981451
-      "3 sin t\xEDtulo_20251008093815_13": 4178132894620505163
-      "3 sin t\xEDtulo_20251008093815_14": 1838165812302051300
-      "3 sin t\xEDtulo_20251008093815_15": 2178865856774870231
-      "3 sin t\xEDtulo_20251008093815_16": -6373349343311791399
-      "3 sin t\xEDtulo_20251008093815_17": 410111342573437577
-      "3 sin t\xEDtulo_20251008093815_18": 2327470663985229950
-      "3 sin t\xEDtulo_20251008093815_19": -6098487752803680510
-      "3 sin t\xEDtulo_20251008093815_2": 8626331525904236715
-      "3 sin t\xEDtulo_20251008093815_20": -7785576232234261916
-      "3 sin t\xEDtulo_20251008093815_21": 2316765474857384436
-      "3 sin t\xEDtulo_20251008093815_22": -8734749751919865079
-      "3 sin t\xEDtulo_20251008093815_23": -7746380753912683394
-      "3 sin t\xEDtulo_20251008093815_24": -1082341096469085924
-      "3 sin t\xEDtulo_20251008093815_25": 4671353833623599525
-      "3 sin t\xEDtulo_20251008093815_26": 8500459408353816003
-      "3 sin t\xEDtulo_20251008093815_27": 8751008826301637006
-      "3 sin t\xEDtulo_20251008093815_28": 8149944731820871587
-      "3 sin t\xEDtulo_20251008093815_29": -3088961272791987645
-      "3 sin t\xEDtulo_20251008093815_3": 5298523178398298187
-      "3 sin t\xEDtulo_20251008093815_30": 1112990226733496636
-      "3 sin t\xEDtulo_20251008093815_31": 5759417588665802803
-      "3 sin t\xEDtulo_20251008093815_32": -2496701977649297597
-      "3 sin t\xEDtulo_20251008093815_33": 1716441088214114595
-      "3 sin t\xEDtulo_20251008093815_34": 735431531892574254
-      "3 sin t\xEDtulo_20251008093815_35": 970190531938186758
-      "3 sin t\xEDtulo_20251008093815_36": 848591671719065763
-      "3 sin t\xEDtulo_20251008093815_37": -3744576458971977199
-      "3 sin t\xEDtulo_20251008093815_38": 2960129475966363843
-      "3 sin t\xEDtulo_20251008093815_39": -7728240813111400365
-      "3 sin t\xEDtulo_20251008093815_4": -2003270206250716235
-      "3 sin t\xEDtulo_20251008093815_40": -8711391092258638427
-      "3 sin t\xEDtulo_20251008093815_41": -7843635512879853177
-      "3 sin t\xEDtulo_20251008093815_42": -1743048487676358974
-      "3 sin t\xEDtulo_20251008093815_43": -2131252843562650539
-      "3 sin t\xEDtulo_20251008093815_44": 6726513738580415800
-      "3 sin t\xEDtulo_20251008093815_45": -4278867655219995715
-      "3 sin t\xEDtulo_20251008093815_46": -2084181635183925313
-      "3 sin t\xEDtulo_20251008093815_47": 3437839513579875037
-      "3 sin t\xEDtulo_20251008093815_48": -8791059544245805139
-      "3 sin t\xEDtulo_20251008093815_49": -2093542483008113002
-      "3 sin t\xEDtulo_20251008093815_5": -5118826892422127914
-      "3 sin t\xEDtulo_20251008093815_50": -6794922488095006671
-      "3 sin t\xEDtulo_20251008093815_51": -1970415097986054460
-      "3 sin t\xEDtulo_20251008093815_52": 7997516123946743641
-      "3 sin t\xEDtulo_20251008093815_53": -8200818240152723468
-      "3 sin t\xEDtulo_20251008093815_54": 931105964022636504
-      "3 sin t\xEDtulo_20251008093815_55": 6368501495629185289
-      "3 sin t\xEDtulo_20251008093815_56": 792846325976441080
-      "3 sin t\xEDtulo_20251008093815_57": -9093860366429074015
-      "3 sin t\xEDtulo_20251008093815_58": 3865923726728294894
-      "3 sin t\xEDtulo_20251008093815_59": -3004977877651166322
-      "3 sin t\xEDtulo_20251008093815_6": 505258527040614009
-      "3 sin t\xEDtulo_20251008093815_60": 2536598769294716789
-      "3 sin t\xEDtulo_20251008093815_61": 7317369460823700468
-      "3 sin t\xEDtulo_20251008093815_62": -189464357238120148
-      "3 sin t\xEDtulo_20251008093815_63": -4419396994040662775
-      "3 sin t\xEDtulo_20251008093815_64": 5854276396316124484
-      "3 sin t\xEDtulo_20251008093815_65": 3758468636220109362
-      "3 sin t\xEDtulo_20251008093815_66": 2194413359320358024
-      "3 sin t\xEDtulo_20251008093815_67": 947608593692142555
-      "3 sin t\xEDtulo_20251008093815_68": -3151789023377447319
-      "3 sin t\xEDtulo_20251008093815_69": -3930235399763885942
-      "3 sin t\xEDtulo_20251008093815_7": -5507766835159003109
-      "3 sin t\xEDtulo_20251008093815_70": 6192230837711884632
-      "3 sin t\xEDtulo_20251008093815_71": -6778754103402582391
-      "3 sin t\xEDtulo_20251008093815_72": -5016044190940381270
-      "3 sin t\xEDtulo_20251008093815_73": 3759123986813431740
-      "3 sin t\xEDtulo_20251008093815_74": -3113688842710720970
-      "3 sin t\xEDtulo_20251008093815_75": -1598222049349039405
-      "3 sin t\xEDtulo_20251008093815_76": -2372811948683836112
-      "3 sin t\xEDtulo_20251008093815_77": 2972517722136547095
-      "3 sin t\xEDtulo_20251008093815_78": 1684577457242964387
-      "3 sin t\xEDtulo_20251008093815_79": -1365517826839960074
-      "3 sin t\xEDtulo_20251008093815_8": 6431667253196335717
-      "3 sin t\xEDtulo_20251008093815_80": 87374966557646584
-      "3 sin t\xEDtulo_20251008093815_81": 3401212451480752430
-      "3 sin t\xEDtulo_20251008093815_82": -2599535539760127527
-      "3 sin t\xEDtulo_20251008093815_83": 3144794004317360510
-      "3 sin t\xEDtulo_20251008093815_84": -4364853286601970700
-      "3 sin t\xEDtulo_20251008093815_85": -9071198753410830906
-      "3 sin t\xEDtulo_20251008093815_86": -1274745916372327704
       "3 sin t\xEDtulo_20251008093815_87": -5015208837629832269
-      "3 sin t\xEDtulo_20251008093815_9": -4864465159584672175
+      "3 sin t\xEDtulo_20251008093815_88": 205342521
+      ataque1: -189464357238120148
+      ataque2: -4419396994040662775
+      ataque3: 5854276396316124484
+      ataque4: 3758468636220109362
+      ataque5: 2194413359320358024
+      ataque6: 947608593692142555
+      ataque7: -3151789023377447319
+      ataque8: -3930235399763885942
+      ataque9: 6192230837711884632
+      caminar1: 6431667253196335717
+      caminar10: 410111342573437577
+      caminar11: 2327470663985229950
+      caminar12: -6098487752803680510
+      caminar13: -7785576232234261916
+      caminar14: 2316765474857384436
+      caminar15: -8734749751919865079
+      caminar16: -7746380753912683394
+      caminar2: -4864465159584672175
+      caminar3: -8423420942385485705
+      caminar4: 3766889926806295189
+      caminar5: -3078431459547981451
+      caminar6: 4178132894620505163
+      caminar7: 1838165812302051300
+      caminar8: 2178865856774870231
+      caminar9: -6373349343311791399
+      derrota1: -6778754103402582391
+      derrota10: 87374966557646584
+      derrota11: 3401212451480752430
+      derrota12: -2599535539760127527
+      derrota13: 3144794004317360510
+      derrota14: -4364853286601970700
+      derrota15: -9071198753410830906
+      derrota16: -1274745916372327704
+      derrota2: -5016044190940381270
+      derrota3: 3759123986813431740
+      derrota4: -3113688842710720970
+      derrota5: -1598222049349039405
+      derrota6: -2372811948683836112
+      derrota7: 2972517722136547095
+      derrota8: 1684577457242964387
+      derrota9: -1365517826839960074
+      deteca10: 1716441088214114595
+      deteca5: 8149944731820871587
+      deteca6: -3088961272791987645
+      deteca7: 1112990226733496636
+      deteca8: 5759417588665802803
+      deteca9: -2496701977649297597
+      detecar1: -1082341096469085924
+      detecar11: 735431531892574254
+      detecar12: 970190531938186758
+      detecar13: 848591671719065763
+      detecar14: -3744576458971977199
+      detecar15: 2960129475966363843
+      detecar16: -7728240813111400365
+      detecar17: -8711391092258638427
+      detecar18: -7843635512879853177
+      detecar19: -1743048487676358974
+      detecar2: 4671353833623599525
+      detecar20: -2131252843562650539
+      detecar21: 6726513738580415800
+      detecar22: -4278867655219995715
+      detecar23: -2084181635183925313
+      detecar24: 3437839513579875037
+      detecar3: 8500459408353816003
+      detecar4: 8751008826301637006
+      idle1: -3618381114797325057
+      idle2: -5521685499404161390
+      idle3: 8626331525904236715
+      idle4: 5298523178398298187
+      idle5: -2003270206250716235
+      idle6: -5118826892422127914
+      idle7: 505258527040614009
+      idle8: -5507766835159003109
+      preparar1: -8791059544245805139
+      preparar10: -9093860366429074015
+      preparar11: 3865923726728294894
+      preparar12: -3004977877651166322
+      preparar13: 2536598769294716789
+      preparar14: 7317369460823700468
+      preparar2: -2093542483008113002
+      preparar3: -6794922488095006671
+      preparar4: -1970415097986054460
+      preparar5: 7997516123946743641
+      preparar6: -8200818240152723468
+      preparar7: 931105964022636504
+      preparar8: 6368501495629185289
+      preparar9: 792846325976441080
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
