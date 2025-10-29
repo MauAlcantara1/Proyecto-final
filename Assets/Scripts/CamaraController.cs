@@ -9,8 +9,8 @@ public class CamaraController : MonoBehaviour
     public float velocidadCamara = 2f;  // Qué tan rápido sigue al jugador
     public float offsetX = 2f;           // Desplazamiento horizontal de la cámara respecto al jugador
 
-    private float posicionY;  // Altura fija de la cámara
-    private float posicionZ;  // Profundidad fija de la cámara
+    private float posicionY;  
+    private float posicionZ;  
 
     private void Start()
     {

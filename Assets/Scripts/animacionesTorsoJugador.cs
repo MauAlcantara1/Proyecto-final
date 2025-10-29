@@ -1,23 +1,34 @@
 using UnityEngine;
-
+using System.Collections;
 public class animacionesTorsoJugador : MonoBehaviour
 {
     private Animator animator;
-    private Rigidbody2D rb;
+
+    public SpriteRenderer piernas;
 
     void Start()
     {
         animator = GetComponent<Animator>();
-        rb = GetComponentInParent<Rigidbody2D>();
     }
 
-    void Update()
+    public void ActualizarMovimiento(float movx)
     {
-        float velocidadX = rb.linearVelocity.x;
-        float velocidadAbs = Mathf.Abs(velocidadX);
+        animator.SetFloat("movx", movx);
+    }
 
-        animator.SetFloat("movx", velocidadAbs);
+    public void ActualizarDisparo(bool Disparo)
+    {
+        animator.SetBool("Disparo", Disparo);
+    }
 
-        
+    public void ActualizarPosicion(bool Arriba)
+    {
+        animator.SetBool("Arriba", Arriba);
+    }
+
+    public void MostrarSprite()
+    {
+        if (piernas != null)
+            piernas.enabled = true;
     }
 }
