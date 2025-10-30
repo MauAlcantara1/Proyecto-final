@@ -9,7 +9,7 @@ public class NavMenu : MonoBehaviour
     [SerializeField] private GameObject panelSonido;
     [SerializeField] private GameObject panelMenu;
 
-    private int opcionActual = 1; // 1 = Niveles, 2 = Sonido
+    private int opcionActual = 1;
     private bool confirmado = false;
 
     void Update()
