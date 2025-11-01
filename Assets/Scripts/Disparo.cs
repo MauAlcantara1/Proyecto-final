@@ -9,14 +9,14 @@ public class Disparo : MonoBehaviour
 
     [SerializeField] private GameObject bala;
 
-    private void Update()
-    {
-        if (Input.GetButtonDown("Fire1"))
-        {
-            Disparar();
-        }
-    }
-private void Disparar()
+    // private void Update()
+    //{
+    //  if (Input.GetButtonDown("Fire1"))
+    //{
+    // Disparar();
+    //}
+    //}
+    private void Disparar()
     {
         Instantiate(bala, controladorDisparo.position, controladorDisparo.rotation);
     }
