@@ -764,6 +764,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -771,10 +784,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_0"
       rect:
         serializedVersion: 2
-        x: 5
-        y: 2926
-        width: 32
-        height: 29
+        x: 6
+        y: 2927
+        width: 30
+        height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -793,10 +806,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_1"
       rect:
         serializedVersion: 2
-        x: 38
-        y: 2926
-        width: 33
-        height: 29
+        x: 39
+        y: 2927
+        width: 31
+        height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -815,10 +828,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_2"
       rect:
         serializedVersion: 2
-        x: 72
-        y: 2926
-        width: 38
-        height: 29
+        x: 73
+        y: 2927
+        width: 36
+        height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -837,10 +850,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_3"
       rect:
         serializedVersion: 2
-        x: 111
-        y: 2926
-        width: 39
-        height: 29
+        x: 112
+        y: 2927
+        width: 37
+        height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -859,10 +872,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_4"
       rect:
         serializedVersion: 2
-        x: 151
-        y: 2926
-        width: 39
-        height: 29
+        x: 152
+        y: 2927
+        width: 37
+        height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -881,9 +894,9 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_5"
       rect:
         serializedVersion: 2
-        x: 195
+        x: 198
         y: 2927
-        width: 41
+        width: 38
         height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -906,7 +919,7 @@ TextureImporter:
         x: 239
         y: 2927
         width: 40
-        height: 32
+        height: 31
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -925,13 +938,13 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_7"
       rect:
         serializedVersion: 2
-        x: 281
-        y: 2926
-        width: 44
-        height: 35
+        x: 282
+        y: 2927
+        width: 42
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 1, y: 0, z: 1, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -944,35 +957,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "14 sin t\xEDtulo_20251029111941_8"
-      rect:
-        serializedVersion: 2
-        x: 312
-        y: 2931
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0af87dc29c7622850800000000000000
-      internalID: 6350752538284232608
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: "14 sin t\xEDtulo_20251029111941_9"
       rect:
         serializedVersion: 2
-        x: 326
-        y: 2926
-        width: 45
-        height: 37
+        x: 327
+        y: 2927
+        width: 43
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2949,10 +2940,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_99"
       rect:
         serializedVersion: 2
-        x: 5
-        y: 2693
-        width: 35
-        height: 40
+        x: 6
+        y: 2694
+        width: 33
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2971,10 +2962,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_100"
       rect:
         serializedVersion: 2
-        x: 41
-        y: 2693
-        width: 36
-        height: 39
+        x: 42
+        y: 2694
+        width: 34
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2993,10 +2984,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_101"
       rect:
         serializedVersion: 2
-        x: 78
-        y: 2693
-        width: 31
-        height: 40
+        x: 79
+        y: 2694
+        width: 29
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3015,10 +3006,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_102"
       rect:
         serializedVersion: 2
-        x: 110
-        y: 2694
-        width: 23
-        height: 42
+        x: 111
+        y: 2695
+        width: 21
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3037,10 +3028,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_103"
       rect:
         serializedVersion: 2
-        x: 134
-        y: 2695
-        width: 21
-        height: 40
+        x: 135
+        y: 2696
+        width: 19
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3059,10 +3050,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_104"
       rect:
         serializedVersion: 2
-        x: 156
-        y: 2693
-        width: 25
-        height: 41
+        x: 157
+        y: 2694
+        width: 23
+        height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3081,10 +3072,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_105"
       rect:
         serializedVersion: 2
-        x: 182
-        y: 2693
-        width: 32
-        height: 39
+        x: 183
+        y: 2694
+        width: 30
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3103,10 +3094,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_106"
       rect:
         serializedVersion: 2
-        x: 215
-        y: 2693
-        width: 27
-        height: 40
+        x: 216
+        y: 2694
+        width: 25
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3125,10 +3116,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_107"
       rect:
         serializedVersion: 2
-        x: 243
-        y: 2693
-        width: 24
-        height: 41
+        x: 244
+        y: 2694
+        width: 22
+        height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3147,10 +3138,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_108"
       rect:
         serializedVersion: 2
-        x: 268
-        y: 2693
-        width: 24
-        height: 42
+        x: 269
+        y: 2694
+        width: 22
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3169,10 +3160,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_109"
       rect:
         serializedVersion: 2
-        x: 293
-        y: 2694
-        width: 32
-        height: 40
+        x: 294
+        y: 2695
+        width: 30
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3191,10 +3182,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_110"
       rect:
         serializedVersion: 2
-        x: 326
-        y: 2694
-        width: 35
-        height: 40
+        x: 327
+        y: 2695
+        width: 33
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4445,10 +4436,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_167"
       rect:
         serializedVersion: 2
-        x: 5
-        y: 2456
-        width: 42
-        height: 41
+        x: 6
+        y: 2457
+        width: 40
+        height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4467,10 +4458,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_168"
       rect:
         serializedVersion: 2
-        x: 45
-        y: 2456
-        width: 40
-        height: 43
+        x: 46
+        y: 2457
+        width: 38
+        height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4489,10 +4480,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_169"
       rect:
         serializedVersion: 2
-        x: 86
-        y: 2456
-        width: 34
-        height: 43
+        x: 87
+        y: 2457
+        width: 32
+        height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4511,10 +4502,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_170"
       rect:
         serializedVersion: 2
-        x: 121
-        y: 2458
-        width: 40
-        height: 41
+        x: 122
+        y: 2459
+        width: 38
+        height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4533,10 +4524,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_171"
       rect:
         serializedVersion: 2
-        x: 162
-        y: 2456
-        width: 44
-        height: 42
+        x: 163
+        y: 2457
+        width: 42
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4555,10 +4546,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_172"
       rect:
         serializedVersion: 2
-        x: 207
-        y: 2456
-        width: 38
-        height: 43
+        x: 208
+        y: 2457
+        width: 36
+        height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4577,10 +4568,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_173"
       rect:
         serializedVersion: 2
-        x: 246
-        y: 2456
-        width: 38
-        height: 43
+        x: 247
+        y: 2457
+        width: 36
+        height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4599,10 +4590,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_174"
       rect:
         serializedVersion: 2
-        x: 285
-        y: 2459
-        width: 43
-        height: 40
+        x: 286
+        y: 2460
+        width: 41
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4621,10 +4612,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_175"
       rect:
         serializedVersion: 2
-        x: 5
-        y: 2405
-        width: 39
-        height: 37
+        x: 6
+        y: 2406
+        width: 37
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4643,10 +4634,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_176"
       rect:
         serializedVersion: 2
-        x: 45
-        y: 2405
-        width: 38
-        height: 36
+        x: 46
+        y: 2406
+        width: 36
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4665,10 +4656,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_177"
       rect:
         serializedVersion: 2
-        x: 84
-        y: 2405
-        width: 37
-        height: 35
+        x: 85
+        y: 2406
+        width: 35
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4687,10 +4678,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_178"
       rect:
         serializedVersion: 2
-        x: 122
-        y: 2405
-        width: 37
-        height: 35
+        x: 123
+        y: 2406
+        width: 35
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4709,10 +4700,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_179"
       rect:
         serializedVersion: 2
-        x: 160
-        y: 2405
-        width: 38
-        height: 42
+        x: 161
+        y: 2406
+        width: 36
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4731,10 +4722,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_180"
       rect:
         serializedVersion: 2
-        x: 199
-        y: 2405
-        width: 39
-        height: 44
+        x: 200
+        y: 2406
+        width: 37
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5237,10 +5228,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_203"
       rect:
         serializedVersion: 2
-        x: 5
-        y: 2260
-        width: 27
-        height: 38
+        x: 6
+        y: 2261
+        width: 25
+        height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5259,10 +5250,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_204"
       rect:
         serializedVersion: 2
-        x: 33
-        y: 2257
-        width: 28
-        height: 40
+        x: 34
+        y: 2262
+        width: 26
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5281,10 +5272,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_205"
       rect:
         serializedVersion: 2
-        x: 62
-        y: 2257
-        width: 28
-        height: 38
+        x: 63
+        y: 2262
+        width: 26
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5303,10 +5294,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_206"
       rect:
         serializedVersion: 2
-        x: 91
-        y: 2260
-        width: 29
-        height: 43
+        x: 92
+        y: 2262
+        width: 27
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5325,10 +5316,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_207"
       rect:
         serializedVersion: 2
-        x: 121
-        y: 2261
-        width: 22
-        height: 43
+        x: 122
+        y: 2262
+        width: 20
+        height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5347,10 +5338,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_208"
       rect:
         serializedVersion: 2
-        x: 144
-        y: 2260
-        width: 23
-        height: 46
+        x: 145
+        y: 2262
+        width: 21
+        height: 43
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5369,10 +5360,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_209"
       rect:
         serializedVersion: 2
-        x: 168
-        y: 2261
-        width: 31
-        height: 47
+        x: 169
+        y: 2262
+        width: 29
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5391,10 +5382,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_210"
       rect:
         serializedVersion: 2
-        x: 200
-        y: 2261
-        width: 28
-        height: 48
+        x: 201
+        y: 2262
+        width: 26
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5413,10 +5404,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_211"
       rect:
         serializedVersion: 2
-        x: 229
-        y: 2261
-        width: 34
-        height: 46
+        x: 230
+        y: 2262
+        width: 32
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5435,10 +5426,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_212"
       rect:
         serializedVersion: 2
-        x: 264
-        y: 2261
-        width: 35
-        height: 45
+        x: 265
+        y: 2262
+        width: 33
+        height: 43
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5457,10 +5448,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_213"
       rect:
         serializedVersion: 2
-        x: 300
-        y: 2261
-        width: 35
-        height: 42
+        x: 301
+        y: 2262
+        width: 33
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5479,10 +5470,10 @@ TextureImporter:
       name: "14 sin t\xEDtulo_20251029111941_214"
       rect:
         serializedVersion: 2
-        x: 336
-        y: 2260
-        width: 35
-        height: 39
+        x: 337
+        y: 2262
+        width: 33
+        height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
