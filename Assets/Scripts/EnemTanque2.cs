@@ -7,7 +7,7 @@ public class EnemTanque2 : MonoBehaviour
     private Animator anim;
     private Rigidbody2D rb;
     private Transform jugador;
-    private bool mirandoderecha = false;
+    private bool mirandoderecha = true;
 
     [Header("Vida")]
     public int vida_INI = 3;
@@ -20,12 +20,12 @@ public class EnemTanque2 : MonoBehaviour
     [SerializeField] private float dSeguimiento = 6f, velSeguimiento = 2f;
 
     [Header("Patrullaje")]
-    public float rangoPatrulla = 4f; // Rango máximo a cada lado
+    public float rangoPatrulla = 4f;
     private float puntoInicial;
-    private int direccion = 1; // 1 = derecha, -1 = izquierda
+    private int direccion = 1;
 
     [Header("Puntuación")]
-    public int puntosPorMuerte = 100; // 👈 Editable en el Inspector
+    public int puntosPorMuerte = 100;
 
     public static float distanciaEnemigoJugador;
 
@@ -33,7 +33,7 @@ public class EnemTanque2 : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        jugador = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        jugador = GameObject.FindGameObjectWithTag("Player").transform;
         vida = vida_INI;
         puntoInicial = transform.position.x;
     }
@@ -41,68 +41,92 @@ public class EnemTanque2 : MonoBehaviour
     void Update()
     {
         distanciaEnemigoJugador = Vector2.Distance(transform.position, jugador.position);
-        anim.SetFloat("DistanciaJugador", distanciaEnemigoJugador);
         DeterminaAccion(distanciaEnemigoJugador);
     }
 
     private void DeterminaAccion(float d)
     {
-        ResetAnimsEnemigo();
+        ResetAnimaciones();
 
+        // --- Detección ---
+        if (d <= dSeguimiento)
+        {
+            anim.SetBool("DetEnem", true);
+        }
+
+        // --- Ataque cercano ---
         if (d <= radioAtaque)
         {
+            anim.SetBool("DecidirATK", true);
+            anim.SetBool("DispEnem", true);
             Ataque();
-            anim.SetBool("atacando", true);
         }
+        // --- Movimiento hacia el jugador ---
         else if (d > radioAtaque && d <= dSeguimiento)
         {
-            // Seguir al jugador
+            anim.SetBool("Cargar", true);
+
             transform.position = Vector3.MoveTowards(
                 transform.position,
                 new Vector2(jugador.position.x, transform.position.y),
                 velSeguimiento * Time.deltaTime
             );
 
-            //  Girar hacia el jugador
-
-            anim.SetBool("caminando", true);
+            GirarHaciaJugador();
         }
+        // --- Patrulla si el jugador está lejos ---
         else
         {
-            // Patrullar cuando no detecta al jugador
             Patrullar();
         }
     }
 
     private void Patrullar()
     {
-        anim.SetBool("caminando", true);
+        anim.SetBool("Volver a disp", true);
         transform.Translate(Vector2.right * direccion * velSeguimiento * Time.deltaTime);
 
-        if (rb.linearVelocity.x < -0.1f)
-            transform.localScale = new Vector3(-1, 1, 1);
-        else if (rb.linearVelocity.x > 0.1f)
-            transform.localScale = new Vector3(1, 1, 1);
+        if (transform.position.x > puntoInicial + rangoPatrulla)
+            direccion = -1;
+        else if (transform.position.x < puntoInicial - rangoPatrulla)
+            direccion = 1;
+
+        // Gira visualmente al patrullar
+        transform.localScale = new Vector3(direccion, 1, 1);
     }
 
-    private void Girar()
+    private void GirarHaciaJugador()
     {
-        
+        if (jugador == null) return;
+
+        if ((jugador.position.x > transform.position.x && !mirandoderecha) ||
+            (jugador.position.x < transform.position.x && mirandoderecha))
+        {
+            mirandoderecha = !mirandoderecha;
+            transform.Rotate(0f, 180f, 0f);
+            anim.SetBool("Girar", true);
+        }
     }
 
-    private void ResetAnimsEnemigo()
+    private void ResetAnimaciones()
     {
-        anim.SetBool("atacando", false);
-        anim.SetBool("caminando", false);
+        anim.SetBool("DetEnem", false);
+        anim.SetBool("DecidirATK", false);
+        anim.SetBool("Embestir", false);
+        anim.SetBool("Cargar", false);
+        anim.SetBool("DispEnem", false);
+        anim.SetBool("Volver a disp", false);
+        anim.SetBool("Girar", false);
     }
 
     public void TomarDaño(int daño)
     {
         vida -= daño;
+        anim.SetBool("Daño", true);
 
         if (vida <= 0)
         {
-            anim.SetTrigger("Muerte");
+            anim.SetBool("Muerte", true);
             VidasPlayer.puntuacion += puntosPorMuerte;
             StartCoroutine(EliminaEnemigo());
         }
@@ -117,11 +141,11 @@ public class EnemTanque2 : MonoBehaviour
     private void Ataque()
     {
         Collider2D[] objs = Physics2D.OverlapCircleAll(controladorAtaque.position, radioAtaque);
-        foreach (Collider2D colisionador in objs)
+        foreach (Collider2D col in objs)
         {
-            if (colisionador.CompareTag("Player"))
+            if (col.CompareTag("Player"))
             {
-                colisionador.transform.GetComponent<VidasPlayer>().TomarDaño(dañoAtaque);
+                col.GetComponent<VidasPlayer>().TomarDaño(dañoAtaque);
             }
         }
     }
