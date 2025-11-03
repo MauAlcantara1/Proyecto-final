@@ -14,12 +14,11 @@ public class NavMenu : MonoBehaviour
 
     void Update()
     {
-        if (!panelMenu.activeSelf) return;
         if (confirmado) return;
 
         var kb = Keyboard.current;
 
-        if (kb.upArrowKey.wasPressedThisFrame || kb.wKey.wasPressedThisFrame)
+        if (kb.upArrowKey.wasPressedThisFrame || kb.wKey.wasPressedThisFrame )
             CambiarOpcion(1);
         if (kb.downArrowKey.wasPressedThisFrame || kb.sKey.wasPressedThisFrame)
             CambiarOpcion(2);
