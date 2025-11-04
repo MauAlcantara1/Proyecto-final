@@ -2855,7 +2855,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 4
   m_Sprite: {fileID: -1133942624747952062, guid: 70259c963ea5abc4fbae334eacea79ab, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9622642, g: 0.9499081, b: 0.9304913, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9162,50 +9162,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 626461682388806613, guid: b74bc7a4693965b498004970be22b64a, type: 3}
-      propertyPath: piernas
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 981842966379435022, guid: b74bc7a4693965b498004970be22b64a, type: 3}
-      propertyPath: animTorso
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 981842966379435022, guid: b74bc7a4693965b498004970be22b64a, type: 3}
-      propertyPath: jumpForce
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 981842966379435022, guid: b74bc7a4693965b498004970be22b64a, type: 3}
-      propertyPath: animPiernas
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1682269107091547678, guid: b74bc7a4693965b498004970be22b64a, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2613643281772433767, guid: b74bc7a4693965b498004970be22b64a, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2738516152612152201, guid: b74bc7a4693965b498004970be22b64a, type: 3}
-      propertyPath: m_Mass
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4945062237604583218, guid: b74bc7a4693965b498004970be22b64a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 6130748836009210114, guid: b74bc7a4693965b498004970be22b64a, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7683501009680060616, guid: b74bc7a4693965b498004970be22b64a, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8400928058805685879, guid: b74bc7a4693965b498004970be22b64a, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 184015266946129924, guid: 8b4ffacb6cdd24444a5adf99da093bd2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.95
@@ -9265,6 +9221,50 @@ PrefabInstance:
     - target: {fileID: 5629592392220657861, guid: 8b4ffacb6cdd24444a5adf99da093bd2, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 626461682388806613, guid: b74bc7a4693965b498004970be22b64a, type: 3}
+      propertyPath: piernas
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 981842966379435022, guid: b74bc7a4693965b498004970be22b64a, type: 3}
+      propertyPath: animTorso
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 981842966379435022, guid: b74bc7a4693965b498004970be22b64a, type: 3}
+      propertyPath: jumpForce
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 981842966379435022, guid: b74bc7a4693965b498004970be22b64a, type: 3}
+      propertyPath: animPiernas
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1682269107091547678, guid: b74bc7a4693965b498004970be22b64a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613643281772433767, guid: b74bc7a4693965b498004970be22b64a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738516152612152201, guid: b74bc7a4693965b498004970be22b64a, type: 3}
+      propertyPath: m_Mass
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4945062237604583218, guid: b74bc7a4693965b498004970be22b64a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 6130748836009210114, guid: b74bc7a4693965b498004970be22b64a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7683501009680060616, guid: b74bc7a4693965b498004970be22b64a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8400928058805685879, guid: b74bc7a4693965b498004970be22b64a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8400928058805685879, guid: b74bc7a4693965b498004970be22b64a, type: 3}
