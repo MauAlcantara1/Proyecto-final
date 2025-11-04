@@ -6,15 +6,21 @@ public class CamaraController : MonoBehaviour
     public Transform objetivo;
 
     [Header("Configuración de cámara")]
-    public float velocidadCamara = 2f;  // Qué tan rápido sigue al jugador
-    public float offsetX = 2f;           // Desplazamiento horizontal de la cámara respecto al jugador
+    public float velocidadCamara = 5f;
+    public float offsetX = 2f;
 
-    private float posicionY;  
-    private float posicionZ;  
+    [Header("Límites de cámara (opcional)")]
+    public bool usarLimites = false;
+    public float limiteIzquierdo;
+    public float limiteDerecho;
+
+    private float posicionY;
+    private float posicionZ;
+    private bool congelada = false;
+
 
     private void Start()
     {
-        // Guardamos la posición Y y Z iniciales para mantenerlas fijas
         posicionY = transform.position.y;
         posicionZ = transform.position.z;
     }
@@ -23,10 +29,42 @@ public class CamaraController : MonoBehaviour
     {
         if (objetivo == null) return;
 
-        // Calcula la nueva posición X con suavizado
-        float nuevaX = Mathf.Lerp(transform.position.x, objetivo.position.x + offsetX, velocidadCamara);
+        // Calcular nueva posición X
+        float nuevaX = Mathf.Lerp(transform.position.x, objetivo.position.x + offsetX, Time.deltaTime * velocidadCamara);
 
-        // Mantiene la cámara fija en Y y Z
+        // Aplicar límites si están activos
+        if (usarLimites)
+        {
+            nuevaX = Mathf.Clamp(nuevaX, limiteIzquierdo, limiteDerecho);
+        }
+
         transform.position = new Vector3(nuevaX, posicionY, posicionZ);
     }
+
+    public void BloquearEnPosicionActual()
+    {
+        usarLimites = true;
+        limiteIzquierdo = transform.position.x;
+        limiteDerecho = transform.position.x;
+    }
+    
+    public void QuitarLimites()
+    {
+        usarLimites = false;
+    }
+
+    public void EstablecerLimites(float izq, float der)
+    {
+        limiteIzquierdo = izq;
+        limiteDerecho = der;
+        usarLimites = true;
+    }
+
+    public void CongelarCamara(bool estado)
+    {
+        congelada = estado;
+    }
+
+
+
 }
