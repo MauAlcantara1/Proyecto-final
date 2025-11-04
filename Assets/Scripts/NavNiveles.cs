@@ -35,6 +35,15 @@ public class NavNiveles : MonoBehaviour
             return;
         var kb = Keyboard.current;
 
+        if (kb.escapeKey.wasPressedThisFrame)
+            Regresar();
+
+        if (kb.leftArrowKey.wasPressedThisFrame || kb.aKey.wasPressedThisFrame)
+            AnteriorNivel();
+
+        if (kb.rightArrowKey.wasPressedThisFrame || kb.dKey.wasPressedThisFrame)
+            SiguienteNivel();
+
         if (kb.spaceKey.wasPressedThisFrame)
         {
             ConfirmarNivel();
@@ -82,5 +91,10 @@ public class NavNiveles : MonoBehaviour
 
         string nombreEscena = "Nivel" + (nivelActual + 1);
         SceneManager.LoadScene(nombreEscena);
+    }
+
+     public void Regresar()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }
