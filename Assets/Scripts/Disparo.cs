@@ -21,3 +21,4 @@ public class Disparo : MonoBehaviour
         Instantiate(bala, controladorDisparo.position, controladorDisparo.rotation);
     }
 }
+
