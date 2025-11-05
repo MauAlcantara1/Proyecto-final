@@ -427,6 +427,7 @@ GameObject:
   - component: {fileID: 123157189}
   - component: {fileID: 123157188}
   - component: {fileID: 123157187}
+  - component: {fileID: 123157193}
   m_Layer: 0
   m_Name: OsoPrefab (1)
   m_TagString: Untagged
@@ -446,16 +447,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43ec4cf7e23276d40989dc62c28c82d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemOso
-  vida_INI: 4
-  "da\xF1oUmbral": 2
-  controladorAtaque: {fileID: 1416062568}
-  radioAtaque: 0.7
-  "da\xF1oAtaque": 1
-  dDeteccion: 8
-  dAtaque: 1.2
-  velMovimiento: 2
-  rangoPatrulla: 4
-  puntosPorMuerte: 150
+  jugador: {fileID: 2007631236}
+  rangoDeteccion: 15
+  rangoAtaque: 0.5
+  velocidad: 2
+  velocidadHuida: 5
+  spriteMiraDerecha: 0
+  dano: 5
+  tiempoPreparacion: 0.8
+  tiempoPostAtaque: 0.8
+  tiempoAgacharse: 0.8
+  tiempoEntreRepeticiones: 0.6
+  vidaMax: 100
+  vidaActual: 0
+  umbralHuida: 30
 --- !u!95 &123157188
 Animator:
   serializedVersion: 7
@@ -535,7 +540,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -600,7 +605,7 @@ SpriteRenderer:
   m_SortingOrder: 5
   m_Sprite: {fileID: -1845466348888407652, guid: 4655bc3201b4b654295cfdb54bc421ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -618,13 +623,25 @@ Transform:
   m_GameObject: {fileID: 123157186}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.9, y: 2.1, z: 0}
+  m_LocalPosition: {x: 12, y: 1.2, z: 0}
   m_LocalScale: {x: 6.826938, y: 6.826938, z: 6.826938}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1416062568}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &123157193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123157186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4851132aec80c1429f58a92497ec3da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PruebaTrigger
 --- !u!1 &140591492
 GameObject:
   m_ObjectHideFlags: 0
@@ -1682,7 +1699,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 184015266946129924, guid: 8b4ffacb6cdd24444a5adf99da093bd2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.46
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 184015266946129924, guid: 8b4ffacb6cdd24444a5adf99da093bd2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1727,6 +1744,14 @@ PrefabInstance:
     - target: {fileID: 682006761065761479, guid: 8b4ffacb6cdd24444a5adf99da093bd2, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6255376741637765584, guid: 8b4ffacb6cdd24444a5adf99da093bd2, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6255376741637765584, guid: 8b4ffacb6cdd24444a5adf99da093bd2, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 626461682388806613, guid: b74bc7a4693965b498004970be22b64a, type: 3}
       propertyPath: piernas
