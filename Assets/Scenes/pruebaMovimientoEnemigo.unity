@@ -492,7 +492,7 @@ Rigidbody2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123157186}
   m_BodyType: 0
-  m_Simulated: 0
+  m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
@@ -677,6 +677,9 @@ MonoBehaviour:
   objetivo: {fileID: 2007631236}
   velocidadCamara: 1.2
   offsetX: 6.5
+  usarLimites: 0
+  limiteIzquierdo: 0
+  limiteDerecho: 0
 --- !u!114 &140591494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1751,7 +1754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6255376741637765584, guid: 8b4ffacb6cdd24444a5adf99da093bd2, type: 3}
       propertyPath: m_GravityScale
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 626461682388806613, guid: b74bc7a4693965b498004970be22b64a, type: 3}
       propertyPath: piernas
