@@ -6,11 +6,8 @@ public class CamaraControllerTipo2 : MonoBehaviour
     public Transform objetivo;
 
     [Header("Configuración de cámara")]
-    public float velocidadCamara = 5f;
     public float offsetX = 0f;
     public float offsetY = 0f;
-    [Tooltip("Distancia mínima antes de mover la cámara")]
-    public float toleranciaMovimiento = 0.05f;
 
     [Header("Límites de cámara (opcional)")]
     public bool usarLimites = false;
@@ -32,45 +29,22 @@ public class CamaraControllerTipo2 : MonoBehaviour
     {
         if (objetivo == null || congelada) return;
 
-        // Calcular destino en X e Y
-        float destinoX = objetivo.position.x + offsetX;
-        float destinoY = objetivo.position.y + offsetY;
+        // Calcular la posición deseada
+        float nuevaX = objetivo.position.x + offsetX;
+        float nuevaY = objetivo.position.y + offsetY;
 
-        // Solo mover si hay diferencia significativa
-        float diferenciaX = Mathf.Abs(destinoX - transform.position.x);
-        float diferenciaY = Mathf.Abs(destinoY - transform.position.y);
-
-        float nuevaX = transform.position.x;
-        float nuevaY = transform.position.y;
-
-        if (diferenciaX > toleranciaMovimiento)
-        {
-            nuevaX = Mathf.MoveTowards(
-                transform.position.x,
-                destinoX,
-                velocidadCamara * Time.deltaTime
-            );
-        }
-
-        if (diferenciaY > toleranciaMovimiento)
-        {
-            nuevaY = Mathf.MoveTowards(
-                transform.position.y,
-                destinoY,
-                velocidadCamara * Time.deltaTime
-            );
-        }
-
-        // Aplicar límites
+        // Aplicar límites si están activos
         if (usarLimites)
             nuevaX = Mathf.Clamp(nuevaX, limiteIzquierdo, limiteDerecho);
 
         if (usarLimitesY)
             nuevaY = Mathf.Clamp(nuevaY, limiteInferior, limiteSuperior);
 
+        // Mover instantáneamente la cámara
         transform.position = new Vector3(nuevaX, nuevaY, posicionZ);
     }
 
+    // --- Métodos auxiliares ---
     public void BloquearEnPosicionActual()
     {
         usarLimites = true;
