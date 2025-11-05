@@ -8,6 +8,8 @@ public class CamaraController : MonoBehaviour
     [Header("Configuración de cámara")]
     public float velocidadCamara = 5f;
     public float offsetX = 2f;
+    [Tooltip("Distancia mínima antes de mover la cámara")]
+    public float toleranciaMovimiento = 0.05f;
 
     [Header("Límites de cámara (opcional)")]
     public bool usarLimites = false;
@@ -18,7 +20,6 @@ public class CamaraController : MonoBehaviour
     private float posicionZ;
     private bool congelada = false;
 
-
     private void Start()
     {
         posicionY = transform.position.y;
@@ -27,18 +28,25 @@ public class CamaraController : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (objetivo == null) return;
+        if (objetivo == null || congelada) return;
 
-        // Calcular nueva posición X
-        float nuevaX = Mathf.Lerp(transform.position.x, objetivo.position.x + offsetX, Time.deltaTime * velocidadCamara);
+        float destinoX = objetivo.position.x + offsetX;
+        float diferencia = Mathf.Abs(destinoX - transform.position.x);
 
-        // Aplicar límites si están activos
-        if (usarLimites)
+        // Solo mover la cámara si la diferencia es mayor a la tolerancia
+        if (diferencia > toleranciaMovimiento)
         {
-            nuevaX = Mathf.Clamp(nuevaX, limiteIzquierdo, limiteDerecho);
-        }
+            float nuevaX = Mathf.MoveTowards(
+                transform.position.x,
+                destinoX,
+                velocidadCamara * Time.deltaTime
+            );
 
-        transform.position = new Vector3(nuevaX, posicionY, posicionZ);
+            if (usarLimites)
+                nuevaX = Mathf.Clamp(nuevaX, limiteIzquierdo, limiteDerecho);
+
+            transform.position = new Vector3(nuevaX, posicionY, posicionZ);
+        }
     }
 
     public void BloquearEnPosicionActual()
@@ -47,7 +55,7 @@ public class CamaraController : MonoBehaviour
         limiteIzquierdo = transform.position.x;
         limiteDerecho = transform.position.x;
     }
-    
+
     public void QuitarLimites()
     {
         usarLimites = false;
@@ -64,7 +72,4 @@ public class CamaraController : MonoBehaviour
     {
         congelada = estado;
     }
-
-
-
 }
