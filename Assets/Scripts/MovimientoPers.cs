@@ -5,6 +5,7 @@ public class MovimientoPers : MonoBehaviour
 {
     public float speed = 5f;
     public float jumpForce = 10f;
+    public Transform controladorDisparo;
     private Rigidbody2D rb;
 
     private bool isGrounded = true;
@@ -74,7 +75,21 @@ public class MovimientoPers : MonoBehaviour
         bool Disparo = tiempoDisparo > 0;
         animTorso?.ActualizarDisparo(Disparo);
 
+        // direccion disparo
+        if (tiempoArriba > 0) // Arriba
+        {
+            controladorDisparo.right = Vector2.up;
+        }
+        else
+        {
+            if (transform.localScale.x > 0) // derecha
+                controladorDisparo.right = Vector2.right;
+            else // izquierda
+                controladorDisparo.right = Vector2.left;
+        }
+
     }
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -87,4 +102,5 @@ public class MovimientoPers : MonoBehaviour
             }
         }
     }
+
 }

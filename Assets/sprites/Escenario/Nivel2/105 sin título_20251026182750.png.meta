@@ -169,7 +169,7 @@ TextureImporter:
         width: 1084
         height: 224
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -178,6 +178,28 @@ TextureImporter:
       bones: []
       spriteID: 276c4703e1b1bd648bb23911d3e1902d
       internalID: 1114686577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "105 sin t\xEDtulo_20251026182750_2"
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 10
+        width: 233
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530d9bcaff0e9704790e3177689acbc5
+      internalID: -1894127509
       vertices: []
       indices: 
       edges: []
@@ -198,6 +220,7 @@ TextureImporter:
     nameFileIdTable:
       "105 sin t\xEDtulo_20251026182750_0": -6003397093469996395
       "105 sin t\xEDtulo_20251026182750_1": 1114686577
+      "105 sin t\xEDtulo_20251026182750_2": -1894127509
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

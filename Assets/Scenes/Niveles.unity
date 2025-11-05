@@ -509,7 +509,6 @@ GameObject:
   - component: {fileID: 396936825}
   - component: {fileID: 396936828}
   - component: {fileID: 396936827}
-  - component: {fileID: 396936826}
   m_Layer: 5
   m_Name: txtBarraEspacio
   m_TagString: Untagged
@@ -537,20 +536,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -400}
   m_SizeDelta: {x: 1920, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &396936826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 396936824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819baa1d186bb62f0ada706ce79432d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TextoParpadeo
-  texto: {fileID: 396936827}
-  velocidadParpadeo: 4
 --- !u!114 &396936827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1502,7 +1487,6 @@ GameObject:
   - component: {fileID: 1393878355}
   - component: {fileID: 1393878358}
   - component: {fileID: 1393878357}
-  - component: {fileID: 1393878356}
   m_Layer: 5
   m_Name: txtBarraEspacio (1)
   m_TagString: Untagged
@@ -1529,20 +1513,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 6}
   m_SizeDelta: {x: 1800, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1393878356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1393878354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819baa1d186bb62f0ada706ce79432d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TextoParpadeo
-  texto: {fileID: 1393878357}
-  velocidadParpadeo: 4
 --- !u!114 &1393878357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1922,8 +1892,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 819baa1d186bb62f0ada706ce79432d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextoParpadeo
-  texto: {fileID: 0}
-  velocidadParpadeo: 0
+  texto: {fileID: 1393878357}
+  velocidadParpadeo: 4
 --- !u!4 &1533547217
 Transform:
   m_ObjectHideFlags: 0
