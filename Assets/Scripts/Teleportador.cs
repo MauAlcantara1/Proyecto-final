@@ -31,23 +31,19 @@ public class Teleportador : MonoBehaviour
 
     private IEnumerator TeletransportarConRetraso(Transform jugador)
     {
-        // --- Paso 1: congelar cámara en el lugar ---
         if (bloquearCamaraAlEntrar)
             camara.BloquearEnPosicionActual();
 
-        // --- Paso 2: fade out ---
         camara.CongelarCamara(true);
         if (fadeOut != null)
             fadeOut.FadeOut();
 
         yield return new WaitForSeconds(retraso);
 
-        // --- Paso 3: teletransportar ---
         jugador.position = destino;
 
         yield return new WaitForSeconds(0.1f);
 
-        // --- Paso 4: liberar la cámara ---
         camara.CongelarCamara(false);
 
         if (liberarCamaraAlLlegar)

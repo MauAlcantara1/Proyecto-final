@@ -6,8 +6,8 @@ public class Npc : MonoBehaviour
     private bool activo = false;
 
     [Header("Movimiento")]
-    public float dActivacion = 10f;        // Distancia para activarse
-    public float velHuida = 4f;            // Velocidad al huir
+    public float dActivacion = 10f;        
+    public float velHuida = 4f;            
     public float limiteFueraCamara = 15f;  // Distancia máxima antes de destruirse
 
     void Start()

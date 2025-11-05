@@ -6,7 +6,7 @@ public class Bala : MonoBehaviour
 {
     [SerializeField] private float velocidad;
     [SerializeField] private float dano;
-    [SerializeField] private float tiempoVida = 3f;
+    [SerializeField] private float tiempoVida = 1f;
 
     // esto lo setea el jugador cuando crea la bala
     public Vector2 direccion = Vector2.right;
@@ -29,3 +29,4 @@ public class Bala : MonoBehaviour
         }
     }
 }
+
