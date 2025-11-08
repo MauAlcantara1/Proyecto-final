@@ -2,143 +2,53 @@ using UnityEngine;
 
 public class Tanque : MonoBehaviour
 {
-    [Header("Movimiento")]
+    [Header("Movimiento de Patrullaje")]
     [SerializeField] private float velocidad = 2f;
-    [SerializeField] private float distanciaDeteccion = 15f;
-    [SerializeField] private float distanciaFrenado = 10f;
+    [SerializeField] private float distanciaPatrulla = 4f;
 
-    private Animator animator;
-    private Transform player;
-
-    private bool persiguiendo = false;
-
-    private bool arranqueOriginalHecho = false;
-    private bool arranqueOriginalTerminado = false;
-
-    private bool frenando = false;
-    private bool prepHecho = false;
-    private bool disparoHecho = false;
-
-    private bool arranque0Activo = false;
-    private bool arranque0Terminado = false;
-
-    private bool enProcesoAtaque = false;
+    [Header("Detección del Jugador")]
+    [SerializeField] private float radioDeteccion = 10f;
+    private Transform jugador;
 
     private Vector3 puntoInicial;
     private Vector3 puntoFinal;
     private bool yendoAlFinal = true;
 
+    private bool persiguiendo = false;
+
     private void Start()
     {
-        animator = GetComponent<Animator>();
-        player = GameObject.FindGameObjectWithTag("Player")?.transform;
-
         puntoInicial = transform.position;
-        puntoFinal = puntoInicial + transform.forward * 4f;
+        puntoFinal = puntoInicial + transform.forward * distanciaPatrulla;
 
-        Debug.Log("✅ Tanque iniciado.");
+        // Buscar al jugador por Tag
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+
+        if (playerObj != null)
+        {
+            jugador = playerObj.transform;
+            Debug.Log("Jugador encontrado.");
+        }
+        else
+        {
+            Debug.LogWarning("No se encontró objeto con tag 'Player'.");
+        }
     }
 
     private void Update()
     {
-        DetectarJugador();
-        AnimatorStateInfo info = animator.GetCurrentAnimatorStateInfo(0);
+        Debug.DrawLine(transform.position, puntoFinal, Color.green);
 
-        // ✅ ARRANQUE ORIGINAL → Movimiento
-        if (arranqueOriginalHecho && !arranqueOriginalTerminado)
+        if (jugador != null)
         {
-            if (info.IsName("Arranque") && info.normalizedTime >= 0.95f)
-            {
-                arranqueOriginalTerminado = true;
-                animator.SetTrigger("Mover");
-                Debug.Log("✅ Arranque original terminado → Movimiento0.");
-            }
+            DetectarJugador();
         }
 
-        // ✅ ARRANQUE0 → Movimiento1
-        if (arranque0Activo && !arranque0Terminado)
+        if (persiguiendo)
         {
-            if (info.IsName("Arranque0") && info.normalizedTime >= 0.95f)
-            {
-                arranque0Terminado = true;
-                animator.SetTrigger("Mover1");
-                Debug.Log("✅ Arranque0 terminado → Movimiento0 (Mover1).");
-            }
+            PerseguirJugador();
         }
-
-        // ✅ FRENADO → Prep
-        if (frenando && !prepHecho)
-        {
-            if (info.IsName("Frenado") && info.normalizedTime >= 0.95f)
-            {
-                prepHecho = true;
-                enProcesoAtaque = true;
-                animator.ResetTrigger("Frenado");
-                animator.SetTrigger("Preparacion");
-                Debug.Log("✅ Frenado terminado → Preparacion.");
-            }
-        }
-
-        // ✅ PREP → Disparo
-        if (prepHecho && !disparoHecho)
-        {
-            if (info.IsName("Prep") && info.normalizedTime >= 0.95f)
-            {
-                disparoHecho = true;
-                enProcesoAtaque = true;
-                animator.ResetTrigger("Preparacion");
-                animator.SetTrigger("Disparo");
-                Debug.Log("✅ Preparacion terminada → Disparo.");
-            }
-        }
-
-        // ✅ DISPARO → Arranque1 (reinicio de movimiento)
-        if (disparoHecho)
-        {
-            if (info.IsName("Disparo") && info.normalizedTime >= 0.95f)
-            {
-                Debug.Log("🏁 Disparo terminado → reiniciando ciclo de movimiento con Arranque1.");
-
-                arranque0Activo = true;
-                arranque0Terminado = false;
-
-                frenando = false;
-                prepHecho = false;
-                disparoHecho = false;
-                enProcesoAtaque = false;
-
-                animator.ResetTrigger("Disparo");
-                animator.SetTrigger("Arranque1");
-            }
-        }
-
-        // ✅ MOVIMIENTO O PERSECUCIÓN
-        // Eliminamos dependencia de nombres exactos de animaciones, usamos lógica general
-        if (!enProcesoAtaque && persiguiendo && (arranqueOriginalTerminado || arranque0Terminado))
-        {
-            float distancia = Vector3.Distance(transform.position, player.position);
-
-            if (distancia <= distanciaFrenado)
-            {
-                frenando = true;
-                enProcesoAtaque = true;
-                animator.SetTrigger("Frenado");
-                Debug.Log("🛑 Jugador en rango de ataque → Frenando.");
-                return;
-            }
-
-            // Se mueve siempre que el Animator no esté en una animación de ataque o arranque
-            if (!info.IsName("Arranque") &&
-                !info.IsName("Arranque0") &&
-                !info.IsName("Frenado") &&
-                !info.IsName("Prep") &&
-                !info.IsName("Disparo"))
-            {
-                PerseguirJugador();
-                Debug.Log("🚗 Persiguiendo al jugador...");
-            }
-        }
-        else if (!persiguiendo && !enProcesoAtaque)
+        else
         {
             Patrullar();
         }
@@ -146,76 +56,44 @@ public class Tanque : MonoBehaviour
 
     private void DetectarJugador()
     {
-        if (player == null) return;
+        float distancia = Vector3.Distance(transform.position, jugador.position);
 
-        float dist = Vector3.Distance(transform.position, player.position);
-
-        if (dist <= distanciaDeteccion)
+        // Si está en rango, activa persecución
+        if (distancia < radioDeteccion)
         {
             persiguiendo = true;
-
-            if (!arranqueOriginalHecho)
-            {
-                arranqueOriginalHecho = true;
-                arranqueOriginalTerminado = false;
-                animator.SetTrigger("Arranque");
-                Debug.Log("🚀 Activando Arranque inicial.");
-            }
         }
         else
         {
             persiguiendo = false;
-
-            if (!enProcesoAtaque)
-            {
-                arranque0Activo = false;
-                arranque0Terminado = false;
-                frenando = false;
-                prepHecho = false;
-                disparoHecho = false;
-
-                animator.ResetTrigger("Arranque");
-                animator.ResetTrigger("Arranque1");
-                animator.ResetTrigger("Frenado");
-                animator.ResetTrigger("Preparacion");
-                animator.ResetTrigger("Disparo");
-
-                Debug.Log("⚪ Jugador fuera de detección → reseteando estado.");
-            }
-            else
-            {
-                Debug.Log("⚪ Jugador fuera de detección, pero hay ataque en curso (no interrumpir).");
-            }
         }
     }
 
     private void PerseguirJugador()
     {
-        if (player == null) return;
-
+        // Mover hacia el jugador
         transform.position = Vector3.MoveTowards(
             transform.position,
-            player.position,
+            jugador.position,
             velocidad * Time.deltaTime
         );
+
+        Debug.Log("Persiguiendo al jugador...");
     }
 
     private void Patrullar()
     {
-        if (arranqueOriginalHecho) return;
-
         Vector3 objetivo = yendoAlFinal ? puntoFinal : puntoInicial;
-        transform.position = Vector3.MoveTowards(transform.position, objetivo, velocidad * Time.deltaTime);
 
-        if (Vector3.Distance(transform.position, objetivo) < 0.1f)
+        transform.position = Vector3.MoveTowards(
+            transform.position,
+            objetivo,
+            velocidad * Time.deltaTime
+        );
+
+        if (Vector3.Distance(transform.position, objetivo) < 0.05f)
+        {
             yendoAlFinal = !yendoAlFinal;
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, distanciaDeteccion);
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, distanciaFrenado);
+        }
     }
 }

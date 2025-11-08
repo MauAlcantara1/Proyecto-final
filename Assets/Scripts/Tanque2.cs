@@ -13,9 +13,9 @@ public class Tanque2 : MonoBehaviour
     [Header("Daño Embestida")]
     [SerializeField] private float danoEmbestida = 5f;
 
-    [Header("Tiempos (Inspector)")]
+    [Header("Tiempos (ajustables en Inspector)")]
     [SerializeField] private float duracionCarga = 1.5f;
-    [SerializeField] private float duracionDisparo = 1.5f; // fallback, se intenta leer de Animator
+    [SerializeField] private float duracionDisparo = 1.5f;
     [SerializeField] private float retrasoAntesEmbestir = 0.3f;
     [SerializeField] private float duracionGiroFallback = 1.5f;
     [SerializeField] private float tiempoEntreDecisiones = 1f;
@@ -29,7 +29,6 @@ public class Tanque2 : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Collider2D[] colisionesTanque;
 
-    // Estados exclusivos
     private bool embistiendo = false;
     private bool cargando = false;
     private bool disparando = false;
@@ -37,6 +36,7 @@ public class Tanque2 : MonoBehaviour
     private bool girando = false;
     private bool puedeHacerDaño = false;
     private bool dañoAplicado = false;
+
     private Vector2 direccionActual;
 
     private void Start()
@@ -57,33 +57,23 @@ public class Tanque2 : MonoBehaviour
 
         float distancia = Vector2.Distance(transform.position, jugador.position);
 
-        // Protección extra: si el animator está actualmente en Disparo o Cargar, bloqueamos movimiento
-        if (IsInState("DispEnem") || IsInState("Cargar"))
-        {
-            DetenerMovimiento();
-            return;
-        }
-
-        // Si cualquiera de las banderas bloqueantes está activo, no mover
         if (cargando || embistiendo || disparando || enDecision || girando)
         {
             DetenerMovimiento();
             return;
         }
 
-        // Movimiento hacia el jugador
         if (distancia < distanciaDeteccion && distancia > distanciaParada)
         {
-            TrySetTriggerSafe("DetEnem");
+            anim.SetTrigger("DetEnem");
             MoverHaciaJugador(velocidadMovimiento);
         }
         else if (distancia <= distanciaParada)
         {
             DetenerMovimiento();
-
             if (!enDecision)
             {
-                TrySetTriggerSafe("DecidirAtk");
+                anim.SetTrigger("DecidirAtk");
                 StartCoroutine(DecidirAtaque());
             }
         }
@@ -93,25 +83,6 @@ public class Tanque2 : MonoBehaviour
         }
     }
 
-    // --------------------------------------------------------------------------------
-    // Helpers
-    // --------------------------------------------------------------------------------
-    private bool IsInState(string stateName)
-    {
-        if (anim == null) return false;
-        var info = anim.GetCurrentAnimatorStateInfo(0);
-        return info.IsName(stateName);
-    }
-
-    private void TrySetTriggerSafe(string trigger)
-    {
-        anim.ResetTrigger(trigger);
-        anim.SetTrigger(trigger);
-    }
-
-    // --------------------------------------------------------------------------------
-    // Movimiento / Flip
-    // --------------------------------------------------------------------------------
     private void MoverHaciaJugador(float velocidad)
     {
         Vector3 direccion = (jugador.position - transform.position).normalized;
@@ -129,15 +100,12 @@ public class Tanque2 : MonoBehaviour
             rb.linearVelocity = Vector2.zero;
     }
 
-    // --------------------------------------------------------------------------------
-    // Decisión y ciclos de ataque
-    // --------------------------------------------------------------------------------
     private IEnumerator DecidirAtaque()
     {
         enDecision = true;
         yield return new WaitForSeconds(0.5f);
 
-        int eleccion = Random.Range(0, 2); // 0 = Cargar+Disparo, 1 = Embestir
+        int eleccion = Random.Range(0, 2); // 0 carga, 1 embestida
         Debug.Log($"[Tanque2] Elección: {(eleccion == 0 ? "Cargar+Disparar" : "Embestir")}");
 
         if (eleccion == 0)
@@ -157,35 +125,22 @@ public class Tanque2 : MonoBehaviour
     private IEnumerator AtaqueCargarYDisparar()
     {
         cargando = true;
-        anim.ResetTrigger("Embestir");
-        TrySetTriggerSafe("Cargar");
-        Debug.Log("[Tanque2] Cargar trigger enviado");
-
-        yield return new WaitUntil(() => IsInState("Cargar"));
-        yield return new WaitUntil(() => anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f);
+        anim.SetTrigger("Cargar");
+        Debug.Log("[Tanque2] Cargando...");
+        yield return new WaitForSeconds(duracionCarga);
         cargando = false;
 
         disparando = true;
-        TrySetTriggerSafe("DispEnem");
-        Debug.Log("[Tanque2] Disparo trigger enviado");
-
-        yield return new WaitUntil(() => IsInState("DispEnem"));
-
-        float start = Time.time;
-        float clipLen = anim.GetCurrentAnimatorStateInfo(0).length;
-        if (clipLen <= 0f) clipLen = duracionDisparo;
-
-        yield return new WaitUntil(() =>
-            anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f ||
-            Time.time - start > clipLen + 0.2f);
-
+        anim.SetTrigger("DispEnem");
+        Debug.Log("[Tanque2] Disparando...");
+        yield return new WaitForSeconds(duracionDisparo);
         disparando = false;
 
         int siguiente = Random.Range(0, 2);
         if (siguiente == 0)
         {
-            Debug.Log("[Tanque2] Volver a Cargar after Disparo");
-            TrySetTriggerSafe("Volver a disp");
+            Debug.Log("[Tanque2] Volver a Cargar");
+            anim.SetTrigger("Volver a disp");
             yield return new WaitForSeconds(0.5f);
             yield return StartCoroutine(AtaqueCargarYDisparar());
         }
@@ -196,23 +151,17 @@ public class Tanque2 : MonoBehaviour
         }
     }
 
-    // --------------------------------------------------------------------------------
-    // Embestida
-    // --------------------------------------------------------------------------------
     private IEnumerator Embestida()
     {
         if (embistiendo || cargando || disparando || girando)
-        {
-            Debug.Log("[Tanque2] Embestida cancelada: estado incompatible");
             yield break;
-        }
 
         embistiendo = true;
         puedeHacerDaño = true;
         dañoAplicado = false;
 
-        TrySetTriggerSafe("Embestir");
-        Debug.Log("[Tanque2] Embestir trigger enviado");
+        anim.SetTrigger("Embestir");
+        Debug.Log("[Tanque2] Embestida iniciada");
 
         Collider2D[] colJugador = jugador.GetComponentsInChildren<Collider2D>();
         foreach (var cTan in colisionesTanque)
@@ -222,6 +171,7 @@ public class Tanque2 : MonoBehaviour
         yield return new WaitForSeconds(retrasoAntesEmbestir);
 
         Vector3 direccion = (jugador.position - transform.position).normalized;
+
         bool flipDeseado = spriteMiraDerecha ? (direccion.x < 0f) : (direccion.x > 0f);
         spriteRenderer.flipX = flipDeseado;
 
@@ -242,65 +192,57 @@ public class Tanque2 : MonoBehaviour
             foreach (var cJug in colJugador)
                 Physics2D.IgnoreCollision(cTan, cJug, false);
 
-        if (rb != null)
-            rb.linearVelocity = Vector2.zero;
+        if (rb != null) rb.linearVelocity = Vector2.zero;
 
-        Debug.Log("[Tanque2] Embestida finalizada. Iniciando Giro...");
+        Debug.Log("[Tanque2] Embestida finalizada. Iniciando giro...");
+
         yield return StartCoroutine(Giro());
     }
 
-    // --------------------------------------------------------------------------------
-    // Giro
-    // --------------------------------------------------------------------------------
     private IEnumerator Giro()
     {
         girando = true;
-        anim.ResetTrigger("Embestir");
-        anim.ResetTrigger("Cargar");
-        TrySetTriggerSafe("Girar");
+        anim.SetTrigger("Girar");
 
-        Debug.Log("[Tanque2] Giro trigger enviado, esperando entrada a estado 'Giro'...");
-        yield return new WaitUntil(() => IsInState("Giro"));
-        yield return new WaitUntil(() => anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f);
+        yield return new WaitUntil(() => anim.GetCurrentAnimatorStateInfo(0).IsName("Giro"));
 
-        anim.ResetTrigger("Girar");
+        float durGiro = anim.GetCurrentAnimatorStateInfo(0).length;
+        if (durGiro <= 0f) durGiro = duracionGiroFallback;
+
+        yield return new WaitForSeconds(durGiro);
+
         spriteRenderer.flipX = !spriteRenderer.flipX;
-        Debug.Log("[Tanque2] Giro completado. flipX invertido.");
+
+        Debug.Log("[Tanque2] Giro completado. Ahora → Cargar");
 
         girando = false;
+
+        // ✅ VERSION C → Después de girar, SIEMPRE pasa a Cargar
         yield return StartCoroutine(ForzarIrACargar());
     }
 
     private IEnumerator ForzarIrACargar()
     {
-        if (cargando || disparando || embistiendo || girando)
-            yield break;
-
         cargando = true;
-        TrySetTriggerSafe("Cargar");
-        Debug.Log("[Tanque2] Forzando Cargar después de Giro...");
+        anim.SetTrigger("Cargar");
 
-        yield return new WaitUntil(() => IsInState("Cargar"));
-        yield return new WaitUntil(() => anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f);
+        Debug.Log("[Tanque2] Entrando a Carga después del giro");
+
+        yield return new WaitForSeconds(duracionCarga);
 
         cargando = false;
+
+        // ✅ Después vuelve al ciclo normal (DecidirAtaque)
         enDecision = false;
-        yield return null;
+        yield return StartCoroutine(DecidirAtaque());
     }
 
-    // --------------------------------------------------------------------------------
-    // Colisiones (daño)
-    // --------------------------------------------------------------------------------
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (puedeHacerDaño && !dañoAplicado && other.CompareTag("Player"))
         {
             Debug.Log($"[Tanque2] 💥 Golpea al jugador y causa {danoEmbestida} de daño");
             dañoAplicado = true;
-        }
-        else if (other.CompareTag("Player") && !puedeHacerDaño)
-        {
-            Debug.Log("[Tanque2] Colisión con Player detectada (sin daño)");
         }
     }
 }

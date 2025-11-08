@@ -5,30 +5,22 @@ using System.Collections;
 [RequireComponent(typeof(SpriteRenderer))]
 public class EnemOso : MonoBehaviour
 {
-    [Header("Detección del jugador (Horizontal)")]
+    [Header("Detección del jugador")]
     public Transform jugador;
-    public float rangoDeteccion = 6f;
-    public float rangoAtaque = 4f;
-
-    [Header("Detección por área (Nuevo)")]
-    public LayerMask capaJugador;
-    public float radioDeteccionCircular = 5f;
+    public float rangoDeteccion = 5f;
+    public float rangoAtaque = 1.5f;
 
     [Header("Movimiento del oso")]
     public float velocidad = 2f;
     public float velocidadHuida = 5f;
     public bool spriteMiraDerecha = true;
 
-    [Header("Tiempos de animaciones")]
+    [Header("Ataque")]
+    public int dano = 5;
     public float tiempoPreparacion = 0.8f;
     public float tiempoPostAtaque = 0.8f;
     public float tiempoAgacharse = 0.8f;
     public float tiempoEntreRepeticiones = 0.6f;
-    public float tiempoGiro = 0.9f;
-    public float tiempoCarga = 1.0f;
-
-    [Header("Ataque")]
-    public int dano = 5;
 
     [Header("Vida del oso")]
     public int vidaMax = 100;
@@ -37,7 +29,7 @@ public class EnemOso : MonoBehaviour
 
     private Animator animator;
     private SpriteRenderer spriteRenderer;
-    private Collider2D colisionador;
+    private Collider2D colisionador; // 🔹 Nuevo: referencia al collider
 
     private bool detectando = false;
     private bool preparando = false;
@@ -47,67 +39,73 @@ public class EnemOso : MonoBehaviour
     private bool enCicloAtaque = false;
     private bool cayendo = false;
     private bool huyendo = false;
-    private bool haciendoGiro = false;
-    private bool haciendoCarga = false;
 
-    private void Awake()
+    private Vector3 escalaOriginal;
+    private bool ultimoFlip = false;
+
+    void Awake()
     {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        colisionador = GetComponent<Collider2D>();
+        colisionador = GetComponent<Collider2D>(); // 🔹 Obtenemos el collider (BoxCollider2D o CircleCollider2D)
+        escalaOriginal = transform.localScale;
+
+        if (animator != null)
+            animator.applyRootMotion = false;
     }
 
-    private void Start()
+    void Start()
     {
         vidaActual = vidaMax;
 
         if (jugador == null)
         {
-            GameObject p = GameObject.FindGameObjectWithTag("Player");
-            if (p != null)
+            GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+            if (playerObj != null)
             {
-                jugador = p.transform;
-                Debug.Log("[OSO] Jugador asignado automáticamente.");
+                jugador = playerObj.transform;
+                Debug.Log("[EnemOso] Jugador asignado automáticamente");
+            }
+            else
+            {
+                Debug.LogWarning("[EnemOso] No se encontró jugador con tag 'Player'.");
             }
         }
 
         animator.Play("Idle");
+        Debug.Log("[EnemOso] Iniciado en Idle");
     }
 
-    private void Update()
+    void Update()
     {
-        if (cayendo || huyendo || haciendoGiro || haciendoCarga) return;
+        if (cayendo || huyendo) return; // No hacer nada durante caída o huida
+
         if (jugador == null) return;
 
-        float distancia = Mathf.Abs(jugador.position.x - transform.position.x);
+        float distancia = Vector2.Distance(transform.position, jugador.position);
 
-        // NUEVO: Detección circular
-        bool jugadorCerca = Physics2D.OverlapCircle(transform.position, radioDeteccionCircular, capaJugador);
-
-        // Activar ciclo de ataque como antes
-        if (jugadorCerca && distancia <= rangoAtaque && !enCicloAtaque && !atacando)
+        // Ataque
+        if (distancia <= rangoAtaque && !enCicloAtaque && !atacando)
         {
-            Debug.Log("[OSO] Jugador en rango -> iniciar ciclo de ataque");
             IniciarCicloAtaque();
             return;
         }
 
-        // Detección inicial usando detección circular
-        if (jugadorCerca && distancia <= rangoDeteccion && !detectando && !preparando && !avanzando && !enCicloAtaque && !atacando)
+        // Detección y movimiento
+        if (distancia <= rangoDeteccion && !detectando && !preparando && !avanzando && !atacando && !agachandose && !enCicloAtaque)
         {
             detectando = true;
             animator.SetTrigger("detEnem");
-            Debug.Log("[OSO] Detecta jugador → detEnem");
+            Debug.Log("[EnemOso] Jugador detectado → animación detectar enemigo");
             Invoke(nameof(PasarAPrepararCaminar), 1.0f);
         }
 
-        // Perder detección cuando sale del radio
-        if ((!jugadorCerca || distancia > rangoDeteccion) && (detectando || preparando || avanzando) && !enCicloAtaque)
+        if (distancia > rangoDeteccion && (detectando || preparando || avanzando) && !enCicloAtaque)
         {
             ReiniciarEstadosSinIdle();
         }
 
-        if (avanzando && !atacando && !enCicloAtaque)
+        if (avanzando && !atacando && !agachandose && !enCicloAtaque)
         {
             MoverHaciaJugador();
         }
@@ -117,106 +115,84 @@ public class EnemOso : MonoBehaviour
     {
         enCicloAtaque = true;
         atacando = true;
+        detectando = preparando = avanzando = agachandose = false;
 
-        detectando = preparando = avanzando = false;
-
+        animator.ResetTrigger("detEnem");
+        animator.ResetTrigger("Prepcaminar");
+        animator.ResetTrigger("Avanzar");
         animator.SetTrigger("PrepAtk");
-        Debug.Log("[OSO] -> PrepAtk");
 
-        StartCoroutine(CicloAtaque());
+        Debug.Log("[EnemOso] Jugador en rango → iniciar animación PrepAtk");
+        StartCoroutine(CicloDeAtaqueContinuo());
     }
 
-    private IEnumerator CicloAtaque()
+    private IEnumerator CicloDeAtaqueContinuo()
     {
         yield return new WaitForSeconds(tiempoPreparacion);
 
         animator.ResetTrigger("PrepAtk");
         animator.SetTrigger("atqEnem");
-        Debug.Log("[OSO] -> atqEnem (Ataque inicial)");
+        Debug.Log("[EnemOso] Ejecutando ataque inicial...");
+
+        if (Vector2.Distance(transform.position, jugador.position) <= rangoAtaque)
+        {
+            Debug.Log($"[EnemOso]  Daño al jugador: -{dano} HP (ataque inicial)");
+        }
 
         yield return new WaitForSeconds(tiempoPostAtaque);
 
-        while (Mathf.Abs(jugador.position.x - transform.position.x) <= rangoAtaque)
+        while (Vector2.Distance(transform.position, jugador.position) <= rangoAtaque && !cayendo && !huyendo)
         {
             animator.ResetTrigger("atqEnem");
             animator.SetTrigger("RepAtk");
-            Debug.Log("[OSO] -> RepAtk");
+            Debug.Log("[EnemOso] Ataque repetido (RepAtk)");
 
             yield return new WaitForSeconds(tiempoEntreRepeticiones);
 
             animator.ResetTrigger("RepAtk");
             animator.SetTrigger("atqEnem");
-            Debug.Log("[OSO] -> atqEnem (repetición)");
+            Debug.Log("[EnemOso] Ejecutando ataque dentro del bucle...");
+
+            if (Vector2.Distance(transform.position, jugador.position) <= rangoAtaque)
+            {
+                Debug.Log($"[EnemOso]  Daño al jugador: -{dano} HP (ataque repetido)");
+            }
 
             yield return new WaitForSeconds(tiempoPostAtaque);
         }
 
         atacando = false;
         agachandose = true;
-
+        animator.ResetTrigger("atqEnem");
         animator.SetTrigger("Agacharse");
-        Debug.Log("[OSO] -> Agacharse");
+        Debug.Log("[EnemOso] Jugador se alejó → Agacharse");
 
         yield return new WaitForSeconds(tiempoAgacharse);
 
         agachandose = false;
         enCicloAtaque = false;
 
-        IniciarGiro();
-    }
-
-    private void IniciarGiro()
-    {
-        haciendoGiro = true;
-        animator.SetTrigger("Girar");
-        Debug.Log("[OSO] -> Giro");
-
-        StartCoroutine(GiroRoutine());
-    }
-
-    private IEnumerator GiroRoutine()
-    {
-        yield return new WaitForSeconds(tiempoGiro);
-
-        spriteRenderer.flipX = !spriteRenderer.flipX;
-        Debug.Log("[OSO] Giro completado. Flip aplicado.");
-
-        haciendoGiro = false;
-        IniciarCarga();
-    }
-
-    private void IniciarCarga()
-    {
-        haciendoCarga = true;
-        animator.SetTrigger("Cargar");
-        Debug.Log("[OSO] -> Carga");
-
-        StartCoroutine(CargaRoutine());
-    }
-
-    private IEnumerator CargaRoutine()
-    {
-        yield return new WaitForSeconds(tiempoCarga);
-        haciendoCarga = false;
-    }
-
-    private void MoverHaciaJugador()
-    {
-        Vector3 direccion = new Vector3(jugador.position.x - transform.position.x, 0, 0).normalized;
-        transform.position += direccion * velocidad * Time.deltaTime;
-
-        bool flipDeseado = spriteMiraDerecha ? (direccion.x < 0f) : (direccion.x > 0f);
-        spriteRenderer.flipX = flipDeseado;
+        if (Vector2.Distance(transform.position, jugador.position) <= rangoDeteccion)
+        {
+            avanzando = true;
+            animator.ResetTrigger("Agacharse");
+            animator.SetTrigger("Avanzar");
+            Debug.Log("[EnemOso] Regresa a caminar tras agacharse");
+        }
+        else
+        {
+            Debug.Log("[EnemOso] Termina agacharse → jugador fuera de rango");
+        }
     }
 
     private void PasarAPrepararCaminar()
     {
-        if (!preparando && !avanzando && !enCicloAtaque)
+        if (!preparando && !avanzando && !atacando && !enCicloAtaque)
         {
             detectando = false;
             preparando = true;
             animator.SetTrigger("Prepcaminar");
-            Debug.Log("[OSO] -> Prepcaminar");
+            Debug.Log("[EnemOso] Pasando a Prepcaminar");
             Invoke(nameof(PasarAAvanzar), 1.0f);
         }
     }
@@ -225,16 +201,29 @@ public class EnemOso : MonoBehaviour
     {
         if (!avanzando && !atacando && !enCicloAtaque)
         {
-            preparando = false;
             avanzando = true;
+            preparando = false;
             animator.SetTrigger("Avanzar");
-            Debug.Log("[OSO] -> Avanzar");
+            Debug.Log("[EnemOso] Pasando a Avanzar");
         }
+    }
+
+    private void MoverHaciaJugador()
+    {
+        if (jugador == null) return;
+
+        Vector3 direccion = (jugador.position - transform.position).normalized;
+        transform.position += direccion * velocidad * Time.deltaTime;
+
+        bool flipDeseado = spriteMiraDerecha ? (direccion.x < 0f) : (direccion.x > 0f);
+        spriteRenderer.flipX = flipDeseado;
+        ultimoFlip = flipDeseado;
     }
 
     private void ReiniciarEstadosSinIdle()
     {
         detectando = preparando = avanzando = atacando = agachandose = enCicloAtaque = false;
+
         animator.ResetTrigger("detEnem");
         animator.ResetTrigger("Prepcaminar");
         animator.ResetTrigger("Avanzar");
@@ -242,53 +231,91 @@ public class EnemOso : MonoBehaviour
         animator.ResetTrigger("atqEnem");
         animator.ResetTrigger("RepAtk");
         animator.ResetTrigger("Agacharse");
-        Debug.Log("[OSO] Estados reiniciados.");
+
+        Debug.Log("[EnemOso] Estados reiniciados (sin forzar Idle).");
     }
 
+
+    // SISTEMA DE DAÑO Y HUÍDA
+    
     public void RecibirDanio(int cantidad)
     {
         if (vidaActual <= 0 || huyendo) return;
 
         vidaActual -= cantidad;
-        Debug.Log("[OSO] Recibe daño: " + cantidad + " Vida: " + vidaActual);
+        Debug.Log($"[EnemOso]  Recibe {cantidad} de daño. Vida restante: {vidaActual}");
 
-        if (vidaActual <= umbralHuida && !huyendo)
+        if (vidaActual <= umbralHuida && !cayendo && !huyendo)
         {
             StartCoroutine(CaerYHuir());
         }
     }
 
-    private IEnumerator CaerYHuir()
-    {
-        cayendo = true;
-        atacando = agachandose = enCicloAtaque = avanzando = false;
+private IEnumerator CaerYHuir()
+{
+    cayendo = true;
+    atacando = false;
+    agachandose = false;
+    enCicloAtaque = false;
+    avanzando = false;
 
+    bool estabaAgachado = animator.GetCurrentAnimatorStateInfo(0).IsName("Agacharse");
+
+    // Limpiar triggers activos
+    animator.ResetTrigger("atqEnem");
+    animator.ResetTrigger("RepAtk");
+    animator.ResetTrigger("PrepAtk");
+    animator.ResetTrigger("Avanzar");
+    animator.ResetTrigger("Agacharse");
+
+    // Ejecutar caída
+    if (estabaAgachado)
+        animator.SetTrigger("Caer0");
+    else
         animator.SetTrigger("Caer");
-        Debug.Log("[OSO] -> Caer");
 
-        yield return new WaitForSeconds(1f);
+    Debug.Log("[EnemOso]  Oso herido → cae");
 
-        colisionador.enabled = false;
-        Debug.Log("[OSO] Collider desactivado");
+    yield return new WaitForSeconds(1.0f);
 
-        cayendo = false;
-        huyendo = true;
+    // Iniciar huida
+    cayendo = false;
+    huyendo = true;
 
+    if (estabaAgachado)
+        animator.SetTrigger("Huir0");
+    else
         animator.SetTrigger("Huir");
-        Debug.Log("[OSO] -> Huir");
 
-        while (Mathf.Abs(jugador.position.x - transform.position.x) < 10f)
+    Debug.Log("[EnemOso]  Huyendo rápidamente hacia la izquierda");
+
+    // 🔸 Ignorar colisiones con el jugador
+    if (jugador != null)
+    {
+        Collider2D[] collidersOso = GetComponents<Collider2D>();
+        Collider2D[] collidersJugador = jugador.GetComponents<Collider2D>();
+
+        foreach (var colOso in collidersOso)
         {
-            transform.Translate(Vector2.left * velocidadHuida * Time.deltaTime);
-            yield return null;
+            foreach (var colJug in collidersJugador)
+            {
+                Physics2D.IgnoreCollision(colOso, colJug, true);
+            }
         }
 
-        Destroy(gameObject);
+        Debug.Log("[EnemOso]  Ignorando colisiones con el jugador durante huida");
     }
 
-    private void OnDrawGizmosSelected()
+    // Movimiento de huida
+    while (Vector2.Distance(transform.position, jugador.position) < 10f)
     {
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere(transform.position, radioDeteccionCircular);
+        transform.Translate(Vector2.left * velocidadHuida * Time.deltaTime);
+        yield return null;
     }
+
+    Debug.Log("[EnemOso]  Desaparece tras huir");
+    Destroy(gameObject);
+}
+
+
 }
