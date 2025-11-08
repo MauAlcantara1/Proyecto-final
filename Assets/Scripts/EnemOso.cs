@@ -29,6 +29,7 @@ public class EnemOso : MonoBehaviour
 
     private Animator animator;
     private SpriteRenderer spriteRenderer;
+    private Collider2D colisionador; // 🔹 Nuevo: referencia al collider
 
     private bool detectando = false;
     private bool preparando = false;
@@ -46,6 +47,7 @@ public class EnemOso : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        colisionador = GetComponent<Collider2D>(); // 🔹 Obtenemos el collider (BoxCollider2D o CircleCollider2D)
         escalaOriginal = transform.localScale;
 
         if (animator != null)
@@ -126,22 +128,19 @@ public class EnemOso : MonoBehaviour
 
     private IEnumerator CicloDeAtaqueContinuo()
     {
-        // 1️⃣ Preparar ataque
         yield return new WaitForSeconds(tiempoPreparacion);
 
-        // 2️⃣ Ataque inicial
         animator.ResetTrigger("PrepAtk");
         animator.SetTrigger("atqEnem");
         Debug.Log("[EnemOso] Ejecutando ataque inicial...");
 
         if (Vector2.Distance(transform.position, jugador.position) <= rangoAtaque)
         {
-            Debug.Log($"[EnemOso] 💥 Daño al jugador: -{dano} HP (ataque inicial)");
+            Debug.Log($"[EnemOso]  Daño al jugador: -{dano} HP (ataque inicial)");
         }
 
         yield return new WaitForSeconds(tiempoPostAtaque);
 
-        // 🔁 3️⃣ Ataque continuo
         while (Vector2.Distance(transform.position, jugador.position) <= rangoAtaque && !cayendo && !huyendo)
         {
             animator.ResetTrigger("atqEnem");
@@ -156,13 +155,12 @@ public class EnemOso : MonoBehaviour
 
             if (Vector2.Distance(transform.position, jugador.position) <= rangoAtaque)
             {
-                Debug.Log($"[EnemOso] 💥 Daño al jugador: -{dano} HP (ataque repetido)");
+                Debug.Log($"[EnemOso]  Daño al jugador: -{dano} HP (ataque repetido)");
             }
 
             yield return new WaitForSeconds(tiempoPostAtaque);
         }
 
-        // 4️⃣ Si el jugador se aleja
         atacando = false;
         agachandose = true;
         animator.ResetTrigger("atqEnem");
@@ -237,15 +235,15 @@ public class EnemOso : MonoBehaviour
         Debug.Log("[EnemOso] Estados reiniciados (sin forzar Idle).");
     }
 
-    // ==========================================
-    // 🔹 SISTEMA DE DAÑO Y HUÍDA
-    // ==========================================
+
+    // SISTEMA DE DAÑO Y HUÍDA
+    
     public void RecibirDanio(int cantidad)
     {
         if (vidaActual <= 0 || huyendo) return;
 
         vidaActual -= cantidad;
-        Debug.Log($"[EnemOso] 🩸 Recibe {cantidad} de daño. Vida restante: {vidaActual}");
+        Debug.Log($"[EnemOso]  Recibe {cantidad} de daño. Vida restante: {vidaActual}");
 
         if (vidaActual <= umbralHuida && !cayendo && !huyendo)
         {
@@ -253,51 +251,71 @@ public class EnemOso : MonoBehaviour
         }
     }
 
-    private IEnumerator CaerYHuir()
+private IEnumerator CaerYHuir()
+{
+    cayendo = true;
+    atacando = false;
+    agachandose = false;
+    enCicloAtaque = false;
+    avanzando = false;
+
+    bool estabaAgachado = animator.GetCurrentAnimatorStateInfo(0).IsName("Agacharse");
+
+    // Limpiar triggers activos
+    animator.ResetTrigger("atqEnem");
+    animator.ResetTrigger("RepAtk");
+    animator.ResetTrigger("PrepAtk");
+    animator.ResetTrigger("Avanzar");
+    animator.ResetTrigger("Agacharse");
+
+    // Ejecutar caída
+    if (estabaAgachado)
+        animator.SetTrigger("Caer0");
+    else
+        animator.SetTrigger("Caer");
+
+    Debug.Log("[EnemOso]  Oso herido → cae");
+
+    yield return new WaitForSeconds(1.0f);
+
+    // Iniciar huida
+    cayendo = false;
+    huyendo = true;
+
+    if (estabaAgachado)
+        animator.SetTrigger("Huir0");
+    else
+        animator.SetTrigger("Huir");
+
+    Debug.Log("[EnemOso]  Huyendo rápidamente hacia la izquierda");
+
+    // 🔸 Ignorar colisiones con el jugador
+    if (jugador != null)
     {
-        cayendo = true;
-        atacando = false;
-        agachandose = false;
-        enCicloAtaque = false;
-        avanzando = false;
+        Collider2D[] collidersOso = GetComponents<Collider2D>();
+        Collider2D[] collidersJugador = jugador.GetComponents<Collider2D>();
 
-        bool estabaAgachado = animator.GetCurrentAnimatorStateInfo(0).IsName("Agacharse");
-
-        // Limpiar triggers activos
-        animator.ResetTrigger("atqEnem");
-        animator.ResetTrigger("RepAtk");
-        animator.ResetTrigger("PrepAtk");
-        animator.ResetTrigger("Avanzar");
-        animator.ResetTrigger("Agacharse");
-
-        // Ejecutar caída
-        if (estabaAgachado)
-            animator.SetTrigger("Caer0");
-        else
-            animator.SetTrigger("Caer");
-
-        Debug.Log("[EnemOso] 🐻‍❄️ Oso herido → cae");
-
-        yield return new WaitForSeconds(1.0f);
-
-        // Iniciar huida
-        cayendo = false;
-        huyendo = true;
-
-        if (estabaAgachado)
-            animator.SetTrigger("Huir0");
-        else
-            animator.SetTrigger("Huir");
-
-        Debug.Log("[EnemOso] 🏃‍♂️ Huyendo rápidamente hacia la izquierda");
-
-        while (Vector2.Distance(transform.position, jugador.position) < 10f)
+        foreach (var colOso in collidersOso)
         {
-            transform.Translate(Vector2.left * velocidadHuida * Time.deltaTime);
-            yield return null;
+            foreach (var colJug in collidersJugador)
+            {
+                Physics2D.IgnoreCollision(colOso, colJug, true);
+            }
         }
 
-        Debug.Log("[EnemOso] 🌀 Desaparece tras huir");
-        Destroy(gameObject);
+        Debug.Log("[EnemOso]  Ignorando colisiones con el jugador durante huida");
     }
+
+    // Movimiento de huida
+    while (Vector2.Distance(transform.position, jugador.position) < 10f)
+    {
+        transform.Translate(Vector2.left * velocidadHuida * Time.deltaTime);
+        yield return null;
+    }
+
+    Debug.Log("[EnemOso]  Desaparece tras huir");
+    Destroy(gameObject);
+}
+
+
 }
