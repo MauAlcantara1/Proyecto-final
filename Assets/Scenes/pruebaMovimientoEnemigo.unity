@@ -218,7 +218,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &58890255
 Animator:
   serializedVersion: 7
@@ -1704,13 +1704,21 @@ PrefabInstance:
       propertyPath: jugador
       value: 
       objectReference: {fileID: 2007631236}
+    - target: {fileID: 612303344058137605, guid: 028747ac9806b1a4783bef2be8edcccc, type: 3}
+      propertyPath: rangoAtaque
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1025834620070116955, guid: 028747ac9806b1a4783bef2be8edcccc, type: 3}
       propertyPath: m_Name
       value: Oso
       objectReference: {fileID: 0}
     - target: {fileID: 1025834620070116955, guid: 028747ac9806b1a4783bef2be8edcccc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2158313435414190625, guid: 028747ac9806b1a4783bef2be8edcccc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7718959228196182720, guid: 028747ac9806b1a4783bef2be8edcccc, type: 3}
       propertyPath: m_LocalPosition.x
