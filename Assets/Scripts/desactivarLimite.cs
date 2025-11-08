@@ -13,10 +13,6 @@ public class CambiarNivel : MonoBehaviour
             {
                 SceneManager.LoadScene(nombreEscena);
             }
-            else
-            {
-                Debug.LogWarning("No se ha asignado una escena en el inspector.");
-            }
         }
     }
 }
