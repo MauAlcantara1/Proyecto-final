@@ -6,6 +6,8 @@ public class Objetos_P : MonoBehaviour
     public TextMeshProUGUI textoPuntuacion;
     public TextMeshProUGUI textoPuntuacion2;
 
+    [SerializeField] private AudioSource audioSource;       // <-- nuevo
+    [SerializeField] private AudioClip sfxObjetoRecogido;   // <-- nuevo
 
     void Start()
     {
@@ -34,7 +36,12 @@ public class Objetos_P : MonoBehaviour
     private void SumarPuntos(int puntos, Collider2D collision)
     {
         VidasPlayer.puntuacion += puntos;
-        Debug.Log($"¡Objeto recogido ({collision.tag})! Puntuación: {VidasPlayer.puntuacion}");
+
+        // reproduce sonido
+        if (audioSource != null && sfxObjetoRecogido != null)
+        {
+            audioSource.PlayOneShot(sfxObjetoRecogido);
+        }
 
         if (textoPuntuacion != null)
             textoPuntuacion.text = "Puntos: " + VidasPlayer.puntuacion;
@@ -44,3 +51,4 @@ public class Objetos_P : MonoBehaviour
         Destroy(collision.gameObject);
     }
 }
+
