@@ -4,12 +4,15 @@ using TMPro;
 public class Objetos_P : MonoBehaviour
 {
     public TextMeshProUGUI textoPuntuacion;
+    public TextMeshProUGUI textoPuntuacion2;
+
 
     void Start()
     {
-        // Puntuación inicial
         if (textoPuntuacion != null)
             textoPuntuacion.text = "Puntos: " + VidasPlayer.puntuacion;
+        if (textoPuntuacion2 != null)
+            textoPuntuacion2.text = "Puntos: " + VidasPlayer.puntuacion;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -35,6 +38,8 @@ public class Objetos_P : MonoBehaviour
 
         if (textoPuntuacion != null)
             textoPuntuacion.text = "Puntos: " + VidasPlayer.puntuacion;
+        if (textoPuntuacion2 != null)
+            textoPuntuacion2.text = "Puntos: " + VidasPlayer.puntuacion;
 
         Destroy(collision.gameObject);
     }

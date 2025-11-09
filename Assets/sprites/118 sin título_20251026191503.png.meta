@@ -8233,15 +8233,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "118 sin t\xEDtulo_20251026191503_276"
+      name: m6
       rect:
         serializedVersion: 2
-        x: 1196
-        y: 1490
-        width: 593
-        height: 394
+        x: 1197
+        y: 1489
+        width: 54
+        height: 57
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -8915,15 +8915,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "118 sin t\xEDtulo_20251026191503_307"
+      name: m7
       rect:
         serializedVersion: 2
-        x: 900
-        y: 1407
-        width: 66
-        height: 257
+        x: 913
+        y: 1430
+        width: 54
+        height: 57
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -9619,11 +9619,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "118 sin t\xEDtulo_20251026191503_339"
+      name: m1
       rect:
         serializedVersion: 2
-        x: 912
-        y: 1490
+        x: 913
+        y: 1489
         width: 54
         height: 57
       alignment: 0
@@ -9641,12 +9641,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "118 sin t\xEDtulo_20251026191503_340"
+      name: m2
       rect:
         serializedVersion: 2
-        x: 969
-        y: 1490
-        width: 53
+        x: 970
+        y: 1489
+        width: 54
         height: 57
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -9663,10 +9663,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "118 sin t\xEDtulo_20251026191503_341"
+      name: m3
       rect:
         serializedVersion: 2
-        x: 1025
+        x: 1026
         y: 1490
         width: 54
         height: 57
@@ -9685,11 +9685,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "118 sin t\xEDtulo_20251026191503_342"
+      name: m4
       rect:
         serializedVersion: 2
-        x: 1082
-        y: 1490
+        x: 1083
+        y: 1489
         width: 54
         height: 57
       alignment: 0
@@ -9707,11 +9707,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "118 sin t\xEDtulo_20251026191503_343"
+      name: m5
       rect:
         serializedVersion: 2
-        x: 1139
-        y: 1490
+        x: 1140
+        y: 1489
         width: 54
         height: 57
       alignment: 0
@@ -9773,13 +9773,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "118 sin t\xEDtulo_20251026191503_346"
+      name: m8
       rect:
         serializedVersion: 2
-        x: 969
-        y: 1431
-        width: 53
-        height: 56
+        x: 970
+        y: 1430
+        width: 54
+        height: 57
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9795,13 +9795,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "118 sin t\xEDtulo_20251026191503_347"
+      name: m9
       rect:
         serializedVersion: 2
-        x: 1025
-        y: 1431
+        x: 1026
+        y: 1430
         width: 54
-        height: 56
+        height: 57
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9817,13 +9817,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "118 sin t\xEDtulo_20251026191503_348"
+      name: m10
       rect:
         serializedVersion: 2
-        x: 1082
-        y: 1431
+        x: 1083
+        y: 1430
         width: 54
-        height: 56
+        height: 57
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9839,13 +9839,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "118 sin t\xEDtulo_20251026191503_349"
+      name: m11
       rect:
         serializedVersion: 2
-        x: 1139
-        y: 1431
-        width: 55
-        height: 56
+        x: 1142
+        y: 1430
+        width: 54
+        height: 57
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9861,12 +9861,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "118 sin t\xEDtulo_20251026191503_350"
+      name: m12
       rect:
         serializedVersion: 2
-        x: 1197
-        y: 1431
-        width: 56
+        x: 1200
+        y: 1430
+        width: 54
         height: 57
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -13931,28 +13931,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "118 sin t\xEDtulo_20251026191503_535"
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 448
-        width: 68
-        height: 328
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c168155bb4aebab40800000000000000
-      internalID: 5452709384747583004
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: "118 sin t\xEDtulo_20251026191503_536"
       rect:
         serializedVersion: 2
@@ -15012,9 +14990,9 @@ TextureImporter:
       name: "118 sin t\xEDtulo_20251026191503_584"
       rect:
         serializedVersion: 2
-        x: 900
+        x: 910
         y: 517
-        width: 59
+        width: 49
         height: 62
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -17221,7 +17199,6 @@ TextureImporter:
       "118 sin t\xEDtulo_20251026191503_273": 6580985187021410178
       "118 sin t\xEDtulo_20251026191503_274": 7800748981544478254
       "118 sin t\xEDtulo_20251026191503_275": -6261212303254250431
-      "118 sin t\xEDtulo_20251026191503_276": -7082045798800109309
       "118 sin t\xEDtulo_20251026191503_277": -1608393772255537749
       "118 sin t\xEDtulo_20251026191503_278": -1821846372207369434
       "118 sin t\xEDtulo_20251026191503_279": 9066596620859390762
@@ -17256,7 +17233,6 @@ TextureImporter:
       "118 sin t\xEDtulo_20251026191503_304": 7563595468124155938
       "118 sin t\xEDtulo_20251026191503_305": -2121213678894672415
       "118 sin t\xEDtulo_20251026191503_306": 6178677212297509711
-      "118 sin t\xEDtulo_20251026191503_307": -6104346162031601077
       "118 sin t\xEDtulo_20251026191503_308": -1911412249872490994
       "118 sin t\xEDtulo_20251026191503_309": 8380117296320257314
       "118 sin t\xEDtulo_20251026191503_31": 5638662906557157682
@@ -17291,20 +17267,10 @@ TextureImporter:
       "118 sin t\xEDtulo_20251026191503_336": 338608957802746418
       "118 sin t\xEDtulo_20251026191503_337": -5651645938767548376
       "118 sin t\xEDtulo_20251026191503_338": 4992971398608799053
-      "118 sin t\xEDtulo_20251026191503_339": 6212801624695640732
       "118 sin t\xEDtulo_20251026191503_34": -5591663613962506775
-      "118 sin t\xEDtulo_20251026191503_340": -8990860247945885206
-      "118 sin t\xEDtulo_20251026191503_341": 2969879343401516878
-      "118 sin t\xEDtulo_20251026191503_342": 7985300526516500085
-      "118 sin t\xEDtulo_20251026191503_343": -2904181760915478559
       "118 sin t\xEDtulo_20251026191503_344": 3662107002451318380
       "118 sin t\xEDtulo_20251026191503_345": -4997216531805006228
-      "118 sin t\xEDtulo_20251026191503_346": 7768691820492114887
-      "118 sin t\xEDtulo_20251026191503_347": -1913237108598270848
-      "118 sin t\xEDtulo_20251026191503_348": -7734295592809034270
-      "118 sin t\xEDtulo_20251026191503_349": 7462493335129385238
       "118 sin t\xEDtulo_20251026191503_35": 3958858371866838343
-      "118 sin t\xEDtulo_20251026191503_350": 4048310336198228804
       "118 sin t\xEDtulo_20251026191503_351": -5922093242305241280
       "118 sin t\xEDtulo_20251026191503_352": -6635764922576056572
       "118 sin t\xEDtulo_20251026191503_353": 2319059877582973349
@@ -17700,6 +17666,18 @@ TextureImporter:
       "118 sin t\xEDtulo_20251026191503_98": 5688923421290757017
       "118 sin t\xEDtulo_20251026191503_99": -8624752274936472674
       Bala: 1326336834377772573
+      m1: 6212801624695640732
+      m10: -7734295592809034270
+      m11: 7462493335129385238
+      m12: 4048310336198228804
+      m2: -8990860247945885206
+      m3: 2969879343401516878
+      m4: 7985300526516500085
+      m5: -2904181760915478559
+      m6: -7082045798800109309
+      m7: -6104346162031601077
+      m8: 7768691820492114887
+      m9: -1913237108598270848
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,7 +1,7 @@
-using System.Collections;
 using UnityEngine;
+using System.Collections;
 
-public class Teleportador : MonoBehaviour
+public class TpCaso2 : MonoBehaviour
 {
     public Vector3 destino;
 
@@ -11,11 +11,11 @@ public class Teleportador : MonoBehaviour
     public Fade fadeOut;
     public float retraso = 1f;
 
-    private CamaraController camara;
+    private CamaraControllerTipo2 camara;
 
     private void Start()
     {
-        camara = Camera.main.GetComponent<CamaraController>();
+        camara = Camera.main.GetComponent<CamaraControllerTipo2>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)

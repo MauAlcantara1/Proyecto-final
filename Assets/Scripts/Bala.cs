@@ -12,13 +12,13 @@ public class Bala : MonoBehaviour
 
     private void Start()
     {
-        // Destruye la bala después de cierto tiempo para evitar sobrecarga
+       
         Destroy(gameObject, tiempoVida);
     }
 
     private void Update()
     {
-        // Mueve la bala constantemente en la dirección definida
+        
         transform.Translate(direccion * velocidad * Time.deltaTime);
     }
 
@@ -40,11 +40,6 @@ public class Bala : MonoBehaviour
             }
 
             Destroy(gameObject); // Destruye la bala al impactar
-        }
-        else if (!other.CompareTag("Player") && !other.CompareTag("bala"))
-        {
-            // Si golpea algo que no sea el jugador o otra bala, también desaparece
-            Destroy(gameObject);
         }
     }
 }
