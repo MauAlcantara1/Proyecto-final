@@ -446,6 +446,7 @@ GameObject:
   - component: {fileID: 3651744595080886889}
   - component: {fileID: 1348789177839893419}
   - component: {fileID: 4596491513191016194}
+  - component: {fileID: 3999576656367202399}
   m_Layer: 0
   m_Name: Jugador 1
   m_TagString: Player
@@ -633,6 +634,19 @@ CapsuleCollider2D:
   m_Size: {x: 0.81896925, y: 1.6778088}
   m_Direction: 0
 --- !u!114 &4596491513191016194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7860175344245787006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667a9cc7db488724cbc11b15cfd0a01f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Objetos_P
+  textoPuntuacion: {fileID: 0}
+--- !u!114 &3999576656367202399
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
