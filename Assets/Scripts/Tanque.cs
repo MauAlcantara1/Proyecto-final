@@ -8,7 +8,7 @@ public class Tanque : MonoBehaviour
     [SerializeField] private float distanciaFrenado = 10f;
 
     [Header("Vida y Daño")]
-    [SerializeField] private int vidaMaxima = 10;  // Vida máxima editable
+    [SerializeField] private int vidaMaxima = 10;
     private int vidaActual;
     private bool estaMuerto = false;
 
@@ -19,8 +19,8 @@ public class Tanque : MonoBehaviour
     private Animator animator;
     private Transform player;
     private SpriteRenderer spriteRenderer;
-    private Collider2D colisionador;   // Collider propio
-    private Rigidbody2D rb;             // Rigidbody para controlar físicas
+    private Collider2D colisionador;
+    private Rigidbody2D rb;
 
     private bool persiguiendo = false;
     private bool arranqueOriginalHecho = false;
@@ -58,13 +58,11 @@ public class Tanque : MonoBehaviour
 
     private void Update()
     {
-        // Si está muerto, no hace nada
         if (estaMuerto) return;
 
         DetectarJugador();
         AnimatorStateInfo info = animator.GetCurrentAnimatorStateInfo(0);
 
-        // ARRANQUE ORIGINAL → Movimiento
         if (arranqueOriginalHecho && !arranqueOriginalTerminado)
         {
             if (info.IsName("Arranque") && info.normalizedTime >= 0.95f)
@@ -74,7 +72,6 @@ public class Tanque : MonoBehaviour
             }
         }
 
-        // ARRANQUE0 → Movimiento1
         if (arranque0Activo && !arranque0Terminado)
         {
             if (info.IsName("Arranque0") && info.normalizedTime >= 0.95f)
@@ -84,7 +81,6 @@ public class Tanque : MonoBehaviour
             }
         }
 
-        // FRENADO → decidir entre GIRO o PREP
         if (frenando && !prepHecho && !girando)
         {
             if (info.IsName("Frenado") && info.normalizedTime >= 0.95f)
@@ -105,7 +101,6 @@ public class Tanque : MonoBehaviour
             }
         }
 
-        // GIRO → PREP
         if (girando && info.IsName("Giro"))
         {
             if (info.normalizedTime >= 0.95f)
@@ -118,7 +113,6 @@ public class Tanque : MonoBehaviour
             }
         }
 
-        // PREP → Disparo
         if (prepHecho && !disparoHecho)
         {
             if (info.IsName("Prep") && info.normalizedTime >= 0.95f)
@@ -130,7 +124,6 @@ public class Tanque : MonoBehaviour
             }
         }
 
-        // DISPARO → Arranque1
         if (disparoHecho)
         {
             if (info.IsName("Disparo") && info.normalizedTime >= 0.95f)
@@ -149,7 +142,6 @@ public class Tanque : MonoBehaviour
             }
         }
 
-        // Movimiento o patrulla
         if (!enProcesoAtaque && persiguiendo && (arranqueOriginalTerminado || arranque0Terminado))
         {
             float distancia = Vector3.Distance(transform.position, player.position);
@@ -178,10 +170,6 @@ public class Tanque : MonoBehaviour
         }
     }
 
-    // ======================================
-    // 🩸 SISTEMA DE VIDA Y DAÑO
-    // ======================================
-
     public void RecibirDaño(int cantidad)
     {
         if (estaMuerto) return;
@@ -189,75 +177,58 @@ public class Tanque : MonoBehaviour
         vidaActual -= cantidad;
         Debug.Log($"💥 Tanque recibió {cantidad} de daño. Vida restante: {vidaActual}");
 
-        if (vidaActual <= 0)
-        {
-            Morir();
-        }
+        if (vidaActual <= 0) Morir();
     }
 
-  private void Morir()
-{
-    if (estaMuerto) return;
-    estaMuerto = true;
-
-    Debug.Log("☠️ Tanque ha muerto.");
-
-    // Detiene toda la IA
-    persiguiendo = false;
-    enProcesoAtaque = false;
-    frenando = false;
-    prepHecho = false;
-    disparoHecho = false;
-    girando = false;
-
-    // Limpia triggers activos
-    animator.ResetTrigger("Arranque");
-    animator.ResetTrigger("Arranque1");
-    animator.ResetTrigger("Frenado");
-    animator.ResetTrigger("Preparacion");
-    animator.ResetTrigger("Disparo");
-    animator.ResetTrigger("Girar");
-
-    // 🧱 Ignora colisiones solo con el jugador y las balas, pero NO con el suelo
-    if (colisionador != null)
+    private void Morir()
     {
-        Collider2D[] todos = FindObjectsOfType<Collider2D>();
-        foreach (var c in todos)
+        if (estaMuerto) return;
+        estaMuerto = true;
+
+        Debug.Log("☠️ Tanque ha muerto.");
+
+        persiguiendo = false;
+        enProcesoAtaque = false;
+        frenando = false;
+        prepHecho = false;
+        disparoHecho = false;
+        girando = false;
+
+        animator.ResetTrigger("Arranque");
+        animator.ResetTrigger("Arranque1");
+        animator.ResetTrigger("Frenado");
+        animator.ResetTrigger("Preparacion");
+        animator.ResetTrigger("Disparo");
+        animator.ResetTrigger("Girar");
+
+        if (colisionador != null)
         {
-            if (c == null || c == colisionador) continue;
+            Collider2D[] todos = Object.FindObjectsByType<Collider2D>(FindObjectsSortMode.None); // ← CAMBIO HECHO AQUÍ
 
-            string tag = c.tag.ToLower();
-
-            // Solo ignorar si es jugador o bala
-            if (tag == "player" || tag == "bala")
+            foreach (var c in todos)
             {
-                Physics2D.IgnoreCollision(colisionador, c, true);
+                if (c == null || c == colisionador) continue;
+
+                string tag = c.tag.ToLower();
+
+                if (tag == "player" || tag == "bala")
+                {
+                    Physics2D.IgnoreCollision(colisionador, c, true);
+                }
             }
+
+            Debug.Log("🚫 Tanque muerto: colisiones ignoradas solo con jugador y balas.");
         }
 
-        Debug.Log("🚫 Tanque muerto: colisiones ignoradas solo con jugador y balas.");
+        animator.SetTrigger("Muerte");
+
+        DropLoot drop = GetComponent<DropLoot>();
+        if (drop != null)
+        {
+            drop.SoltarObjetos();
+            Debug.Log("🎲 Drop ejecutado al morir el tanque.");
+        }
     }
-
-    // Activa la animación de muerte
-    animator.SetTrigger("Muerte");
-
-    // 🎁 Intenta ejecutar el drop de loot
-    DropLoot drop = GetComponent<DropLoot>();
-    if (drop != null)
-    {
-        drop.SoltarObjetos();
-        Debug.Log("🎲 Drop ejecutado al morir el tanque.");
-    }
-    else
-    {
-        Debug.LogWarning("⚠️ No se encontró componente DropLoot en el tanque.");
-    }
-}
-
-
-    // ======================================
-    // SISTEMAS EXISTENTES
-    // ======================================
 
     private void DetectarJugador()
     {
@@ -306,8 +277,7 @@ public class Tanque : MonoBehaviour
         Vector2 dirToPlayer = (player.position - transform.position).normalized;
         Vector2 facing = mirandoDerecha ? Vector2.right : Vector2.left;
         float angle = Vector2.Angle(facing, dirToPlayer);
-        bool detras = angle < anguloDetras;
-        return detras;
+        return angle < anguloDetras;
     }
 
     private void FlipSprite()

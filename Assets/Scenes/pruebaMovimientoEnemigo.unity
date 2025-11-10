@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 58890261}
   m_Layer: 0
   m_Name: Tanque2Prefab
-  m_TagString: Untagged
+  m_TagString: enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -381,7 +381,7 @@ Transform:
   m_GameObject: {fileID: 58890254}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.37, y: 1.68, z: 0}
+  m_LocalPosition: {x: 25.7, y: 1.68, z: 0}
   m_LocalScale: {x: 5.4007354, y: 5.4007354, z: 5.4007354}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -400,18 +400,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cea48cc1690b2d94b85fbcc063eea091, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemTanque2
+  distanciaDeteccion: 30
+  distanciaParada: 15
   velocidadMovimiento: 2
-  velocidadEmbestida: 5
-  distanciaDeteccion: 20
-  distanciaParada: 16
-  distanciaEmbestida: 20
-  danoEmbestida: 5
+  retrasoAntesDeAtacar: 4
   duracionCarga: 4
-  duracionDisparo: 4
-  retrasoAntesEmbestir: 1
-  duracionGiroFallback: 3
-  tiempoEntreDecisiones: 1.5
-  spriteMiraDerecha: 0
+  duracionDisparo: 3
+  pausaEntreCiclos: 4.5
+  distanciaEmbestida: 10
+  fuerzaEmbestida: 8
+  distanciaRecorridoEmbestida: 20
+  pausaPostEmbestida: 2
+  miraDerechaPorDefecto: 0
 --- !u!4 &102031426 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3773871173705302284, guid: 1f8976c91313264448ddfa5481c32845, type: 3}
@@ -568,7 +568,7 @@ Transform:
   m_GameObject: {fileID: 140591492}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.58, y: -0.29, z: -10}
+  m_LocalPosition: {x: 8.9, y: -0.29, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1317,7 +1317,7 @@ PrefabInstance:
       objectReference: {fileID: 502782092}
     - target: {fileID: 7417369988130022333, guid: 3dd38b7ef3d50cd44a266534cc2e14a7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.72
+      value: -3.6
       objectReference: {fileID: 0}
     - target: {fileID: 7417369988130022333, guid: 3dd38b7ef3d50cd44a266534cc2e14a7, type: 3}
       propertyPath: m_LocalPosition.y

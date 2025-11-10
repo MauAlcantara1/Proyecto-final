@@ -241,7 +241,7 @@ AnimatorStateMachine:
     m_Position: {x: 1060, y: -150, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8839863338745155189}
-    m_Position: {x: -20, y: 10, z: 0}
+    m_Position: {x: 10, y: 0, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8530786048735412747}
     m_Position: {x: 1310, y: 40, z: 0}
@@ -473,7 +473,7 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 6
+  - m_ConditionMode: 1
     m_ConditionEvent: Muerte
     m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
@@ -808,7 +808,7 @@ AnimatorController:
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
   - m_Name: Muerte
-    m_Type: 3
+    m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
