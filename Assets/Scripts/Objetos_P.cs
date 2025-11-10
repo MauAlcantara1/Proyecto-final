@@ -31,16 +31,26 @@ public class Objetos_P : MonoBehaviour
         else if (collision.CompareTag("KK")) SumarPuntos(1, collision);
     }
 
-    private void SumarPuntos(int puntos, Collider2D collision)
-    {
-        VidasPlayer.puntuacion += puntos;
-        Debug.Log($"¡Objeto recogido ({collision.tag})! Puntuación: {VidasPlayer.puntuacion}");
+private void SumarPuntos(int puntos, Collider2D collision)
+{
+    // Desactivar collider inmediatamente para evitar doble trigger
+    Collider2D col = collision.GetComponent<Collider2D>();
+    if (col != null)
+        col.enabled = false;
 
-        if (textoPuntuacion != null)
-            textoPuntuacion.text = "Puntos: " + VidasPlayer.puntuacion;
-        if (textoPuntuacion2 != null)
-            textoPuntuacion2.text = "Puntos: " + VidasPlayer.puntuacion;
+    // Sumar puntos
+    VidasPlayer.puntuacion += puntos;
+    Debug.Log($"¡Objeto recogido ({collision.tag})! Puntuación: {VidasPlayer.puntuacion}");
 
-        Destroy(collision.gameObject);
-    }
+    // Actualizar UI
+    if (textoPuntuacion != null)
+        textoPuntuacion.text = "Puntos: " + VidasPlayer.puntuacion;
+    if (textoPuntuacion2 != null)
+        textoPuntuacion2.text = "Puntos: " + VidasPlayer.puntuacion;
+
+    // Destruir objeto
+    Destroy(collision.gameObject);
+}
+
+
 }
