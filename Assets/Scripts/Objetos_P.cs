@@ -6,8 +6,6 @@ public class Objetos_P : MonoBehaviour
     public TextMeshProUGUI textoPuntuacion;
     public TextMeshProUGUI textoPuntuacion2;
 
-    [SerializeField] private AudioSource audioSource;       // <-- nuevo
-    [SerializeField] private AudioClip sfxObjetoRecogido;   // <-- nuevo
 
     void Start()
     {
@@ -33,22 +31,26 @@ public class Objetos_P : MonoBehaviour
         else if (collision.CompareTag("KK")) SumarPuntos(1, collision);
     }
 
-    private void SumarPuntos(int puntos, Collider2D collision)
-    {
-        VidasPlayer.puntuacion += puntos;
+private void SumarPuntos(int puntos, Collider2D collision)
+{
+    // Desactivar collider inmediatamente para evitar doble trigger
+    Collider2D col = collision.GetComponent<Collider2D>();
+    if (col != null)
+        col.enabled = false;
 
-        // reproduce sonido
-        if (audioSource != null && sfxObjetoRecogido != null)
-        {
-            audioSource.PlayOneShot(sfxObjetoRecogido);
-        }
+    // Sumar puntos
+    VidasPlayer.puntuacion += puntos;
+    Debug.Log($"¡Objeto recogido ({collision.tag})! Puntuación: {VidasPlayer.puntuacion}");
 
-        if (textoPuntuacion != null)
-            textoPuntuacion.text = "Puntos: " + VidasPlayer.puntuacion;
-        if (textoPuntuacion2 != null)
-            textoPuntuacion2.text = "Puntos: " + VidasPlayer.puntuacion;
+    // Actualizar UI
+    if (textoPuntuacion != null)
+        textoPuntuacion.text = "Puntos: " + VidasPlayer.puntuacion;
+    if (textoPuntuacion2 != null)
+        textoPuntuacion2.text = "Puntos: " + VidasPlayer.puntuacion;
 
-        Destroy(collision.gameObject);
-    }
+    // Destruir objeto
+    Destroy(collision.gameObject);
 }
 
+
+}

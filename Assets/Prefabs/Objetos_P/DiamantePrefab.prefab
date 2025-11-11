@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5459759274310077973}
   - component: {fileID: 5541477679327639673}
   - component: {fileID: 3678860763981468941}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DiamantePrefab
   m_TagString: Diamante
   m_Icon: {fileID: 0}
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 8064490595582123834, guid: 70259c963ea5abc4fbae334eacea79ab, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

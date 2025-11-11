@@ -12,34 +12,42 @@ public class Bala : MonoBehaviour
 
     private void Start()
     {
-       
         Destroy(gameObject, tiempoVida);
     }
 
     private void Update()
     {
-        
         transform.Translate(direccion * velocidad * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Si impacta contra un enemigo
+        // 💥 Si impacta contra un enemigo
         if (other.CompareTag("enemigo"))
         {
-            EnemOso oso = other.GetComponent<EnemOso>();
+            bool impacto = false;
 
+            // --- Oso ---
+            EnemOso oso = other.GetComponent<EnemOso>();
             if (oso != null)
             {
                 oso.RecibirDanio(dano);
-                Debug.Log($"[BALA] 💥 Impacto al oso. Daño enviado: {dano}");
-            }
-            else
-            {
-                Debug.LogWarning("[BALA] El objeto con tag 'enemigo' no tiene componente EnemOso.");
+                Debug.Log($"[BALA] 💥 Impacto al Oso. Daño enviado: {dano}");
+                impacto = true;
             }
 
-            Destroy(gameObject); // Destruye la bala al impactar
+            // --- Tanque ---
+            Tanque tanque = other.GetComponent<Tanque>();
+            if (tanque != null)
+            {
+                tanque.RecibirDaño(dano);
+                Debug.Log($"[BALA] 💥 Impacto al Tanque. Daño enviado: {dano}");
+                impacto = true;
+            }
+
+            // 💣 Si impactó contra un enemigo válido, destruir la bala
+            if (impacto)
+                Destroy(gameObject);
         }
     }
 }
