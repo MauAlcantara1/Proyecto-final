@@ -143,7 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Bala
   velocidad: 20
   dano: 1
-  tiempoVida: 0.8
+  tiempoVida: 1
   direccion: {x: 1, y: 0}
 --- !u!95 &6545976811065592674
 Animator:

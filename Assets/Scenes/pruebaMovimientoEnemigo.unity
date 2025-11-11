@@ -816,6 +816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Objetos_P
   textoPuntuacion: {fileID: 0}
+  textoPuntuacion2: {fileID: 0}
 --- !u!70 &513429243
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1704,21 +1705,9 @@ PrefabInstance:
       propertyPath: jugador
       value: 
       objectReference: {fileID: 2007631236}
-    - target: {fileID: 612303344058137605, guid: 028747ac9806b1a4783bef2be8edcccc, type: 3}
-      propertyPath: rangoAtaque
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 1025834620070116955, guid: 028747ac9806b1a4783bef2be8edcccc, type: 3}
       propertyPath: m_Name
       value: Oso
-      objectReference: {fileID: 0}
-    - target: {fileID: 1025834620070116955, guid: 028747ac9806b1a4783bef2be8edcccc, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2158313435414190625, guid: 028747ac9806b1a4783bef2be8edcccc, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7718959228196182720, guid: 028747ac9806b1a4783bef2be8edcccc, type: 3}
       propertyPath: m_LocalPosition.x

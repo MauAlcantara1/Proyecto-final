@@ -17,6 +17,7 @@ TagManager:
   - KK
   - Bala
   - bala
+  - "Da\xF1o"
   layers:
   - Default
   - TransparentFX

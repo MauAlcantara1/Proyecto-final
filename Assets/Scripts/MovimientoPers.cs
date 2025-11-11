@@ -7,7 +7,6 @@ public class MovimientoPers : MonoBehaviour
     public float jumpForce = 10f;
     public Transform controladorDisparo;
     private Rigidbody2D rb;
-
     private bool isGrounded = true;
 
     public animacionesPiernasJugador animPiernas;
@@ -21,12 +20,17 @@ public class MovimientoPers : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        if (rb == null)
-            Debug.LogError("No se encontró Rigidbody2D en el personaje!");
     }
 
     void Update()
     {
+        if (animTorso != null && animTorso.muerto)
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            return;
+        }
+
+
         float move = 0f;
         if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)
             move = -1f;
@@ -37,7 +41,6 @@ public class MovimientoPers : MonoBehaviour
 
         if (Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded)
         {
-            Debug.Log("Saltó");
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             isGrounded = false;
         }
@@ -55,13 +58,13 @@ public class MovimientoPers : MonoBehaviour
             tiempoArriba = duracionArriba;
 
         if (Keyboard.current.wKey.isPressed)
-            tiempoArriba = duracionArriba; 
-    
+            tiempoArriba = duracionArriba;
+
         if (Keyboard.current.jKey.wasPressedThisFrame)
             tiempoDisparo = duracionDisparo;
 
         if (Keyboard.current.jKey.isPressed)
-        tiempoDisparo = duracionDisparo;
+            tiempoDisparo = duracionDisparo;
 
         if (tiempoDisparo > 0)
             tiempoDisparo -= Time.deltaTime;
@@ -75,21 +78,16 @@ public class MovimientoPers : MonoBehaviour
         bool Disparo = tiempoDisparo > 0;
         animTorso?.ActualizarDisparo(Disparo);
 
-        // direccion disparo
-        if (tiempoArriba > 0) // Arriba
+        // Dirección del disparo
+        if (tiempoArriba > 0)
         {
             controladorDisparo.right = Vector2.up;
         }
         else
         {
-            if (transform.localScale.x > 0) // derecha
-                controladorDisparo.right = Vector2.right;
-            else // izquierda
-                controladorDisparo.right = Vector2.left;
+            controladorDisparo.right = transform.localScale.x > 0 ? Vector2.right : Vector2.left;
         }
-
     }
-
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -103,4 +101,12 @@ public class MovimientoPers : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Daño"))
+        {
+            animTorso.Morir();
+        }
+    }
+    
 }

@@ -206,7 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemOso
   jugador: {fileID: 0}
   rangoDeteccion: 15
-  rangoAtaque: 0.5
+  rangoAtaque: 2
   velocidad: 2
   velocidadHuida: 5
   spriteMiraDerecha: 0

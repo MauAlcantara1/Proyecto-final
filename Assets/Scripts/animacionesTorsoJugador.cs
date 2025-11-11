@@ -1,10 +1,13 @@
 using UnityEngine;
 using System.Collections;
+
 public class animacionesTorsoJugador : MonoBehaviour
 {
     private Animator animator;
 
     public SpriteRenderer piernas;
+    public bool muerto = false;
+    private bool inmune = false;  
 
     void Start()
     {
@@ -30,5 +33,46 @@ public class animacionesTorsoJugador : MonoBehaviour
     {
         if (piernas != null)
             piernas.enabled = true;
+    }
+
+    public void Morir()
+    {
+        if (muerto || inmune) return;  
+
+        piernas.enabled = false;
+        muerto = true;
+
+        animator.Play("muerte");
+    }
+
+    public void Revivir()
+    {
+        if (!muerto) return;
+
+        if (piernas != null)
+            piernas.enabled = true;
+
+        muerto = false;
+
+        StartCoroutine(InvulnerabilidadTemporal(1f)); 
+    }
+
+    private IEnumerator InvulnerabilidadTemporal(float duracionExtra)
+    {
+        inmune = true;
+
+
+        float duracionAnim = animator.GetCurrentAnimatorStateInfo(0).length;
+        yield return new WaitForSeconds(duracionAnim + duracionExtra);
+
+        inmune = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Daño"))
+        {
+            Morir();
+        }
     }
 }
