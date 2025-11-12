@@ -12,6 +12,11 @@ public class Tanque : MonoBehaviour
     private int vidaActual;
     private bool estaMuerto = false;
 
+    [Header("Disparo")] // 🟩 NUEVO
+    [SerializeField] private GameObject prefabBala; // 🟩 NUEVO
+    [SerializeField] private Transform puntoDisparo; // 🟩 NUEVO
+    [SerializeField] private float fuerzaDisparo = 8f; // 🟩 NUEVO
+
     [Header("Detección de giro")]
     [Tooltip("Ángulo mínimo para considerar que el jugador está detrás (en grados)")]
     [SerializeField] private float anguloDetras = 100f;
@@ -40,6 +45,8 @@ public class Tanque : MonoBehaviour
     private Vector3 puntoInicial;
     private Vector3 puntoFinal;
     private bool yendoAlFinal = true;
+
+    private bool balaDisparada = false; // 🟩 NUEVO
 
     private void Start()
     {
@@ -124,10 +131,19 @@ public class Tanque : MonoBehaviour
             }
         }
 
+        // 🟩 NUEVO: durante la animación de Disparo, dispara la bala en el momento medio
+        if (info.IsName("Disparo") && info.normalizedTime >= 0.5f && !balaDisparada)
+        {
+            Disparar();
+            balaDisparada = true;
+        }
+
         if (disparoHecho)
         {
             if (info.IsName("Disparo") && info.normalizedTime >= 0.95f)
             {
+                balaDisparada = false; // 🟩 NUEVO
+
                 arranque0Activo = true;
                 arranque0Terminado = false;
 
@@ -170,6 +186,28 @@ public class Tanque : MonoBehaviour
         }
     }
 
+    // 🟩 NUEVO: Método para disparar una bala
+    private void Disparar()
+    {
+        if (prefabBala == null || puntoDisparo == null)
+        {
+            Debug.LogWarning("⚠️ Falta asignar prefabBala o puntoDisparo en el tanque.");
+            return;
+        }
+
+        GameObject bala = Instantiate(prefabBala, puntoDisparo.position, puntoDisparo.rotation);
+
+        Rigidbody2D rbBala = bala.GetComponent<Rigidbody2D>();
+        if (rbBala != null)
+        {
+            Vector2 direccion = mirandoDerecha ? Vector2.left : Vector2.right;
+            rbBala.linearVelocity = direccion * fuerzaDisparo;
+
+        }
+
+        Debug.Log("💣 Tanque disparó una bala.");
+    }
+
     public void RecibirDaño(int cantidad)
     {
         if (estaMuerto) return;
@@ -203,20 +241,15 @@ public class Tanque : MonoBehaviour
 
         if (colisionador != null)
         {
-            Collider2D[] todos = Object.FindObjectsByType<Collider2D>(FindObjectsSortMode.None); // ← CAMBIO HECHO AQUÍ
-
+            Collider2D[] todos = Object.FindObjectsByType<Collider2D>(FindObjectsSortMode.None);
             foreach (var c in todos)
             {
                 if (c == null || c == colisionador) continue;
 
                 string tag = c.tag.ToLower();
-
                 if (tag == "player" || tag == "bala")
-                {
                     Physics2D.IgnoreCollision(colisionador, c, true);
-                }
             }
-
             Debug.Log("🚫 Tanque muerto: colisiones ignoradas solo con jugador y balas.");
         }
 
