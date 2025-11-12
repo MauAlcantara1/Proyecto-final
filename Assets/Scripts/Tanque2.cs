@@ -14,6 +14,7 @@ public class Tanque2 : MonoBehaviour
     [SerializeField] private float duracionCarga = 1f;
     [SerializeField] private float duracionDisparo = 3f;
     [SerializeField] private float pausaEntreCiclos = 4.5f;
+    [SerializeField] private Transform puntoDisparo;
 
     [Header("Ataque Secundario (Embestida)")]
     [SerializeField] private float fuerzaEmbestida = 8f;
@@ -22,13 +23,17 @@ public class Tanque2 : MonoBehaviour
 
     [Header("Orientación del Sprite")]
     [SerializeField] private bool miraDerechaPorDefecto = false;
+    private bool estaMuerto = false;
+    private int vidaActual;
+
+
 
     // Componentes y estados
     private Transform jugador;
     private Animator anim;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
-    private Collider2D[] colisionesTanque;
+    private Collider2D colisionesTanque;
     private Collider2D[] colJugador;
 
     // Estados lógicos
@@ -43,13 +48,15 @@ public class Tanque2 : MonoBehaviour
     private bool girando = false;
     private bool puedeEmbestir = true;
 
+    [SerializeField] private int vidaMaxima = 10;
+
     private void Start()
     {
         jugador = GameObject.FindGameObjectWithTag("Player")?.transform;
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        colisionesTanque = GetComponentsInChildren<Collider2D>();
+        colisionesTanque = GetComponent<Collider2D>();
 
         if (jugador != null)
             colJugador = jugador.GetComponentsInChildren<Collider2D>();
@@ -59,11 +66,14 @@ public class Tanque2 : MonoBehaviour
 
         if (rb != null)
             rb.freezeRotation = true;
+            
+        vidaActual = vidaMaxima;
+
     }
 
     private void Update()
     {
-        if (jugador == null || embistiendo || girando) return;
+        if (jugador == null || embistiendo || girando || estaMuerto) return;
 
         float distancia = Vector2.Distance(transform.position, jugador.position);
 
@@ -91,7 +101,6 @@ public class Tanque2 : MonoBehaviour
 
         if (jugadorDetectado && distancia > distanciaParada && !atacando && !embistiendo)
         {
-            // 🚶 Prioridad 3: moverse
             MoverHaciaJugador();
         }
     }
@@ -152,7 +161,7 @@ public class Tanque2 : MonoBehaviour
     {
         if (embistiendo) yield break;
 
-        // 🔹 Limpieza de estados anteriores
+        // Limpieza
         anim.SetBool("Cargar", false);
         anim.SetBool("Volver a disp", false);
         anim.SetBool("Girar", false);
@@ -162,20 +171,14 @@ public class Tanque2 : MonoBehaviour
         enCicloAtaque = false;
         puedeEmbestir = false;
 
-        // 🔹 Activa animación de embestida
+        // 🔹 Animación de embestida
         anim.SetBool("Embestir", true);
-        yield return null; // permite al Animator cambiar de estado
+        yield return null;
         anim.SetBool("Embestir", false);
-
-        // 🔹 Ignora colisiones mientras embiste
-        if (colJugador != null)
-            foreach (var cTan in colisionesTanque)
-                foreach (var cJug in colJugador)
-                    Physics2D.IgnoreCollision(cTan, cJug, true);
 
         yield return new WaitForSeconds(0.3f);
 
-        // 🔹 Movimiento de embestida
+        // Movimiento de embestida
         Vector3 direccion = mirandoDerecha ? Vector3.right : Vector3.left;
         float distanciaRecorrida = 0f;
         Vector3 inicio = transform.position;
@@ -187,45 +190,31 @@ public class Tanque2 : MonoBehaviour
             yield return null;
         }
 
-        // 🔹 Activa animación de giro
-        anim.SetBool("Girar", true);
+        // Si pausaPostEmbestida > 0, esperamos; si no, giramos enseguida
+        if (pausaPostEmbestida > 0)
+            yield return new WaitForSeconds(pausaPostEmbestida);
 
-        // 🔹 Restaura colisiones
-        if (colJugador != null)
-            foreach (var cTan in colisionesTanque)
-                foreach (var cJug in colJugador)
-                    Physics2D.IgnoreCollision(cTan, cJug, false);
-
-        yield return new WaitForSeconds(pausaPostEmbestida);
-
-        // 🔹 Realiza el cambio de orientación y escala tras el giro
+        // 🔹 Inicia el giro inmediatamente
         StartCoroutine(GiroTrasEmbestida());
+
     }
 
     private IEnumerator GiroTrasEmbestida()
     {
-        yield return new WaitForSeconds(1.0f);
-
-        // Cambia la dirección lógica
-        mirandoDerecha = !mirandoDerecha;
-
-        // Fuerza la escala correcta según dirección
-        Vector3 escala = transform.localScale;
-        escala.x = mirandoDerecha ? Mathf.Abs(escala.x) : -Mathf.Abs(escala.x);
-        transform.localScale = escala;
-
-        yield return new WaitForSeconds(0.3f);
+        anim.SetBool("Girar", true);
+        yield return new WaitForSeconds(1.660f);
 
         anim.SetBool("Girar", false);
+        VoltearTanque(!mirandoDerecha);
+        mirandoDerecha = !mirandoDerecha;
+
+
         embistiendo = false;
         atacando = false;
         puedeEmbestir = true;
 
         StartCoroutine(CicloAtaque());
     }
-
-
-
 
 
     // ========== MOVIMIENTO ==========
@@ -257,4 +246,42 @@ public class Tanque2 : MonoBehaviour
         Gizmos.color = Color.red; Gizmos.DrawWireSphere(transform.position, distanciaParada);
         Gizmos.color = Color.cyan; Gizmos.DrawWireSphere(transform.position, distanciaEmbestida);
     }
+
+    private void VoltearTanque(bool mirarDerechaNuevo)
+    {
+        Vector3 escala = transform.localScale;
+        escala.x = mirarDerechaNuevo ? Mathf.Abs(escala.x) : -Mathf.Abs(escala.x);
+        transform.localScale = escala;
+
+        Vector3 pos = puntoDisparo.localPosition;
+        pos.x = -pos.x;
+        puntoDisparo.localPosition = pos;
+    }
+
+    public void RecibirDaño(int cantidad)
+    {
+        if (estaMuerto) return;
+
+        vidaActual -= cantidad;
+        Debug.Log($"💥 Tanque recibió {cantidad} de daño. Vida restante: {vidaActual}");
+
+        if (vidaActual <= 0) Morir();
+    }
+
+    private void Morir()
+    {
+        if (estaMuerto) return;
+        estaMuerto = true;
+        anim.Play("Muerte");
+
+        anim.SetTrigger("Muerte");
+
+        DropLoot drop = GetComponent<DropLoot>();
+        if (drop != null)
+        {
+            drop.SoltarObjetos();
+            Debug.Log("🎲 Drop ejecutado al morir el tanque.");
+        }
+    }
+
 }

@@ -45,6 +45,14 @@ public class Bala : MonoBehaviour
                 impacto = true;
             }
 
+            Tanque2 tanque2 = other.GetComponent<Tanque2>();
+            if (tanque2 != null)
+            {
+                tanque2.RecibirDaño(dano);
+                Debug.Log($"[BALA] 💥 Impacto al Tanque2. Daño enviado: {dano}");
+                impacto = true;
+            }
+
             // 💣 Si impactó contra un enemigo válido, destruir la bala
             if (impacto)
                 Destroy(gameObject);

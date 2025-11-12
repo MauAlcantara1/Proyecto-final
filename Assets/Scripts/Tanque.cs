@@ -203,8 +203,6 @@ public class Tanque : MonoBehaviour
             Vector2 direccion = mirandoDerecha ? Vector2.left : Vector2.right;
             rbBala.linearVelocity = direccion * fuerzaDisparo;
         }
-
-        Debug.Log($"💣 Tanque disparó una bala hacia {(mirandoDerecha ? "derecha" : "izquierda")}.");
     }
 
 
