@@ -23,6 +23,13 @@ public class MovimientoPers : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        // Ignorar colisiones físicas con todos los enemigos al iniciar
+        GameObject[] enemigos = GameObject.FindGameObjectsWithTag("enemigo");
+        foreach (GameObject enemigo in enemigos)
+        {
+            IgnorarColisionesConEnemigo(enemigo);
+        }
     }
 
     void Update()
@@ -115,10 +122,27 @@ public class MovimientoPers : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("enemigo"))
+        if (collision.CompareTag("DañoEnemigo"))
         {
             animTorso.Morir();
         }
     }
+
+    void IgnorarColisionesConEnemigo(GameObject enemigo)
+{
+    Collider2D[] colJugador = GetComponents<Collider2D>();
+    Collider2D[] colEnemigo = enemigo.GetComponents<Collider2D>();
+
+    foreach (Collider2D cj in colJugador)
+    {
+        foreach (Collider2D ce in colEnemigo)
+        {
+            if (!cj.isTrigger && !ce.isTrigger)
+            {
+                Physics2D.IgnoreCollision(cj, ce, true);
+            }
+        }
+    }
+}
     
 }

@@ -22,27 +22,4 @@ public class Disparo : MonoBehaviour
             audioSource.PlayOneShot(sfxDisparo);
         }
     }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.CompareTag("enemigo"))
-        {
-            bool impacto = false;
-
-            EnemOso oso = other.GetComponent<EnemOso>();
-            if (oso != null)
-            {
-                oso.RecibirDanio(dano);
-                Debug.Log($"[cuerpo] 💥 Impacto al Oso. Daño enviado: {dano}");
-                impacto = true;
-            }
-
-            Tanque tanque = other.GetComponent<Tanque>();
-            if (tanque != null)
-            {
-                tanque.RecibirDaño(dano);
-                impacto = true;
-            }
-        }
-    }
 }
