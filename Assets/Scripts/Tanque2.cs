@@ -15,13 +15,13 @@ public class Tanque2 : MonoBehaviour
     [SerializeField] private float pausaEntreCiclos = 4.5f;
 
     [Header("Ataque Secundario (Embestida)")]
-    [SerializeField] private float distanciaEmbestida = 10f;       // Distancia para activar embestida
-    [SerializeField] private float fuerzaEmbestida = 8f;           // Velocidad del impulso
+    [SerializeField] private float distanciaEmbestida = 10f;
+    [SerializeField] private float fuerzaEmbestida = 8f;
     [SerializeField] private float distanciaRecorridoEmbestida = 20f;
     [SerializeField] private float pausaPostEmbestida = 2f;
 
     [Header("Orientación del Sprite")]
-    [SerializeField] private bool miraDerechaPorDefecto = true;
+    [SerializeField] private bool miraDerechaPorDefecto = false;
 
     private Transform jugador;
     private Animator anim;
@@ -37,6 +37,7 @@ public class Tanque2 : MonoBehaviour
     private bool enCicloAtaque = false;
     private bool embistiendo = false;
     private bool girando = false;
+    private bool puedeEmbestir = true;
 
     private void Start()
     {
@@ -50,74 +51,65 @@ public class Tanque2 : MonoBehaviour
             colJugador = jugador.GetComponentsInChildren<Collider2D>();
 
         mirandoDerecha = miraDerechaPorDefecto;
+        spriteRenderer.flipX = !mirandoDerecha;
+
         if (rb != null)
             rb.freezeRotation = true;
-
-        // ✅ Corrige orientación inicial del sprite
-        spriteRenderer.flipX = mirandoDerecha ? false : true;
-
-        Debug.Log($"✅ Tanque2 iniciado mirando {(mirandoDerecha ? "a la derecha" : "a la izquierda")} en Idle (esperando jugador).");
     }
 
     private void Update()
     {
-        if (jugador == null || atacando || embistiendo || girando) return;
+        if (jugador == null || embistiendo || girando)
+            return;
 
         float distancia = Vector2.Distance(transform.position, jugador.position);
 
-        // 🔶 Detecta jugador
+        // Detección inicial
         if (!jugadorDetectado && distancia <= distanciaDeteccion)
         {
             jugadorDetectado = true;
             anim.SetTrigger("DetEnem");
             enMovimiento = true;
-            Debug.Log("🎯 Jugador detectado → Inicia movimiento hacia él.");
         }
 
-        // 🔶 Movimiento
-        if (enMovimiento)
+        // Movimiento hacia el jugador
+        if (enMovimiento && !atacando)
         {
             if (distancia > distanciaParada)
-            {
                 MoverHaciaJugador();
-            }
             else
             {
                 DetenerMovimiento();
                 enMovimiento = false;
                 anim.SetTrigger("DecidirAtk");
-                Debug.Log("🛑 Tanque2 se detiene → Idle 0 (DecidirAtk).");
 
                 if (!enCicloAtaque)
                     Invoke(nameof(IniciarAtaque), retrasoAntesDeAtacar);
             }
         }
 
-        // 🔶 Si el jugador se acerca demasiado → Embestir
-        if (!embistiendo && distancia <= distanciaEmbestida)
-        {
-            CancelInvoke(nameof(IniciarAtaque)); // cancela cualquier otro ataque
-            StartCoroutine(Embestida());
-        }
-
-        // 🔶 Si el jugador se aleja
-        else if (jugadorDetectado && distancia > distanciaDeteccion + 5f)
+        // Si jugador se aleja mucho → reset total
+        if (jugadorDetectado && distancia > distanciaDeteccion + 5f)
         {
             jugadorDetectado = false;
-            anim.ResetTrigger("DetEnem");
-            anim.ResetTrigger("DecidirAtk");
             CancelInvoke(nameof(IniciarAtaque));
-            enCicloAtaque = false;
-            atacando = false;
-            embistiendo = false;
-            girando = false;
-            Debug.Log("🚶‍♂️ Jugador fuera de rango → vuelve a Idle.");
+            ResetEstados();
         }
+    }
+
+    private void ResetEstados()
+    {
+        enMovimiento = false;
+        atacando = false;
+        enCicloAtaque = false;
+        embistiendo = false;
+        girando = false;
+        puedeEmbestir = true;
     }
 
     private void IniciarAtaque()
     {
-        if (enCicloAtaque || embistiendo) return;
+        if (enCicloAtaque || embistiendo || girando) return;
         enCicloAtaque = true;
         atacando = true;
         StartCoroutine(CicloAtaque());
@@ -125,50 +117,74 @@ public class Tanque2 : MonoBehaviour
 
     private IEnumerator CicloAtaque()
     {
-        while (jugadorDetectado && !embistiendo)
+        while (jugadorDetectado && !embistiendo && enCicloAtaque)
         {
+            float distancia = Vector2.Distance(transform.position, jugador.position);
+
+            // Si el jugador está muy cerca → embestir
+            if (puedeEmbestir && distancia <= distanciaEmbestida)
+            {
+                enCicloAtaque = false;
+                atacando = false;
+                StartCoroutine(Embestida());
+                yield break;
+            }
+
+            // Fase de carga
             anim.SetTrigger("Cargar");
-            Debug.Log("⚡ Tanque2 comienza CARGA...");
             yield return new WaitForSeconds(duracionCarga);
 
-            anim.SetTrigger("DispEnem");
-            Debug.Log("💥 Tanque2 dispara...");
-            yield return new WaitForSeconds(duracionDisparo);
+            if (!enCicloAtaque || embistiendo) yield break;
 
+            // Fase de disparo
+            anim.SetTrigger("DispEnem");
+            float tiempo = 0f;
+
+            while (tiempo < duracionDisparo)
+            {
+                if (jugador != null && puedeEmbestir && Vector2.Distance(transform.position, jugador.position) <= distanciaEmbestida)
+                {
+                    enCicloAtaque = false;
+                    atacando = false;
+                    StartCoroutine(Embestida());
+                    yield break;
+                }
+
+                tiempo += Time.deltaTime;
+                yield return null;
+            }
+
+            // Vuelve a carga (no embestida)
             anim.SetTrigger("Volver a disp");
-            Debug.Log("🔁 Tanque2 vuelve a CARGAR (Volver a disp).");
             yield return new WaitForSeconds(pausaEntreCiclos);
         }
 
-        atacando = false;
-        enCicloAtaque = false;
+        ResetEstados();
     }
 
     private IEnumerator Embestida()
     {
+        if (embistiendo) yield break;
+
         embistiendo = true;
         atacando = true;
         enCicloAtaque = false;
-        DetenerMovimiento();
+        puedeEmbestir = false;
 
         anim.SetTrigger("Embestir");
-        Debug.Log("🚀 Embestida iniciada.");
 
-        // 🔹 Ignorar colisiones con jugador
+        // Ignorar colisión con el jugador durante embestida
         if (colJugador != null)
-        {
             foreach (var cTan in colisionesTanque)
                 foreach (var cJug in colJugador)
                     Physics2D.IgnoreCollision(cTan, cJug, true);
-        }
 
-        yield return new WaitForSeconds(0.3f); // pequeña pausa antes del impulso
+        yield return new WaitForSeconds(0.5f);
 
-        Vector3 direccion = (jugador.position - transform.position).normalized;
+        Vector3 direccion = mirandoDerecha ? Vector3.right : Vector3.left;
         float distanciaRecorrida = 0f;
         Vector3 inicio = transform.position;
 
-        // 🔹 Movimiento hacia adelante
         while (distanciaRecorrida < distanciaRecorridoEmbestida)
         {
             transform.Translate(direccion * fuerzaEmbestida * Time.deltaTime, Space.World);
@@ -176,20 +192,13 @@ public class Tanque2 : MonoBehaviour
             yield return null;
         }
 
-        Debug.Log("💥 Tanque2 impacta al jugador (daño aplicado)");
-
-        // 🔹 Reactivar colisiones
+        // Reactivar colisiones
         if (colJugador != null)
-        {
             foreach (var cTan in colisionesTanque)
                 foreach (var cJug in colJugador)
                     Physics2D.IgnoreCollision(cTan, cJug, false);
-        }
 
-        embistiendo = false;
-        atacando = false;
-
-        // 🔁 Inicia animación de giro al terminar la embestida
+        yield return new WaitForSeconds(pausaPostEmbestida);
         StartCoroutine(GiroTrasEmbestida());
     }
 
@@ -197,31 +206,30 @@ public class Tanque2 : MonoBehaviour
     {
         girando = true;
         anim.SetTrigger("Girar");
-        Debug.Log("🔄 Inicia animación de giro...");
-
-        // Espera a que termine la animación de giro (ajusta duración según tu clip)
         yield return new WaitForSeconds(1.2f);
 
-        // ✅ Cambia la dirección visual del sprite
         mirandoDerecha = !mirandoDerecha;
         spriteRenderer.flipX = !spriteRenderer.flipX;
-        Debug.Log($"↩️ Dirección cambiada. Ahora mirando {(mirandoDerecha ? "a la derecha" : "a la izquierda")}");
 
-        yield return new WaitForSeconds(0.3f);
-
-        // 🔁 Luego del giro → vuelve al ciclo de ataques
-        anim.SetTrigger("Cargar");
-        Debug.Log("⚡ Vuelve a cargar tras el giro.");
+        yield return new WaitForSeconds(0.4f);
 
         girando = false;
-        atacando = true;
-        StartCoroutine(CicloAtaque());
+        embistiendo = false;
+        atacando = false;
+
+        anim.SetTrigger("Volver a disp");
+        puedeEmbestir = true;
+        enCicloAtaque = false;
+
+        // 🔁 Reinicia ciclo de disparo
+        Invoke(nameof(IniciarAtaque), 1.5f);
     }
 
     private void MoverHaciaJugador()
     {
-        Vector2 direccion = (jugador.position - transform.position).normalized;
-        bool debeMirarDerecha = direccion.x > 0;
+        if (jugador == null) return;
+        Vector2 dir = (jugador.position - transform.position).normalized;
+        bool debeMirarDerecha = dir.x > 0;
 
         if (debeMirarDerecha != mirandoDerecha)
         {
@@ -229,7 +237,7 @@ public class Tanque2 : MonoBehaviour
             spriteRenderer.flipX = !spriteRenderer.flipX;
         }
 
-        transform.position += (Vector3)(direccion * velocidadMovimiento * Time.deltaTime);
+        transform.position += (Vector3)(dir * velocidadMovimiento * Time.deltaTime);
     }
 
     private void DetenerMovimiento()
@@ -240,13 +248,8 @@ public class Tanque2 : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, distanciaDeteccion);
-
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, distanciaParada);
-
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere(transform.position, distanciaEmbestida);
+        Gizmos.color = Color.yellow; Gizmos.DrawWireSphere(transform.position, distanciaDeteccion);
+        Gizmos.color = Color.red; Gizmos.DrawWireSphere(transform.position, distanciaParada);
+        Gizmos.color = Color.cyan; Gizmos.DrawWireSphere(transform.position, distanciaEmbestida);
     }
 }
