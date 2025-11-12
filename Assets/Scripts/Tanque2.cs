@@ -3,26 +3,27 @@ using UnityEngine;
 
 public class Tanque2 : MonoBehaviour
 {
-    [Header("Detección y Movimiento")]
+    [Header("Rangos y Movimiento")]
     [SerializeField] private float distanciaDeteccion = 25f;
     [SerializeField] private float distanciaParada = 10f;
+    [SerializeField] private float distanciaEmbestida = 3f;
     [SerializeField] private float velocidadMovimiento = 1.5f;
 
     [Header("Ataque Principal (Carga y Disparo)")]
     [SerializeField] private float retrasoAntesDeAtacar = 4f;
-    [SerializeField] private float duracionCarga = 4f;
+    [SerializeField] private float duracionCarga = 1f;
     [SerializeField] private float duracionDisparo = 3f;
     [SerializeField] private float pausaEntreCiclos = 4.5f;
 
     [Header("Ataque Secundario (Embestida)")]
-    [SerializeField] private float distanciaEmbestida = 10f;
     [SerializeField] private float fuerzaEmbestida = 8f;
-    [SerializeField] private float distanciaRecorridoEmbestida = 20f;
+    [SerializeField] private float distanciaRecorridoEmbestida = 7f;
     [SerializeField] private float pausaPostEmbestida = 2f;
 
     [Header("Orientación del Sprite")]
     [SerializeField] private bool miraDerechaPorDefecto = false;
 
+    // Componentes y estados
     private Transform jugador;
     private Animator anim;
     private Rigidbody2D rb;
@@ -30,7 +31,10 @@ public class Tanque2 : MonoBehaviour
     private Collider2D[] colisionesTanque;
     private Collider2D[] colJugador;
 
+    // Estados lógicos
     private bool jugadorDetectado = false;
+    private bool enRangoAtaque = false;
+    private bool enRangoEmbestida = false;
     private bool enMovimiento = false;
     private bool mirandoDerecha;
     private bool atacando = false;
@@ -59,41 +63,36 @@ public class Tanque2 : MonoBehaviour
 
     private void Update()
     {
-        if (jugador == null || embistiendo || girando)
-            return;
+        if (jugador == null || embistiendo || girando) return;
 
         float distancia = Vector2.Distance(transform.position, jugador.position);
 
-        // Detección inicial
-        if (!jugadorDetectado && distancia <= distanciaDeteccion)
-        {
-            jugadorDetectado = true;
-            anim.SetTrigger("DetEnem");
-            enMovimiento = true;
-        }
+        jugadorDetectado = distancia <= distanciaDeteccion;
+        enRangoAtaque = jugadorDetectado && distancia <= distanciaParada && distancia > distanciaEmbestida;
+        enRangoEmbestida = jugadorDetectado && distancia <= distanciaEmbestida;
 
-        // Movimiento hacia el jugador
-        if (enMovimiento && !atacando)
+        if (!jugadorDetectado)
         {
-            if (distancia > distanciaParada)
-                MoverHaciaJugador();
-            else
-            {
-                DetenerMovimiento();
-                enMovimiento = false;
-                anim.SetTrigger("DecidirAtk");
-
-                if (!enCicloAtaque)
-                    Invoke(nameof(IniciarAtaque), retrasoAntesDeAtacar);
-            }
-        }
-
-        // Si jugador se aleja mucho → reset total
-        if (jugadorDetectado && distancia > distanciaDeteccion + 5f)
-        {
-            jugadorDetectado = false;
-            CancelInvoke(nameof(IniciarAtaque));
             ResetEstados();
+            return;
+        }
+
+        if (enRangoEmbestida && puedeEmbestir && !embistiendo)
+        {
+            StartCoroutine(Embestida());
+            return;
+        }
+
+        if (enRangoAtaque && !atacando && !enCicloAtaque)
+        {
+            StartCoroutine(CicloAtaque());
+            return;
+        }
+
+        if (jugadorDetectado && distancia > distanciaParada && !atacando && !embistiendo)
+        {
+            // 🚶 Prioridad 3: moverse
+            MoverHaciaJugador();
         }
     }
 
@@ -107,80 +106,76 @@ public class Tanque2 : MonoBehaviour
         puedeEmbestir = true;
     }
 
-    private void IniciarAtaque()
-    {
-        if (enCicloAtaque || embistiendo || girando) return;
-        enCicloAtaque = true;
-        atacando = true;
-        StartCoroutine(CicloAtaque());
-    }
-
+    // ========== CICLO DE ATAQUE ==========
     private IEnumerator CicloAtaque()
     {
-        while (jugadorDetectado && !embistiendo && enCicloAtaque)
-        {
-            float distancia = Vector2.Distance(transform.position, jugador.position);
+        enCicloAtaque = true;
+        atacando = true;
 
-            // Si el jugador está muy cerca → embestir
+        while (jugadorDetectado && !embistiendo)
+        {
+            // 🔹 Etapa 1: CARGA
+            anim.SetBool("Cargar", true);
+            anim.SetBool("Disparar", false);
+            yield return new WaitForSeconds(duracionCarga);
+
+            // 🔹 Etapa 2: DISPARO
+            anim.SetBool("Cargar", false);
+            anim.SetBool("Disparar", true);
+            yield return new WaitForSeconds(duracionDisparo);
+
+            // 🔹 Etapa 3: Reinicio del ciclo
+            anim.SetBool("Disparar", false);
+            yield return new WaitForSeconds(pausaEntreCiclos);
+
+            // Si el jugador se acercó demasiado, embestir
+            float distancia = Vector2.Distance(transform.position, jugador.position);
             if (puedeEmbestir && distancia <= distanciaEmbestida)
             {
+                anim.SetBool("Cargar", false);
+                anim.SetBool("Disparar", false);
                 enCicloAtaque = false;
                 atacando = false;
                 StartCoroutine(Embestida());
                 yield break;
             }
-
-            // Fase de carga
-            anim.SetTrigger("Cargar");
-            yield return new WaitForSeconds(duracionCarga);
-
-            if (!enCicloAtaque || embistiendo) yield break;
-
-            // Fase de disparo
-            anim.SetTrigger("DispEnem");
-            float tiempo = 0f;
-
-            while (tiempo < duracionDisparo)
-            {
-                if (jugador != null && puedeEmbestir && Vector2.Distance(transform.position, jugador.position) <= distanciaEmbestida)
-                {
-                    enCicloAtaque = false;
-                    atacando = false;
-                    StartCoroutine(Embestida());
-                    yield break;
-                }
-
-                tiempo += Time.deltaTime;
-                yield return null;
-            }
-
-            // Vuelve a carga (no embestida)
-            anim.SetTrigger("Volver a disp");
-            yield return new WaitForSeconds(pausaEntreCiclos);
         }
 
-        ResetEstados();
+        enCicloAtaque = false;
+        atacando = false;
     }
 
-    private IEnumerator Embestida()
+
+
+    // ========== EMBESTIDA ==========
+   private IEnumerator Embestida()
     {
         if (embistiendo) yield break;
 
+        // 🔹 Limpieza de estados anteriores
+        anim.SetBool("Cargar", false);
+        anim.SetBool("Volver a disp", false);
+        anim.SetBool("Girar", false);
+
         embistiendo = true;
-        atacando = true;
+        atacando = false;
         enCicloAtaque = false;
         puedeEmbestir = false;
 
-        anim.SetTrigger("Embestir");
+        // 🔹 Activa animación de embestida
+        anim.SetBool("Embestir", true);
+        yield return null; // permite al Animator cambiar de estado
+        anim.SetBool("Embestir", false);
 
-        // Ignorar colisión con el jugador durante embestida
+        // 🔹 Ignora colisiones mientras embiste
         if (colJugador != null)
             foreach (var cTan in colisionesTanque)
                 foreach (var cJug in colJugador)
                     Physics2D.IgnoreCollision(cTan, cJug, true);
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.3f);
 
+        // 🔹 Movimiento de embestida
         Vector3 direccion = mirandoDerecha ? Vector3.right : Vector3.left;
         float distanciaRecorrida = 0f;
         Vector3 inicio = transform.position;
@@ -192,42 +187,52 @@ public class Tanque2 : MonoBehaviour
             yield return null;
         }
 
-        // Reactivar colisiones
+        // 🔹 Activa animación de giro
+        anim.SetBool("Girar", true);
+
+        // 🔹 Restaura colisiones
         if (colJugador != null)
             foreach (var cTan in colisionesTanque)
                 foreach (var cJug in colJugador)
                     Physics2D.IgnoreCollision(cTan, cJug, false);
 
         yield return new WaitForSeconds(pausaPostEmbestida);
+
+        // 🔹 Realiza el cambio de orientación y escala tras el giro
         StartCoroutine(GiroTrasEmbestida());
     }
 
     private IEnumerator GiroTrasEmbestida()
     {
-        girando = true;
-        anim.SetTrigger("Girar");
-        yield return new WaitForSeconds(1.2f);
+        yield return new WaitForSeconds(1.0f);
 
+        // Cambia la dirección lógica
         mirandoDerecha = !mirandoDerecha;
-        spriteRenderer.flipX = !spriteRenderer.flipX;
 
-        yield return new WaitForSeconds(0.4f);
+        // Fuerza la escala correcta según dirección
+        Vector3 escala = transform.localScale;
+        escala.x = mirandoDerecha ? Mathf.Abs(escala.x) : -Mathf.Abs(escala.x);
+        transform.localScale = escala;
 
-        girando = false;
+        yield return new WaitForSeconds(0.3f);
+
+        anim.SetBool("Girar", false);
         embistiendo = false;
         atacando = false;
-
-        anim.SetTrigger("Volver a disp");
         puedeEmbestir = true;
-        enCicloAtaque = false;
 
-        // 🔁 Reinicia ciclo de disparo
-        Invoke(nameof(IniciarAtaque), 1.5f);
+        StartCoroutine(CicloAtaque());
     }
 
+
+
+
+
+    // ========== MOVIMIENTO ==========
     private void MoverHaciaJugador()
     {
         if (jugador == null) return;
+
         Vector2 dir = (jugador.position - transform.position).normalized;
         bool debeMirarDerecha = dir.x > 0;
 
