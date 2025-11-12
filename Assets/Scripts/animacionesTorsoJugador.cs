@@ -29,6 +29,11 @@ public class animacionesTorsoJugador : MonoBehaviour
         animator.SetBool("Arriba", Arriba);
     }
 
+    public void ActualizarGolpe(bool Golpe)
+    {
+        animator.SetBool("Golpe", Golpe);
+    }
+
     public void MostrarSprite()
     {
         if (piernas != null)
