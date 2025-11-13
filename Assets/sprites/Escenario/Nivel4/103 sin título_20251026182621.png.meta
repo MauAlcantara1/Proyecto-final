@@ -698,7 +698,7 @@ TextureImporter:
         width: 63
         height: 272
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -720,7 +720,7 @@ TextureImporter:
         width: 63
         height: 272
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -729,6 +729,28 @@ TextureImporter:
       bones: []
       spriteID: 56a9943661019bc4187541306ad0af60
       internalID: -1474601628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 0
+        width: 401
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69a5966cdcb4a34289e4684a59cfbb4
+      internalID: 1293353547
       vertices: []
       indices: 
       edges: []
@@ -767,6 +789,7 @@ TextureImporter:
       "103 sin t\xEDtulo_20251026182621_7": 4259560810850839835
       "103 sin t\xEDtulo_20251026182621_8": 6302193639463382546
       "103 sin t\xEDtulo_20251026182621_9": -316668223725722839
+      fondo: 1293353547
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

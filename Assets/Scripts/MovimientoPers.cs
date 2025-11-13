@@ -7,7 +7,6 @@ public class MovimientoPers : MonoBehaviour
     public float jumpForce = 10f;
     public Transform controladorDisparo;
     private Rigidbody2D rb;
-
     private bool isGrounded = true;
 
     public animacionesPiernasJugador animPiernas;
@@ -18,15 +17,27 @@ public class MovimientoPers : MonoBehaviour
     private float duracionArriba = 0.2f;
     private float tiempoArriba = 0;
 
+    private float tiempoGolpe = 0;
+
+    private float duracionGolpe = 0.2f;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        if (rb == null)
-            Debug.LogError("No se encontró Rigidbody2D en el personaje!");
+
+        GameObject[] enemigos = GameObject.FindGameObjectsWithTag("enemigo");
+        foreach (GameObject enemigo in enemigos)
+        {
+            IgnorarColisionesConEnemigo(enemigo);
+        }
     }
 
     void Update()
     {
+        if (animTorso != null && animTorso.muerto)
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            return;
+        }
         float move = 0f;
         if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)
             move = -1f;
@@ -37,7 +48,6 @@ public class MovimientoPers : MonoBehaviour
 
         if (Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded)
         {
-            Debug.Log("Saltó");
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             isGrounded = false;
         }
@@ -51,17 +61,23 @@ public class MovimientoPers : MonoBehaviour
         animPiernas?.ActualizarMovimiento(velocidadAbs);
         animTorso?.ActualizarMovimiento(velocidadAbs);
 
+        if (Keyboard.current.kKey.isPressed)
+            tiempoGolpe = duracionGolpe;
+
+        if (Keyboard.current.kKey.wasPressedThisFrame)
+            tiempoGolpe = duracionGolpe;
+
         if (Keyboard.current.wKey.wasPressedThisFrame)
             tiempoArriba = duracionArriba;
 
         if (Keyboard.current.wKey.isPressed)
-            tiempoArriba = duracionArriba; 
-    
+            tiempoArriba = duracionArriba;
+
         if (Keyboard.current.jKey.wasPressedThisFrame)
             tiempoDisparo = duracionDisparo;
 
         if (Keyboard.current.jKey.isPressed)
-        tiempoDisparo = duracionDisparo;
+            tiempoDisparo = duracionDisparo;
 
         if (tiempoDisparo > 0)
             tiempoDisparo -= Time.deltaTime;
@@ -69,27 +85,27 @@ public class MovimientoPers : MonoBehaviour
         if (tiempoArriba > 0)
             tiempoArriba -= Time.deltaTime;
 
+        if (tiempoGolpe > 0)
+            tiempoGolpe -= Time.deltaTime;
+
         bool Arriba = tiempoArriba > 0;
         animTorso?.ActualizarPosicion(Arriba);
 
         bool Disparo = tiempoDisparo > 0;
         animTorso?.ActualizarDisparo(Disparo);
 
-        // direccion disparo
-        if (tiempoArriba > 0) // Arriba
+        bool Golpe = tiempoGolpe > 0;
+        animTorso?.ActualizarGolpe(Golpe);
+
+        if (tiempoArriba > 0)
         {
             controladorDisparo.right = Vector2.up;
         }
         else
         {
-            if (transform.localScale.x > 0) // derecha
-                controladorDisparo.right = Vector2.right;
-            else // izquierda
-                controladorDisparo.right = Vector2.left;
+            controladorDisparo.right = transform.localScale.x > 0 ? Vector2.right : Vector2.left;
         }
-
     }
-
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -103,4 +119,29 @@ public class MovimientoPers : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("DañoEnemigo"))
+        {
+            animTorso.Morir();
+        }
+    }
+
+    void IgnorarColisionesConEnemigo(GameObject enemigo)
+    {
+        Collider2D[] colJugador = GetComponents<Collider2D>();
+        Collider2D[] colEnemigo = enemigo.GetComponents<Collider2D>();
+
+        foreach (Collider2D cj in colJugador)
+        {
+            foreach (Collider2D ce in colEnemigo)
+            {
+                if (!cj.isTrigger && !ce.isTrigger)
+                {
+                    Physics2D.IgnoreCollision(cj, ce, true);
+                }
+            }
+        }
+    }
+    
 }

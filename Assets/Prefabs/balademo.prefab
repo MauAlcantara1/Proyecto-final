@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6545976811065592674}
   m_Layer: 0
   m_Name: balademo
-  m_TagString: Untagged
+  m_TagString: bala
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.3348, y: 0.0425, z: 0}
-  m_LocalScale: {x: 23.796999, y: 32.072, z: 10}
+  m_LocalScale: {x: 7, y: 7, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Bala
   velocidad: 20
   dano: 1
-  tiempoVida: 0.8
+  tiempoVida: 1
   direccion: {x: 1, y: 0}
 --- !u!95 &6545976811065592674
 Animator:
