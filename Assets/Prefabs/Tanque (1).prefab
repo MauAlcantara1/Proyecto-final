@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7556328499482267231}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: controladorAtaque
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 2471103205021198409}
   - component: {fileID: 7080154830789625816}
   - component: {fileID: 1274743912470110922}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tanque (1)
   m_TagString: enemigo
   m_Icon: {fileID: 0}

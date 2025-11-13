@@ -14,7 +14,6 @@ public class Tanque2 : MonoBehaviour
     [SerializeField] private float duracionCarga = 1f;
     [SerializeField] private float duracionDisparo = 3f;
     [SerializeField] private float pausaEntreCiclos = 4.5f;
-    [SerializeField] private Transform puntoDisparo;
 
     [Header("Ataque Secundario (Embestida)")]
     [SerializeField] private float fuerzaEmbestida = 8f;
@@ -25,6 +24,10 @@ public class Tanque2 : MonoBehaviour
     [SerializeField] private bool miraDerechaPorDefecto = false;
     private bool estaMuerto = false;
     private int vidaActual;
+
+    [SerializeField] private GameObject prefabBala; // 🟩 NUEVO
+    [SerializeField] private Transform puntoDisparo; // 🟩 NUEVO
+    [SerializeField] private float fuerzaDisparo = 8f; // 🟩 NUEVO
 
 
 
@@ -62,7 +65,7 @@ public class Tanque2 : MonoBehaviour
             colJugador = jugador.GetComponentsInChildren<Collider2D>();
 
         mirandoDerecha = miraDerechaPorDefecto;
-        spriteRenderer.flipX = !mirandoDerecha;
+        VoltearTanque(mirandoDerecha);
 
         if (rb != null)
             rb.freezeRotation = true;
@@ -137,7 +140,6 @@ public class Tanque2 : MonoBehaviour
             anim.SetBool("Disparar", false);
             yield return new WaitForSeconds(pausaEntreCiclos);
 
-            // Si el jugador se acercó demasiado, embestir
             float distancia = Vector2.Distance(transform.position, jugador.position);
             if (puedeEmbestir && distancia <= distanciaEmbestida)
             {
@@ -206,7 +208,7 @@ public class Tanque2 : MonoBehaviour
 
         anim.SetBool("Girar", false);
         VoltearTanque(!mirandoDerecha);
-        mirandoDerecha = !mirandoDerecha;
+
 
 
         embistiendo = false;
@@ -227,8 +229,7 @@ public class Tanque2 : MonoBehaviour
 
         if (debeMirarDerecha != mirandoDerecha)
         {
-            mirandoDerecha = debeMirarDerecha;
-            spriteRenderer.flipX = !spriteRenderer.flipX;
+            VoltearTanque(debeMirarDerecha);
         }
 
         transform.position += (Vector3)(dir * velocidadMovimiento * Time.deltaTime);
@@ -249,14 +250,16 @@ public class Tanque2 : MonoBehaviour
 
     private void VoltearTanque(bool mirarDerechaNuevo)
     {
-        Vector3 escala = transform.localScale;
-        escala.x = mirarDerechaNuevo ? Mathf.Abs(escala.x) : -Mathf.Abs(escala.x);
-        transform.localScale = escala;
+        mirandoDerecha = mirarDerechaNuevo;
 
-        Vector3 pos = puntoDisparo.localPosition;
-        pos.x = -pos.x;
-        puntoDisparo.localPosition = pos;
+        Vector3 escala = transform.localScale;
+        escala.x = mirandoDerecha ? Mathf.Abs(escala.x) : -Mathf.Abs(escala.x);
+        transform.localScale = escala;
+        
     }
+
+
+
 
     public void RecibirDaño(int cantidad)
     {
@@ -272,9 +275,30 @@ public class Tanque2 : MonoBehaviour
     {
         if (estaMuerto) return;
         estaMuerto = true;
+
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.isKinematic = true; // Evita que la física lo mueva más
+        }
+
+        // 🚫 Desactivar colisiones con el jugador o proyectiles
+        if (colisionesTanque != null)
+            colisionesTanque.enabled = false;
         anim.Play("Muerte");
 
         anim.SetTrigger("Muerte");
+
+        StopAllCoroutines();
+
+        GameObject[] balas = GameObject.FindGameObjectsWithTag("bala");
+        foreach (GameObject bala in balas)
+        {
+            Collider2D colBala = bala.GetComponent<Collider2D>();
+            if (colBala != null && colisionesTanque != null)
+                Physics2D.IgnoreCollision(colisionesTanque, colBala, true);
+        }
+
 
         DropLoot drop = GetComponent<DropLoot>();
         if (drop != null)
@@ -283,5 +307,20 @@ public class Tanque2 : MonoBehaviour
             Debug.Log("🎲 Drop ejecutado al morir el tanque.");
         }
     }
+
+    private void Disparar()
+    {
+        GameObject bala = Instantiate(prefabBala, puntoDisparo.position, puntoDisparo.rotation);
+        Rigidbody2D rbBala = bala.GetComponent<Rigidbody2D>();
+
+        if (rbBala != null)
+        {
+            // Dirección depende del signo de la escala X
+            float direccionX = Mathf.Sign(transform.localScale.x);
+            rbBala.linearVelocity = new Vector2(direccionX * fuerzaDisparo, 0f);
+        }
+    }
+
+
 
 }

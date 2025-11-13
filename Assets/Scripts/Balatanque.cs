@@ -9,7 +9,16 @@ public class Balatanque : MonoBehaviour
 
     void Start()
     {
-        // Destruye la bala después de un tiempo para evitar acumular basura
         Destroy(gameObject, tiempoVida);
     }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.collider.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
+    }
+
+
 }

@@ -1585,7 +1585,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "4 sin t\xEDtulo_20251008095638_57"
+      name: muerte1
       rect:
         serializedVersion: 2
         x: 80
@@ -1629,13 +1629,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "4 sin t\xEDtulo_20251008095638_59"
+      name: muerte
       rect:
         serializedVersion: 2
-        x: 3
+        x: 1
         y: 899
-        width: 74
-        height: 88
+        width: 76
+        height: 91
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1651,13 +1651,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "4 sin t\xEDtulo_20251008095638_60"
+      name: muerte2
       rect:
         serializedVersion: 2
         x: 160
         y: 899
         width: 77
-        height: 88
+        height: 97
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1673,13 +1673,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "4 sin t\xEDtulo_20251008095638_61"
+      name: muerte3
       rect:
         serializedVersion: 2
         x: 240
         y: 899
         width: 90
-        height: 74
+        height: 97
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1827,18 +1827,18 @@ TextureImporter:
       "4 sin t\xEDtulo_20251008095638_54": -5208440383988341133
       "4 sin t\xEDtulo_20251008095638_55": 6564890141137795480
       "4 sin t\xEDtulo_20251008095638_56": 4929802267460236089
-      "4 sin t\xEDtulo_20251008095638_57": -6624119974294263998
       "4 sin t\xEDtulo_20251008095638_58": 5919194309830923796
-      "4 sin t\xEDtulo_20251008095638_59": -8757724668851561824
       "4 sin t\xEDtulo_20251008095638_6": 2505953010044783880
-      "4 sin t\xEDtulo_20251008095638_60": 5836680242553510101
-      "4 sin t\xEDtulo_20251008095638_61": 8153171685078565170
       "4 sin t\xEDtulo_20251008095638_62": 9016335529466268752
       "4 sin t\xEDtulo_20251008095638_63": 8045200583864902666
       "4 sin t\xEDtulo_20251008095638_64": -7197384338805448534
       "4 sin t\xEDtulo_20251008095638_7": 9036689717677288799
       "4 sin t\xEDtulo_20251008095638_8": 6928687106474033379
       "4 sin t\xEDtulo_20251008095638_9": 3358381173192922829
+      muerte: -8757724668851561824
+      muerte1: -6624119974294263998
+      muerte2: 5836680242553510101
+      muerte3: 8153171685078565170
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
