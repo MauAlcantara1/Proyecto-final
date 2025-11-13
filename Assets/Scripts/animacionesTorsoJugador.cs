@@ -7,11 +7,14 @@ public class animacionesTorsoJugador : MonoBehaviour
 
     public SpriteRenderer piernas;
     public bool muerto = false;
-    private bool inmune = false;  
+    private bool inmune = false;
+    private GolpeJugador golpeJugador;
 
     void Start()
     {
         animator = GetComponent<Animator>();
+        golpeJugador = GetComponentInChildren<GolpeJugador>();
+
     }
 
     public void ActualizarMovimiento(float movx)
@@ -27,6 +30,11 @@ public class animacionesTorsoJugador : MonoBehaviour
     public void ActualizarPosicion(bool Arriba)
     {
         animator.SetBool("Arriba", Arriba);
+    }
+
+    public void ActualizarGolpe(bool Golpe)
+    {
+        animator.SetBool("Golpe", Golpe);
     }
 
     public void MostrarSprite()
@@ -68,11 +76,23 @@ public class animacionesTorsoJugador : MonoBehaviour
         inmune = false;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void EjecutarGolpe()
     {
-        if (collision.CompareTag("Daño"))
+        if (golpeJugador != null)
         {
-            Morir();
+            golpeJugador.ActivarGolpe();
+        }
+        else
+        {
+            Debug.LogWarning("GolpeJugador no encontrado en hijos del torso");
+        }
+    }
+
+    public void TerminarGolpe()
+    {
+        if (golpeJugador != null)
+        {
+            golpeJugador.DesactivarGolpe();
         }
     }
 }

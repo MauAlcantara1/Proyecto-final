@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Disparo : MonoBehaviour
 {
+    [SerializeField] private int dano = 3;
+
     [SerializeField] private Transform controladorDisparo;
     [SerializeField] private GameObject bala;
 
-    [SerializeField] private AudioSource audioSource;   // <-- nuevo
-    [SerializeField] private AudioClip sfxDisparo;      // <-- nuevo
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip sfxDisparo;
 
     private void Disparar()
     {

@@ -96,7 +96,6 @@ public class EnemOso : MonoBehaviour
             return;
         }
 
-        // Detección y movimiento
         if (distancia <= rangoDeteccion && !detectando && !preparando && !avanzando && !atacando && !agachandose && !enCicloAtaque)
         {
             detectando = true;
@@ -223,10 +222,12 @@ private void PasarAAvanzar()
         Vector3 direccion = (jugador.position - transform.position).normalized;
         transform.position += direccion * velocidad * Time.deltaTime;
 
-        bool flipDeseado = spriteMiraDerecha ? (direccion.x < 0f) : (direccion.x > 0f);
-        spriteRenderer.flipX = flipDeseado;
-        ultimoFlip = flipDeseado;
+        if (direccion.x < -0.1f)
+            transform.localScale = new Vector3(-Mathf.Abs(escalaOriginal.x), escalaOriginal.y, escalaOriginal.z);
+        else if (direccion.x > 0.1f)
+            transform.localScale = new Vector3(Mathf.Abs(escalaOriginal.x), escalaOriginal.y, escalaOriginal.z);
     }
+
 
     private void ReiniciarEstadosSinIdle()
     {
@@ -240,12 +241,11 @@ private void PasarAAvanzar()
         animator.ResetTrigger("RepAtk");
         animator.ResetTrigger("Agacharse");
 
-        Debug.Log("[EnemOso] Estados reiniciados (sin forzar Idle).");
     }
 
 public void RecibirDanio(int cantidad)
 {
-    if (invulnerable) return; // <--- NO recibe daño hasta que la bandera se apague
+    if (invulnerable) return; 
     if (vidaActual <= 0 || huyendo) return;
 
     vidaActual -= cantidad;
@@ -260,7 +260,7 @@ public void RecibirDanio(int cantidad)
 }
 
 
-    private IEnumerator CaerYHuir()
+        private IEnumerator CaerYHuir()
     {
         Debug.Log("[EnemOso] → CaerYHuir() iniciado");
 
@@ -290,58 +290,36 @@ public void RecibirDanio(int cantidad)
         cayendo = false;
         huyendo = true;
 
+        DropLoot drop = GetComponent<DropLoot>() ?? GetComponentInChildren<DropLoot>();
+        if (drop != null)
+        {
+            drop.SoltarObjetos();
+        }
+
+
         if (estabaAgachado)
             animator.SetTrigger("Huir0");
         else
             animator.SetTrigger("Huir");
 
-        Debug.Log("[EnemOso]  Huyendo rápidamente hacia la izquierda");
+        Vector2 direccionHuida = (transform.position.x < jugador.position.x) ? Vector2.left : Vector2.right;
 
-        if (jugador != null)
+        if (direccionHuida == Vector2.left)
+            transform.localScale = new Vector3(-Mathf.Abs(escalaOriginal.x), escalaOriginal.y, escalaOriginal.z);
+        else
+            transform.localScale = new Vector3(Mathf.Abs(escalaOriginal.x), escalaOriginal.y, escalaOriginal.z);
+
+        Debug.Log($"[EnemOso]  Huyendo hacia {(direccionHuida == Vector2.left ? "izquierda" : "derecha")}");
+
+        while (jugador != null && Vector2.Distance(transform.position, jugador.position) < 14f)
         {
-            Collider2D[] collidersOso = GetComponents<Collider2D>();
-            Collider2D[] collidersJugador = jugador.GetComponents<Collider2D>();
-
-            foreach (var colOso in collidersOso)
-            {
-                foreach (var colJug in collidersJugador)
-                {
-                    Physics2D.IgnoreCollision(colOso, colJug, true);
-                }
-            }
-
-            Debug.Log("[EnemOso]  Ignorando colisiones con el jugador durante huida");
-        }
-
-        while (jugador != null && Vector2.Distance(transform.position, jugador.position) < 4.7f)
-        {
-            transform.Translate(Vector2.left * velocidadHuida * Time.deltaTime);
+            transform.Translate(direccionHuida * velocidadHuida * Time.deltaTime);
             yield return null;
         }
 
-        // Drop justo donde el oso muere/huye
-        DropLoot drop = GetComponent<DropLoot>();
-        if (drop != null)
-        {
-            Debug.Log("[EnemOso] DropLoot encontrado → Ejecutando SoltarObjetos()");
-            drop.SoltarObjetos();
-        }
-        else
-        {
-            Debug.LogWarning("[EnemOso] No se encontró DropLoot en objeto, buscando en hijos...");
-            DropLoot dropHijo = GetComponentInChildren<DropLoot>();
-            if (dropHijo != null)
-            {
-                Debug.Log("[EnemOso] DropLoot encontrado en hijo → Ejecutando SoltarObjetos()");
-                dropHijo.SoltarObjetos();
-            }
-            else
-            {
-                Debug.LogError("[EnemOso] No se encontró DropLoot → NO HAY DROP");
-            }
-        }
 
-        Debug.Log("[EnemOso]  Oso desaparece tras huir");
+
         Destroy(gameObject);
     }
+
 }

@@ -299,6 +299,119 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &17888109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 17888110}
+  - component: {fileID: 17888112}
+  - component: {fileID: 17888111}
+  m_Layer: 0
+  m_Name: Fio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &17888110
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17888109}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -35.8, y: -6.7, z: 0}
+  m_LocalScale: {x: 5.891502, y: 5.891502, z: 5.891502}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 516436696}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &17888111
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17888109}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f664dc5a17a0dfa43861f8c90048d369, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!212 &17888112
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17888109}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: -5627015171945004233, guid: 4953618e026fc2a4988a447f71f98c73, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &50865746
 GameObject:
   m_ObjectHideFlags: 0
@@ -1492,6 +1605,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &516436695
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 516436696}
+  m_Layer: 0
+  m_Name: Fio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &516436696
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516436695}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.40793, y: 5.67703, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 17888110}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &530759044
 GameObject:
   m_ObjectHideFlags: 0
@@ -1582,6 +1727,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!224 &564110183 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3010338536334842280, guid: bb05e11059120654d86da03a93d724bb, type: 3}
+  m_PrefabInstance: {fileID: 1977447990}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &567340318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1740,6 +1890,7 @@ GameObject:
   - component: {fileID: 619894569}
   - component: {fileID: 619894571}
   - component: {fileID: 619894570}
+  - component: {fileID: 619894572}
   m_Layer: 0
   m_Name: Tenkiu1 (11)
   m_TagString: Untagged
@@ -1842,6 +1993,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &619894572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619894568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dddca0a25030e74daf750fa478b8004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimarPorDistancia
+  jugador: {fileID: 1204387871}
+  distanciaActivacion: 15
+  nombreAnimacion: Tenkiu1
 --- !u!1001 &628089956
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2076,7 +2242,7 @@ GameObject:
   - component: {fileID: 651365245}
   m_Layer: 0
   m_Name: Obstaculo (3)
-  m_TagString: Untagged
+  m_TagString: "Da\xF1oEnemigo"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2126,7 +2292,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -2347,7 +2513,7 @@ GameObject:
   - component: {fileID: 682364977}
   m_Layer: 0
   m_Name: Obstaculo (1)
-  m_TagString: Untagged
+  m_TagString: "Da\xF1oEnemigo"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2397,7 +2563,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -2429,6 +2595,7 @@ PolygonCollider2D:
       - {x: -0.114999995, y: 0.10818879}
       - {x: -0.13261037, y: 0.05159233}
       - {x: -0.18137631, y: 0.016377684}
+      - {x: -0.18998711, y: -0.029500607}
       - {x: -0.1961399, y: -0.06228321}
       - {x: -0.005, y: -0.06}
       - {x: 0.015, y: -0.04}
@@ -3411,6 +3578,7 @@ GameObject:
   - component: {fileID: 877434918}
   - component: {fileID: 877434920}
   - component: {fileID: 877434919}
+  - component: {fileID: 877434921}
   m_Layer: 0
   m_Name: Tenkiu1 (3)
   m_TagString: Untagged
@@ -3513,6 +3681,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &877434921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877434917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dddca0a25030e74daf750fa478b8004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimarPorDistancia
+  jugador: {fileID: 1204387871}
+  distanciaActivacion: 15
+  nombreAnimacion: Tenkiu1
 --- !u!114 &886089469 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5921755047753472066, guid: bb05e11059120654d86da03a93d724bb, type: 3}
@@ -4004,6 +4187,102 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 15.559029, y: 0.34925652}
   m_EdgeRadius: 0
+--- !u!1 &979761180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 979761183}
+  - component: {fileID: 979761182}
+  - component: {fileID: 979761181}
+  m_Layer: 0
+  m_Name: to (2)
+  m_TagString: "Da\xF1oEnemigo"
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &979761181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979761180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d71a343168698644c83b93f235fa5450, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  destino: {x: 80, y: 2, z: 0}
+  bloquearCamaraAlEntrar: 0
+  liberarCamaraAlLlegar: 0
+  fadeOut: {fileID: 1811575626}
+  retraso: 2
+--- !u!61 &979761182
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979761180}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.41414642, y: 4.7643404}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 3.2640076, y: 0.47870255}
+  m_EdgeRadius: 0
+--- !u!4 &979761183
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979761180}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 86.81, y: -8.71, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &983232165
 GameObject:
   m_ObjectHideFlags: 0
@@ -4638,7 +4917,7 @@ GameObject:
   - component: {fileID: 1025448905}
   m_Layer: 0
   m_Name: Obstaculo (5)
-  m_TagString: Untagged
+  m_TagString: "Da\xF1oEnemigo"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4688,7 +4967,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -5811,6 +6090,7 @@ GameObject:
   - component: {fileID: 1365395314}
   - component: {fileID: 1365395316}
   - component: {fileID: 1365395315}
+  - component: {fileID: 1365395317}
   m_Layer: 0
   m_Name: Tenkiu1 (6)
   m_TagString: Untagged
@@ -5913,6 +6193,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1365395317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365395313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dddca0a25030e74daf750fa478b8004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimarPorDistancia
+  jugador: {fileID: 1204387871}
+  distanciaActivacion: 15
+  nombreAnimacion: Tenkiu1
 --- !u!1 &1375753502
 GameObject:
   m_ObjectHideFlags: 0
@@ -6182,9 +6477,9 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -8.894257, y: 0.23725986}
-  - {x: 0.54977256, y: 0.3045987}
-  - {x: 0.6206076, y: 0.31810588}
+  - {x: -8.900996, y: 0.31813383}
+  - {x: 0.53281397, y: 0.38599813}
+  - {x: 0.6239989, y: 0.38933036}
   - {x: 0.7431678, y: 0.3689553}
   - {x: 0.75404423, y: 0.4420102}
   - {x: 0.81962496, y: 0.47810492}
@@ -6294,11 +6589,11 @@ PrefabInstance:
       objectReference: {fileID: 886089469}
     - target: {fileID: 7417369988130022333, guid: 3dd38b7ef3d50cd44a266534cc2e14a7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.8
+      value: -6.6
       objectReference: {fileID: 0}
     - target: {fileID: 7417369988130022333, guid: 3dd38b7ef3d50cd44a266534cc2e14a7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7417369988130022333, guid: 3dd38b7ef3d50cd44a266534cc2e14a7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7124,6 +7419,7 @@ GameObject:
   - component: {fileID: 1503143298}
   - component: {fileID: 1503143300}
   - component: {fileID: 1503143299}
+  - component: {fileID: 1503143301}
   m_Layer: 0
   m_Name: Tenkiu1 (8)
   m_TagString: Untagged
@@ -7226,6 +7522,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1503143301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503143297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dddca0a25030e74daf750fa478b8004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimarPorDistancia
+  jugador: {fileID: 1204387871}
+  distanciaActivacion: 15
+  nombreAnimacion: Tenkiu1
 --- !u!4 &1503944359 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1952969614376503667, guid: ab51b19578a9dae488f077e9280e858b, type: 3}
@@ -7321,6 +7632,102 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1537514841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1537514844}
+  - component: {fileID: 1537514843}
+  - component: {fileID: 1537514842}
+  m_Layer: 0
+  m_Name: to (1)
+  m_TagString: "Da\xF1oEnemigo"
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1537514842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537514841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d71a343168698644c83b93f235fa5450, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  destino: {x: 80, y: 2, z: 0}
+  bloquearCamaraAlEntrar: 0
+  liberarCamaraAlLlegar: 0
+  fadeOut: {fileID: 1811575626}
+  retraso: 2
+--- !u!61 &1537514843
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537514841}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.41414642, y: 4.7643404}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 3.2640076, y: 0.47870255}
+  m_EdgeRadius: 0
+--- !u!4 &1537514844
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537514841}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 95.45, y: -8.31, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1550219080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8104,6 +8511,7 @@ GameObject:
   - component: {fileID: 1705013957}
   - component: {fileID: 1705013959}
   - component: {fileID: 1705013958}
+  - component: {fileID: 1705013960}
   m_Layer: 0
   m_Name: Tenkiu1 (12)
   m_TagString: Untagged
@@ -8206,6 +8614,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1705013960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705013956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dddca0a25030e74daf750fa478b8004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimarPorDistancia
+  jugador: {fileID: 1204387871}
+  distanciaActivacion: 15
+  nombreAnimacion: Tenkiu1
 --- !u!1 &1734659569
 GameObject:
   m_ObjectHideFlags: 0
@@ -8220,7 +8643,7 @@ GameObject:
   - component: {fileID: 1734659571}
   m_Layer: 0
   m_Name: Obstaculo (4)
-  m_TagString: Untagged
+  m_TagString: "Da\xF1oEnemigo"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8270,7 +8693,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -8602,7 +9025,7 @@ GameObject:
   - component: {fileID: 1776700304}
   m_Layer: 0
   m_Name: Obstaculo
-  m_TagString: Untagged
+  m_TagString: "Da\xF1oEnemigo"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8652,7 +9075,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -8828,6 +9251,7 @@ GameObject:
   - component: {fileID: 1801581070}
   - component: {fileID: 1801581072}
   - component: {fileID: 1801581071}
+  - component: {fileID: 1801581073}
   m_Layer: 0
   m_Name: Tenkiu1 (7)
   m_TagString: Untagged
@@ -8930,6 +9354,133 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1801581073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801581069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dddca0a25030e74daf750fa478b8004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimarPorDistancia
+  jugador: {fileID: 1204387871}
+  distanciaActivacion: 15
+  nombreAnimacion: Tenkiu1
+--- !u!1 &1811575625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1811575630}
+  - component: {fileID: 1811575629}
+  - component: {fileID: 1811575628}
+  - component: {fileID: 1811575626}
+  - component: {fileID: 1811575627}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1811575626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811575625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b4dc7e7830358745b1993feeceeb00e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Fade
+  animator: {fileID: 1811575627}
+--- !u!95 &1811575627
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811575625}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 041a88d4123af274794b1fd8697515a9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1811575628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811575625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 56.85
+--- !u!222 &1811575629
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811575625}
+  m_CullTransparentMesh: 1
+--- !u!224 &1811575630
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811575625}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 564110183}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1816311806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9018,7 +9569,7 @@ GameObject:
   - component: {fileID: 1839792000}
   m_Layer: 0
   m_Name: Obstaculo (2)
-  m_TagString: Untagged
+  m_TagString: "Da\xF1oEnemigo"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9068,7 +9619,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -9246,6 +9797,7 @@ GameObject:
   - component: {fileID: 1867235273}
   - component: {fileID: 1867235275}
   - component: {fileID: 1867235274}
+  - component: {fileID: 1867235276}
   m_Layer: 0
   m_Name: Tenkiu1 (5)
   m_TagString: Untagged
@@ -9348,6 +9900,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1867235276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867235272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dddca0a25030e74daf750fa478b8004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimarPorDistancia
+  jugador: {fileID: 1204387871}
+  distanciaActivacion: 15
+  nombreAnimacion: Tenkiu1
 --- !u!1001 &1884732736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9433,6 +10000,7 @@ GameObject:
   - component: {fileID: 1910180329}
   - component: {fileID: 1910180331}
   - component: {fileID: 1910180330}
+  - component: {fileID: 1910180332}
   m_Layer: 0
   m_Name: Tenkiu1 (13)
   m_TagString: Untagged
@@ -9535,6 +10103,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1910180332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910180328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dddca0a25030e74daf750fa478b8004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimarPorDistancia
+  jugador: {fileID: 1204387871}
+  distanciaActivacion: 15
+  nombreAnimacion: Tenkiu1
 --- !u!1 &1942775146
 GameObject:
   m_ObjectHideFlags: 0
@@ -9888,8 +10471,12 @@ PrefabInstance:
       value: -50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5931983449434688735, guid: bb05e11059120654d86da03a93d724bb, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3010338536334842280, guid: bb05e11059120654d86da03a93d724bb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1811575630}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb05e11059120654d86da03a93d724bb, type: 3}
 --- !u!1 &1990299724
@@ -11255,3 +11842,6 @@ SceneRoots:
   - {fileID: 2077359903}
   - {fileID: 618137405}
   - {fileID: 703351785}
+  - {fileID: 1537514844}
+  - {fileID: 979761183}
+  - {fileID: 516436696}

@@ -131,12 +131,18 @@ public class Tanque : MonoBehaviour
             }
         }
 
+        if (info.IsName("Disparo") && info.normalizedTime >= 0.95f)
+            {
+                balaDisparada = false;
+            }
+
+
         // 🟩 NUEVO: durante la animación de Disparo, dispara la bala en el momento medio
-        if (info.IsName("Disparo") && info.normalizedTime >= 0.5f && !balaDisparada)
-        {
-            Disparar();
-            balaDisparada = true;
-        }
+        //if (info.IsName("Disparo") && info.normalizedTime >= 0.5f && !balaDisparada)
+        //{
+        //    Disparar();
+        //    balaDisparada = true;
+        //}
 
         if (disparoHecho)
         {
@@ -186,27 +192,20 @@ public class Tanque : MonoBehaviour
         }
     }
 
-    // 🟩 NUEVO: Método para disparar una bala
     private void Disparar()
     {
-        if (prefabBala == null || puntoDisparo == null)
-        {
-            Debug.LogWarning("⚠️ Falta asignar prefabBala o puntoDisparo en el tanque.");
-            return;
-        }
-
         GameObject bala = Instantiate(prefabBala, puntoDisparo.position, puntoDisparo.rotation);
 
         Rigidbody2D rbBala = bala.GetComponent<Rigidbody2D>();
         if (rbBala != null)
         {
+            // 🔁 Invertimos la dirección porque el sprite está al revés
             Vector2 direccion = mirandoDerecha ? Vector2.left : Vector2.right;
             rbBala.linearVelocity = direccion * fuerzaDisparo;
-
         }
-
-        Debug.Log("💣 Tanque disparó una bala.");
     }
+
+
 
     public void RecibirDaño(int cantidad)
     {
@@ -315,10 +314,9 @@ public class Tanque : MonoBehaviour
 
     private void FlipSprite()
     {
-        mirandoDerecha = !mirandoDerecha;
-        if (spriteRenderer != null)
-            spriteRenderer.flipX = !spriteRenderer.flipX;
+        VoltearTanque(!mirandoDerecha);
     }
+
 
     private void PerseguirJugador()
     {
@@ -349,4 +347,18 @@ public class Tanque : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, distanciaFrenado);
     }
+
+    private void VoltearTanque(bool mirarDerecha)
+    {
+        mirandoDerecha = mirarDerecha;
+
+        Vector3 escala = transform.localScale;
+        escala.x = mirandoDerecha ? Mathf.Abs(escala.x) : -Mathf.Abs(escala.x);
+        transform.localScale = escala;
+
+        Vector3 pos = puntoDisparo.localPosition;
+        pos.x = -pos.x;
+        puntoDisparo.localPosition = pos;
+    }
+
 }

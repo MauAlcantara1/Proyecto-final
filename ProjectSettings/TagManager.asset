@@ -18,15 +18,16 @@ TagManager:
   - Bala
   - bala
   - "Da\xF1o"
+  - "Da\xF1oEnemigo"
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Bala
   - Water
   - UI
   - Player
-  - 
+  - Enemigo
   - 
   - 
   - 

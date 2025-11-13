@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7556328499482267231}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: controladorAtaque
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24,13 +24,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5649939990082012654}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.9848078, z: -0, w: 0.17364825}
+  m_LocalRotation: {x: -0, y: 0.99820274, z: -0, w: 0.05992785}
   m_LocalPosition: {x: -0.35, y: 0.21, z: 1}
   m_LocalScale: {x: 5.1365995, y: 5.1366, z: 5.1365995}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8355372125962523910}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 173.129, z: 0}
 --- !u!1 &8230867475910586384
 GameObject:
   m_ObjectHideFlags: 0
@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 2471103205021198409}
   - component: {fileID: 7080154830789625816}
   - component: {fileID: 1274743912470110922}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tanque (1)
   m_TagString: enemigo
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ Transform:
   m_GameObject: {fileID: 8230867475910586384}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.24, y: -2.3, z: 0}
+  m_LocalPosition: {x: 17.98, y: -1.9193102, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -251,12 +251,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tanque
   velocidad: 2
-  distanciaDeteccion: 15
-  distanciaFrenado: 10
-  vidaMaxima: 10
+  distanciaDeteccion: 12
+  distanciaFrenado: 7
+  vidaMaxima: 20
   prefabBala: {fileID: 2708955634872394561, guid: 27f63ad7670115f49842d5b934cb6afe, type: 3}
   puntoDisparo: {fileID: 7556328499482267231}
-  fuerzaDisparo: 6
+  fuerzaDisparo: 9
   anguloDetras: 100
 --- !u!114 &1274743912470110922
 MonoBehaviour:
@@ -271,7 +271,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DropLoot
   posiblesDrops:
-  - {fileID: 0}
-  probabilidadDrop: 0.931
+  - {fileID: 41026359484825233, guid: d654a5c00f42c084584d7d63662da812, type: 3}
+  - {fileID: 6356524569022012406, guid: e08fd74ae93be8442842557e59bd1bdb, type: 3}
+  - {fileID: 7846604672225859189, guid: 5d469c1be1faee341be370ecf8620c51, type: 3}
+  probabilidadDrop: 0.46
   minDrops: 1
   maxDrops: 1

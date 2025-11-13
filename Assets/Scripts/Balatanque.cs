@@ -9,14 +9,16 @@ public class Balatanque : MonoBehaviour
 
     void Start()
     {
-        // Destruye la bala después de un tiempo para evitar acumular basura
         Destroy(gameObject, tiempoVida);
     }
 
-    void Update()
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        // Mueve la bala hacia la dirección "derecha" local del prefab
-        transform.Translate(Vector3.right * velocidad * Time.deltaTime);
+        if (other.collider.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
     }
+
 
 }
