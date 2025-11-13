@@ -539,6 +539,7 @@ GameObject:
   - component: {fileID: 46828964}
   - component: {fileID: 46828966}
   - component: {fileID: 46828965}
+  - component: {fileID: 46828967}
   m_Layer: 0
   m_Name: Tenkiu1 (1)
   m_TagString: Untagged
@@ -641,6 +642,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &46828967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46828963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dddca0a25030e74daf750fa478b8004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimarPorDistancia
+  jugador: {fileID: 488231501}
+  distanciaActivacion: 15
+  nombreAnimacion: Tenkiu1
 --- !u!1 &48482848
 GameObject:
   m_ObjectHideFlags: 0
@@ -3444,6 +3460,7 @@ GameObject:
   - component: {fileID: 386868739}
   - component: {fileID: 386868741}
   - component: {fileID: 386868740}
+  - component: {fileID: 386868742}
   m_Layer: 0
   m_Name: Tenkiu1 (5)
   m_TagString: Untagged
@@ -3546,6 +3563,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &386868742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386868738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dddca0a25030e74daf750fa478b8004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimarPorDistancia
+  jugador: {fileID: 488231501}
+  distanciaActivacion: 15
+  nombreAnimacion: Tenkiu1
 --- !u!1 &400676581
 GameObject:
   m_ObjectHideFlags: 0
@@ -3613,7 +3645,7 @@ GameObject:
   - component: {fileID: 403405300}
   m_Layer: 0
   m_Name: Obstaculo (4)
-  m_TagString: Untagged
+  m_TagString: "Da\xF1oEnemigo"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3627,8 +3659,8 @@ Transform:
   m_GameObject: {fileID: 403405298}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.9429142, y: 0.9010001, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalPosition: {x: -2.9429142, y: 0.802, z: 0}
+  m_LocalScale: {x: 0.6749283, y: 0.6749283, z: 0.84366035}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2019924180}
@@ -3663,7 +3695,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -3903,7 +3935,7 @@ GameObject:
   - component: {fileID: 444415251}
   m_Layer: 0
   m_Name: Obstaculo (8)
-  m_TagString: Untagged
+  m_TagString: "Da\xF1oEnemigo"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3917,8 +3949,8 @@ Transform:
   m_GameObject: {fileID: 444415249}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.57754, y: 0.9010001, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalPosition: {x: 6.57754, y: 0.795, z: 0}
+  m_LocalScale: {x: 0.658576, y: 0.658576, z: 0.82322}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2019924180}
@@ -3953,7 +3985,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -4371,6 +4403,7 @@ GameObject:
   - component: {fileID: 477426386}
   - component: {fileID: 477426388}
   - component: {fileID: 477426387}
+  - component: {fileID: 477426389}
   m_Layer: 0
   m_Name: Tenkiu1 (3)
   m_TagString: Untagged
@@ -4473,6 +4506,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &477426389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477426385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dddca0a25030e74daf750fa478b8004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimarPorDistancia
+  jugador: {fileID: 488231501}
+  distanciaActivacion: 15
+  nombreAnimacion: Tenkiu1
 --- !u!1 &485960749
 GameObject:
   m_ObjectHideFlags: 0
@@ -5433,7 +5481,7 @@ GameObject:
   - component: {fileID: 635774071}
   m_Layer: 0
   m_Name: Obstaculo (2)
-  m_TagString: Untagged
+  m_TagString: "Da\xF1oEnemigo"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5447,8 +5495,8 @@ Transform:
   m_GameObject: {fileID: 635774069}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.034, y: 0.879, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalPosition: {x: -8.034, y: 0.822, z: 0}
+  m_LocalScale: {x: 0.669888, y: 0.669888, z: 0.83736}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2019924180}
@@ -5483,7 +5531,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -5845,7 +5893,7 @@ GameObject:
   - component: {fileID: 666052915}
   m_Layer: 0
   m_Name: Obstaculo
-  m_TagString: Untagged
+  m_TagString: "Da\xF1oEnemigo"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5939,8 +5987,8 @@ Transform:
   m_GameObject: {fileID: 666052910}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.102, y: 0.901, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalPosition: {x: -15.102, y: 0.802, z: 0}
+  m_LocalScale: {x: 0.675552, y: 0.675552, z: 0.84444}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2019924180}
@@ -5975,7 +6023,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -6390,7 +6438,7 @@ GameObject:
   - component: {fileID: 701371108}
   m_Layer: 0
   m_Name: Obstaculo (11)
-  m_TagString: Untagged
+  m_TagString: "Da\xF1oEnemigo"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6404,8 +6452,8 @@ Transform:
   m_GameObject: {fileID: 701371106}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.182085, y: 0.9010001, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalPosition: {x: 16.182085, y: 0.823, z: 0}
+  m_LocalScale: {x: 0.669896, y: 0.669896, z: 0.83737}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2019924180}
@@ -6440,7 +6488,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -10793,7 +10841,7 @@ GameObject:
   - component: {fileID: 1140684224}
   m_Layer: 0
   m_Name: Obstaculo (7)
-  m_TagString: Untagged
+  m_TagString: "Da\xF1oEnemigo"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10807,8 +10855,8 @@ Transform:
   m_GameObject: {fileID: 1140684222}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.0434473, y: 0.9010001, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalPosition: {x: 3.0434473, y: 0.802, z: 0}
+  m_LocalScale: {x: 0.647264, y: 0.647264, z: 0.80908}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2019924180}
@@ -10843,7 +10891,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -14086,7 +14134,7 @@ GameObject:
   - component: {fileID: 1489169204}
   m_Layer: 0
   m_Name: Obstaculo (1)
-  m_TagString: Untagged
+  m_TagString: "Da\xF1oEnemigo"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14100,8 +14148,8 @@ Transform:
   m_GameObject: {fileID: 1489169202}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.638369, y: 0.9010001, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalPosition: {x: -12.638369, y: 0.851, z: 0}
+  m_LocalScale: {x: 0.62464, y: 0.62464, z: 0.7808}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2019924180}
@@ -14136,7 +14184,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -14562,7 +14610,7 @@ GameObject:
   - component: {fileID: 1501174567}
   m_Layer: 0
   m_Name: Obstaculo (9)
-  m_TagString: Untagged
+  m_TagString: "Da\xF1oEnemigo"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14576,8 +14624,8 @@ Transform:
   m_GameObject: {fileID: 1501174565}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.727539, y: 0.9010001, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalPosition: {x: 10.855, y: 0.788, z: 0}
+  m_LocalScale: {x: 0.65292, y: 0.65292, z: 0.81615}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2019924180}
@@ -14612,7 +14660,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -15196,6 +15244,7 @@ GameObject:
   - component: {fileID: 1583592934}
   - component: {fileID: 1583592936}
   - component: {fileID: 1583592935}
+  - component: {fileID: 1583592937}
   m_Layer: 0
   m_Name: Tenkiu1 (4)
   m_TagString: Untagged
@@ -15298,6 +15347,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1583592937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583592933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dddca0a25030e74daf750fa478b8004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimarPorDistancia
+  jugador: {fileID: 488231501}
+  distanciaActivacion: 15
+  nombreAnimacion: Tenkiu1
 --- !u!1 &1592859846
 GameObject:
   m_ObjectHideFlags: 0
@@ -15309,6 +15373,7 @@ GameObject:
   - component: {fileID: 1592859847}
   - component: {fileID: 1592859849}
   - component: {fileID: 1592859848}
+  - component: {fileID: 1592859850}
   m_Layer: 0
   m_Name: Tenkiu1
   m_TagString: Untagged
@@ -15411,6 +15476,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1592859850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592859846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dddca0a25030e74daf750fa478b8004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimarPorDistancia
+  jugador: {fileID: 488231501}
+  distanciaActivacion: 15
+  nombreAnimacion: Tenkiu1
 --- !u!1 &1603045986
 GameObject:
   m_ObjectHideFlags: 0
@@ -15608,6 +15688,7 @@ GameObject:
   - component: {fileID: 1621231549}
   - component: {fileID: 1621231551}
   - component: {fileID: 1621231550}
+  - component: {fileID: 1621231552}
   m_Layer: 0
   m_Name: Tenkiu1 (6)
   m_TagString: Untagged
@@ -15710,6 +15791,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1621231552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621231548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dddca0a25030e74daf750fa478b8004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimarPorDistancia
+  jugador: {fileID: 488231501}
+  distanciaActivacion: 15
+  nombreAnimacion: Tenkiu1
 --- !u!1 &1641447492
 GameObject:
   m_ObjectHideFlags: 0
@@ -17555,6 +17651,7 @@ GameObject:
   - component: {fileID: 1822136581}
   - component: {fileID: 1822136583}
   - component: {fileID: 1822136582}
+  - component: {fileID: 1822136584}
   m_Layer: 0
   m_Name: Tenkiu1 (2)
   m_TagString: Untagged
@@ -17657,6 +17754,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1822136584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822136580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dddca0a25030e74daf750fa478b8004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimarPorDistancia
+  jugador: {fileID: 488231501}
+  distanciaActivacion: 15
+  nombreAnimacion: Tenkiu1
 --- !u!1 &1852298706
 GameObject:
   m_ObjectHideFlags: 0
@@ -19012,7 +19124,7 @@ GameObject:
   - component: {fileID: 1928907793}
   m_Layer: 0
   m_Name: Obstaculo (10)
-  m_TagString: Untagged
+  m_TagString: "Da\xF1oEnemigo"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19026,8 +19138,8 @@ Transform:
   m_GameObject: {fileID: 1928907791}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.409356, y: 0.9010001, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalPosition: {x: 13.409356, y: 0.809, z: 0}
+  m_LocalScale: {x: 0.65292, y: 0.65292, z: 0.81615}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2019924180}
@@ -19062,7 +19174,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -20036,7 +20148,7 @@ GameObject:
   - component: {fileID: 2010206588}
   m_Layer: 0
   m_Name: Obstaculo (6)
-  m_TagString: Untagged
+  m_TagString: "Da\xF1oEnemigo"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20050,8 +20162,8 @@ Transform:
   m_GameObject: {fileID: 2010206586}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7957203, y: 0.9010001, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalPosition: {x: 0.7957203, y: 0.788, z: 0}
+  m_LocalScale: {x: 0.640896, y: 0.640896, z: 0.80112004}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2019924180}
@@ -20086,7 +20198,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -20718,7 +20830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7417369988130022333, guid: 3dd38b7ef3d50cd44a266534cc2e14a7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -564.52
+      value: -229
       objectReference: {fileID: 0}
     - target: {fileID: 7417369988130022333, guid: 3dd38b7ef3d50cd44a266534cc2e14a7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -20788,7 +20900,7 @@ GameObject:
   - component: {fileID: 2130435992}
   m_Layer: 0
   m_Name: Obstaculo (5)
-  m_TagString: Untagged
+  m_TagString: "Da\xF1oEnemigo"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20802,8 +20914,8 @@ Transform:
   m_GameObject: {fileID: 2130435990}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.1565502, y: 0.9010001, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalPosition: {x: -2.1565502, y: 0.83, z: 0}
+  m_LocalScale: {x: 0.62522435, y: 0.62522435, z: 0.7815304}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2019924180}
@@ -20838,7 +20950,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
