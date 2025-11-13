@@ -1038,7 +1038,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "15 sin t\xEDtulo_20251106212331_34"
+      name: bala1
       rect:
         serializedVersion: 2
         x: 2
@@ -1060,7 +1060,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "15 sin t\xEDtulo_20251106212331_35"
+      name: bala2
       rect:
         serializedVersion: 2
         x: 19
@@ -1082,7 +1082,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "15 sin t\xEDtulo_20251106212331_36"
+      name: bala3
       rect:
         serializedVersion: 2
         x: 36
@@ -1104,7 +1104,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "15 sin t\xEDtulo_20251106212331_37"
+      name: bala4
       rect:
         serializedVersion: 2
         x: 53
@@ -1126,7 +1126,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "15 sin t\xEDtulo_20251106212331_38"
+      name: bala5
       rect:
         serializedVersion: 2
         x: 70
@@ -1148,7 +1148,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "15 sin t\xEDtulo_20251106212331_39"
+      name: bala6
       rect:
         serializedVersion: 2
         x: 87
@@ -1192,7 +1192,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "15 sin t\xEDtulo_20251106212331_41"
+      name: bala7
       rect:
         serializedVersion: 2
         x: 104
@@ -1214,7 +1214,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "15 sin t\xEDtulo_20251106212331_42"
+      name: bala8
       rect:
         serializedVersion: 2
         x: 121
@@ -2179,16 +2179,8 @@ TextureImporter:
       "15 sin t\xEDtulo_20251106212331_31": -8871265139024222654
       "15 sin t\xEDtulo_20251106212331_32": -5970963852619906982
       "15 sin t\xEDtulo_20251106212331_33": 3816641840692784356
-      "15 sin t\xEDtulo_20251106212331_34": 2062376857790187503
-      "15 sin t\xEDtulo_20251106212331_35": -7566887225762071450
-      "15 sin t\xEDtulo_20251106212331_36": 353754331133271470
-      "15 sin t\xEDtulo_20251106212331_37": -2533723073459821135
-      "15 sin t\xEDtulo_20251106212331_38": -9041378704195734561
-      "15 sin t\xEDtulo_20251106212331_39": -8121207762236351818
       "15 sin t\xEDtulo_20251106212331_4": 8679924007591758856
       "15 sin t\xEDtulo_20251106212331_40": -6103134858320710724
-      "15 sin t\xEDtulo_20251106212331_41": 993077381359129174
-      "15 sin t\xEDtulo_20251106212331_42": -8164241009194988808
       "15 sin t\xEDtulo_20251106212331_43": -663696195645712645
       "15 sin t\xEDtulo_20251106212331_44": -978409760966621023
       "15 sin t\xEDtulo_20251106212331_45": 5099705988003552280
@@ -2237,6 +2229,14 @@ TextureImporter:
       "15 sin t\xEDtulo_20251106212331_84": -2295582001821891871
       "15 sin t\xEDtulo_20251106212331_85": -1247075021
       "15 sin t\xEDtulo_20251106212331_9": -4199084279182572583
+      bala1: 2062376857790187503
+      bala2: -7566887225762071450
+      bala3: 353754331133271470
+      bala4: -2533723073459821135
+      bala5: -9041378704195734561
+      bala6: -8121207762236351818
+      bala7: 993077381359129174
+      bala8: -8164241009194988808
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

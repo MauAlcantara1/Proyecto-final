@@ -1,0 +1,6539 @@
+fileFormatVersion: 2
+guid: bd73736a0291b954eaff9c875b876954
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5259368518037437754
+    second: muertesoldado_0
+  - first:
+      213: 995504899764007969
+    second: muertesoldado_1
+  - first:
+      213: 5693522943976014288
+    second: muertesoldado_2
+  - first:
+      213: 639122919013960343
+    second: muertesoldado_3
+  - first:
+      213: -5574137609972966636
+    second: muertesoldado_4
+  - first:
+      213: 288052524523968484
+    second: muertesoldado_5
+  - first:
+      213: 7259313905869587018
+    second: muertesoldado_6
+  - first:
+      213: 1696957044775803112
+    second: muertesoldado_7
+  - first:
+      213: -3125146625027183513
+    second: muertesoldado_8
+  - first:
+      213: 263432022564161130
+    second: muertesoldado_9
+  - first:
+      213: 8687096186096882326
+    second: muertesoldado_10
+  - first:
+      213: 4234807270490146437
+    second: muertesoldado_11
+  - first:
+      213: -7777087944414952698
+    second: muertesoldado_12
+  - first:
+      213: -1790703044165696921
+    second: muertesoldado_13
+  - first:
+      213: 2057793608743426824
+    second: muertesoldado_14
+  - first:
+      213: 8921565596995030790
+    second: muertesoldado_15
+  - first:
+      213: -4222651006951666080
+    second: muertesoldado_16
+  - first:
+      213: -7244675028885251458
+    second: muertesoldado_17
+  - first:
+      213: -243111897481736433
+    second: muertesoldado_18
+  - first:
+      213: 6346211420234409386
+    second: muertesoldado_19
+  - first:
+      213: 163257191844030330
+    second: muertesoldado_20
+  - first:
+      213: -2578665536918081621
+    second: muertesoldado_21
+  - first:
+      213: 1290765535481932528
+    second: muertesoldado_22
+  - first:
+      213: -7339494291482196017
+    second: muertesoldado_23
+  - first:
+      213: -6619309772666659529
+    second: muertesoldado_24
+  - first:
+      213: -2234246623733174562
+    second: muertesoldado_25
+  - first:
+      213: 7403651812177120294
+    second: muertesoldado_26
+  - first:
+      213: 3449772508233591661
+    second: muertesoldado_27
+  - first:
+      213: 799150280843972527
+    second: muertesoldado_28
+  - first:
+      213: 9146341649301590974
+    second: muertesoldado_29
+  - first:
+      213: -7012689333350096157
+    second: muertesoldado_30
+  - first:
+      213: -6012647904572489753
+    second: muertesoldado_31
+  - first:
+      213: -6519574990286037011
+    second: muertesoldado_32
+  - first:
+      213: 3097383809808844598
+    second: muertesoldado_33
+  - first:
+      213: 392870943679472301
+    second: muertesoldado_34
+  - first:
+      213: -1278459107736367213
+    second: muertesoldado_35
+  - first:
+      213: 4409139987350252781
+    second: muertesoldado_36
+  - first:
+      213: 6890104968271710171
+    second: muertesoldado_37
+  - first:
+      213: 5613319093844150850
+    second: muertesoldado_38
+  - first:
+      213: 1912221663107518631
+    second: muertesoldado_39
+  - first:
+      213: 2668161874778350279
+    second: muertesoldado_40
+  - first:
+      213: -8410584854274866066
+    second: muertesoldado_41
+  - first:
+      213: 3161983062315525238
+    second: muertesoldado_42
+  - first:
+      213: -3448794295812333357
+    second: muertesoldado_43
+  - first:
+      213: -6280345676747922573
+    second: muertesoldado_44
+  - first:
+      213: -7001388567645021028
+    second: muertesoldado_45
+  - first:
+      213: 8986926669892230459
+    second: muertesoldado_46
+  - first:
+      213: 2513766593851833114
+    second: muertesoldado_47
+  - first:
+      213: -7001550256170511876
+    second: muertesoldado_48
+  - first:
+      213: 4906508552369506306
+    second: muertesoldado_49
+  - first:
+      213: 823519154101590993
+    second: muertesoldado_50
+  - first:
+      213: -8457968530556288852
+    second: muertesoldado_51
+  - first:
+      213: -4642884272484034207
+    second: muertesoldado_52
+  - first:
+      213: 967564389766994636
+    second: muertesoldado_53
+  - first:
+      213: -7421126678200263003
+    second: muertesoldado_54
+  - first:
+      213: 6088781151315861050
+    second: muertesoldado_55
+  - first:
+      213: 1791749475565992838
+    second: muertesoldado_56
+  - first:
+      213: 6081878082478928209
+    second: muertesoldado_57
+  - first:
+      213: 6430134483773996016
+    second: muertesoldado_58
+  - first:
+      213: 151400718361287156
+    second: muertesoldado_59
+  - first:
+      213: 1634840571919613158
+    second: muertesoldado_60
+  - first:
+      213: 8002746239917102145
+    second: muertesoldado_61
+  - first:
+      213: -2255656222373530754
+    second: muertesoldado_62
+  - first:
+      213: 1543446465442826792
+    second: muertesoldado_63
+  - first:
+      213: 386922406521527835
+    second: muertesoldado_64
+  - first:
+      213: -4238006621777822789
+    second: muertesoldado_65
+  - first:
+      213: -8397380814360978077
+    second: muertesoldado_66
+  - first:
+      213: -8508026348396428021
+    second: muertesoldado_67
+  - first:
+      213: -5940416084549949756
+    second: muertesoldado_68
+  - first:
+      213: -1931304975613809052
+    second: muertesoldado_69
+  - first:
+      213: 3674986431908021394
+    second: muertesoldado_70
+  - first:
+      213: 8617058015444294826
+    second: muertesoldado_71
+  - first:
+      213: -7707675412965809012
+    second: muertesoldado_72
+  - first:
+      213: -2630854146337808922
+    second: muertesoldado_73
+  - first:
+      213: 1568093064362822296
+    second: muertesoldado_74
+  - first:
+      213: -5280533434940901097
+    second: muertesoldado_75
+  - first:
+      213: 898925481290301157
+    second: muertesoldado_76
+  - first:
+      213: 3948674675867588322
+    second: muertesoldado_77
+  - first:
+      213: 3951235846542143749
+    second: muertesoldado_78
+  - first:
+      213: 2831835127098918792
+    second: muertesoldado_79
+  - first:
+      213: 4053437523988460601
+    second: muertesoldado_80
+  - first:
+      213: 8066290574906069352
+    second: muertesoldado_81
+  - first:
+      213: 1608451360411731029
+    second: muertesoldado_82
+  - first:
+      213: 1616728479074404833
+    second: muertesoldado_83
+  - first:
+      213: 8716775319485564979
+    second: muertesoldado_84
+  - first:
+      213: 948093841366520087
+    second: muertesoldado_85
+  - first:
+      213: -6178596336736966625
+    second: muertesoldado_86
+  - first:
+      213: 3766870403298850395
+    second: muertesoldado_87
+  - first:
+      213: 7485338516006561126
+    second: muertesoldado_88
+  - first:
+      213: 8974918382447604225
+    second: muertesoldado_89
+  - first:
+      213: -1843829225132337307
+    second: muertesoldado_90
+  - first:
+      213: 4997197685531732864
+    second: muertesoldado_91
+  - first:
+      213: -5951854472289147383
+    second: muertesoldado_92
+  - first:
+      213: -5663033857032178088
+    second: muertesoldado_93
+  - first:
+      213: 903572733598528932
+    second: muertesoldado_94
+  - first:
+      213: 2349206470873882084
+    second: muertesoldado_95
+  - first:
+      213: -1571795656506719524
+    second: muertesoldado_96
+  - first:
+      213: 4064466451726065224
+    second: muertesoldado_97
+  - first:
+      213: 1913308809252275255
+    second: muertesoldado_98
+  - first:
+      213: -8958391378434026697
+    second: muertesoldado_99
+  - first:
+      213: 7962291328075035500
+    second: muertesoldado_100
+  - first:
+      213: -5160614694174656822
+    second: muertesoldado_101
+  - first:
+      213: -1703271283555603367
+    second: muertesoldado_102
+  - first:
+      213: 1364593623070640234
+    second: muertesoldado_103
+  - first:
+      213: -2041192419218642755
+    second: muertesoldado_104
+  - first:
+      213: 357904135351746757
+    second: muertesoldado_105
+  - first:
+      213: 590427023186414395
+    second: muertesoldado_106
+  - first:
+      213: 8063368129984992375
+    second: muertesoldado_107
+  - first:
+      213: 6242657364588863331
+    second: muertesoldado_108
+  - first:
+      213: 2695386180458318693
+    second: muertesoldado_109
+  - first:
+      213: -1777938950488195293
+    second: muertesoldado_110
+  - first:
+      213: -3319715567463761312
+    second: muertesoldado_111
+  - first:
+      213: -1070471471447572407
+    second: muertesoldado_112
+  - first:
+      213: 4425895655372684719
+    second: muertesoldado_113
+  - first:
+      213: 6605311079504097696
+    second: muertesoldado_114
+  - first:
+      213: -7355486818229669580
+    second: muertesoldado_115
+  - first:
+      213: -2838998382801255100
+    second: muertesoldado_116
+  - first:
+      213: -5538990510051668036
+    second: muertesoldado_117
+  - first:
+      213: -234607395828677421
+    second: muertesoldado_118
+  - first:
+      213: 2248449150506408499
+    second: muertesoldado_119
+  - first:
+      213: 7792552064469436016
+    second: muertesoldado_120
+  - first:
+      213: 3361718428316684597
+    second: muertesoldado_121
+  - first:
+      213: -2917732846230516674
+    second: muertesoldado_122
+  - first:
+      213: -1272507488256519368
+    second: muertesoldado_123
+  - first:
+      213: 2862866719517183781
+    second: muertesoldado_124
+  - first:
+      213: -1422261740468956792
+    second: muertesoldado_125
+  - first:
+      213: -8821018059875714303
+    second: muertesoldado_126
+  - first:
+      213: -4891579671651055373
+    second: muertesoldado_127
+  - first:
+      213: -5270517790118657816
+    second: muertesoldado_128
+  - first:
+      213: 7132441699625784878
+    second: muertesoldado_129
+  - first:
+      213: 8289118493939243052
+    second: muertesoldado_130
+  - first:
+      213: 2442355545335095812
+    second: muertesoldado_131
+  - first:
+      213: 1909146008271116740
+    second: muertesoldado_132
+  - first:
+      213: 4699197718829270085
+    second: muertesoldado_133
+  - first:
+      213: -918176524244351714
+    second: muertesoldado_134
+  - first:
+      213: -7292449406948785409
+    second: muertesoldado_135
+  - first:
+      213: 1772528371346136444
+    second: muertesoldado_136
+  - first:
+      213: -5948919732775048589
+    second: muertesoldado_137
+  - first:
+      213: 1651199307185195787
+    second: muertesoldado_138
+  - first:
+      213: 4469087540157794462
+    second: muertesoldado_139
+  - first:
+      213: -8189834128637000428
+    second: muertesoldado_140
+  - first:
+      213: 6938764334590246441
+    second: muertesoldado_141
+  - first:
+      213: -8424704080407174182
+    second: muertesoldado_142
+  - first:
+      213: -3207863083517743216
+    second: muertesoldado_143
+  - first:
+      213: -6126390812570972994
+    second: muertesoldado_144
+  - first:
+      213: -8176928057006815277
+    second: muertesoldado_145
+  - first:
+      213: -6480221477554597709
+    second: muertesoldado_146
+  - first:
+      213: 725904903680078835
+    second: muertesoldado_147
+  - first:
+      213: -3135484199457294471
+    second: muertesoldado_148
+  - first:
+      213: -8765733393848211506
+    second: muertesoldado_149
+  - first:
+      213: 8772732707402885718
+    second: muertesoldado_150
+  - first:
+      213: 2610855309245506467
+    second: muertesoldado_151
+  - first:
+      213: -2003122745969195443
+    second: muertesoldado_152
+  - first:
+      213: -7724612236719482589
+    second: muertesoldado_153
+  - first:
+      213: -6787927856784639803
+    second: muertesoldado_154
+  - first:
+      213: -9196539606949477623
+    second: muertesoldado_155
+  - first:
+      213: 2493726863688033146
+    second: muertesoldado_156
+  - first:
+      213: -9087259592449450793
+    second: muertesoldado_157
+  - first:
+      213: 3711016892649802920
+    second: muertesoldado_158
+  - first:
+      213: 6430406146708685606
+    second: muertesoldado_159
+  - first:
+      213: -4373852372072866869
+    second: muertesoldado_160
+  - first:
+      213: 4176826259753942622
+    second: muertesoldado_161
+  - first:
+      213: -1674957797908861632
+    second: muertesoldado_162
+  - first:
+      213: -1625251667155715792
+    second: muertesoldado_163
+  - first:
+      213: -6282590977735957807
+    second: muertesoldado_164
+  - first:
+      213: 8653747720616533293
+    second: muertesoldado_165
+  - first:
+      213: 2154206539458798533
+    second: muertesoldado_166
+  - first:
+      213: -5356346342905902615
+    second: muertesoldado_167
+  - first:
+      213: -5721588257214863557
+    second: muertesoldado_168
+  - first:
+      213: 2306187981570637987
+    second: muertesoldado_169
+  - first:
+      213: 5160057285928137327
+    second: muertesoldado_170
+  - first:
+      213: 8346616754779280598
+    second: muertesoldado_171
+  - first:
+      213: 9221048172889651016
+    second: muertesoldado_172
+  - first:
+      213: 4033167496937208017
+    second: muertesoldado_173
+  - first:
+      213: -1305723045405206130
+    second: muertesoldado_174
+  - first:
+      213: 5478205247889365693
+    second: muertesoldado_175
+  - first:
+      213: -1650270322460994901
+    second: muertesoldado_176
+  - first:
+      213: -6938168246569265560
+    second: muertesoldado_177
+  - first:
+      213: -1983840577543576757
+    second: muertesoldado_178
+  - first:
+      213: -2105745385981901846
+    second: muertesoldado_179
+  - first:
+      213: 5942341078390693610
+    second: muertesoldado_180
+  - first:
+      213: -489980081258919398
+    second: muertesoldado_181
+  - first:
+      213: -5422135587483798521
+    second: muertesoldado_182
+  - first:
+      213: -3536469552112068678
+    second: muertesoldado_183
+  - first:
+      213: -6157338381464569519
+    second: muertesoldado_184
+  - first:
+      213: -543845156435810711
+    second: muertesoldado_185
+  - first:
+      213: -8688417244538318525
+    second: muertesoldado_186
+  - first:
+      213: -3834864613083083820
+    second: muertesoldado_187
+  - first:
+      213: 8940068915985287864
+    second: muertesoldado_188
+  - first:
+      213: 1946135801101027198
+    second: muertesoldado_189
+  - first:
+      213: -8429565328860536591
+    second: muertesoldado_190
+  - first:
+      213: -9034661146067330358
+    second: muertesoldado_191
+  - first:
+      213: -2251996457779088442
+    second: muertesoldado_192
+  - first:
+      213: -4708293392467964813
+    second: muertesoldado_193
+  - first:
+      213: 4818245184004046542
+    second: muertesoldado_194
+  - first:
+      213: 7342917007584216997
+    second: muertesoldado_195
+  - first:
+      213: 1756858085432639125
+    second: muertesoldado_196
+  - first:
+      213: -698704677021962009
+    second: muertesoldado_197
+  - first:
+      213: -5106965766363341169
+    second: muertesoldado_198
+  - first:
+      213: -2321138650813740457
+    second: muertesoldado_199
+  - first:
+      213: -7335404813241367747
+    second: muertesoldado_200
+  - first:
+      213: -4248281229645796936
+    second: muertesoldado_201
+  - first:
+      213: 4315784151821067325
+    second: muertesoldado_202
+  - first:
+      213: 4989620084979716493
+    second: muertesoldado_203
+  - first:
+      213: 7078344444264135079
+    second: muertesoldado_204
+  - first:
+      213: -2968972533731986932
+    second: muertesoldado_205
+  - first:
+      213: 5948586666934484437
+    second: muertesoldado_206
+  - first:
+      213: -2924955802153023534
+    second: muertesoldado_207
+  - first:
+      213: 1090356312646773957
+    second: muertesoldado_208
+  - first:
+      213: 7780821699441716988
+    second: muertesoldado_209
+  - first:
+      213: -1386102279662959131
+    second: muertesoldado_210
+  - first:
+      213: 2241862394772931784
+    second: muertesoldado_211
+  - first:
+      213: 5451853002281699001
+    second: muertesoldado_212
+  - first:
+      213: 705148415905626032
+    second: muertesoldado_213
+  - first:
+      213: -3336758957831486599
+    second: muertesoldado_214
+  - first:
+      213: -4412098688651937135
+    second: muertesoldado_215
+  - first:
+      213: 4292714753584619635
+    second: muertesoldado_216
+  - first:
+      213: -5827190781029082450
+    second: muertesoldado_217
+  - first:
+      213: -76019832754571367
+    second: muertesoldado_218
+  - first:
+      213: -7784501924980853861
+    second: muertesoldado_219
+  - first:
+      213: -8477209962196814535
+    second: muertesoldado_220
+  - first:
+      213: 2277115399671871082
+    second: muertesoldado_221
+  - first:
+      213: -2113531268463581927
+    second: muertesoldado_222
+  - first:
+      213: 1494996703300172045
+    second: muertesoldado_223
+  - first:
+      213: -7726386422592241678
+    second: muertesoldado_224
+  - first:
+      213: -3902961772494971790
+    second: muertesoldado_225
+  - first:
+      213: -5931201186312561741
+    second: muertesoldado_226
+  - first:
+      213: 1446533083159510391
+    second: muertesoldado_227
+  - first:
+      213: -6200480402993731048
+    second: muertesoldado_228
+  - first:
+      213: 1082629719580167875
+    second: muertesoldado_229
+  - first:
+      213: -229644012457737139
+    second: muertesoldado_230
+  - first:
+      213: -4311438454880619837
+    second: muertesoldado_231
+  - first:
+      213: -95059730717863472
+    second: muertesoldado_232
+  - first:
+      213: 8813367975974139478
+    second: muertesoldado_233
+  - first:
+      213: 1224106800493516898
+    second: muertesoldado_234
+  - first:
+      213: 5348371976351935229
+    second: muertesoldado_235
+  - first:
+      213: 3018042249142470150
+    second: muertesoldado_236
+  - first:
+      213: -4752141082343283024
+    second: muertesoldado_237
+  - first:
+      213: -1181612102790309594
+    second: muertesoldado_238
+  - first:
+      213: 1735945847216205165
+    second: muertesoldado_239
+  - first:
+      213: -2366023362004069536
+    second: muertesoldado_240
+  - first:
+      213: -3309287323712465557
+    second: muertesoldado_241
+  - first:
+      213: 6292765869065328290
+    second: muertesoldado_242
+  - first:
+      213: -5917525425886766230
+    second: muertesoldado_243
+  - first:
+      213: 3879105239808430934
+    second: muertesoldado_244
+  - first:
+      213: -5216198425819810310
+    second: muertesoldado_245
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: muertesoldado_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 943
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c2818bb238f207b0800000000000000
+      internalID: -5259368518037437754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 943
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12438929e6eb0dd00800000000000000
+      internalID: 995504899764007969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 943
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d10a34b3f4730f40800000000000000
+      internalID: 5693522943976014288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_3
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 943
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a43ab98ee9ed800800000000000000
+      internalID: 639122919013960343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_4
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 943
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41b9a64706fa4a2b0800000000000000
+      internalID: -5574137609972966636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_5
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 943
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e7d7e0be3e5ff300800000000000000
+      internalID: 288052524523968484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_6
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 943
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a42096039834eb460800000000000000
+      internalID: 7259313905869587018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_7
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 943
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e855fcf07dcc8710800000000000000
+      internalID: 1696957044775803112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_8
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 943
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c6e38c3bf31a4d0800000000000000
+      internalID: -3125146625027183513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_9
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 943
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a66466f5706e7a300800000000000000
+      internalID: 263432022564161130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_10
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 943
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69294fd74f3ce8870800000000000000
+      internalID: 8687096186096882326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_11
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 898
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5868ec986ce05ca30800000000000000
+      internalID: 4234807270490146437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_12
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 898
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6038c2628bb321490800000000000000
+      internalID: -7777087944414952698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_13
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 898
+        width: 30
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7620b42a1152627e0800000000000000
+      internalID: -1790703044165696921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_14
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 898
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80b983e6260ce8c10800000000000000
+      internalID: 2057793608743426824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_15
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 898
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60f0c3954a4cfcb70800000000000000
+      internalID: 8921565596995030790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_16
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 898
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06e433028412665c0800000000000000
+      internalID: -4222651006951666080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_17
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 898
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7ad626f17eb57b90800000000000000
+      internalID: -7244675028885251458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_18
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 898
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0f0eed640b40acf0800000000000000
+      internalID: -243111897481736433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_19
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 898
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa5699cb9a5421850800000000000000
+      internalID: 6346211420234409386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_20
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 898
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7724ee0d81044200800000000000000
+      internalID: 163257191844030330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_21
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 898
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bafa4754b5db63cd0800000000000000
+      internalID: -2578665536918081621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_22
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 898
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0faa7be6a68b9e110800000000000000
+      internalID: 1290765535481932528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_23
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 854
+        width: 30
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc7423504d0e42a90800000000000000
+      internalID: -7339494291482196017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_24
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 854
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d9ee515dc7324a0800000000000000
+      internalID: -6619309772666659529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_25
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 855
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edea4c3888c5ef0e0800000000000000
+      internalID: -2234246623733174562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_26
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 855
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62c8e71d81e0fb660800000000000000
+      internalID: 7403651812177120294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_27
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 855
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6beb2d81dd00ef20800000000000000
+      internalID: 3449772508233591661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_28
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 855
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fafcbd342f6271b00800000000000000
+      internalID: 799150280843972527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_29
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 855
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb35bf845455eee70800000000000000
+      internalID: 9146341649301590974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_30
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 855
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e22f75c43cedae90800000000000000
+      internalID: -7012689333350096157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_31
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 854
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7efb5705698ce8ca0800000000000000
+      internalID: -6012647904572489753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_32
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 854
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: defda79a611d585a0800000000000000
+      internalID: -6519574990286037011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_33
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 854
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 637c3b41a2e1cfa20800000000000000
+      internalID: 3097383809808844598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_34
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 854
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da26690ba02c37500800000000000000
+      internalID: 392870943679472301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_35
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 815
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39fc28f0730024ee0800000000000000
+      internalID: -1278459107736367213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_36
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 815
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec6bf63579603d30800000000000000
+      internalID: 4409139987350252781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_37
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 815
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd74dfa96f19e9f50800000000000000
+      internalID: 6890104968271710171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_38
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 815
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a8f77a9f386ed40800000000000000
+      internalID: 5613319093844150850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_39
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 815
+        width: 42
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a09451a873998a10800000000000000
+      internalID: 1912221663107518631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_40
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 815
+        width: 46
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c2676da617370520800000000000000
+      internalID: 2668161874778350279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_41
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 815
+        width: 47
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e648aafd2a9974b80800000000000000
+      internalID: -8410584854274866066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_42
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 815
+        width: 47
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6746e1f97de91eb20800000000000000
+      internalID: 3161983062315525238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_43
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 771
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d066b64cdb6320d0800000000000000
+      internalID: -3448794295812333357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_44
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 771
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373a7c6b1eab7d8a0800000000000000
+      internalID: -6280345676747922573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_45
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 771
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9c9903513216de90800000000000000
+      internalID: -7001388567645021028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_46
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 771
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3d1965013af7bc70800000000000000
+      internalID: 8986926669892230459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_47
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 771
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1b38ca0661b2e220800000000000000
+      internalID: 2513766593851833114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_48
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 771
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf159e7432f75de90800000000000000
+      internalID: -7001550256170511876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_49
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 771
+        width: 40
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2088667588b671440800000000000000
+      internalID: 4906508552369506306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_50
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 771
+        width: 46
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1db94f5be4abd6b00800000000000000
+      internalID: 823519154101590993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_51
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 771
+        width: 46
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca082c60f624f9a80800000000000000
+      internalID: -8457968530556288852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_52
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 722
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169575d6a59219fb0800000000000000
+      internalID: -4642884272484034207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_53
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 722
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cca1165afaa7d6d00800000000000000
+      internalID: 967564389766994636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_54
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 722
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aed2b0ea9cd20990800000000000000
+      internalID: -7421126678200263003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_55
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 722
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3e96478232bf7450800000000000000
+      internalID: 6088781151315861050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_56
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 753
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68b7a99a7a29dd810800000000000000
+      internalID: 1791749475565992838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_57
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 752
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 151f36194eb276450800000000000000
+      internalID: 6081878082478928209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_58
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 748
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fbb653ae3d6c3950800000000000000
+      internalID: 6430134483773996016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_59
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 744
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f9d9a4b622e91200800000000000000
+      internalID: 151400718361287156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_60
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 744
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ec3aa1a6de10b610800000000000000
+      internalID: 1634840571919613158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_61
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 722
+        width: 41
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1441ad90e477f0f60800000000000000
+      internalID: 8002746239917102145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_62
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 722
+        width: 45
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e73b602ed9c42b0e0800000000000000
+      internalID: -2255656222373530754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_63
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 722
+        width: 46
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82a4d8ef16c6b6510800000000000000
+      internalID: 1543446465442826792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_64
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 722
+        width: 44
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1eda54f0ef9e5500800000000000000
+      internalID: 386922406521527835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_65
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 722
+        width: 46
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbbfd217e639f25c0800000000000000
+      internalID: -4238006621777822789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_66
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 740
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36d555cf3a2867b80800000000000000
+      internalID: -8397380814360978077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_67
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 709
+        width: 48
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b05ca241d1b6de980800000000000000
+      internalID: -8508026348396428021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_68
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 722
+        width: 43
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c622667b076f8da0800000000000000
+      internalID: -5940416084549949756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_69
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 734
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e289f6b50a235e0800000000000000
+      internalID: -1931304975613809052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_70
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 722
+        width: 49
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 294024c50bc200330800000000000000
+      internalID: 3674986431908021394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_71
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 722
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aac5d732c90f59770800000000000000
+      internalID: 8617058015444294826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_72
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 722
+        width: 51
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8429268c06d80590800000000000000
+      internalID: -7707675412965809012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_73
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 722
+        width: 51
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eddbafb7145d7bd0800000000000000
+      internalID: -2630854146337808922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_74
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 722
+        width: 51
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89a891c755cf2c510800000000000000
+      internalID: 1568093064362822296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_75
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 673
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71936c181d6c7b6b0800000000000000
+      internalID: -5280533434940901097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_76
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 673
+        width: 45
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eefad766ff997c00800000000000000
+      internalID: 898925481290301157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_77
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 673
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e61bac52b28cc630800000000000000
+      internalID: 3948674675867588322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_78
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 673
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5013fe0611c95d630800000000000000
+      internalID: 3951235846542143749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_79
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 673
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 887443d5b03bc4720800000000000000
+      internalID: 2831835127098918792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_80
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 673
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9343298b3f3b04830800000000000000
+      internalID: 4053437523988460601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_81
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 673
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8619b547a8831ff60800000000000000
+      internalID: 8066290574906069352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_82
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 673
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 554c5d78dfd525610800000000000000
+      internalID: 1608451360411731029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_83
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 704
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e9cc756cf5cf6610800000000000000
+      internalID: 1616728479074404833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_84
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 673
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33844d838f438f870800000000000000
+      internalID: 8716775319485564979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_85
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 673
+        width: 47
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7111364535e482d00800000000000000
+      internalID: 948093841366520087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_86
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 673
+        width: 45
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18634a0e57314aa0800000000000000
+      internalID: -6178596336736966625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_87
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 673
+        width: 51
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b567f8f8cac964430800000000000000
+      internalID: 3766870403298850395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_88
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 673
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 665ee16a8b341e760800000000000000
+      internalID: 7485338516006561126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_89
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 673
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 102b9e9b7b05d8c70800000000000000
+      internalID: 8974918382447604225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_90
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 647
+        width: 47
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 567d089b6176966e0800000000000000
+      internalID: -1843829225132337307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_91
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 647
+        width: 47
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08be58691dc995540800000000000000
+      internalID: 4997197685531732864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_92
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 647
+        width: 47
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 906a26844e3c66da0800000000000000
+      internalID: -5951854472289147383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_93
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 647
+        width: 47
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 856369806bcd861b0800000000000000
+      internalID: -5663033857032178088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_94
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 647
+        width: 47
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a57ed62d922a8c00800000000000000
+      internalID: 903572733598528932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_95
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 647
+        width: 47
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ed9c70b6de0a9020800000000000000
+      internalID: 2349206470873882084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_96
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 647
+        width: 47
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd24a6a9d2cdf2ae0800000000000000
+      internalID: -1571795656506719524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_97
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 647
+        width: 47
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84edf9014b2e76830800000000000000
+      internalID: 4064466451726065224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_98
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 647
+        width: 47
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7348b1199307d8a10800000000000000
+      internalID: 1913308809252275255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_99
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 658
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 733948141866da380800000000000000
+      internalID: -8958391378434026697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_100
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 647
+        width: 48
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c63f510e6cdbf7e60800000000000000
+      internalID: 7962291328075035500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_101
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 663
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6fe0b1740d168b0800000000000000
+      internalID: -5160614694174656822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_102
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 647
+        width: 48
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95c6b8bbac3cc58e0800000000000000
+      internalID: -1703271283555603367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_103
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 647
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6883e59ba200f210800000000000000
+      internalID: 1364593623070640234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_104
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 649
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db8a0463f4a3ca3e0800000000000000
+      internalID: -2041192419218642755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_105
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 621
+        width: 48
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c0c8433ae787f400800000000000000
+      internalID: 357904135351746757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_106
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 621
+        width: 48
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3b41d6df3e913800800000000000000
+      internalID: 590427023186414395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_107
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 621
+        width: 48
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77416f8b796d6ef60800000000000000
+      internalID: 8063368129984992375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_108
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 621
+        width: 48
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36f9bce4ccf52a650800000000000000
+      internalID: 6242657364588863331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_109
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 621
+        width: 48
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56b07ba437fe76520800000000000000
+      internalID: 2695386180458318693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_110
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 621
+        width: 48
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32ff1d7c1fd7357e0800000000000000
+      internalID: -1777938950488195293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_111
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 621
+        width: 48
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06afcfda7400ee1d0800000000000000
+      internalID: -3319715567463761312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_112
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 621
+        width: 48
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9408d2a4edbe421f0800000000000000
+      internalID: -1070471471447572407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_113
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 621
+        width: 48
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fadfe6f26a0fb6d30800000000000000
+      internalID: 4425895655372684719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_114
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 588
+        width: 49
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a13bcc2e67caab50800000000000000
+      internalID: 6605311079504097696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_115
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 621
+        width: 48
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4313a59b5bf0ce990800000000000000
+      internalID: -7355486818229669580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_116
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 621
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4450933330ad998d0800000000000000
+      internalID: -2838998382801255100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_117
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 569
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf4c1a5a7d8123b0800000000000000
+      internalID: -5538990510051668036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_118
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 569
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d4c3f501d18ebcf0800000000000000
+      internalID: -234607395828677421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_119
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 569
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33a967fe698143f10800000000000000
+      internalID: 2248449150506408499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_120
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 569
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0760070e0d4b42c60800000000000000
+      internalID: 7792552064469436016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_121
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 569
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53153b2791937ae20800000000000000
+      internalID: 3361718428316684597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_122
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 569
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3cc0f66f612287d0800000000000000
+      internalID: -2917732846230516674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_123
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 569
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83312747e25275ee0800000000000000
+      internalID: -1272507488256519368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_124
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 603
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52f0c100d12fab720800000000000000
+      internalID: 2862866719517183781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_125
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 595
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88118b58b7c134ce0800000000000000
+      internalID: -1422261740468956792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_126
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 569
+        width: 47
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10b7dcf6fc2759580800000000000000
+      internalID: -8821018059875714303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_127
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 602
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f887b0943e9d1cb0800000000000000
+      internalID: -4891579671651055373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_128
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 584
+        width: 40
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e0c9998efb5bd6b0800000000000000
+      internalID: -5270517790118657816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_129
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 567
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e26d06fbfe58bf260800000000000000
+      internalID: 7132441699625784878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_130
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 582
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c289e544a5dd80370800000000000000
+      internalID: 8289118493939243052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_131
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 570
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40267e6ad6df4e120800000000000000
+      internalID: 2442355545335095812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_132
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 586
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c9da5fed26ae7a10800000000000000
+      internalID: 1909146008271116740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_133
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 567
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54405288d67e63140800000000000000
+      internalID: 4699197718829270085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_134
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 588
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e15005fd05bf143f0800000000000000
+      internalID: -918176524244351714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_135
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 571
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff24f44c6e30cca90800000000000000
+      internalID: -7292449406948785409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_136
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 571
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d53689929499810800000000000000
+      internalID: 1772528371346136444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_137
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 567
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37aa1a29501317da0800000000000000
+      internalID: -5948919732775048589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_138
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 567
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b052e750d3ae610800000000000000
+      internalID: 1651199307185195787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_139
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 573
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e98ca358073650e30800000000000000
+      internalID: 4469087540157794462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_140
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 577
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4158839604dd75e80800000000000000
+      internalID: -8189834128637000428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_141
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 569
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92eb66f26617b4060800000000000000
+      internalID: 6938764334590246441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_142
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 574
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad3eb8d5640751b80800000000000000
+      internalID: -8424704080407174182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_143
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 512
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09fe5d285816b73d0800000000000000
+      internalID: -3207863083517743216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_144
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 512
+        width: 31
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc8d75d300bafaa0800000000000000
+      internalID: -6126390812570972994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_145
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 512
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d70f206147b58e80800000000000000
+      internalID: -8176928057006815277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_146
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 512
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b0508c56e0a116a0800000000000000
+      internalID: -6480221477554597709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_147
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 512
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f3b094f9aee21a00800000000000000
+      internalID: 725904903680078835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_148
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 512
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9777f7cabb58c74d0800000000000000
+      internalID: -3135484199457294471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_149
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 512
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec7e5efcbebd95680800000000000000
+      internalID: -8765733393848211506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_150
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 512
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a233edae10fb970800000000000000
+      internalID: 8772732707402885718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_151
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 536
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a36583221f9b3420800000000000000
+      internalID: 2610855309245506467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_152
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 525
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d46400db97a7334e0800000000000000
+      internalID: -2003122745969195443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_153
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 530
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32913b2f81aacc490800000000000000
+      internalID: -7724612236719482589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_154
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 512
+        width: 48
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c87f57049f6cc1a0800000000000000
+      internalID: -6787927856784639803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_155
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 540
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90347fce3f35f5080800000000000000
+      internalID: -9196539606949477623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_156
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 529
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7369f4ce5f7b9220800000000000000
+      internalID: 2493726863688033146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_157
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 539
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc1a4a0c8193e180800000000000000
+      internalID: -9087259592449450793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_158
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 512
+        width: 49
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac8dd9b33e208330800000000000000
+      internalID: 3711016892649802920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_159
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 534
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6234f0812546d3950800000000000000
+      internalID: 6430406146708685606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_160
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 512
+        width: 49
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcbd896f074fc43c0800000000000000
+      internalID: -4373852372072866869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_161
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 512
+        width: 49
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5e382d7a5117f930800000000000000
+      internalID: 4176826259753942622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_162
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 512
+        width: 44
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04d2fd1d1ca51c8e0800000000000000
+      internalID: -1674957797908861632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_163
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 512
+        width: 49
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 039729c3832f179e0800000000000000
+      internalID: -1625251667155715792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_164
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 512
+        width: 49
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d269f6dac0cfc8a0800000000000000
+      internalID: -6282590977735957807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_165
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 512
+        width: 50
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2dd13fc3b9481870800000000000000
+      internalID: 8653747720616533293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_166
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 463
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c3e3452f6745ed10800000000000000
+      internalID: 2154206539458798533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_167
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 412
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e98129516f6aa5b0800000000000000
+      internalID: -5356346342905902615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_168
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 463
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3769a95bc5d890b0800000000000000
+      internalID: -5721588257214863557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_169
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 412
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a00bc220c9310020800000000000000
+      internalID: 2306187981570637987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_170
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 463
+        width: 35
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f62b96c23c43c9740800000000000000
+      internalID: 5160057285928137327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_171
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 412
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d451f857b325d370800000000000000
+      internalID: 8346616754779280598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_172
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 464
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8473ad1457eb7ff70800000000000000
+      internalID: 9221048172889651016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_173
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 413
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d8f7964870b8f730800000000000000
+      internalID: 4033167496937208017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_174
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 457
+        width: 40
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e89d497eec321ede0800000000000000
+      internalID: -1305723045405206130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_175
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 413
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dba502fe5ae760c40800000000000000
+      internalID: 5478205247889365693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_176
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 428
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba2d75e92ef0919e0800000000000000
+      internalID: -1650270322460994901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_177
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 364
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 866185f5dbca6bf90800000000000000
+      internalID: -6938168246569265560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_178
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 364
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43628c618bf774e0800000000000000
+      internalID: -1983840577543576757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_179
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 364
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae381296ab3e6c2e0800000000000000
+      internalID: -2105745385981901846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_180
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 364
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee50b71abf677250800000000000000
+      internalID: 5942341078390693610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_181
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 364
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1a8b8d46bd3339f0800000000000000
+      internalID: -489980081258919398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_182
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 364
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70436003964b0c4b0800000000000000
+      internalID: -5422135587483798521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_183
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 364
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7106bedafebeec0800000000000000
+      internalID: -3536469552112068678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_184
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 364
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 159fce27d5dbc8aa0800000000000000
+      internalID: -6157338381464569519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_185
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 364
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 966a3dd26bfd378f0800000000000000
+      internalID: -543845156435810711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_186
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 295
+        width: 47
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3415aee9c8a8c6780800000000000000
+      internalID: -8688417244538318525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_187
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 295
+        width: 47
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4db877fc3f2d7cac0800000000000000
+      internalID: -3834864613083083820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_188
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 295
+        width: 51
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ba80d40051811c70800000000000000
+      internalID: 8940068915985287864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_189
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 295
+        width: 55
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e770c453330120b10800000000000000
+      internalID: 1946135801101027198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_190
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 295
+        width: 48
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f0a152cefa240b80800000000000000
+      internalID: -8429565328860536591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_191
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 295
+        width: 47
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aca12aa2e8f6e9280800000000000000
+      internalID: -9034661146067330358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_192
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 295
+        width: 48
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3b3aa372d4fb0e0800000000000000
+      internalID: -2251996457779088442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_193
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 295
+        width: 47
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37cc0abea18c8aeb0800000000000000
+      internalID: -4708293392467964813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_194
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 324
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ece3c497778ddd240800000000000000
+      internalID: 4818245184004046542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_195
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 221
+        width: 45
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a74b3c2d1847e560800000000000000
+      internalID: 7342917007584216997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_196
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 221
+        width: 47
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e3cf6de1d916810800000000000000
+      internalID: 1756858085432639125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_197
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 221
+        width: 51
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e0b3335cc3bd46f0800000000000000
+      internalID: -698704677021962009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_198
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 221
+        width: 55
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8e15df71b96029b0800000000000000
+      internalID: -5106965766363341169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_199
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 221
+        width: 45
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75a41dbe1b8a9cfd0800000000000000
+      internalID: -2321138650813740457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_200
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 221
+        width: 45
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d33ce0fdf28633a90800000000000000
+      internalID: -7335404813241367747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_201
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 221
+        width: 46
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b9a001eab21b05c0800000000000000
+      internalID: -4248281229645796936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_202
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 221
+        width: 46
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d342e80f1deb4eb30800000000000000
+      internalID: 4315784151821067325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_203
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 221
+        width: 46
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d81de59f701be3540800000000000000
+      internalID: 4989620084979716493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_204
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 241
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a93936f4c45b3260800000000000000
+      internalID: 7078344444264135079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_205
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 274
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c02730bf5371cc6d0800000000000000
+      internalID: -2968972533731986932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_206
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 241
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dd314e7e00ad8250800000000000000
+      internalID: 5948586666934484437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_207
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 274
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d783fce1387867d0800000000000000
+      internalID: -2924955802153023534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_208
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 280
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cc6ae51a49b12f00800000000000000
+      internalID: 1090356312646773957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_209
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 274
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfeefdf6c180bfb60800000000000000
+      internalID: 7780821699441716988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_210
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 276
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e5845e025393cce0800000000000000
+      internalID: -1386102279662959131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_211
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 241
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c44fbb58f1bc1f10800000000000000
+      internalID: 2241862394772931784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_212
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 252
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b6c5a0ab6fd8ab40800000000000000
+      internalID: 5451853002281699001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_213
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 255
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b7fbfb8fb039c900800000000000000
+      internalID: 705148415905626032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_214
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 248
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9730a51286371b1d0800000000000000
+      internalID: -3336758957831486599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_215
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 221
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19a3fe47e9315c2c0800000000000000
+      internalID: -4412098688651937135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_216
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 221
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3706d791359c29b30800000000000000
+      internalID: 4292714753584619635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_217
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 221
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaa9452cbd8a12fa0800000000000000
+      internalID: -5827190781029082450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_218
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 221
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99777c86d5ce1fef0800000000000000
+      internalID: -76019832754571367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_219
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 221
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b93fb284eb4e7f390800000000000000
+      internalID: -7784501924980853861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_220
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 184
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9353bdc1476ea5a80800000000000000
+      internalID: -8477209962196814535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_221
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 184
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a66730e2460f99f10800000000000000
+      internalID: 2277115399671871082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_222
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 184
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9152c81628a3ba2e0800000000000000
+      internalID: -2113531268463581927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_223
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 184
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d093690b49b4fb410800000000000000
+      internalID: 1494996703300172045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_224
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 184
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fffcfb1c7c56c490800000000000000
+      internalID: -7726386422592241678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_225
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 184
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27c128a52f4e5d9c0800000000000000
+      internalID: -3902961772494971790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_226
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 184
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bbd67622f320bda0800000000000000
+      internalID: -5931201186312561741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_227
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 184
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77db291dc2e131410800000000000000
+      internalID: 1446533083159510391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_228
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 184
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81aa9cecce773f9a0800000000000000
+      internalID: -6200480402993731048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_229
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 184
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ce4bd27ef5460f00800000000000000
+      internalID: 1082629719580167875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_230
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 184
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4449a4ccf320dcf0800000000000000
+      internalID: -229644012457737139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_231
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 184
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c2b1e97191ba24c0800000000000000
+      internalID: -4311438454880619837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_232
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 194
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d11e16bda74eaef0800000000000000
+      internalID: -95059730717863472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_233
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 144
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 656fdba9a7f5f4a70800000000000000
+      internalID: 8813367975974139478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_234
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 136
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2685e8246a6ecf010800000000000000
+      internalID: 1224106800493516898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_235
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 136
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfa6c11c9fb393a40800000000000000
+      internalID: 5348371976351935229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_236
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 136
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60602417f6d32e920800000000000000
+      internalID: 3018042249142470150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_237
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 136
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b663601dd00d0eb0800000000000000
+      internalID: -4752141082343283024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_238
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 136
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62991ee8d021a9fe0800000000000000
+      internalID: -1181612102790309594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_239
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 136
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6de2a4fc81571810800000000000000
+      internalID: 1735945847216205165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_240
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 136
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 063d879b9423a2fd0800000000000000
+      internalID: -2366023362004069536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_241
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 136
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b655a6266bc0312d0800000000000000
+      internalID: -3309287323712465557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_242
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 136
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a65758a735645750800000000000000
+      internalID: 6292765869065328290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_243
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 126
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b5da04af9b0eda0800000000000000
+      internalID: -5917525425886766230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_244
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 4
+        width: 126
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6535329c9a955d530800000000000000
+      internalID: 3879105239808430934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muertesoldado_245
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 59
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af5fe071b275c97b0800000000000000
+      internalID: -5216198425819810310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ebd12fb013823cd48ab9580a89d6ae1c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      muertesoldado_0: -5259368518037437754
+      muertesoldado_1: 995504899764007969
+      muertesoldado_10: 8687096186096882326
+      muertesoldado_100: 7962291328075035500
+      muertesoldado_101: -5160614694174656822
+      muertesoldado_102: -1703271283555603367
+      muertesoldado_103: 1364593623070640234
+      muertesoldado_104: -2041192419218642755
+      muertesoldado_105: 357904135351746757
+      muertesoldado_106: 590427023186414395
+      muertesoldado_107: 8063368129984992375
+      muertesoldado_108: 6242657364588863331
+      muertesoldado_109: 2695386180458318693
+      muertesoldado_11: 4234807270490146437
+      muertesoldado_110: -1777938950488195293
+      muertesoldado_111: -3319715567463761312
+      muertesoldado_112: -1070471471447572407
+      muertesoldado_113: 4425895655372684719
+      muertesoldado_114: 6605311079504097696
+      muertesoldado_115: -7355486818229669580
+      muertesoldado_116: -2838998382801255100
+      muertesoldado_117: -5538990510051668036
+      muertesoldado_118: -234607395828677421
+      muertesoldado_119: 2248449150506408499
+      muertesoldado_12: -7777087944414952698
+      muertesoldado_120: 7792552064469436016
+      muertesoldado_121: 3361718428316684597
+      muertesoldado_122: -2917732846230516674
+      muertesoldado_123: -1272507488256519368
+      muertesoldado_124: 2862866719517183781
+      muertesoldado_125: -1422261740468956792
+      muertesoldado_126: -8821018059875714303
+      muertesoldado_127: -4891579671651055373
+      muertesoldado_128: -5270517790118657816
+      muertesoldado_129: 7132441699625784878
+      muertesoldado_13: -1790703044165696921
+      muertesoldado_130: 8289118493939243052
+      muertesoldado_131: 2442355545335095812
+      muertesoldado_132: 1909146008271116740
+      muertesoldado_133: 4699197718829270085
+      muertesoldado_134: -918176524244351714
+      muertesoldado_135: -7292449406948785409
+      muertesoldado_136: 1772528371346136444
+      muertesoldado_137: -5948919732775048589
+      muertesoldado_138: 1651199307185195787
+      muertesoldado_139: 4469087540157794462
+      muertesoldado_14: 2057793608743426824
+      muertesoldado_140: -8189834128637000428
+      muertesoldado_141: 6938764334590246441
+      muertesoldado_142: -8424704080407174182
+      muertesoldado_143: -3207863083517743216
+      muertesoldado_144: -6126390812570972994
+      muertesoldado_145: -8176928057006815277
+      muertesoldado_146: -6480221477554597709
+      muertesoldado_147: 725904903680078835
+      muertesoldado_148: -3135484199457294471
+      muertesoldado_149: -8765733393848211506
+      muertesoldado_15: 8921565596995030790
+      muertesoldado_150: 8772732707402885718
+      muertesoldado_151: 2610855309245506467
+      muertesoldado_152: -2003122745969195443
+      muertesoldado_153: -7724612236719482589
+      muertesoldado_154: -6787927856784639803
+      muertesoldado_155: -9196539606949477623
+      muertesoldado_156: 2493726863688033146
+      muertesoldado_157: -9087259592449450793
+      muertesoldado_158: 3711016892649802920
+      muertesoldado_159: 6430406146708685606
+      muertesoldado_16: -4222651006951666080
+      muertesoldado_160: -4373852372072866869
+      muertesoldado_161: 4176826259753942622
+      muertesoldado_162: -1674957797908861632
+      muertesoldado_163: -1625251667155715792
+      muertesoldado_164: -6282590977735957807
+      muertesoldado_165: 8653747720616533293
+      muertesoldado_166: 2154206539458798533
+      muertesoldado_167: -5356346342905902615
+      muertesoldado_168: -5721588257214863557
+      muertesoldado_169: 2306187981570637987
+      muertesoldado_17: -7244675028885251458
+      muertesoldado_170: 5160057285928137327
+      muertesoldado_171: 8346616754779280598
+      muertesoldado_172: 9221048172889651016
+      muertesoldado_173: 4033167496937208017
+      muertesoldado_174: -1305723045405206130
+      muertesoldado_175: 5478205247889365693
+      muertesoldado_176: -1650270322460994901
+      muertesoldado_177: -6938168246569265560
+      muertesoldado_178: -1983840577543576757
+      muertesoldado_179: -2105745385981901846
+      muertesoldado_18: -243111897481736433
+      muertesoldado_180: 5942341078390693610
+      muertesoldado_181: -489980081258919398
+      muertesoldado_182: -5422135587483798521
+      muertesoldado_183: -3536469552112068678
+      muertesoldado_184: -6157338381464569519
+      muertesoldado_185: -543845156435810711
+      muertesoldado_186: -8688417244538318525
+      muertesoldado_187: -3834864613083083820
+      muertesoldado_188: 8940068915985287864
+      muertesoldado_189: 1946135801101027198
+      muertesoldado_19: 6346211420234409386
+      muertesoldado_190: -8429565328860536591
+      muertesoldado_191: -9034661146067330358
+      muertesoldado_192: -2251996457779088442
+      muertesoldado_193: -4708293392467964813
+      muertesoldado_194: 4818245184004046542
+      muertesoldado_195: 7342917007584216997
+      muertesoldado_196: 1756858085432639125
+      muertesoldado_197: -698704677021962009
+      muertesoldado_198: -5106965766363341169
+      muertesoldado_199: -2321138650813740457
+      muertesoldado_2: 5693522943976014288
+      muertesoldado_20: 163257191844030330
+      muertesoldado_200: -7335404813241367747
+      muertesoldado_201: -4248281229645796936
+      muertesoldado_202: 4315784151821067325
+      muertesoldado_203: 4989620084979716493
+      muertesoldado_204: 7078344444264135079
+      muertesoldado_205: -2968972533731986932
+      muertesoldado_206: 5948586666934484437
+      muertesoldado_207: -2924955802153023534
+      muertesoldado_208: 1090356312646773957
+      muertesoldado_209: 7780821699441716988
+      muertesoldado_21: -2578665536918081621
+      muertesoldado_210: -1386102279662959131
+      muertesoldado_211: 2241862394772931784
+      muertesoldado_212: 5451853002281699001
+      muertesoldado_213: 705148415905626032
+      muertesoldado_214: -3336758957831486599
+      muertesoldado_215: -4412098688651937135
+      muertesoldado_216: 4292714753584619635
+      muertesoldado_217: -5827190781029082450
+      muertesoldado_218: -76019832754571367
+      muertesoldado_219: -7784501924980853861
+      muertesoldado_22: 1290765535481932528
+      muertesoldado_220: -8477209962196814535
+      muertesoldado_221: 2277115399671871082
+      muertesoldado_222: -2113531268463581927
+      muertesoldado_223: 1494996703300172045
+      muertesoldado_224: -7726386422592241678
+      muertesoldado_225: -3902961772494971790
+      muertesoldado_226: -5931201186312561741
+      muertesoldado_227: 1446533083159510391
+      muertesoldado_228: -6200480402993731048
+      muertesoldado_229: 1082629719580167875
+      muertesoldado_23: -7339494291482196017
+      muertesoldado_230: -229644012457737139
+      muertesoldado_231: -4311438454880619837
+      muertesoldado_232: -95059730717863472
+      muertesoldado_233: 8813367975974139478
+      muertesoldado_234: 1224106800493516898
+      muertesoldado_235: 5348371976351935229
+      muertesoldado_236: 3018042249142470150
+      muertesoldado_237: -4752141082343283024
+      muertesoldado_238: -1181612102790309594
+      muertesoldado_239: 1735945847216205165
+      muertesoldado_24: -6619309772666659529
+      muertesoldado_240: -2366023362004069536
+      muertesoldado_241: -3309287323712465557
+      muertesoldado_242: 6292765869065328290
+      muertesoldado_243: -5917525425886766230
+      muertesoldado_244: 3879105239808430934
+      muertesoldado_245: -5216198425819810310
+      muertesoldado_25: -2234246623733174562
+      muertesoldado_26: 7403651812177120294
+      muertesoldado_27: 3449772508233591661
+      muertesoldado_28: 799150280843972527
+      muertesoldado_29: 9146341649301590974
+      muertesoldado_3: 639122919013960343
+      muertesoldado_30: -7012689333350096157
+      muertesoldado_31: -6012647904572489753
+      muertesoldado_32: -6519574990286037011
+      muertesoldado_33: 3097383809808844598
+      muertesoldado_34: 392870943679472301
+      muertesoldado_35: -1278459107736367213
+      muertesoldado_36: 4409139987350252781
+      muertesoldado_37: 6890104968271710171
+      muertesoldado_38: 5613319093844150850
+      muertesoldado_39: 1912221663107518631
+      muertesoldado_4: -5574137609972966636
+      muertesoldado_40: 2668161874778350279
+      muertesoldado_41: -8410584854274866066
+      muertesoldado_42: 3161983062315525238
+      muertesoldado_43: -3448794295812333357
+      muertesoldado_44: -6280345676747922573
+      muertesoldado_45: -7001388567645021028
+      muertesoldado_46: 8986926669892230459
+      muertesoldado_47: 2513766593851833114
+      muertesoldado_48: -7001550256170511876
+      muertesoldado_49: 4906508552369506306
+      muertesoldado_5: 288052524523968484
+      muertesoldado_50: 823519154101590993
+      muertesoldado_51: -8457968530556288852
+      muertesoldado_52: -4642884272484034207
+      muertesoldado_53: 967564389766994636
+      muertesoldado_54: -7421126678200263003
+      muertesoldado_55: 6088781151315861050
+      muertesoldado_56: 1791749475565992838
+      muertesoldado_57: 6081878082478928209
+      muertesoldado_58: 6430134483773996016
+      muertesoldado_59: 151400718361287156
+      muertesoldado_6: 7259313905869587018
+      muertesoldado_60: 1634840571919613158
+      muertesoldado_61: 8002746239917102145
+      muertesoldado_62: -2255656222373530754
+      muertesoldado_63: 1543446465442826792
+      muertesoldado_64: 386922406521527835
+      muertesoldado_65: -4238006621777822789
+      muertesoldado_66: -8397380814360978077
+      muertesoldado_67: -8508026348396428021
+      muertesoldado_68: -5940416084549949756
+      muertesoldado_69: -1931304975613809052
+      muertesoldado_7: 1696957044775803112
+      muertesoldado_70: 3674986431908021394
+      muertesoldado_71: 8617058015444294826
+      muertesoldado_72: -7707675412965809012
+      muertesoldado_73: -2630854146337808922
+      muertesoldado_74: 1568093064362822296
+      muertesoldado_75: -5280533434940901097
+      muertesoldado_76: 898925481290301157
+      muertesoldado_77: 3948674675867588322
+      muertesoldado_78: 3951235846542143749
+      muertesoldado_79: 2831835127098918792
+      muertesoldado_8: -3125146625027183513
+      muertesoldado_80: 4053437523988460601
+      muertesoldado_81: 8066290574906069352
+      muertesoldado_82: 1608451360411731029
+      muertesoldado_83: 1616728479074404833
+      muertesoldado_84: 8716775319485564979
+      muertesoldado_85: 948093841366520087
+      muertesoldado_86: -6178596336736966625
+      muertesoldado_87: 3766870403298850395
+      muertesoldado_88: 7485338516006561126
+      muertesoldado_89: 8974918382447604225
+      muertesoldado_9: 263432022564161130
+      muertesoldado_90: -1843829225132337307
+      muertesoldado_91: 4997197685531732864
+      muertesoldado_92: -5951854472289147383
+      muertesoldado_93: -5663033857032178088
+      muertesoldado_94: 903572733598528932
+      muertesoldado_95: 2349206470873882084
+      muertesoldado_96: -1571795656506719524
+      muertesoldado_97: 4064466451726065224
+      muertesoldado_98: 1913308809252275255
+      muertesoldado_99: -8958391378434026697
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
