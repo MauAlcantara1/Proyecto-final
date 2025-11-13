@@ -9,6 +9,7 @@ public class NavFinal : MonoBehaviour
     public TextMeshProUGUI textoSombra;
     public float duracionConteo = 1.5f;
     public float velocidadParpadeo = 1.5f;
+    
 
     void Start()
     {

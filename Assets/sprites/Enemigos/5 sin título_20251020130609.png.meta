@@ -773,7 +773,7 @@ TextureImporter:
       name: caminar6
       rect:
         serializedVersion: 2
-        x: 166
+        x: 167
         y: 1121
         width: 34
         height: 41
@@ -1873,7 +1873,7 @@ TextureImporter:
       name: ataque4
       rect:
         serializedVersion: 2
-        x: 125
+        x: 126
         y: 781
         width: 40
         height: 49
