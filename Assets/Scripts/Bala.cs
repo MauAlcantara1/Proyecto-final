@@ -53,6 +53,14 @@ public class Bala : MonoBehaviour
                 impacto = true;
             }
 
+            EnemYeti enemYeti = other.GetComponent<EnemYeti>();
+            if (enemYeti != null)
+            {
+                enemYeti.RecibirDaño(dano);
+                Debug.Log($"[BALA] 💥 Impacto al Yeti. Daño enviado: {dano}");
+                impacto = true;
+            }
+
             // 💣 Si impactó contra un enemigo válido, destruir la bala
             if (impacto)
                 Destroy(gameObject);

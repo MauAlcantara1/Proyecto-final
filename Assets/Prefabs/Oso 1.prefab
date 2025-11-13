@@ -1,5 +1,73 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2606682139822800324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1881502908740487190}
+  - component: {fileID: 388782293422880282}
+  m_Layer: 7
+  m_Name: ataqueCuerpo
+  m_TagString: "Da\xF1oEnemigo"
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1881502908740487190
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2606682139822800324}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.126, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2363946959090669105}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &388782293422880282
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2606682139822800324}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.058734097, y: 0.24546531}
+  m_Radius: 0.31326875
 --- !u!1 &3345989717143993216
 GameObject:
   m_ObjectHideFlags: 0
@@ -15,7 +83,7 @@ GameObject:
   - component: {fileID: 6498224617740119568}
   - component: {fileID: 6142334075242535347}
   - component: {fileID: 5072516842437426191}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Oso 1
   m_TagString: enemigo
   m_Icon: {fileID: 0}
@@ -31,10 +99,11 @@ Transform:
   m_GameObject: {fileID: 3345989717143993216}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.909117, y: -1.14, z: 0}
-  m_LocalScale: {x: 6.826938, y: 6.826938, z: 6.826938}
+  m_LocalPosition: {x: 13.98, y: -2.08, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1881502908740487190}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6373165611924950766
@@ -83,7 +152,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 2
   m_Sprite: {fileID: -1845466348888407652, guid: 4655bc3201b4b654295cfdb54bc421ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -126,7 +195,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.00045484304, y: 0.10877849}
@@ -203,8 +272,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemOso
   jugador: {fileID: 0}
-  rangoDeteccion: 10
-  rangoAtaque: 3
+  rangoDeteccion: 14
+  rangoAtaque: 2
   velocidad: 2
   velocidadHuida: 5
   spriteMiraDerecha: 0
@@ -230,6 +299,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DropLoot
   posiblesDrops:
   - {fileID: 6962116332179625240, guid: 2c3799b1b1c50f946b9b299d3c8d4820, type: 3}
-  probabilidadDrop: 1
+  probabilidadDrop: 0.512
   minDrops: 1
   maxDrops: 1

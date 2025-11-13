@@ -96,7 +96,6 @@ public class EnemOso : MonoBehaviour
             return;
         }
 
-        // Detección y movimiento
         if (distancia <= rangoDeteccion && !detectando && !preparando && !avanzando && !atacando && !agachandose && !enCicloAtaque)
         {
             detectando = true;

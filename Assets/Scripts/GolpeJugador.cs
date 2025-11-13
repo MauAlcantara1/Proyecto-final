@@ -40,7 +40,6 @@ public class GolpeJugador : MonoBehaviour
 
         if (other.CompareTag("enemigo"))
         {
-            // Dañar enemigo
             EnemOso oso = other.GetComponent<EnemOso>();
             if (oso != null)
             {
@@ -53,6 +52,20 @@ public class GolpeJugador : MonoBehaviour
             {
                 tanque.RecibirDaño(dano);
                 Debug.Log($"[GOLPE] 💥 Impacto al Tanque. Daño: {dano}");
+            }
+
+            Tanque2 tanque2 = other.GetComponent<Tanque2>();
+            if (tanque2 != null)
+            {
+                tanque2.RecibirDaño(dano);
+                Debug.Log($"[BALA] 💥 Impacto al Tanque2. Daño enviado: {dano}");
+            }
+
+            EnemYeti enemYeti = other.GetComponent<EnemYeti>();
+            if (enemYeti != null)
+            {
+                enemYeti.RecibirDaño(dano);
+                Debug.Log($"[BALA] 💥 Impacto al Yeti. Daño enviado: {dano}");
             }
         }
     }

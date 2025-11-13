@@ -349,7 +349,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8532654280525234988}
   - component: {fileID: 3581351279444418265}
-  - component: {fileID: 3314306913677347619}
+  - component: {fileID: 8968187822731136652}
   m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
@@ -430,7 +430,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3314306913677347619
+--- !u!95 &8968187822731136652
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -440,7 +440,7 @@ Animator:
   m_GameObject: {fileID: 6524548217175658901}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f2281425b2e7fb04f9ece682a588fea1, type: 2}
+  m_Controller: {fileID: 9100000, guid: 06c774bb99463aa45b405cb0823f14d4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
