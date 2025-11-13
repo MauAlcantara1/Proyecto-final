@@ -7,7 +7,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: agachado 0 0
+  m_Name: 'agachado '
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -60,7 +60,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: festejo 0
+  m_Name: 'festejo '
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -183,7 +183,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: disparoyrecargaagachado 0 0
+  m_Name: disparoyrecargaagachado
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -210,7 +210,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: levantarse 0 0
+  m_Name: 'levantarse '
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -262,7 +262,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: cac 0 0
+  m_Name: 'cac '
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -290,18 +290,6 @@ AnimatorController:
   m_Name: Square
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: movX
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: moxY
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
   - m_Name: enemigcerc
     m_Type: 4
     m_DefaultFloat: 0
@@ -626,7 +614,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: disparoyrecarga 0
+  m_Name: 'disparoyrecarga '
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
