@@ -1653,6 +1653,10 @@ PrefabInstance:
       propertyPath: sfxObjetoRecogido
       value: 
       objectReference: {fileID: 8300000, guid: c4352d76d6bbb2544a2a9124c6d6c347, type: 3}
+    - target: {fileID: 4629762352990473721, guid: 3dd38b7ef3d50cd44a266534cc2e14a7, type: 3}
+      propertyPath: muerto
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7417369988130022333, guid: 3dd38b7ef3d50cd44a266534cc2e14a7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.66
