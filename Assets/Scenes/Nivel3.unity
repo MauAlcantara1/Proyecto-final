@@ -1599,6 +1599,7 @@ MonoBehaviour:
   prefabBala: {fileID: 0}
   puntoDisparo: {fileID: 0}
   fuerzaDisparo: 8
+  sonidoMuerte: {fileID: 0}
   vidaMaxima: 10
 --- !u!1 &429116072
 GameObject:
@@ -2497,6 +2498,10 @@ PrefabInstance:
       propertyPath: textoPuntuacion
       value: 
       objectReference: {fileID: 1721105273}
+    - target: {fileID: 4596491513191016194, guid: 3dd38b7ef3d50cd44a266534cc2e14a7, type: 3}
+      propertyPath: textoPuntuacion2
+      value: 
+      objectReference: {fileID: 1514577660}
     - target: {fileID: 7417369988130022333, guid: 3dd38b7ef3d50cd44a266534cc2e14a7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.26
