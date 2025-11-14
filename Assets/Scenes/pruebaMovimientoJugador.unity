@@ -557,11 +557,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8355372125962523910, guid: 1be288e0c541c964386b413778d432a9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.98
+      value: 8.16
       objectReference: {fileID: 0}
     - target: {fileID: 8355372125962523910, guid: 1be288e0c541c964386b413778d432a9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.9193102
+      value: -2.24
       objectReference: {fileID: 0}
     - target: {fileID: 8355372125962523910, guid: 1be288e0c541c964386b413778d432a9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -932,8 +932,8 @@ GameObject:
   - component: {fileID: 586454198}
   - component: {fileID: 586454197}
   - component: {fileID: 586454195}
-  - component: {fileID: 586454202}
   - component: {fileID: 586454203}
+  - component: {fileID: 586454204}
   m_Layer: 0
   m_Name: soldado
   m_TagString: enemigo
@@ -1057,7 +1057,7 @@ Transform:
   m_GameObject: {fileID: 586454194}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.67, y: -2.91, z: 0}
+  m_LocalPosition: {x: 4, y: -2.87, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1065,32 +1065,6 @@ Transform:
   - {fileID: 524397131}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &586454202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 586454194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df10e1988ce2c284c8f2772b8ebb915d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemSoldado
-  rangoLargo: 8
-  rangoMedio: 6
-  rangoCuerpo: 1.5
-  velocidadMovimiento: 2
-  "da\xF1oCuerpo": 20
-  animIdle: idle
-  animDisparo: 'disparoyrecarga '
-  animDisparoAgachado: agachado
-  animCuerpo: 'cac '
-  animCaminar: caminar
-  animMuerte: muerte
-  prefabBala: {fileID: 7444384463852843943, guid: 17db775e2f8827544bd006f0d9ef6fa9, type: 3}
-  puntoDisparo: {fileID: 1842416333}
-  fuerzaDisparo: 8
 --- !u!61 &586454203
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1137,6 +1111,26 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.42, y: 0.39}
   m_EdgeRadius: 0
+--- !u!114 &586454204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586454194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c214f9f803086cb46900d8c14b323437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  velocidad: 2
+  rangoPerseguir: 9
+  rangoDisparo: 7
+  rangoCAC: 4
+  prefabBala: {fileID: 7444384463852843943, guid: 17db775e2f8827544bd006f0d9ef6fa9, type: 3}
+  puntoDisparo: {fileID: 1842416333}
+  fuerzaDisparo: 6
+  tiempoEntreDisparos: 1.5
 --- !u!1001 &749650289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1661,7 +1655,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: c4352d76d6bbb2544a2a9124c6d6c347, type: 3}
     - target: {fileID: 7417369988130022333, guid: 3dd38b7ef3d50cd44a266534cc2e14a7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.9734116
+      value: -6.66
       objectReference: {fileID: 0}
     - target: {fileID: 7417369988130022333, guid: 3dd38b7ef3d50cd44a266534cc2e14a7, type: 3}
       propertyPath: m_LocalPosition.y
