@@ -12,14 +12,19 @@ public class Tanque : MonoBehaviour
     private int vidaActual;
     private bool estaMuerto = false;
 
-    [Header("Disparo")] // 🟩 NUEVO
-    [SerializeField] private GameObject prefabBala; // 🟩 NUEVO
-    [SerializeField] private Transform puntoDisparo; // 🟩 NUEVO
-    [SerializeField] private float fuerzaDisparo = 8f; // 🟩 NUEVO
+    [Header("Disparo")]
+    [SerializeField] private GameObject prefabBala;
+    [SerializeField] private Transform puntoDisparo;
+    [SerializeField] private float fuerzaDisparo = 8f;
 
     [Header("Detección de giro")]
     [Tooltip("Ángulo mínimo para considerar que el jugador está detrás (en grados)")]
     [SerializeField] private float anguloDetras = 100f;
+
+    // 🔊 AUDIO (NUEVO)
+    [Header("Audio")]
+    [SerializeField] private AudioClip sonidoMuerte;
+    private AudioSource audioSource;
 
     private Animator animator;
     private Transform player;
@@ -46,7 +51,7 @@ public class Tanque : MonoBehaviour
     private Vector3 puntoFinal;
     private bool yendoAlFinal = true;
 
-    private bool balaDisparada = false; // 🟩 NUEVO
+    private bool balaDisparada = false;
 
     private void Start()
     {
@@ -55,6 +60,9 @@ public class Tanque : MonoBehaviour
         colisionador = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player")?.transform;
+
+        // 🔊 AUDIO
+        audioSource = GetComponent<AudioSource>();
 
         puntoInicial = transform.position;
         puntoFinal = puntoInicial + transform.right * 4f;
@@ -132,23 +140,15 @@ public class Tanque : MonoBehaviour
         }
 
         if (info.IsName("Disparo") && info.normalizedTime >= 0.95f)
-            {
-                balaDisparada = false;
-            }
-
-
-        // 🟩 NUEVO: durante la animación de Disparo, dispara la bala en el momento medio
-        //if (info.IsName("Disparo") && info.normalizedTime >= 0.5f && !balaDisparada)
-        //{
-        //    Disparar();
-        //    balaDisparada = true;
-        //}
+        {
+            balaDisparada = false;
+        }
 
         if (disparoHecho)
         {
             if (info.IsName("Disparo") && info.normalizedTime >= 0.95f)
             {
-                balaDisparada = false; // 🟩 NUEVO
+                balaDisparada = false;
 
                 arranque0Activo = true;
                 arranque0Terminado = false;
@@ -205,8 +205,6 @@ public class Tanque : MonoBehaviour
         }
     }
 
-
-
     public void RecibirDaño(int cantidad)
     {
         if (estaMuerto) return;
@@ -223,6 +221,10 @@ public class Tanque : MonoBehaviour
         estaMuerto = true;
 
         Debug.Log("☠️ Tanque ha muerto.");
+
+        // 🔊 SONIDO DE MUERTE
+        if (audioSource != null && sonidoMuerte != null)
+            audioSource.PlayOneShot(sonidoMuerte);
 
         persiguiendo = false;
         enProcesoAtaque = false;
@@ -316,7 +318,6 @@ public class Tanque : MonoBehaviour
     {
         VoltearTanque(!mirandoDerecha);
     }
-
 
     private void PerseguirJugador()
     {

@@ -9,11 +9,15 @@ public class animacionesTorsoJugador : MonoBehaviour
     public bool muerto = false;
     private bool inmune = false;
     private GolpeJugador golpeJugador;
+    private AudioSource audioSource;
+
 
     void Start()
     {
         animator = GetComponent<Animator>();
         golpeJugador = GetComponentInChildren<GolpeJugador>();
+        audioSource = GetComponent<AudioSource>();
+
 
     }
 
@@ -45,12 +49,17 @@ public class animacionesTorsoJugador : MonoBehaviour
 
     public void Morir()
     {
-        if (muerto || inmune) return;  
+        if (muerto || inmune) return;
 
-        piernas.enabled = false;
+        if (piernas != null)
+            piernas.enabled = false;
+
         muerto = true;
 
         animator.Play("muerte");
+
+        if (audioSource != null)
+            audioSource.Play();
     }
 
     public void Revivir()
@@ -95,4 +104,12 @@ public class animacionesTorsoJugador : MonoBehaviour
             golpeJugador.DesactivarGolpe();
         }
     }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Morir();
+        }
+    }
+
 }
