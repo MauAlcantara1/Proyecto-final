@@ -25,11 +25,15 @@ public class Tanque2 : MonoBehaviour
     private bool estaMuerto = false;
     private int vidaActual;
 
-    [SerializeField] private GameObject prefabBala; // 🟩 NUEVO
-    [SerializeField] private Transform puntoDisparo; // 🟩 NUEVO
-    [SerializeField] private float fuerzaDisparo = 8f; // 🟩 NUEVO
+    [SerializeField] private GameObject prefabBala;
+    [SerializeField] private Transform puntoDisparo;
+    [SerializeField] private float fuerzaDisparo = 8f;
 
-
+    // 🟩🟩🟩 AUDIO DE MUERTE (NUEVO)
+    [Header("Audio")]
+    [SerializeField] private AudioClip sonidoMuerte;
+    private AudioSource audioSource;
+    // 🟩🟩🟩 FIN
 
     // Componentes y estados
     private Transform jugador;
@@ -69,9 +73,11 @@ public class Tanque2 : MonoBehaviour
 
         if (rb != null)
             rb.freezeRotation = true;
-            
+
         vidaActual = vidaMaxima;
 
+        // 🟩 OBTENER AUDIOSOURCE (NUEVO)
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -118,7 +124,8 @@ public class Tanque2 : MonoBehaviour
         puedeEmbestir = true;
     }
 
-    // ========== CICLO DE ATAQUE ==========
+    // ========== CICLO ATAQUE ==========
+
     private IEnumerator CicloAtaque()
     {
         enCicloAtaque = true;
@@ -126,17 +133,14 @@ public class Tanque2 : MonoBehaviour
 
         while (jugadorDetectado && !embistiendo)
         {
-            // 🔹 Etapa 1: CARGA
             anim.SetBool("Cargar", true);
             anim.SetBool("Disparar", false);
             yield return new WaitForSeconds(duracionCarga);
 
-            // 🔹 Etapa 2: DISPARO
             anim.SetBool("Cargar", false);
             anim.SetBool("Disparar", true);
             yield return new WaitForSeconds(duracionDisparo);
 
-            // 🔹 Etapa 3: Reinicio del ciclo
             anim.SetBool("Disparar", false);
             yield return new WaitForSeconds(pausaEntreCiclos);
 
@@ -156,14 +160,12 @@ public class Tanque2 : MonoBehaviour
         atacando = false;
     }
 
-
-
     // ========== EMBESTIDA ==========
-   private IEnumerator Embestida()
+
+    private IEnumerator Embestida()
     {
         if (embistiendo) yield break;
 
-        // Limpieza
         anim.SetBool("Cargar", false);
         anim.SetBool("Volver a disp", false);
         anim.SetBool("Girar", false);
@@ -173,14 +175,12 @@ public class Tanque2 : MonoBehaviour
         enCicloAtaque = false;
         puedeEmbestir = false;
 
-        // 🔹 Animación de embestida
         anim.SetBool("Embestir", true);
         yield return null;
         anim.SetBool("Embestir", false);
 
         yield return new WaitForSeconds(0.3f);
 
-        // Movimiento de embestida
         Vector3 direccion = mirandoDerecha ? Vector3.right : Vector3.left;
         float distanciaRecorrida = 0f;
         Vector3 inicio = transform.position;
@@ -192,13 +192,10 @@ public class Tanque2 : MonoBehaviour
             yield return null;
         }
 
-        // Si pausaPostEmbestida > 0, esperamos; si no, giramos enseguida
         if (pausaPostEmbestida > 0)
             yield return new WaitForSeconds(pausaPostEmbestida);
 
-        // 🔹 Inicia el giro inmediatamente
         StartCoroutine(GiroTrasEmbestida());
-
     }
 
     private IEnumerator GiroTrasEmbestida()
@@ -209,8 +206,6 @@ public class Tanque2 : MonoBehaviour
         anim.SetBool("Girar", false);
         VoltearTanque(!mirandoDerecha);
 
-
-
         embistiendo = false;
         atacando = false;
         puedeEmbestir = true;
@@ -218,8 +213,8 @@ public class Tanque2 : MonoBehaviour
         StartCoroutine(CicloAtaque());
     }
 
-
     // ========== MOVIMIENTO ==========
+
     private void MoverHaciaJugador()
     {
         if (jugador == null) return;
@@ -255,11 +250,7 @@ public class Tanque2 : MonoBehaviour
         Vector3 escala = transform.localScale;
         escala.x = mirandoDerecha ? Mathf.Abs(escala.x) : -Mathf.Abs(escala.x);
         transform.localScale = escala;
-        
     }
-
-
-
 
     public void RecibirDaño(int cantidad)
     {
@@ -276,17 +267,21 @@ public class Tanque2 : MonoBehaviour
         if (estaMuerto) return;
         estaMuerto = true;
 
+        // 🟩 REPRODUCIR SONIDO DE MUERTE (NUEVO)
+        if (audioSource != null && sonidoMuerte != null)
+            audioSource.PlayOneShot(sonidoMuerte);
+        // 🟩 FIN
+
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero;
-            rb.isKinematic = true; // Evita que la física lo mueva más
+            rb.isKinematic = true;
         }
 
-        // 🚫 Desactivar colisiones con el jugador o proyectiles
         if (colisionesTanque != null)
             colisionesTanque.enabled = false;
-        anim.Play("Muerte");
 
+        anim.Play("Muerte");
         anim.SetTrigger("Muerte");
 
         StopAllCoroutines();
@@ -298,7 +293,6 @@ public class Tanque2 : MonoBehaviour
             if (colBala != null && colisionesTanque != null)
                 Physics2D.IgnoreCollision(colisionesTanque, colBala, true);
         }
-
 
         DropLoot drop = GetComponent<DropLoot>();
         if (drop != null)
@@ -315,12 +309,8 @@ public class Tanque2 : MonoBehaviour
 
         if (rbBala != null)
         {
-            // Dirección depende del signo de la escala X
             float direccionX = Mathf.Sign(transform.localScale.x);
             rbBala.linearVelocity = new Vector2(direccionX * fuerzaDisparo, 0f);
         }
     }
-
-
-
 }

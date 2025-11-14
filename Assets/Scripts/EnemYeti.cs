@@ -24,10 +24,12 @@ public class EnemYeti : MonoBehaviour
     private bool atacando = false;
     private bool muerto = false;
 
+
     private Transform jugador;
     private Animator anim;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
+    private AudioSource audioSource;
 
     private void Start()
     {
@@ -35,6 +37,8 @@ public class EnemYeti : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
+
 
         if (rb != null)
             rb.freezeRotation = true;
@@ -113,6 +117,9 @@ public class EnemYeti : MonoBehaviour
 
         muerto = true;
         anim.Play(animMuerte);
+
+        if (audioSource != null)
+            audioSource.Play();
 
         if (rb != null)
         {

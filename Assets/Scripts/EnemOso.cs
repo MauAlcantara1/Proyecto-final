@@ -25,8 +25,12 @@ public class EnemOso : MonoBehaviour
     [Header("Vida del oso")]
     public int vidaMax = 100;
     public int vidaActual;
-    [Tooltip("Si la vida baja a este umbral, el oso cae y huye (comportamiento de herido).")]
     public int umbralHuida = 30;
+
+    // 🔊 --- AUDIO ---
+    [Header("Audio")]
+    public AudioClip sonidoHuida;
+    private AudioSource audioSource;
 
     // Referencias
     private Animator animator;
@@ -62,6 +66,9 @@ public class EnemOso : MonoBehaviour
     {
         vidaActual = vidaMax;
 
+        // AUDIO
+        audioSource = GetComponent<AudioSource>();
+
         if (jugador == null)
         {
             GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
@@ -89,7 +96,6 @@ public class EnemOso : MonoBehaviour
 
         float distancia = Vector2.Distance(transform.position, jugador.position);
 
-        // Ataque
         if (distancia <= rangoAtaque && !enCicloAtaque && !atacando)
         {
             IniciarCicloAtaque();
@@ -100,7 +106,6 @@ public class EnemOso : MonoBehaviour
         {
             detectando = true;
             animator.SetTrigger("detEnem");
-            Debug.Log("[EnemOso] Jugador detectado → animación detectar enemigo");
             Invoke(nameof(PasarAPrepararCaminar), 1.0f);
         }
 
@@ -126,7 +131,6 @@ public class EnemOso : MonoBehaviour
         animator.ResetTrigger("Avanzar");
         animator.SetTrigger("PrepAtk");
 
-        Debug.Log("[EnemOso] Jugador en rango → iniciar animación PrepAtk");
         StartCoroutine(CicloDeAtaqueContinuo());
     }
 
@@ -136,11 +140,10 @@ public class EnemOso : MonoBehaviour
 
         animator.ResetTrigger("PrepAtk");
         animator.SetTrigger("atqEnem");
-        Debug.Log("[EnemOso] Ejecutando ataque inicial...");
 
         if (Vector2.Distance(transform.position, jugador.position) <= rangoAtaque)
         {
-            Debug.Log($"[EnemOso]  Daño al jugador: -{dano} HP (ataque inicial)");
+            Debug.Log($"Daño al jugador: -{dano} HP (ataque inicial)");
         }
 
         yield return new WaitForSeconds(tiempoPostAtaque);
@@ -149,17 +152,15 @@ public class EnemOso : MonoBehaviour
         {
             animator.ResetTrigger("atqEnem");
             animator.SetTrigger("RepAtk");
-            Debug.Log("[EnemOso] Ataque repetido (RepAtk)");
 
             yield return new WaitForSeconds(tiempoEntreRepeticiones);
 
             animator.ResetTrigger("RepAtk");
             animator.SetTrigger("atqEnem");
-            Debug.Log("[EnemOso] Ejecutando ataque dentro del bucle...");
 
             if (Vector2.Distance(transform.position, jugador.position) <= rangoAtaque)
             {
-                Debug.Log($"[EnemOso]  Daño al jugador: -{dano} HP (ataque repetido)");
+                Debug.Log($"Daño al jugador repetido: -{dano} HP");
             }
 
             yield return new WaitForSeconds(tiempoPostAtaque);
@@ -169,7 +170,6 @@ public class EnemOso : MonoBehaviour
         agachandose = true;
         animator.ResetTrigger("atqEnem");
         animator.SetTrigger("Agacharse");
-        Debug.Log("[EnemOso] Jugador se alejó → Agacharse");
 
         yield return new WaitForSeconds(tiempoAgacharse);
 
@@ -181,11 +181,6 @@ public class EnemOso : MonoBehaviour
             avanzando = true;
             animator.ResetTrigger("Agacharse");
             animator.SetTrigger("Avanzar");
-            Debug.Log("[EnemOso] Regresa a caminar tras agacharse");
-        }
-        else
-        {
-            Debug.Log("[EnemOso] Termina agacharse → jugador fuera de rango");
         }
     }
 
@@ -196,24 +191,21 @@ public class EnemOso : MonoBehaviour
             detectando = false;
             preparando = true;
             animator.SetTrigger("Prepcaminar");
-            Debug.Log("[EnemOso] Pasando a Prepcaminar");
             Invoke(nameof(PasarAAvanzar), 1.0f);
         }
     }
 
-private void PasarAAvanzar()
-{
-    if (!avanzando && !atacando && !enCicloAtaque)
+    private void PasarAAvanzar()
     {
-        avanzando = true;
-        preparando = false;
-        invulnerable = false; // <--- AHORA YA PUEDE RECIBIR DAÑO
+        if (!avanzando && !atacando && !enCicloAtaque)
+        {
+            avanzando = true;
+            preparando = false;
+            invulnerable = false;
 
-        animator.SetTrigger("Avanzar");
-        Debug.Log("[EnemOso] Pasando a Avanzar (invulnerabilidad desactivada)");
+            animator.SetTrigger("Avanzar");
+        }
     }
-}
-
 
     private void MoverHaciaJugador()
     {
@@ -228,7 +220,6 @@ private void PasarAAvanzar()
             transform.localScale = new Vector3(Mathf.Abs(escalaOriginal.x), escalaOriginal.y, escalaOriginal.z);
     }
 
-
     private void ReiniciarEstadosSinIdle()
     {
         detectando = preparando = avanzando = atacando = agachandose = enCicloAtaque = false;
@@ -240,29 +231,29 @@ private void PasarAAvanzar()
         animator.ResetTrigger("atqEnem");
         animator.ResetTrigger("RepAtk");
         animator.ResetTrigger("Agacharse");
-
     }
 
-public void RecibirDanio(int cantidad)
-{
-    if (invulnerable) return; 
-    if (vidaActual <= 0 || huyendo) return;
-
-    vidaActual -= cantidad;
-    if (vidaActual < 0) vidaActual = 0;
-
-    Debug.Log($"[EnemOso]  Recibe {cantidad} de daño. Vida restante: {vidaActual}");
-
-    if (vidaActual <= umbralHuida && !cayendo && !huyendo)
+    public void RecibirDanio(int cantidad)
     {
-        StartCoroutine(CaerYHuir());
+        if (invulnerable) return;
+        if (vidaActual <= 0 || huyendo) return;
+
+        vidaActual -= cantidad;
+        if (vidaActual < 0) vidaActual = 0;
+
+        if (vidaActual <= umbralHuida && !cayendo && !huyendo)
+        {
+            StartCoroutine(CaerYHuir());
+        }
     }
-}
 
-
-        private IEnumerator CaerYHuir()
+    private IEnumerator CaerYHuir()
     {
         Debug.Log("[EnemOso] → CaerYHuir() iniciado");
+
+        // 🔊 *** SONIDO DE HUIDA ***
+        if (audioSource != null && sonidoHuida != null)
+            audioSource.PlayOneShot(sonidoHuida);
 
         cayendo = true;
         atacando = false;
@@ -282,8 +273,6 @@ public void RecibirDanio(int cantidad)
             animator.SetTrigger("Caer0");
         else
             animator.SetTrigger("Caer");
-
-        Debug.Log("[EnemOso]  Oso herido → cae");
 
         yield return new WaitForSeconds(1.0f);
 
@@ -309,17 +298,12 @@ public void RecibirDanio(int cantidad)
         else
             transform.localScale = new Vector3(Mathf.Abs(escalaOriginal.x), escalaOriginal.y, escalaOriginal.z);
 
-        Debug.Log($"[EnemOso]  Huyendo hacia {(direccionHuida == Vector2.left ? "izquierda" : "derecha")}");
-
         while (jugador != null && Vector2.Distance(transform.position, jugador.position) < 14f)
         {
             transform.Translate(direccionHuida * velocidadHuida * Time.deltaTime);
             yield return null;
         }
 
-
-
         Destroy(gameObject);
     }
-
 }
