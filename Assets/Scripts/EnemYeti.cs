@@ -5,16 +5,12 @@ public class EnemYeti : MonoBehaviour
     [SerializeField] private float rangoDeteccion = 18f;
     [SerializeField] private float rangoAtaque = 3f;
     [SerializeField] private float velocidadMovimiento = 2f;
-    [SerializeField] private bool mirarDerechaPorDefecto = true;
-
-    [SerializeField] private int dañoAtaque = 15;
 
     [SerializeField] private int vidaMaxima = 100;
 
     [SerializeField] private string animIdle = "Idle";
     [SerializeField] private string animCaminar = "Caminar";
     [SerializeField] private string animAtacar = "Ataque";
-    [SerializeField] private string animGuardar = "Guardar";
     [SerializeField] private string animMuerte = "Muerte";
 
     // ====== Variables internas ======
@@ -121,11 +117,13 @@ public class EnemYeti : MonoBehaviour
         if (audioSource != null)
             audioSource.Play();
 
+        
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero;
-            rb.isKinematic = true;
+            rb.bodyType = RigidbodyType2D.Kinematic; // ← NUEVO
         }
+
 
         GetComponent<Collider2D>().enabled = false;
         StopAllCoroutines();

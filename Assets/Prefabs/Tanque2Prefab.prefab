@@ -309,7 +309,6 @@ MonoBehaviour:
   distanciaParada: 9.78
   distanciaEmbestida: 4.79
   velocidadMovimiento: 2
-  retrasoAntesDeAtacar: 4
   duracionCarga: 1
   duracionDisparo: 3
   pausaEntreCiclos: 0.7
@@ -319,7 +318,7 @@ MonoBehaviour:
   miraDerechaPorDefecto: 0
   prefabBala: {fileID: 2708955634872394561, guid: cd3e5256e6eb3d74aae84f77b8c2e9b1, type: 3}
   puntoDisparo: {fileID: 3390316805567080304}
-  fuerzaDisparo: 8
+  fuerzaDisparo: 12
   sonidoMuerte: {fileID: 8300000, guid: dbf92f2b9aab9714194decc643d4e40f, type: 3}
   vidaMaxima: 30
 --- !u!114 &2395728449141919688
@@ -353,8 +352,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: fe206e2b319e1ed44bc5cbadfa672c06, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0

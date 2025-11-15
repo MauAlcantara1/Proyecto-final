@@ -49,7 +49,6 @@ public class EnemOso : MonoBehaviour
     private bool huyendo = false;
 
     private Vector3 escalaOriginal;
-    private bool ultimoFlip = false;
 
     void Awake()
     {

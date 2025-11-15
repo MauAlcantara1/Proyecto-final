@@ -10,7 +10,6 @@ public class Tanque2 : MonoBehaviour
     [SerializeField] private float velocidadMovimiento = 1.5f;
 
     [Header("Ataque Principal (Carga y Disparo)")]
-    [SerializeField] private float retrasoAntesDeAtacar = 4f;
     [SerializeField] private float duracionCarga = 1f;
     [SerializeField] private float duracionDisparo = 3f;
     [SerializeField] private float pausaEntreCiclos = 4.5f;
@@ -275,8 +274,9 @@ public class Tanque2 : MonoBehaviour
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero;
-            rb.isKinematic = true;
+            rb.bodyType = RigidbodyType2D.Kinematic; // ← NUEVO
         }
+
 
         if (colisionesTanque != null)
             colisionesTanque.enabled = false;

@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Disparo : MonoBehaviour
 {
-    [SerializeField] private int dano = 3;
-
     [SerializeField] private Transform controladorDisparo;
     [SerializeField] private GameObject bala;
 

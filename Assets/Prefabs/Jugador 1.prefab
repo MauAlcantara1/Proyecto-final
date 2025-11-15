@@ -143,7 +143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b5969228e36ac34cad14134ed769cb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Disparo
-  dano: 3
   controladorDisparo: {fileID: 3164921040285162977}
   bala: {fileID: 7444384463852843943, guid: 17db775e2f8827544bd006f0d9ef6fa9, type: 3}
   audioSource: {fileID: 2904666226256998951}
@@ -160,14 +159,14 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: fe206e2b319e1ed44bc5cbadfa672c06, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 6657d7e07769f6940baaa33e3e0e6114, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 115
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -290,7 +289,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.083
+  m_Volume: 0.15
   m_Pitch: 0.86
   Loop: 0
   Mute: 0
