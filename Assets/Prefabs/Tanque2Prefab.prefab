@@ -305,8 +305,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cea48cc1690b2d94b85fbcc063eea091, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemTanque2
-  distanciaDeteccion: 15.5
-  distanciaParada: 10.06
+  distanciaDeteccion: 20
+  distanciaParada: 10
   distanciaEmbestida: 4.79
   velocidadMovimiento: 2
   duracionCarga: 1
