@@ -6,37 +6,8 @@ public class GolpeJugador : MonoBehaviour
     [SerializeField] private int dano = 5;
     [SerializeField] private Collider2D colliderGolpe;
 
-    private bool activo = false;
-
-    void Start()
-    {
-        if (colliderGolpe != null)
-            colliderGolpe.enabled = false;
-    }
-
-    // Evento de animación: activar el golpe
-    public void ActivarGolpe()
-    {
-        if (colliderGolpe != null)
-        {
-            colliderGolpe.enabled = true;
-            activo = true;
-        }
-    }
-
-    // Evento de animación: desactivar el golpe
-    public void DesactivarGolpe()
-    {
-        if (colliderGolpe != null)
-        {
-            colliderGolpe.enabled = false;
-            activo = false;
-        }
-    }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!activo) return;
 
         if (other.CompareTag("enemigo"))
         {

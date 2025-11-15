@@ -84,26 +84,6 @@ public class animacionesTorsoJugador : MonoBehaviour
 
         inmune = false;
     }
-
-    public void EjecutarGolpe()
-    {
-        if (golpeJugador != null)
-        {
-            golpeJugador.ActivarGolpe();
-        }
-        else
-        {
-            Debug.LogWarning("GolpeJugador no encontrado en hijos del torso");
-        }
-    }
-
-    public void TerminarGolpe()
-    {
-        if (golpeJugador != null)
-        {
-            golpeJugador.DesactivarGolpe();
-        }
-    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))

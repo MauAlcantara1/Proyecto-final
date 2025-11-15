@@ -186,7 +186,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -6636556131482270156, guid: d99e7c497d8e07645834785cb65e695f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -224,7 +224,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &7535908109496925269
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -259,7 +259,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.008915022}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -269,7 +269,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.7401471, y: 1}
+  m_Size: {x: 0.7401471, y: 0.98217}
   m_EdgeRadius: 0
 --- !u!95 &7272761596897061305
 Animator:
@@ -305,8 +305,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cea48cc1690b2d94b85fbcc063eea091, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemTanque2
-  distanciaDeteccion: 14
-  distanciaParada: 9.78
+  distanciaDeteccion: 15.5
+  distanciaParada: 10.06
   distanciaEmbestida: 4.79
   velocidadMovimiento: 2
   duracionCarga: 1
@@ -319,7 +319,7 @@ MonoBehaviour:
   prefabBala: {fileID: 2708955634872394561, guid: cd3e5256e6eb3d74aae84f77b8c2e9b1, type: 3}
   puntoDisparo: {fileID: 3390316805567080304}
   fuerzaDisparo: 12
-  sonidoMuerte: {fileID: 8300000, guid: dbf92f2b9aab9714194decc643d4e40f, type: 3}
+  sonidoMuerte: {fileID: 8300000, guid: 61f1a581341080046840f826db5745c3, type: 3}
   vidaMaxima: 30
 --- !u!114 &2395728449141919688
 MonoBehaviour:
@@ -354,7 +354,7 @@ AudioSource:
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.3
-  m_Pitch: 1
+  m_Pitch: 0.86
   Loop: 0
   Mute: 0
   Spatialize: 0

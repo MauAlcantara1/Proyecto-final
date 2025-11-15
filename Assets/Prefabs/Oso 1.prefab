@@ -199,7 +199,7 @@ BoxCollider2D:
   m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.00045484304, y: 0.10877849}
+  m_Offset: {x: -0.00045484304, y: 0.11344223}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -209,7 +209,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.36291194, y: 0.23631743}
+  m_Size: {x: 0.36291194, y: 0.22698995}
   m_EdgeRadius: 0
 --- !u!50 &2951225290923426506
 Rigidbody2D:
@@ -273,7 +273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemOso
   jugador: {fileID: 0}
-  rangoDeteccion: 14
+  rangoDeteccion: 15
   rangoAtaque: 2
   velocidad: 2
   velocidadHuida: 5
@@ -318,7 +318,7 @@ AudioSource:
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.3
-  m_Pitch: 1
+  m_Pitch: 0.86
   Loop: 0
   Mute: 0
   Spatialize: 0

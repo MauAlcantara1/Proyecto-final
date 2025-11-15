@@ -110,12 +110,13 @@ public class EnemYeti : MonoBehaviour
     private void Morir()
     {
         if (muerto) return;
+        if (audioSource != null)
+            audioSource.Play();
 
         muerto = true;
         anim.Play(animMuerte);
 
-        if (audioSource != null)
-            audioSource.Play();
+        
 
         
         if (rb != null)
