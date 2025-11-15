@@ -19,6 +19,7 @@ TagManager:
   - bala
   - "Da\xF1o"
   - "Da\xF1oEnemigo"
+  - Obstaculo
   layers:
   - Default
   - TransparentFX
@@ -28,8 +29,8 @@ TagManager:
   - UI
   - Player
   - Enemigo
-  - 
-  - 
+  - Plataforma
+  - Obstaculo
   - 
   - 
   - 

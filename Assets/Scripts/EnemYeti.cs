@@ -5,16 +5,12 @@ public class EnemYeti : MonoBehaviour
     [SerializeField] private float rangoDeteccion = 18f;
     [SerializeField] private float rangoAtaque = 3f;
     [SerializeField] private float velocidadMovimiento = 2f;
-    [SerializeField] private bool mirarDerechaPorDefecto = true;
-
-    [SerializeField] private int dañoAtaque = 15;
 
     [SerializeField] private int vidaMaxima = 100;
 
     [SerializeField] private string animIdle = "Idle";
     [SerializeField] private string animCaminar = "Caminar";
     [SerializeField] private string animAtacar = "Ataque";
-    [SerializeField] private string animGuardar = "Guardar";
     [SerializeField] private string animMuerte = "Muerte";
 
     // ====== Variables internas ======
@@ -24,10 +20,12 @@ public class EnemYeti : MonoBehaviour
     private bool atacando = false;
     private bool muerto = false;
 
+
     private Transform jugador;
     private Animator anim;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
+    private AudioSource audioSource;
 
     private void Start()
     {
@@ -35,6 +33,8 @@ public class EnemYeti : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
+
 
         if (rb != null)
             rb.freezeRotation = true;
@@ -110,15 +110,21 @@ public class EnemYeti : MonoBehaviour
     private void Morir()
     {
         if (muerto) return;
+        if (audioSource != null)
+            audioSource.Play();
 
         muerto = true;
         anim.Play(animMuerte);
 
+        
+
+        
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero;
-            rb.isKinematic = true;
+            rb.bodyType = RigidbodyType2D.Kinematic; // ← NUEVO
         }
+
 
         GetComponent<Collider2D>().enabled = false;
         StopAllCoroutines();

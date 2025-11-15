@@ -22,7 +22,12 @@ public class Bala : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // 💥 Si impacta contra un enemigo
+        if (other.CompareTag("Obstaculo"))
+        {
+            Debug.Log("Entró con obstáculo");
+            Destroy(gameObject);
+        }
+
         if (other.CompareTag("enemigo"))
         {
             bool impacto = false;
@@ -64,6 +69,8 @@ public class Bala : MonoBehaviour
             // 💣 Si impactó contra un enemigo válido, destruir la bala
             if (impacto)
                 Destroy(gameObject);
+
+        
         }
     }
 }

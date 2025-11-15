@@ -8,5 +8,7 @@ public class Volumen : MonoBehaviour
     public void CambiarVolumen(float volumen)
     {
         audioMixer.SetFloat("Volumen", volumen);
+        PlayerPrefs.SetFloat("volumenMaster", volumen);
     }
+
 }
