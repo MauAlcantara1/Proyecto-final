@@ -3,16 +3,16 @@ using UnityEngine;
 public class Estructura : MonoBehaviour
 {
     [Header("Vida")]
-    [SerializeField] private int vidaMaxima = 20;   // ✔ Cambiado a 20
-    private int vidaActual;
+    [SerializeField] private int vidaMaxima = 30;  
+    [SerializeField]private int vidaActual;
 
     [Header("Componentes")]
     private Animator animator;
     private Collider2D col;
 
-    // Para evitar avances repetidos
     private bool estado1Activado = false;
     private bool estado2Activado = false;
+    private bool estado3Activado = false;
 
     private void Start()
     {
@@ -33,24 +33,25 @@ public class Estructura : MonoBehaviour
 
     public void RecibirDaño(int cantidad)
     {
-        if (estado2Activado) return;
+        if (estado3Activado) return;
 
         vidaActual -= cantidad;
         Debug.Log("Daño recibido. Vida restante: " + vidaActual);
 
-        // --- Estado 1 al llegar a 10 ---
-        if (vidaActual <= 10 && !estado1Activado)
+        if (vidaActual <= 20 && !estado1Activado)
         {
             estado1Activado = true;
             animator.SetBool("activoEstado1", true);
         }
 
-        // --- Estado 2 al llegar a 0 ---
-        if (vidaActual <= 0 && !estado2Activado)
+        if (vidaActual <= 10 && !estado2Activado)
         {
             estado2Activado = true;
             animator.SetBool("activoEstado2", true);
-            col.enabled = false;  // Desactiva collider
+        }
+        if (vidaActual <= 0 && !estado3Activado)
+        {
+            Destroy(gameObject);
         }
     }
 }

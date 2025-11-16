@@ -1,0 +1,2132 @@
+fileFormatVersion: 2
+guid: f6e199ab3e9fd5549a6e21a17c289d15
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9209828883996367851
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_0
+  - first:
+      213: 7054584866636834951
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_1
+  - first:
+      213: -4431949434259089329
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_2
+  - first:
+      213: -6609974500196581412
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_3
+  - first:
+      213: 8077644692998612568
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_4
+  - first:
+      213: -5891443768400425438
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_5
+  - first:
+      213: -5151732451124818612
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_6
+  - first:
+      213: 5492838123683200898
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_7
+  - first:
+      213: 1650998988242768715
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_8
+  - first:
+      213: -1826103885138694905
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_9
+  - first:
+      213: -8656677509806380245
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_10
+  - first:
+      213: 3897690515127884324
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_11
+  - first:
+      213: 292175334271155384
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_12
+  - first:
+      213: -1070921966622588301
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_13
+  - first:
+      213: -6550525642588862655
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_14
+  - first:
+      213: 1515200632214903013
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_15
+  - first:
+      213: 3151296054306107672
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_16
+  - first:
+      213: -7768645402367932113
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_17
+  - first:
+      213: -5147188477386503961
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_18
+  - first:
+      213: -2059736533252746812
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_19
+  - first:
+      213: -7497631909823133103
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_20
+  - first:
+      213: -4092239273661355107
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_21
+  - first:
+      213: -5605512659723626710
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_22
+  - first:
+      213: 4663407961025446288
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_23
+  - first:
+      213: 6240895888236886797
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_24
+  - first:
+      213: -9027723137957688926
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_25
+  - first:
+      213: -182790958299695979
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_26
+  - first:
+      213: 82196853249325801
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_27
+  - first:
+      213: -3595263261002297282
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_28
+  - first:
+      213: 4655932483875931040
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_29
+  - first:
+      213: 2343445798605151731
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_30
+  - first:
+      213: 6456462881751890313
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_31
+  - first:
+      213: 6231296784381786849
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_32
+  - first:
+      213: -6764480369217475059
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_33
+  - first:
+      213: 3122021062580718345
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_34
+  - first:
+      213: -8933877412871690993
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_35
+  - first:
+      213: -2816719807283514826
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_36
+  - first:
+      213: 6206411901578159413
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_37
+  - first:
+      213: 7296023195675138384
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_38
+  - first:
+      213: -4577415142541255630
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_39
+  - first:
+      213: -3588517897299583144
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_40
+  - first:
+      213: -7827882033680181123
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_41
+  - first:
+      213: -3891881339441241949
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_42
+  - first:
+      213: 7066752696515091543
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_43
+  - first:
+      213: 9137746698691057111
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_44
+  - first:
+      213: -3030809195250336260
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_45
+  - first:
+      213: 2672890765143201241
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_46
+  - first:
+      213: -7369052000333833312
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_47
+  - first:
+      213: 4017262238686072524
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_48
+  - first:
+      213: -7534572777717178690
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_49
+  - first:
+      213: -1197989573020263862
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_50
+  - first:
+      213: 3547845487505527259
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_51
+  - first:
+      213: 3664100829091830090
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_52
+  - first:
+      213: -857850614295008037
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_53
+  - first:
+      213: 7452790126659449003
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_54
+  - first:
+      213: -144417400076794229
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_55
+  - first:
+      213: -3893416320338584404
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_56
+  - first:
+      213: 7609966161564589359
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_57
+  - first:
+      213: -8259025458315585757
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_58
+  - first:
+      213: -3486503956094401392
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_59
+  - first:
+      213: 8622142720757530989
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_60
+  - first:
+      213: -892855115116579492
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_61
+  - first:
+      213: 5735746772369784240
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_62
+  - first:
+      213: 1829800387319166438
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_63
+  - first:
+      213: 6894050695045480685
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_64
+  - first:
+      213: 5091492447900072797
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_65
+  - first:
+      213: -7841475200960907515
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_66
+  - first:
+      213: -5327518546321633342
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_67
+  - first:
+      213: 2172794562051428260
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_68
+  - first:
+      213: 7068982235082736191
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_69
+  - first:
+      213: -1222606108678893966
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_70
+  - first:
+      213: -2042045087474659047
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_71
+  - first:
+      213: 3770962353748436580
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_72
+  - first:
+      213: 6975093026102724931
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_73
+  - first:
+      213: -5079355534521745236
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_74
+  - first:
+      213: 6097959994810359573
+    second: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_75
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 16
+        width: 304
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 514a34ffc6d103080800000000000000
+      internalID: -9209828883996367851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_1
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 16
+        width: 304
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7882cb53f8be6e160800000000000000
+      internalID: 7054584866636834951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_2
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 4
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f485e74987d8e72c0800000000000000
+      internalID: -4431949434259089329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_3
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf74659637a444a0800000000000000
+      internalID: -6609974500196581412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_4
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 4
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85660041d0f891070800000000000000
+      internalID: 8077644692998612568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_5
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ecd4a5b136d3ea0800000000000000
+      internalID: -5891443768400425438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_6
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 4
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d4ad871ae5188b0800000000000000
+      internalID: -5151732451124818612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_7
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f3cd2db2b7a3c40800000000000000
+      internalID: 5492838123683200898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_8
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 4
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b435dba15d689e610800000000000000
+      internalID: 1650998988242768715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_9
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 4
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70de85b013068a6e0800000000000000
+      internalID: -1826103885138694905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_10
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ba0ec7bad4dd780800000000000000
+      internalID: -8656677509806380245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_11
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 4
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42a5b966fd0671630800000000000000
+      internalID: 3897690515127884324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_12
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bcfc532be30e0400800000000000000
+      internalID: 292175334271155384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_13
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3724c4535225321f0800000000000000
+      internalID: -1070921966622588301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_14
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 4
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 147476d52abd715a0800000000000000
+      internalID: -6550525642588862655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_15
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e8dd9672f2170510800000000000000
+      internalID: 1515200632214903013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_16
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 4
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 811710ba017abbb20800000000000000
+      internalID: 3151296054306107672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_17
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 4
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2943e5aa2a303490800000000000000
+      internalID: -7768645402367932113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_18
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e8c46dc9538198b0800000000000000
+      internalID: -5147188477386503961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_19
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 4
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c1539439885a63e0800000000000000
+      internalID: -2059736533252746812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_20
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 4
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15acb5e808f03f790800000000000000
+      internalID: -7497631909823133103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_21
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 4
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9b238def027537c0800000000000000
+      internalID: -4092239273661355107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_22
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27d73d6fe73532b0800000000000000
+      internalID: -5605512659723626710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_23
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 2
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09186af25d0c7b040800000000000000
+      internalID: 4663407961025446288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_24
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 4
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b3e82aebd1c9650800000000000000
+      internalID: 6240895888236886797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_25
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 2
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a9057f03a517b280800000000000000
+      internalID: -9027723137957688926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_26
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 2
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 594b4668798967df0800000000000000
+      internalID: -182790958299695979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_27
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eab49f3a95042100800000000000000
+      internalID: 82196853249325801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_28
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 4
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3012f5dc1f0b1ec0800000000000000
+      internalID: -3595263261002297282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_29
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 4
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a380a70de13d9040800000000000000
+      internalID: 4655932483875931040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_30
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 2
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fddd38a987958020800000000000000
+      internalID: 2343445798605151731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_31
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 4
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 989f05c78c6f99950800000000000000
+      internalID: 6456462881751890313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_32
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 3
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea3c1b19630a7650800000000000000
+      internalID: 6231296784381786849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_33
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 4
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0e60b6a1fcbf12a0800000000000000
+      internalID: -6764480369217475059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_34
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90b49608d95a35b20800000000000000
+      internalID: 3122021062580718345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_35
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 2
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f05a5e2a3dd740480800000000000000
+      internalID: -8933877412871690993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_36
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 4
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6323f07424009e8d0800000000000000
+      internalID: -2816719807283514826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_37
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 535a253ddba912650800000000000000
+      internalID: 6206411901578159413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_38
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 4
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0591a33c07ea04560800000000000000
+      internalID: 7296023195675138384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_39
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 4
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c95571e21c970c0800000000000000
+      internalID: -4577415142541255630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_40
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 2
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85f93553cf5033ec0800000000000000
+      internalID: -3588517897299583144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_41
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7894d6a3c6cd5390800000000000000
+      internalID: -7827882033680181123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_42
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a022a6ba824df9c0800000000000000
+      internalID: -3891881339441241949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_43
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 4
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75cd05fd226221260800000000000000
+      internalID: 7066752696515091543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_44
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 4
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d59af6653ccfce70800000000000000
+      internalID: 9137746698691057111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_45
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfdbd17481760f5d0800000000000000
+      internalID: -3030809195250336260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_46
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 2
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d558c34df3081520800000000000000
+      internalID: 2672890765143201241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_47
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 2
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ab58b4af3edbb990800000000000000
+      internalID: -7369052000333833312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_48
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 2
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce4972c8be20c730800000000000000
+      internalID: 4017262238686072524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_49
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 4
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebed6d18af1df6790800000000000000
+      internalID: -7534572777717178690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_50
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 4
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4a518f94d2ef5fe0800000000000000
+      internalID: -1197989573020263862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_51
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 4
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd15db07caa7c3130800000000000000
+      internalID: 3547845487505527259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_52
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 4
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a499b337a4089d230800000000000000
+      internalID: 3664100829091830090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_53
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 4
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdc6890596d4814f0800000000000000
+      internalID: -857850614295008037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_54
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 4
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba033153221ad6760800000000000000
+      internalID: 7452790126659449003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_55
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b868909c32deefdf0800000000000000
+      internalID: -144417400076794229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_56
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 2
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac928f1c7ec7f9c0800000000000000
+      internalID: -3893416320338584404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_57
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 4
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2ddcc497e70c9960800000000000000
+      internalID: 7609966161564589359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_58
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32711369a1c026d80800000000000000
+      internalID: -8259025458315585757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_59
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 4
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 094cffccf137d9fc0800000000000000
+      internalID: -3486503956094401392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_60
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 4
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6109795f1108a770800000000000000
+      internalID: 8622142720757530989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_61
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 4
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c55f59bd001fb93f0800000000000000
+      internalID: -892855115116579492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_62
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 4
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bdb1b8dc47799f40800000000000000
+      internalID: 5735746772369784240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_63
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 4
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e5f700f1c1c46910800000000000000
+      internalID: 1829800387319166438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_64
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de088b5b4969caf50800000000000000
+      internalID: 6894050695045480685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_65
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5bfaadc76d98a640800000000000000
+      internalID: 5091492447900072797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_66
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 507b0b3c9db7d2390800000000000000
+      internalID: -7841475200960907515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_67
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 4
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cf8138cb1ad016b0800000000000000
+      internalID: -5327518546321633342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_68
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4afc9f86421572e10800000000000000
+      internalID: 2172794562051428260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_69
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3247a5c3e11a1260800000000000000
+      internalID: 7068982235082736191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_70
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27ec8f7c83e680fe0800000000000000
+      internalID: -1222606108678893966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_71
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 911ddb9efc239a3e0800000000000000
+      internalID: -2042045087474659047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_72
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 466eb840846255430800000000000000
+      internalID: 3770962353748436580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_73
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3494820d6228cc060800000000000000
+      internalID: 6975093026102724931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_74
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 4
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca0caec8d018289b0800000000000000
+      internalID: -5079355534521745236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_75
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 2
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51fd6319e4e40a450800000000000000
+      internalID: 6097959994810359573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a5a3b431309fabc43ae5e7b9c541a254
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_0: -9209828883996367851
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_1: 7054584866636834951
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_10: -8656677509806380245
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_11: 3897690515127884324
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_12: 292175334271155384
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_13: -1070921966622588301
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_14: -6550525642588862655
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_15: 1515200632214903013
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_16: 3151296054306107672
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_17: -7768645402367932113
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_18: -5147188477386503961
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_19: -2059736533252746812
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_2: -4431949434259089329
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_20: -7497631909823133103
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_21: -4092239273661355107
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_22: -5605512659723626710
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_23: 4663407961025446288
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_24: 6240895888236886797
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_25: -9027723137957688926
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_26: -182790958299695979
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_27: 82196853249325801
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_28: -3595263261002297282
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_29: 4655932483875931040
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_3: -6609974500196581412
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_30: 2343445798605151731
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_31: 6456462881751890313
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_32: 6231296784381786849
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_33: -6764480369217475059
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_34: 3122021062580718345
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_35: -8933877412871690993
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_36: -2816719807283514826
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_37: 6206411901578159413
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_38: 7296023195675138384
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_39: -4577415142541255630
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_4: 8077644692998612568
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_40: -3588517897299583144
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_41: -7827882033680181123
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_42: -3891881339441241949
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_43: 7066752696515091543
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_44: 9137746698691057111
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_45: -3030809195250336260
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_46: 2672890765143201241
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_47: -7369052000333833312
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_48: 4017262238686072524
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_49: -7534572777717178690
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_5: -5891443768400425438
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_50: -1197989573020263862
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_51: 3547845487505527259
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_52: 3664100829091830090
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_53: -857850614295008037
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_54: 7452790126659449003
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_55: -144417400076794229
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_56: -3893416320338584404
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_57: 7609966161564589359
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_58: -8259025458315585757
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_59: -3486503956094401392
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_6: -5151732451124818612
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_60: 8622142720757530989
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_61: -892855115116579492
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_62: 5735746772369784240
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_63: 1829800387319166438
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_64: 6894050695045480685
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_65: 5091492447900072797
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_66: -7841475200960907515
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_67: -5327518546321633342
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_68: 2172794562051428260
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_69: 7068982235082736191
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_7: 5492838123683200898
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_70: -1222606108678893966
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_71: -2042045087474659047
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_72: 3770962353748436580
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_73: 6975093026102724931
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_74: -5079355534521745236
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_75: 6097959994810359573
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_8: 1650998988242768715
+      Neo Geo _ NGCD - Metal Slug - Miscellaneous - Game Over Screen_9: -1826103885138694905
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

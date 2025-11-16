@@ -106,7 +106,10 @@ public class animacionesTorsoJugador : MonoBehaviour
                 audioSource.PlayOneShot(GameOver);
 
             if (panelMuerte != null)
-                panelMuerte.gameObject.SetActive(true);
+            {
+                FindObjectOfType<musicaNivel>()?.PausarMusica();
+                panelMuerte.SetActive(true);
+            }
         }
     }
 
