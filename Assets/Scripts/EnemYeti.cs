@@ -13,7 +13,6 @@ public class EnemYeti : MonoBehaviour
     [SerializeField] private string animAtacar = "Ataque";
     [SerializeField] private string animMuerte = "Muerte";
 
-    // ====== Variables internas ======
     private int vidaActual;
     private bool mirandoDerecha;
     private bool jugadorDetectado = false;
@@ -122,7 +121,7 @@ public class EnemYeti : MonoBehaviour
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero;
-            rb.bodyType = RigidbodyType2D.Kinematic; // ← NUEVO
+            rb.bodyType = RigidbodyType2D.Kinematic; 
         }
 
 

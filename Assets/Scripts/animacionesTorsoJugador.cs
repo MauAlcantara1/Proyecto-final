@@ -1,15 +1,20 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
+
 
 public class animacionesTorsoJugador : MonoBehaviour
 {
     private Animator animator;
-
+    public GameObject panelMuerte;
     public SpriteRenderer piernas;
     public bool muerto = false;
     private bool inmune = false;
     private GolpeJugador golpeJugador;
     private AudioSource audioSource;
+    [SerializeField] private AudioClip GameOver;
+
+    private int vidas => VidasPlayer.vidas;
 
 
     void Start()
@@ -18,7 +23,8 @@ public class animacionesTorsoJugador : MonoBehaviour
         golpeJugador = GetComponentInChildren<GolpeJugador>();
         audioSource = GetComponent<AudioSource>();
 
-
+        if (panelMuerte != null)
+            panelMuerte.gameObject.SetActive(false);
     }
 
     public void ActualizarMovimiento(float movx)
@@ -84,12 +90,45 @@ public class animacionesTorsoJugador : MonoBehaviour
 
         inmune = false;
     }
-    void Update()
+
+    public void SistemaDeVidas()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        VidasPlayer.vidas -= 1;
+
+
+        Debug.Log("Vidas actuales: " + vidas);
+
+        if (vidas <= 0)
         {
-            Morir();
+            VidasPlayer.vidas = 0;
+
+            if (audioSource != null && GameOver != null)
+                audioSource.PlayOneShot(GameOver);
+
+            if (panelMuerte != null)
+                panelMuerte.gameObject.SetActive(true);
         }
     }
 
+    private IEnumerator RetornoMenu()
+    {
+        Time.timeScale = 0f;   
+        VidasPlayer.vidas = 7;
+        VidasPlayer.puntuacion = 0;
+        float tiempo = 0f;
+
+        while (tiempo < 5f)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+                break;
+
+            tiempo += Time.unscaledDeltaTime; 
+            yield return null;
+        }
+
+        Time.timeScale = 1f; 
+        SceneManager.LoadScene("Inicio"); 
+    }
+
+    
 }

@@ -75,7 +75,6 @@ public class Tanque2 : MonoBehaviour
 
         vidaActual = vidaMaxima;
 
-        // 🟩 OBTENER AUDIOSOURCE (NUEVO)
         audioSource = GetComponent<AudioSource>();
     }
 
@@ -123,7 +122,6 @@ public class Tanque2 : MonoBehaviour
         puedeEmbestir = true;
     }
 
-    // ========== CICLO ATAQUE ==========
 
     private IEnumerator CicloAtaque()
     {
@@ -159,7 +157,6 @@ public class Tanque2 : MonoBehaviour
         atacando = false;
     }
 
-    // ========== EMBESTIDA ==========
 
     private IEnumerator Embestida()
     {
@@ -256,8 +253,6 @@ public class Tanque2 : MonoBehaviour
         if (estaMuerto) return;
 
         vidaActual -= cantidad;
-        Debug.Log($"💥 Tanque recibió {cantidad} de daño. Vida restante: {vidaActual}");
-
         if (vidaActual <= 0) Morir();
     }
 
@@ -266,10 +261,8 @@ public class Tanque2 : MonoBehaviour
         if (estaMuerto) return;
         estaMuerto = true;
 
-        // 🟩 REPRODUCIR SONIDO DE MUERTE (NUEVO)
         if (audioSource != null && sonidoMuerte != null)
             audioSource.PlayOneShot(sonidoMuerte);
-        // 🟩 FIN
 
         if (rb != null)
         {

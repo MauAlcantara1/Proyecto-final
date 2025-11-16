@@ -1,206 +1,205 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class Soldadouno : MonoBehaviour
 {
-    [Header("Movimiento")]
-    public float velocidad = 3f;
-    public float rangoPerseguir = 12f;     // Rango 1
-    public float rangoDisparo = 7f;        // Rango 2
-    public float rangoCAC = 1.5f;          // Rango 3
-
-    [Header("Disparo")]
+    [SerializeField] private AudioClip sfxDisparo;
+    [SerializeField] private AudioSource audioSource;
+    private bool estaMuerto = false;
+    [SerializeField] private AudioClip sonidoMuerte;
+    public float velocidadMovimiento = 3f;
+    public float rangoDeteccion = 12f;
+    public float rangoDisparoDist = 7f;
+    public float rangoOrientacion = 3f;
+    public float rangoCAC = 1.5f;
+    private Coroutine rutinaDisparo = null;
     public GameObject prefabBala;
     public Transform puntoDisparo;
     public float fuerzaDisparo = 6f;
     public float tiempoEntreDisparos = 1.5f;
-    private float proximoDisparo = 0f;
-
+    [SerializeField] private int vidaMaxima = 100;
+    private int vidaActual;
     private Animator anim;
-    private Transform player;
+    private Rigidbody2D rb;
+    private Transform jugador;
     private bool mirandoDerecha = true;
-
-    // Alternancia entre disparo agachado o parado
-    private bool disparoAgachado = false;
-
-    // Control interno
-    private bool enDisparo = false;
-    private bool enCAC = false;
+    private bool puedeDisparar = true;
+    private bool muerto = false;
 
     void Start()
     {
         anim = GetComponent<Animator>();
-        player = GameObject.FindGameObjectWithTag("Player")?.transform;
+        rb = GetComponent<Rigidbody2D>();
+        jugador = GameObject.FindGameObjectWithTag("Player")?.transform;
+        vidaActual = vidaMaxima;
+
+        rb.freezeRotation = true;
     }
 
     void Update()
     {
-        if (player == null) return;
+        if (jugador == null || muerto) return;
+        ActualizarOrientacion();
+        float dist = Vector2.Distance(transform.position, jugador.position);
+        bool jugadorVisto = dist <= rangoDeteccion;
+        bool rangoDisparo = dist <= rangoDisparoDist;
+        bool enemigoCerca = dist <= rangoCAC;
 
-        float dist = Vector2.Distance(transform.position, player.position);
+        anim.SetBool("jugadorVisto", jugadorVisto);
+        anim.SetBool("rangoDisparo", rangoDisparo);
+        anim.SetBool("enemigoCerca", enemigoCerca);
+        anim.SetBool("jugadorMuerto", false);
 
-        MirarJugador();
-
-        // -------------------------------
-        // 🟥 RANGO 3 – CUERPO A CUERPO
-        // -------------------------------
-        if (dist <= rangoCAC)
+       
+        if (enemigoCerca)
         {
-            enDisparo = false;
-            AtaqueCAC();
+            StopAllCoroutines();
             return;
         }
 
-        // -------------------------------
-        // 🟧 RANGO 2 – DETENER Y DISPARAR
-        // -------------------------------
-        if (dist <= rangoDisparo)
+        
+        if (rangoDisparo)
         {
-            enCAC = false;
-            DispararSegunModo();
+            if (rutinaDisparo == null)
+                rutinaDisparo = StartCoroutine(CicloDisparo());
+
             return;
         }
-
-        // -------------------------------
-        // 🟩 RANGO 1 – PERSEGUIR
-        // -------------------------------
-        if (dist <= rangoPerseguir)
-        {
-            enDisparo = false;
-            enCAC = false;
-            Perseguir();
-            return;
-        }
-
-        // 🟦 Fuera de rangos → Idle
-        anim.Play("idle");
-    }
-
-    // ============================================================
-    //  PERSEGUIR
-    // ============================================================
-    private void Perseguir()
-    {
-        anim.Play("caminar");
-
-        Vector3 target = new Vector3(player.position.x, transform.position.y, 0);
-        transform.position = Vector3.MoveTowards(transform.position, target, velocidad * Time.deltaTime);
-    }
-
-    // ============================================================
-    //  DISPARO
-    // ============================================================
-    private void DispararSegunModo()
-    {
-        if (!enDisparo)
-        {
-            enDisparo = true;
-
-            // Alternar entre disparo parado y agachado
-            disparoAgachado = Random.value > 0.5f;
-        }
-
-        if (disparoAgachado)
-            DisparoAgachado();
         else
-            DisparoParado();
-    }
-
-    // ---- DISPARO PARADO ----
-    private void DisparoParado()
-    {
-        anim.Play("disparoyrecarga");
-
-        if (Time.time >= proximoDisparo)
         {
-            InstanciarBala();
-            proximoDisparo = Time.time + tiempoEntreDisparos;
+            if (rutinaDisparo != null)
+            {
+                StopCoroutine(rutinaDisparo);
+                rutinaDisparo = null;
+                puedeDisparar = true; 
+            }
+        }
+
+
+        
+        if (jugadorVisto)
+        {
+            MoverHaciaJugador();
         }
     }
 
-    // ---- DISPARO AGACHADO ----
-    private void DisparoAgachado()
+    private void MoverHaciaJugador()
     {
-        // 1) Animación de agacharse antes del disparo
-        anim.Play("agachado");
+        if (jugador == null) return;
 
-        if (Time.time >= proximoDisparo)
-        {
-            // 2) Animación disparo agachado
-            anim.Play("disparoyrecargaagachado");
+        Vector2 dir = (jugador.position - transform.position).normalized;
 
-            InstanciarBala();
+        bool debeMirarDerecha = dir.x > 0;
 
-            // 3) Al terminar, levantarse
-            anim.Play("levantarse");
+        if (debeMirarDerecha != mirandoDerecha)
+            Voltear(debeMirarDerecha);
 
-            proximoDisparo = Time.time + tiempoEntreDisparos;
-        }
+        transform.position += (Vector3)(dir * velocidadMovimiento * Time.deltaTime);
     }
 
-    // ============================================================
-    //  ATAQUE CUERPO A CUERPO
-    // ============================================================
-    private void AtaqueCAC()
+
+    private void Voltear(bool mirarDerechaNuevo)
     {
-        if (!enCAC)
-        {
-            enCAC = true;
-            anim.Play("cac");
-        }
+        mirandoDerecha = mirarDerechaNuevo;
+        Vector3 escala = transform.localScale;
+        escala.x = mirarDerechaNuevo ? Mathf.Abs(escala.x) : -Mathf.Abs(escala.x);
+        transform.localScale = escala;
     }
 
-    // ============================================================
-    //  MIRAR AL JUGADOR
-    // ============================================================
-    private void MirarJugador()
+    public void RecibirDaño(int cantidad)
     {
-        if (player == null) return;
+        if (muerto) return;
 
-        bool mirarDer = player.position.x > transform.position.x;
+        vidaActual -= cantidad;
 
-        if (mirarDer != mirandoDerecha)
-        {
-            mirandoDerecha = mirarDer;
-
-            Vector3 esc = transform.localScale;
-            esc.x *= -1;
-            transform.localScale = esc;
-
-            // invertir punto de disparo
-            Vector3 p = puntoDisparo.localPosition;
-            p.x *= -1;
-            puntoDisparo.localPosition = p;
-        }
+        if (vidaActual <= 0)
+            Morir();
     }
 
-    // ============================================================
-    //  CREAR BALA
-    // ============================================================
-    private void InstanciarBala()
+    private void Morir()
     {
-        GameObject bala = Instantiate(prefabBala, puntoDisparo.position, Quaternion.identity);
+        if (estaMuerto) return;
+        estaMuerto = true;
 
-        Rigidbody2D rb = bala.GetComponent<Rigidbody2D>();
+        if (audioSource != null && sonidoMuerte != null)
+            audioSource.PlayOneShot(sonidoMuerte);
 
         if (rb != null)
         {
-            Vector2 dir = mirandoDerecha ? Vector2.right : Vector2.left;
-            rb.linearVelocity = dir * fuerzaDisparo;
+            rb.linearVelocity = Vector2.zero;
+            rb.bodyType = RigidbodyType2D.Kinematic; 
+        }
+
+        anim.Play("Muerte");
+        anim.SetTrigger("Muerte");
+
+        StopAllCoroutines();
+
+        DropLoot drop = GetComponent<DropLoot>();
+        if (drop != null)
+        {
+            drop.SoltarObjetos();
         }
     }
 
-    // ============================================================
-    //  DIBUJAR RANGOS
-    // ============================================================
+    private IEnumerator CicloDisparo()
+    {
+        puedeDisparar = false;
+
+        yield return new WaitForSeconds(tiempoEntreDisparos);
+
+        puedeDisparar = true;
+    }
+
+    private void ActualizarOrientacion()
+    {
+        if (jugador == null) return;
+
+        float distX = jugador.position.x - transform.position.x;
+
+        if (Mathf.Abs(distX) <= rangoOrientacion)
+        {
+            bool debeMirarDerecha = distX > 0;
+
+            if (debeMirarDerecha != mirandoDerecha)
+                Voltear(debeMirarDerecha);
+        }
+    }
+
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position, rangoPerseguir);
+        Gizmos.DrawWireSphere(transform.position, rangoDeteccion);
 
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, rangoDisparo);
+        Gizmos.DrawWireSphere(transform.position, rangoDisparoDist);
 
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, rangoCAC);
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position, rangoOrientacion);
+
     }
+    private void Disparar()
+    {
+        audioSource.PlayOneShot(sfxDisparo);
+
+        GameObject bala = Instantiate(prefabBala, puntoDisparo.position, puntoDisparo.rotation);
+
+        Rigidbody2D rbBala = bala.GetComponent<Rigidbody2D>();
+
+        Vector3 escala = bala.transform.localScale;
+        escala.x = mirandoDerecha ? Mathf.Abs(escala.x) : -Mathf.Abs(escala.x);
+        bala.transform.localScale = escala;
+
+        if (rbBala != null)
+        {
+            Vector2 direccion = mirandoDerecha ? Vector2.right : Vector2.left;
+            rbBala.linearVelocity = direccion * fuerzaDisparo;
+        }
+    }
+
+
 }

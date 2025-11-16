@@ -199,7 +199,6 @@ public class Tanque : MonoBehaviour
         Rigidbody2D rbBala = bala.GetComponent<Rigidbody2D>();
         if (rbBala != null)
         {
-            // 🔁 Invertimos la dirección porque el sprite está al revés
             Vector2 direccion = mirandoDerecha ? Vector2.left : Vector2.right;
             rbBala.linearVelocity = direccion * fuerzaDisparo;
         }
