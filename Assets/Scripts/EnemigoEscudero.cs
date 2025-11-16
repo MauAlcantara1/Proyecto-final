@@ -25,7 +25,7 @@ public class EnemigoEscudero : MonoBehaviour
 
     [Header("Referencias")]
     public Rigidbody2D rb;
-
+    public GameObject escudoCaido;
 
     [Header("Movimiento y detección")]
     public float velocidad = 2f;
@@ -59,6 +59,12 @@ public class EnemigoEscudero : MonoBehaviour
         animator.SetBool("enRangoAtaque", enRangoAtaque);
 
         if (estaAtacando)
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
+
+        if (muerto)
         {
             rb.linearVelocity = Vector2.zero;
             return;
@@ -152,9 +158,13 @@ public class EnemigoEscudero : MonoBehaviour
             AudioSource.PlayClipAtPoint(sonidoImpactoEscudo, transform.position);
 
             Destroy(other.gameObject);
+        }else if (other.CompareTag("bala") && !(colliderEscudo.enabled)){
+            Debug.Log("La bala impactó al SOLDADO");
+
         }
        
     }
+
     public void RecibirDaño(int cantidad)
     {
         if (muerto) return;
@@ -165,32 +175,40 @@ public class EnemigoEscudero : MonoBehaviour
             Morir();
     }
 
-private void Morir()
-{
-    if (muerto) return;
-
-    muerto = true;
-    AudioSource.PlayClipAtPoint(sonidoAtaque, transform.position);
-
-    if (animator != null)
-        animator.SetBool("estaMuerto", true);
-
-    if (rb != null)
+    private void Morir()
     {
-        rb.linearVelocity = Vector2.zero;
-        rb.bodyType = RigidbodyType2D.Kinematic;
+        if (muerto) return;
+
+        muerto = true;
+
+        animator.SetBool("jugadorDetectado", false);
+        animator.SetBool("enRangoAtaque", false);
+        animator.SetBool("estaCaminando", false);
+
+        escudoCaido.SetActive(true);
+
+        colliderCuerpo.enabled = false;
+        colliderEscudo.enabled = false;
+        hitboxMachete.enabled = false;
+
+        if (sonidoMuerte != null)
+            AudioSource.PlayClipAtPoint(sonidoMuerte, transform.position);
+
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.bodyType = RigidbodyType2D.Kinematic;
+        }
+
+        animator.SetBool("muerte", true);
+
+        StopAllCoroutines();
+        Destroy(gameObject, 2.5f);
+
+        DropLoot drop = GetComponent<DropLoot>();
+        if (drop != null)
+            drop.SoltarObjetos();
     }
-
-   
-    colliderCuerpo.enabled = false;
-    colliderEscudo.enabled = false;
-
-    StopAllCoroutines();
-
-    DropLoot drop = GetComponent<DropLoot>();
-    if (drop != null)
-        drop.SoltarObjetos();
-}
 
 
     
