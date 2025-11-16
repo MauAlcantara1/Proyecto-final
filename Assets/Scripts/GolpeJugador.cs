@@ -38,6 +38,13 @@ public class GolpeJugador : MonoBehaviour
                 enemYeti.RecibirDaño(dano);
                 Debug.Log($"[BALA] 💥 Impacto al Yeti. Daño enviado: {dano}");
             }
+
+            EnemigoEscudero escudero = other.GetComponent<EnemigoEscudero>();
+            if (escudero != null)
+            {
+                escudero.RecibirDaño(dano);
+                Debug.Log($"[BALA] 💥 Impacto al Escudero. Daño enviado: {dano}");
+            }
         }
     }
 }

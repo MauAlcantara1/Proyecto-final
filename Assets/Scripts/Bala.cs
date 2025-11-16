@@ -66,6 +66,14 @@ public class Bala : MonoBehaviour
                 impacto = true;
             }
 
+            EnemigoEscudero escudero = other.GetComponent<EnemigoEscudero>();
+            if (escudero != null)
+            {
+                escudero.RecibirDaño(dano);
+                Debug.Log($"[BALA] 💥 Impacto al Escudero. Daño enviado: {dano}");
+                impacto = true;
+            }
+
             // 💣 Si impactó contra un enemigo válido, destruir la bala
             if (impacto)
                 Destroy(gameObject);

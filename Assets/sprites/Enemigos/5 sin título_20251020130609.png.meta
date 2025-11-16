@@ -773,7 +773,7 @@ TextureImporter:
       name: caminar6
       rect:
         serializedVersion: 2
-        x: 166
+        x: 167
         y: 1121
         width: 34
         height: 41
@@ -1873,7 +1873,7 @@ TextureImporter:
       name: ataque4
       rect:
         serializedVersion: 2
-        x: 125
+        x: 126
         y: 781
         width: 40
         height: 49
@@ -2008,7 +2008,7 @@ TextureImporter:
         x: 2
         y: 730
         width: 64
-        height: 32
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2030,7 +2030,7 @@ TextureImporter:
         x: 67
         y: 730
         width: 64
-        height: 32
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2052,7 +2052,7 @@ TextureImporter:
         x: 132
         y: 730
         width: 50
-        height: 37
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2074,7 +2074,7 @@ TextureImporter:
         x: 183
         y: 730
         width: 45
-        height: 45
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2118,7 +2118,7 @@ TextureImporter:
         x: 273
         y: 730
         width: 42
-        height: 41
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2140,7 +2140,7 @@ TextureImporter:
         x: 316
         y: 730
         width: 35
-        height: 40
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3300,13 +3300,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "5 sin t\xEDtulo_20251020130609_126"
+      name: escudo1
       rect:
         serializedVersion: 2
         x: 2
         y: 271
         width: 30
-        height: 31
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3322,13 +3322,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "5 sin t\xEDtulo_20251020130609_127"
+      name: escudo
       rect:
         serializedVersion: 2
         x: 32
-        y: 276
+        y: 271
         width: 33
-        height: 20
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3344,13 +3344,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "5 sin t\xEDtulo_20251020130609_128"
+      name: escudo3
       rect:
         serializedVersion: 2
         x: 65
-        y: 276
+        y: 271
         width: 34
-        height: 22
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3366,13 +3366,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "5 sin t\xEDtulo_20251020130609_129"
+      name: escudo4
       rect:
         serializedVersion: 2
         x: 99
         y: 271
         width: 30
-        height: 32
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3388,7 +3388,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "5 sin t\xEDtulo_20251020130609_130"
+      name: escudo5
       rect:
         serializedVersion: 2
         x: 129
@@ -3410,13 +3410,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "5 sin t\xEDtulo_20251020130609_131"
+      name: escudo6
       rect:
         serializedVersion: 2
         x: 160
-        y: 276
+        y: 271
         width: 36
-        height: 22
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3432,13 +3432,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "5 sin t\xEDtulo_20251020130609_132"
+      name: escudo7
       rect:
         serializedVersion: 2
         x: 196
-        y: 277
+        y: 271
         width: 33
-        height: 20
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3454,13 +3454,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "5 sin t\xEDtulo_20251020130609_133"
+      name: escudo8
       rect:
         serializedVersion: 2
         x: 229
         y: 271
         width: 31
-        height: 31
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3537,14 +3537,6 @@ TextureImporter:
       "5 sin t\xEDtulo_20251020130609_123": -2173412255217441614
       "5 sin t\xEDtulo_20251020130609_124": 3816694379655913997
       "5 sin t\xEDtulo_20251020130609_125": -3784932150518237093
-      "5 sin t\xEDtulo_20251020130609_126": -7149289685359385581
-      "5 sin t\xEDtulo_20251020130609_127": -2647315945626309730
-      "5 sin t\xEDtulo_20251020130609_128": 5529154482548904908
-      "5 sin t\xEDtulo_20251020130609_129": 7350711789888751196
-      "5 sin t\xEDtulo_20251020130609_130": 3462954818203417538
-      "5 sin t\xEDtulo_20251020130609_131": 1927746085137648083
-      "5 sin t\xEDtulo_20251020130609_132": -949837667249132217
-      "5 sin t\xEDtulo_20251020130609_133": -2394120795021349815
       "5 sin t\xEDtulo_20251020130609_134": 6503680822852605495
       "5 sin t\xEDtulo_20251020130609_18": 170531436482018886
       "5 sin t\xEDtulo_20251020130609_19": -8793758696383705601
@@ -3640,6 +3632,14 @@ TextureImporter:
       caminar7: -9098510897572158358
       caminar8: 7559884272441570119
       caminar9: -3562016514121896625
+      escudo: -2647315945626309730
+      escudo1: -7149289685359385581
+      escudo3: 5529154482548904908
+      escudo4: 7350711789888751196
+      escudo5: 3462954818203417538
+      escudo6: 1927746085137648083
+      escudo7: -949837667249132217
+      escudo8: -2394120795021349815
       idle1: 5347059466990996307
       idle2: 2891958026583616187
       idle3: 4488839319340081765
