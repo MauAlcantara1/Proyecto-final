@@ -2,28 +2,47 @@ using UnityEngine;
 
 public class EnemigoEscudero : MonoBehaviour
 {
-    [Header("Movimiento y detección")]
-    public float velocidad = 2f;
-    public float rangoDeteccion = 5f;
-    public float rangoAtaque = 1.5f;
+    public Animator animator;
+    public Collider2D colliderCuerpo;
+    public Collider2D colliderEscudo;
+
+    [Header("Vida")]
+    public int vidaMaxima = 100;
+    private int vidaActual;
+    private bool muerto = false;
+
+    [Header("Audio")]
+    public AudioClip sonidoImpactoEscudo;
+    public AudioClip sonidoAtaque;
+    public AudioClip sonidoMuerte;
 
     [Header("Daño")]
     public int dañoAtaque = 1;
 
+    public Collider2D hitboxMachete;
+    public float rangoAtaque = 1.5f;
+    public float rangoDeteccion = 5f;
+
     [Header("Referencias")]
     public Rigidbody2D rb;
-    public Animator animator;
-    public Collider2D hitboxMachete;
-    
-    private Transform jugador;
-    private bool estaAtacando = false;
-    private bool jugadorDetectado = false;
+
+
+    [Header("Movimiento y detección")]
+    public float velocidad = 2f;
+
     private bool enRangoAtaque = false;
+    private bool estaAtacando = false;
+    private Transform jugador;
+    private bool jugadorDetectado = false;
 
     private void Start()
     {
         jugador = GameObject.FindGameObjectWithTag("Player").transform;
+
         hitboxMachete.enabled = false;
+
+        colliderEscudo.enabled = true;
+        colliderCuerpo.enabled = false;
     }
 
     private void Update()
@@ -59,13 +78,33 @@ public class EnemigoEscudero : MonoBehaviour
         FlipTowardsPlayer();
     }
 
-    private void MoverHaciaJugador()
+    public void ActivarHitbox()
     {
-        Vector3 direccion = jugador.position - transform.position;
-        direccion.y = 0f;
-        direccion.Normalize();
+        hitboxMachete.enabled = true;
+    }
 
-        transform.position += direccion * velocidad * Time.deltaTime;
+    public void DesactivarHitbox()
+    {
+        hitboxMachete.enabled = false;
+    }
+
+    public void FinalizarAtaque()
+    {
+        estaAtacando = false;
+
+        colliderEscudo.enabled = true;
+
+        colliderCuerpo.enabled = false;
+    }
+
+    public void IniciarAtaque()
+    {
+        estaAtacando = true;
+        colliderEscudo.enabled = false;
+        colliderCuerpo.enabled = true;
+
+        if (sonidoAtaque != null)
+        AudioSource.PlayClipAtPoint(sonidoAtaque, transform.position);
     }
 
     private void FlipTowardsPlayer()
@@ -88,24 +127,13 @@ public class EnemigoEscudero : MonoBehaviour
         }
     }
 
-    public void IniciarAtaque()
+    private void MoverHaciaJugador()
     {
-        estaAtacando = true;
-    }
+        Vector3 direccion = jugador.position - transform.position;
+        direccion.y = 0f;
+        direccion.Normalize();
 
-    public void FinalizarAtaque()
-    {
-        estaAtacando = false;
-    }
-
-    public void ActivarHitbox()
-    {
-        hitboxMachete.enabled = true;
-    }
-
-    public void DesactivarHitbox()
-    {
-        hitboxMachete.enabled = false;
+        transform.position += direccion * velocidad * Time.deltaTime;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -118,5 +146,52 @@ public class EnemigoEscudero : MonoBehaviour
                 vidaPlayer.TomarDaño(dañoAtaque);
             }
         }
+        if (other.CompareTag("bala") && colliderEscudo.enabled)
+        {
+            Debug.Log("La bala impactó el ESCUDO");
+            AudioSource.PlayClipAtPoint(sonidoImpactoEscudo, transform.position);
+
+            Destroy(other.gameObject);
+        }
+       
     }
+    public void RecibirDaño(int cantidad)
+    {
+        if (muerto) return;
+
+        vidaActual -= cantidad;
+
+        if (vidaActual <= 0)
+            Morir();
+    }
+
+private void Morir()
+{
+    if (muerto) return;
+
+    muerto = true;
+    AudioSource.PlayClipAtPoint(sonidoAtaque, transform.position);
+
+    if (animator != null)
+        animator.SetBool("estaMuerto", true);
+
+    if (rb != null)
+    {
+        rb.linearVelocity = Vector2.zero;
+        rb.bodyType = RigidbodyType2D.Kinematic;
+    }
+
+   
+    colliderCuerpo.enabled = false;
+    colliderEscudo.enabled = false;
+
+    StopAllCoroutines();
+
+    DropLoot drop = GetComponent<DropLoot>();
+    if (drop != null)
+        drop.SoltarObjetos();
+}
+
+
+    
 }
