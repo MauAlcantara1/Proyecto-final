@@ -29,21 +29,23 @@ public class GolpeJugador : MonoBehaviour
             if (tanque2 != null)
             {
                 tanque2.RecibirDaño(dano);
-                Debug.Log($"[BALA] 💥 Impacto al Tanque2. Daño enviado: {dano}");
             }
 
             EnemYeti enemYeti = other.GetComponent<EnemYeti>();
             if (enemYeti != null)
             {
                 enemYeti.RecibirDaño(dano);
-                Debug.Log($"[BALA] 💥 Impacto al Yeti. Daño enviado: {dano}");
             }
 
             EnemigoEscudero escudero = other.GetComponent<EnemigoEscudero>();
             if (escudero != null)
             {
                 escudero.RecibirDaño(dano);
-                Debug.Log($"[BALA] 💥 Impacto al Escudero. Daño enviado: {dano}");
+            }
+            Soldadouno soldado = other.GetComponent<Soldadouno>();
+            if (soldado != null)
+            {
+                soldado.RecibirDaño(dano);
             }
         }
     }
