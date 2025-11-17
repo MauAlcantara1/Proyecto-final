@@ -10,7 +10,8 @@ public class Sub : MonoBehaviour
     private Animator animator;
     private Collider2D col;
 
-    // Para evitar activar animación de estado 1 más de una vez
+    [SerializeField]private Collider2D col2;
+
     private bool estado1Activado = false;
 
     private void Start()
@@ -35,13 +36,14 @@ public class Sub : MonoBehaviour
         vidaActual -= cantidad;
         Debug.Log("Daño recibido. Vida restante: " + vidaActual);
 
-        // --- Estado 1 al llegar a 10 ---
         if (vidaActual <= 10 && !estado1Activado)
         {
             estado1Activado = true;
             animator.SetBool("activoEstado1", true);
+            col.enabled = false;
+            col2.enabled = false;
+
         }
 
-        // Si quieres que al llegar a 0 pase algo, dímelo
     }
 }
