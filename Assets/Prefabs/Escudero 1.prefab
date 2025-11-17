@@ -379,6 +379,7 @@ GameObject:
   - component: {fileID: 7257223241457669064}
   - component: {fileID: 4608163615778627556}
   - component: {fileID: 7712740640898298693}
+  - component: {fileID: 2773216942776483392}
   m_Layer: 7
   m_Name: Escudero 1
   m_TagString: enemigo
@@ -680,3 +681,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2773216942776483392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7718449350492266255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d13356fd09b9238428676f6429b9d498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DropLoot
+  posiblesDrops:
+  - {fileID: 7846604672225859189, guid: 5d469c1be1faee341be370ecf8620c51, type: 3}
+  - {fileID: 6931895541534724455, guid: 1f8976c91313264448ddfa5481c32845, type: 3}
+  probabilidadDrop: 0.4
+  minDrops: 1
+  maxDrops: 1

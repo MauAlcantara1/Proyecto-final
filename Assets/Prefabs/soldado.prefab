@@ -183,6 +183,7 @@ GameObject:
   - component: {fileID: 8527447711272990399}
   - component: {fileID: 6122882395067048228}
   - component: {fileID: 5030414978145716429}
+  - component: {fileID: 611394038527877411}
   m_Layer: 7
   m_Name: soldado
   m_TagString: enemigo
@@ -482,3 +483,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &611394038527877411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7982004166858815301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d13356fd09b9238428676f6429b9d498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DropLoot
+  posiblesDrops:
+  - {fileID: 5248659747000338066, guid: 549e30d5de6abe54ba565feece511329, type: 3}
+  - {fileID: 7846604672225859189, guid: 5d469c1be1faee341be370ecf8620c51, type: 3}
+  probabilidadDrop: 0.4
+  minDrops: 1
+  maxDrops: 1
