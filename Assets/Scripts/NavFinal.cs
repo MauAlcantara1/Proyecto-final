@@ -2,6 +2,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityEngine.InputSystem;
+
 
 public class NavFinal : MonoBehaviour
 {
@@ -15,6 +17,15 @@ public class NavFinal : MonoBehaviour
     {
         if (textoPuntuacion != null)
             StartCoroutine(ContarPuntuacion(VidasPlayer.puntuacion));
+    }
+
+    void Update(){
+        if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            VidasPlayer.vidas = 7;
+            VidasPlayer.puntuacion = 0;
+            SceneManager.LoadScene("Menu");
+        }
     }
 
     IEnumerator ContarPuntuacion(int puntuacionFinal)
@@ -95,8 +106,5 @@ public class NavFinal : MonoBehaviour
         }
     }
 
-    public void Regresar()
-    {
-        SceneManager.LoadScene("Menu");
-    }
+    
 }

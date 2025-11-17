@@ -636,7 +636,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' Presiona espacio para volver al Inicio'
+  m_text: ' Presiona esc para volver al Inicio'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0af345bca7fdb971b94c46cf0a6bf1d1, type: 2}
   m_sharedMaterial: {fileID: -3452616318369050816, guid: 0af345bca7fdb971b94c46cf0a6bf1d1, type: 2}
@@ -1272,7 +1272,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' Presiona espacio para volver al Inicio'
+  m_text: ' Presiona esc para volver al Inicio'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0af345bca7fdb971b94c46cf0a6bf1d1, type: 2}
   m_sharedMaterial: {fileID: -3452616318369050816, guid: 0af345bca7fdb971b94c46cf0a6bf1d1, type: 2}

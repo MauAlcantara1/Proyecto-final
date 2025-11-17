@@ -10,7 +10,6 @@ public class NavSalir : MonoBehaviour
             VidasPlayer.vidas = 7;
             VidasPlayer.puntuacion = 0;
             SceneManager.LoadScene("Menu");
-
         }
     }
 }

@@ -115,14 +115,13 @@ public class animacionesTorsoJugador : MonoBehaviour
 
     private IEnumerator RetornoMenu()
     {
-        Time.timeScale = 0f;   
-        VidasPlayer.vidas = 7;
-        VidasPlayer.puntuacion = 0;
+        Time.timeScale = 0f;
+
         float tiempo = 0f;
 
         while (tiempo < 5f)
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetKeyDown(KeyCode.Space))
                 break;
 
             tiempo += Time.unscaledDeltaTime; 
@@ -130,8 +129,12 @@ public class animacionesTorsoJugador : MonoBehaviour
         }
 
         Time.timeScale = 1f; 
-        SceneManager.LoadScene("Inicio"); 
+
+        
+
+        SceneManager.LoadScene("Final"); 
     }
+
 
     
 }

@@ -1299,7 +1299,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pulsa ESC para salir
+  m_text: Pulsa ESPACIO para avanzar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: edf7a2297b8a3f28cbed0a6ce09c1580, type: 2}
   m_sharedMaterial: {fileID: 8622000060722318931, guid: edf7a2297b8a3f28cbed0a6ce09c1580, type: 2}
