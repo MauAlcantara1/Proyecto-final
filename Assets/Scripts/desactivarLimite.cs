@@ -9,6 +9,7 @@ public class CambiarNivel : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            VidasPlayer.vidas += 3;
             if (!string.IsNullOrEmpty(nombreEscena))
             {
                 SceneManager.LoadScene(nombreEscena);
