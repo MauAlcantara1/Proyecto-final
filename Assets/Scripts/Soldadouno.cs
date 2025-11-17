@@ -130,8 +130,9 @@ public class Soldadouno : MonoBehaviour
             rb.bodyType = RigidbodyType2D.Kinematic; 
         }
 
-        anim.Play("Muerte");
-        anim.SetTrigger("Muerte");
+        anim.Play("muerte");
+        anim.SetTrigger("muerte");
+
 
         StopAllCoroutines();
 
@@ -139,6 +140,7 @@ public class Soldadouno : MonoBehaviour
         if (drop != null)
         {
             drop.SoltarObjetos();
+            
         }
     }
 
@@ -199,6 +201,11 @@ public class Soldadouno : MonoBehaviour
             Vector2 direccion = mirandoDerecha ? Vector2.right : Vector2.left;
             rbBala.linearVelocity = direccion * fuerzaDisparo;
         }
+    }
+
+    private void Desaparecer()
+    {
+        Destroy(gameObject);
     }
 
 

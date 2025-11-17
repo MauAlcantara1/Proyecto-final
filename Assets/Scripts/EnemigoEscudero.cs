@@ -146,11 +146,6 @@ public class EnemigoEscudero : MonoBehaviour
     {
         if (hitboxMachete.enabled && other.CompareTag("Player"))
         {
-            VidasPlayer vidaPlayer = other.GetComponent<VidasPlayer>();
-            if (vidaPlayer != null)
-            {
-                vidaPlayer.TomarDaño(dañoAtaque);
-            }
         }
         if (other.CompareTag("bala") && colliderEscudo.enabled)
         {

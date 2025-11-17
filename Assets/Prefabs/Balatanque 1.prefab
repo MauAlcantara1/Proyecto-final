@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -1382948053533025810}
   - component: {fileID: 6050730704859247708}
   - component: {fileID: 110955766108481259}
-  m_Layer: 3
+  m_Layer: 12
   m_Name: Balatanque 1
   m_TagString: "Da\xF1oEnemigo"
   m_Icon: {fileID: 0}

@@ -282,8 +282,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e14c01ccd1fa8d3428002f2514259c3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  panelMuerte: {fileID: 0}
   piernas: {fileID: 8848170330767537437}
   muerto: 0
+  GameOver: {fileID: 0}
 --- !u!114 &3378973340895941386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,7 +315,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 6657d7e07769f6940baaa33e3e0e6114, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.011
   m_Pitch: 1
   Loop: 0
   Mute: 0

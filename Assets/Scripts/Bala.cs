@@ -74,6 +74,14 @@ public class Bala : MonoBehaviour
                 impacto = true;
             }
 
+            Soldadouno soldado = other.GetComponent<Soldadouno>();
+            if (soldado != null)
+            {
+                soldado.RecibirDaño(dano);
+                Debug.Log($"[BALA]  Impacto al Soldado. Daño enviado: {dano}");
+                impacto = true;
+            }
+
             // 💣 Si impactó contra un enemigo válido, destruir la bala
             if (impacto)
                 Destroy(gameObject);
