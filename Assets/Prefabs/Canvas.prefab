@@ -1060,7 +1060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b4dc7e7830358745b1993feeceeb00e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Fade
-  animator: {fileID: 0}
+  animator: {fileID: 3709869375622941709}
 --- !u!95 &3709869375622941709
 Animator:
   serializedVersion: 7
