@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 9079219991811328174}
   m_Layer: 0
   m_Name: torso
-  m_TagString: Untagged
+  m_TagString: "Da\xF1o"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -188,6 +188,7 @@ Transform:
   m_Children:
   - {fileID: 3164921040285162977}
   - {fileID: 5093037540395593906}
+  - {fileID: 8234432149610453255}
   m_Father: {fileID: 7417369988130022333}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &938647914380895690
@@ -285,7 +286,7 @@ MonoBehaviour:
   panelMuerte: {fileID: 0}
   piernas: {fileID: 8848170330767537437}
   muerto: 0
-  GameOver: {fileID: 0}
+  GameOver: {fileID: 8300000, guid: 2aa70a6fd07c28e47883c0fe9f503aaa, type: 3}
 --- !u!114 &3378973340895941386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -444,7 +445,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.02
   m_Pitch: 0.86
   Loop: 0
   Mute: 0
@@ -569,7 +570,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3045099831283239804}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -685,6 +686,89 @@ Transform:
   m_Children: []
   m_Father: {fileID: 662226309098366629}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4458054755353317018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8234432149610453255}
+  - component: {fileID: 5227940271677947887}
+  - component: {fileID: 3923066629744337400}
+  m_Layer: 0
+  m_Name: GolpeJugador
+  m_TagString: bala
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8234432149610453255
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4458054755353317018}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 662226309098366629}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5227940271677947887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4458054755353317018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43310c3de6dd1eb4dab2df103514f2d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  dano: 5
+  colliderGolpe: {fileID: 3923066629744337400}
+--- !u!58 &3923066629744337400
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4458054755353317018}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.18296002, y: 0}
+  m_Radius: 0.13665588
 --- !u!1 &7860175344245787006
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,7 +800,7 @@ Transform:
   m_GameObject: {fileID: 7860175344245787006}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.9734116, y: -1.0707026, z: 0}
+  m_LocalPosition: {x: -2.44, y: -0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
