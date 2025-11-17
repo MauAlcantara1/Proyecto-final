@@ -21,7 +21,6 @@ public class Tanque : MonoBehaviour
     [Tooltip("Ángulo mínimo para considerar que el jugador está detrás (en grados)")]
     [SerializeField] private float anguloDetras = 100f;
 
-    // 🔊 AUDIO (NUEVO)
     [Header("Audio")]
     [SerializeField] private AudioClip sonidoMuerte;
     private AudioSource audioSource;
@@ -219,49 +218,33 @@ public class Tanque : MonoBehaviour
         if (estaMuerto) return;
         estaMuerto = true;
 
-        Debug.Log("☠️ Tanque ha muerto.");
+        Debug.Log("Tanque ha muerto.");
 
-        // 🔊 SONIDO DE MUERTE
         if (audioSource != null && sonidoMuerte != null)
             audioSource.PlayOneShot(sonidoMuerte);
 
-        persiguiendo = false;
-        enProcesoAtaque = false;
-        frenando = false;
-        prepHecho = false;
-        disparoHecho = false;
-        girando = false;
+        // Detener movimiento y evitar físicas
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.bodyType = RigidbodyType2D.Kinematic; 
+        }
 
-        animator.ResetTrigger("Arranque");
-        animator.ResetTrigger("Arranque1");
-        animator.ResetTrigger("Frenado");
-        animator.ResetTrigger("Preparacion");
-        animator.ResetTrigger("Disparo");
-        animator.ResetTrigger("Girar");
-
+        // Evitar colisiones
         if (colisionador != null)
         {
-            Collider2D[] todos = Object.FindObjectsByType<Collider2D>(FindObjectsSortMode.None);
-            foreach (var c in todos)
-            {
-                if (c == null || c == colisionador) continue;
-
-                string tag = c.tag.ToLower();
-                if (tag == "player" || tag == "bala")
-                    Physics2D.IgnoreCollision(colisionador, c, true);
-            }
-            Debug.Log("🚫 Tanque muerto: colisiones ignoradas solo con jugador y balas.");
+            colisionador.enabled = false;
         }
 
         animator.SetTrigger("Muerte");
 
+        StopAllCoroutines();
+
         DropLoot drop = GetComponent<DropLoot>();
         if (drop != null)
-        {
             drop.SoltarObjetos();
-            Debug.Log("🎲 Drop ejecutado al morir el tanque.");
-        }
     }
+
 
     private void DetectarJugador()
     {

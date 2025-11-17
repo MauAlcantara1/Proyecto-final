@@ -28,13 +28,10 @@ public class Tanque2 : MonoBehaviour
     [SerializeField] private Transform puntoDisparo;
     [SerializeField] private float fuerzaDisparo = 8f;
 
-    // 🟩🟩🟩 AUDIO DE MUERTE (NUEVO)
     [Header("Audio")]
     [SerializeField] private AudioClip sonidoMuerte;
     private AudioSource audioSource;
-    // 🟩🟩🟩 FIN
 
-    // Componentes y estados
     private Transform jugador;
     private Animator anim;
     private Rigidbody2D rb;
@@ -42,7 +39,6 @@ public class Tanque2 : MonoBehaviour
     private Collider2D colisionesTanque;
     private Collider2D[] colJugador;
 
-    // Estados lógicos
     private bool jugadorDetectado = false;
     private bool enRangoAtaque = false;
     private bool enRangoEmbestida = false;
@@ -208,9 +204,6 @@ public class Tanque2 : MonoBehaviour
 
         StartCoroutine(CicloAtaque());
     }
-
-    // ========== MOVIMIENTO ==========
-
     private void MoverHaciaJugador()
     {
         if (jugador == null) return;
@@ -291,7 +284,7 @@ public class Tanque2 : MonoBehaviour
         if (drop != null)
         {
             drop.SoltarObjetos();
-            Debug.Log("🎲 Drop ejecutado al morir el tanque.");
+            Debug.Log("Drop ejecutado al morir el tanque.");
         }
     }
 
