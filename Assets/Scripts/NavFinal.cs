@@ -22,7 +22,7 @@ public class NavFinal : MonoBehaviour
     void Update(){
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            VidasPlayer.vidas = 7;
+            VidasPlayer.vidas = 10;
             VidasPlayer.puntuacion = 0;
             SceneManager.LoadScene("Menu");
         }
