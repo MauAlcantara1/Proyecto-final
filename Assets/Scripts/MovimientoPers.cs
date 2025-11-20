@@ -39,9 +39,9 @@ public class MovimientoPers : MonoBehaviour
             return;
         }
         float move = 0f;
-        if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)
+        if (Keyboard.current.aKey.isPressed)
             move = -1f;
-        if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed)
+        if (Keyboard.current.dKey.isPressed)
             move = 1f;
 
         rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);

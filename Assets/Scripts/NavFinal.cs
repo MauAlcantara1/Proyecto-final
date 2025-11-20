@@ -16,14 +16,16 @@ public class NavFinal : MonoBehaviour
     void Start()
     {
         if (textoPuntuacion != null)
-            StartCoroutine(ContarPuntuacion(VidasPlayer.puntuacion));
+            StartCoroutine(ContarPuntuacion(VidasPlayer.puntuacion1));
     }
 
     void Update(){
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            VidasPlayer.vidas = 10;
-            VidasPlayer.puntuacion = 0;
+            VidasPlayer.vidasJugador1 = 10;
+            VidasPlayer.vidasJugador2 = 10;
+            VidasPlayer.puntuacion1 = 0;
+            VidasPlayer.puntuacion2 = 0;
             SceneManager.LoadScene("Menu");
         }
     }

@@ -7,6 +7,8 @@ public class EnemOso : MonoBehaviour
 {
     [Header("Detección del jugador")]
     public Transform jugador;
+    private Transform jugador1;
+    private Transform jugador2;
     public float rangoDeteccion = 5f;
     public float rangoAtaque = 1.5f;
 
@@ -63,24 +65,18 @@ public class EnemOso : MonoBehaviour
 
     void Start()
     {
+        GameObject j1 = GameObject.FindGameObjectWithTag("Player1");
+        GameObject j2 = GameObject.FindGameObjectWithTag("Player2");
+
+        if (j1 != null) jugador1 = j1.transform;
+        if (j2 != null) jugador2 = j2.transform;
+
+        jugador = ObtenerJugadorObjetivo();
         vidaActual = vidaMax;
 
         // AUDIO
         audioSource = GetComponent<AudioSource>();
 
-        if (jugador == null)
-        {
-            GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
-            if (playerObj != null)
-            {
-                jugador = playerObj.transform;
-                Debug.Log("[EnemOso] Jugador asignado automáticamente");
-            }
-            else
-            {
-                Debug.LogWarning("[EnemOso] No se encontró jugador con tag 'Player'.");
-            }
-        }
 
         if (animator != null)
             animator.Play("Idle");
@@ -90,6 +86,7 @@ public class EnemOso : MonoBehaviour
 
     void Update()
     {
+        jugador = ObtenerJugadorObjetivo();
         if (cayendo || huyendo) return;
         if (jugador == null) return;
 
@@ -304,5 +301,22 @@ public class EnemOso : MonoBehaviour
         }
 
         Destroy(gameObject);
+    }
+
+    private Transform ObtenerJugadorObjetivo()
+    {
+        if (jugador1 == null && jugador2 == null)
+            return null;
+
+        if (jugador1 != null && jugador2 == null)
+            return jugador1;
+
+        if (jugador2 != null && jugador1 == null)
+            return jugador2;
+
+        float dist1 = Vector2.Distance(transform.position, jugador1.position);
+        float dist2 = Vector2.Distance(transform.position, jugador2.position);
+
+        return dist1 < dist2 ? jugador1 : jugador2;
     }
 }

@@ -3,6 +3,8 @@ using UnityEngine;
 public class Npc : MonoBehaviour
 {
     private Transform jugador;
+    private Transform jugador1;
+    private Transform jugador2;
     private bool activo = false;
 
     [Header("Movimiento")]
@@ -12,31 +14,29 @@ public class Npc : MonoBehaviour
 
     void Start()
     {
-        jugador = GameObject.FindGameObjectWithTag("Player")?.transform;
+        GameObject j1 = GameObject.FindGameObjectWithTag("Player1");
+        GameObject j2 = GameObject.FindGameObjectWithTag("Player2");
 
-        if (jugador == null)
-            Debug.LogError("❌ No se encontró el objeto con tag 'Player'.");
+        if (j1 != null) jugador1 = j1.transform;
+        if (j2 != null) jugador2 = j2.transform;
     }
 
     void Update()
     {
+        jugador = ObtenerJugadorObjetivo();
         if (jugador == null) return;
 
         float distancia = Vector2.Distance(transform.position, jugador.position);
 
-        // Activar cuando el jugador esté dentro del rango
         if (!activo && distancia <= dActivacion)
         {
             activo = true;
-            Debug.Log($"{name} ha visto al jugador y huye hacia la izquierda!");
         }
 
-        // Si está activo, huir hacia la izquierda
         if (activo)
         {
             Huir();
 
-            // Si se aleja demasiado, destruirlo
             if (distancia > limiteFueraCamara)
             {
                 Destroy(gameObject);
@@ -46,7 +46,23 @@ public class Npc : MonoBehaviour
 
     private void Huir()
     {
-        // Movimiento fijo hacia la izquierda (sin rotar)
         transform.position += Vector3.left * velHuida * Time.deltaTime;
     }
+    private Transform ObtenerJugadorObjetivo()
+    {
+        if (jugador1 == null && jugador2 == null)
+            return null;
+
+        if (jugador1 != null && jugador2 == null)
+            return jugador1;
+
+        if (jugador2 != null && jugador1 == null)
+            return jugador2;
+
+        float dist1 = Vector2.Distance(transform.position, jugador1.position);
+        float dist2 = Vector2.Distance(transform.position, jugador2.position);
+
+        return dist1 < dist2 ? jugador1 : jugador2;
+    }
+
 }

@@ -5,6 +5,7 @@ public class EnemigoEscudero : MonoBehaviour
     public Animator animator;
     public Collider2D colliderCuerpo;
     public Collider2D colliderEscudo;
+    private AudioSource audioSource;
 
     [Header("Vida")]
     public int vidaMaxima = 100;
@@ -32,21 +33,32 @@ public class EnemigoEscudero : MonoBehaviour
 
     private bool enRangoAtaque = false;
     private bool estaAtacando = false;
-    private Transform jugador;
+    private Transform jugador;     
+    private Transform jugador1;
+    private Transform jugador2;
     private bool jugadorDetectado = false;
 
     private void Start()
     {
-        jugador = GameObject.FindGameObjectWithTag("Player").transform;
+        GameObject j1 = GameObject.FindGameObjectWithTag("Player1");
+        GameObject j2 = GameObject.FindGameObjectWithTag("Player2");
+
+        if (j1 != null) jugador1 = j1.transform;
+        if (j2 != null) jugador2 = j2.transform;
+
+        jugador = ObtenerJugadorObjetivo();
 
         hitboxMachete.enabled = false;
 
         colliderEscudo.enabled = true;
         colliderCuerpo.enabled = false;
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
     {
+         jugador = ObtenerJugadorObjetivo(); // siempre busca al más cercano
+
         if (jugador == null)
             return;
 
@@ -110,7 +122,7 @@ public class EnemigoEscudero : MonoBehaviour
         colliderCuerpo.enabled = true;
 
         if (sonidoAtaque != null)
-        AudioSource.PlayClipAtPoint(sonidoAtaque, transform.position);
+        audioSource.PlayOneShot(sonidoAtaque);
     }
 
     private void FlipTowardsPlayer()
@@ -150,7 +162,7 @@ public class EnemigoEscudero : MonoBehaviour
         if (other.CompareTag("bala") && colliderEscudo.enabled)
         {
             Debug.Log("La bala impactó el ESCUDO");
-            AudioSource.PlayClipAtPoint(sonidoImpactoEscudo, transform.position);
+            audioSource.PlayOneShot(sonidoImpactoEscudo);
 
             Destroy(other.gameObject);
         }else if (other.CompareTag("bala") && !(colliderEscudo.enabled)){
@@ -187,7 +199,7 @@ public class EnemigoEscudero : MonoBehaviour
         hitboxMachete.enabled = false;
 
         if (sonidoMuerte != null)
-            AudioSource.PlayClipAtPoint(sonidoMuerte, transform.position);
+            audioSource.PlayOneShot(sonidoMuerte);
 
         if (rb != null)
         {
@@ -205,6 +217,22 @@ public class EnemigoEscudero : MonoBehaviour
             drop.SoltarObjetos();
     }
 
+    private Transform ObtenerJugadorObjetivo()
+    {
+        if (jugador1 == null && jugador2 == null)
+            return null;
+
+        if (jugador1 != null && jugador2 == null)
+            return jugador1;
+
+        if (jugador2 != null && jugador1 == null)
+            return jugador2;
+
+        float dist1 = Vector2.Distance(transform.position, jugador1.position);
+        float dist2 = Vector2.Distance(transform.position, jugador2.position);
+
+        return dist1 < dist2 ? jugador1 : jugador2;
+    }
 
     
 }

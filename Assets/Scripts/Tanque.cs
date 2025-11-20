@@ -26,7 +26,9 @@ public class Tanque : MonoBehaviour
     private AudioSource audioSource;
 
     private Animator animator;
-    private Transform player;
+    private Transform jugador;
+    private Transform jugador1;
+    private Transform jugador2;
     private SpriteRenderer spriteRenderer;
     private Collider2D colisionador;
     private Rigidbody2D rb;
@@ -54,11 +56,15 @@ public class Tanque : MonoBehaviour
 
     private void Start()
     {
+        GameObject j1 = GameObject.FindGameObjectWithTag("Player1");
+        GameObject j2 = GameObject.FindGameObjectWithTag("Player2");
+
+        if (j1 != null) jugador1 = j1.transform;
+        if (j2 != null) jugador2 = j2.transform;
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         colisionador = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
-        player = GameObject.FindGameObjectWithTag("Player")?.transform;
 
         // 🔊 AUDIO
         audioSource = GetComponent<AudioSource>();
@@ -72,6 +78,7 @@ public class Tanque : MonoBehaviour
 
     private void Update()
     {
+        jugador = ObtenerJugadorObjetivo();
         if (estaMuerto) return;
 
         DetectarJugador();
@@ -165,7 +172,7 @@ public class Tanque : MonoBehaviour
 
         if (!enProcesoAtaque && persiguiendo && (arranqueOriginalTerminado || arranque0Terminado))
         {
-            float distancia = Vector3.Distance(transform.position, player.position);
+            float distancia = Vector3.Distance(transform.position, jugador.position);
 
             if (distancia <= distanciaFrenado)
             {
@@ -248,9 +255,9 @@ public class Tanque : MonoBehaviour
 
     private void DetectarJugador()
     {
-        if (player == null) return;
+        if (jugador == null) return;
 
-        float dist = Vector3.Distance(transform.position, player.position);
+        float dist = Vector3.Distance(transform.position, jugador.position);
 
         if (dist <= distanciaDeteccion)
         {
@@ -288,9 +295,9 @@ public class Tanque : MonoBehaviour
 
     private bool JugadorDetras()
     {
-        if (player == null) return false;
+        if (jugador == null) return false;
 
-        Vector2 dirToPlayer = (player.position - transform.position).normalized;
+        Vector2 dirToPlayer = (jugador.position - transform.position).normalized;
         Vector2 facing = mirandoDerecha ? Vector2.right : Vector2.left;
         float angle = Vector2.Angle(facing, dirToPlayer);
         return angle < anguloDetras;
@@ -303,11 +310,11 @@ public class Tanque : MonoBehaviour
 
     private void PerseguirJugador()
     {
-        if (player == null) return;
+        if (jugador == null) return;
 
         transform.position = Vector3.MoveTowards(
             transform.position,
-            player.position,
+            jugador.position,
             velocidad * Time.deltaTime
         );
     }
@@ -342,6 +349,23 @@ public class Tanque : MonoBehaviour
         Vector3 pos = puntoDisparo.localPosition;
         pos.x = -pos.x;
         puntoDisparo.localPosition = pos;
+    }
+
+    private Transform ObtenerJugadorObjetivo()
+    {
+        if (jugador1 == null && jugador2 == null)
+            return null;
+
+        if (jugador1 != null && jugador2 == null)
+            return jugador1;
+
+        if (jugador2 != null && jugador1 == null)
+            return jugador2;
+
+        float dist1 = Vector2.Distance(transform.position, jugador1.position);
+        float dist2 = Vector2.Distance(transform.position, jugador2.position);
+
+        return dist1 < dist2 ? jugador1 : jugador2;
     }
 
 }

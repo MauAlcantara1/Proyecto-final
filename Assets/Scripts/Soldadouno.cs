@@ -22,15 +22,22 @@ public class Soldadouno : MonoBehaviour
     private Animator anim;
     private Rigidbody2D rb;
     private Transform jugador;
+    private Transform jugador1;
+    private Transform jugador2;
     private bool mirandoDerecha = true;
     private bool puedeDisparar = true;
     private bool muerto = false;
 
     void Start()
     {
+        GameObject j1 = GameObject.FindGameObjectWithTag("Player1");
+        GameObject j2 = GameObject.FindGameObjectWithTag("Player2");
+
+        if (j1 != null) jugador1 = j1.transform;
+        if (j2 != null) jugador2 = j2.transform;
+
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        jugador = GameObject.FindGameObjectWithTag("Player")?.transform;
         vidaActual = vidaMaxima;
 
         rb.freezeRotation = true;
@@ -38,6 +45,7 @@ public class Soldadouno : MonoBehaviour
 
     void Update()
     {
+        jugador = ObtenerJugadorObjetivo();
         if (jugador == null || muerto) return;
         ActualizarOrientacion();
         float dist = Vector2.Distance(transform.position, jugador.position);
@@ -208,5 +216,20 @@ public class Soldadouno : MonoBehaviour
         Destroy(gameObject);
     }
 
+    private Transform ObtenerJugadorObjetivo()
+    {
+        if (jugador1 == null && jugador2 == null)
+            return null;
 
+        if (jugador1 != null && jugador2 == null)
+            return jugador1;
+
+        if (jugador2 != null && jugador1 == null)
+            return jugador2;
+
+        float dist1 = Vector2.Distance(transform.position, jugador1.position);
+        float dist2 = Vector2.Distance(transform.position, jugador2.position);
+
+        return dist1 < dist2 ? jugador1 : jugador2;
+    }
 }

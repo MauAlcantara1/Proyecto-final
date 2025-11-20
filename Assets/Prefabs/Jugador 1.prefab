@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5503516693347346896}
   - component: {fileID: 7092084695028799943}
   - component: {fileID: 8225606819587400855}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 4629762352990473721}
   - component: {fileID: 3378973340895941386}
   - component: {fileID: 9079219991811328174}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: torso
   m_TagString: "Da\xF1o"
   m_Icon: {fileID: 0}
@@ -316,7 +316,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 6657d7e07769f6940baaa33e3e0e6114, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.011
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -410,7 +410,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7780239708760319195}
   - component: {fileID: 2904666226256998951}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: disparo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -445,7 +445,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.02
+  m_Volume: 0.15
   m_Pitch: 0.86
   Loop: 0
   Mute: 0
@@ -541,7 +541,7 @@ GameObject:
   - component: {fileID: 8848170330767537437}
   - component: {fileID: 8157326688779106066}
   - component: {fileID: 5089654260838696859}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: piernas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -664,7 +664,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3164921040285162977}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: ControladorDisparo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -697,7 +697,7 @@ GameObject:
   - component: {fileID: 8234432149610453255}
   - component: {fileID: 5227940271677947887}
   - component: {fileID: 3923066629744337400}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: GolpeJugador
   m_TagString: bala
   m_Icon: {fileID: 0}
@@ -784,9 +784,9 @@ GameObject:
   - component: {fileID: 3651744595080886889}
   - component: {fileID: 1348789177839893419}
   - component: {fileID: 4596491513191016194}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Jugador 1
-  m_TagString: Player
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -982,5 +982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 667a9cc7db488724cbc11b15cfd0a01f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Objetos_P
-  textoPuntuacion: {fileID: 0}
+  textoPuntuacion1: {fileID: 0}
   textoPuntuacion2: {fileID: 0}
+  textoPuntuacion3: {fileID: 0}
+  textoPuntuacion4: {fileID: 0}

@@ -13,6 +13,8 @@ public class TpCaso2 : MonoBehaviour
 
     private CamaraControllerTipo2 camara;
 
+    private bool yaTeletransportando = false;
+
     private void Start()
     {
         camara = Camera.main.GetComponent<CamaraControllerTipo2>();
@@ -20,24 +22,30 @@ public class TpCaso2 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if ((other.CompareTag("Player1") || other.CompareTag("Player2")) && !yaTeletransportando)
         {
-            StartCoroutine(TeletransportarConRetraso(other.transform));
+            yaTeletransportando = true;
+            StartCoroutine(TeletransportarAmbos());
         }
     }
 
-    private IEnumerator TeletransportarConRetraso(Transform jugador)
+    private IEnumerator TeletransportarAmbos()
     {
         if (bloquearCamaraAlEntrar)
             camara.BloquearEnPosicionActual();
 
         camara.CongelarCamara(true);
+
         if (fadeOut != null)
             fadeOut.FadeOut();
 
         yield return new WaitForSeconds(retraso);
 
-        jugador.position = destino;
+        GameObject p1 = GameObject.FindGameObjectWithTag("Player1");
+        GameObject p2 = GameObject.FindGameObjectWithTag("Player2");
+
+        if (p1 != null) p1.transform.position = destino;
+        if (p2 != null) p2.transform.position = destino;
 
         yield return new WaitForSeconds(0.1f);
 
@@ -45,5 +53,7 @@ public class TpCaso2 : MonoBehaviour
 
         if (liberarCamaraAlLlegar)
             camara.QuitarLimites();
+
+        yaTeletransportando = false;
     }
 }

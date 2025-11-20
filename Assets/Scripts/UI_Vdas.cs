@@ -19,8 +19,8 @@ public class UI_Vidas : MonoBehaviour
 
     private void ActualizarVidas()
     {
-        txtVidas.text = "X " + VidasPlayer.vidas;
-        txtVidasSombra.text = "X " + VidasPlayer.vidas;
+        txtVidas.text = "X " + VidasPlayer.vidasJugador1;
+        txtVidasSombra.text = "X " + VidasPlayer.vidasJugador1;
 
     }
 }

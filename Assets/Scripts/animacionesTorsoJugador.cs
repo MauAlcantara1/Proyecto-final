@@ -14,7 +14,7 @@ public class animacionesTorsoJugador : MonoBehaviour
     private AudioSource audioSource;
     [SerializeField] private AudioClip GameOver;
 
-    private int vidas => VidasPlayer.vidas;
+    private int vidas => VidasPlayer.vidasJugador1;
 
 
     void Start()
@@ -93,14 +93,18 @@ public class animacionesTorsoJugador : MonoBehaviour
 
     public void SistemaDeVidas()
     {
-        VidasPlayer.vidas -= 1;
+        VidasPlayer.vidasJugador1 -= 1;
 
-
-        Debug.Log("Vidas actuales: " + vidas);
+        Debug.Log("Vidas actuales J1: " + vidas);
 
         if (vidas <= 0)
         {
-            VidasPlayer.vidas = 0;
+            VidasPlayer.vidasJugador1 = 0;
+
+            if (VidasPlayer.vidasJugador2 > 0)
+            {
+                return;
+            }
 
             if (audioSource != null && GameOver != null)
                 audioSource.PlayOneShot(GameOver);
@@ -112,6 +116,7 @@ public class animacionesTorsoJugador : MonoBehaviour
             }
         }
     }
+
 
     private IEnumerator RetornoMenu()
     {
@@ -134,7 +139,4 @@ public class animacionesTorsoJugador : MonoBehaviour
 
         SceneManager.LoadScene("Final"); 
     }
-
-
-    
 }

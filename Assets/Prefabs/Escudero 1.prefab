@@ -576,7 +576,7 @@ MonoBehaviour:
   vidaMaxima: 100
   sonidoImpactoEscudo: {fileID: 8300000, guid: 910846986177457449fb21edcbd1e010, type: 3}
   sonidoAtaque: {fileID: 8300000, guid: 18359a98837ab9f479190f1c1428ec1f, type: 3}
-  sonidoMuerte: {fileID: 8300000, guid: d1b45423b4df9bb40b592932795865e0, type: 3}
+  sonidoMuerte: {fileID: 8300000, guid: 1c8346419ad7aaa4bb149ad73f952cc7, type: 3}
   "da\xF1oAtaque": 1
   hitboxMachete: {fileID: 6277220240331703925}
   rangoAtaque: 2
@@ -597,7 +597,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
