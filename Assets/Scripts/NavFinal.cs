@@ -16,8 +16,12 @@ public class NavFinal : MonoBehaviour
     void Start()
     {
         if (textoPuntuacion != null)
-            StartCoroutine(ContarPuntuacion(VidasPlayer.puntuacion1));
+        {
+            int puntuacionTotal = VidasPlayer.puntuacion1 + VidasPlayer.puntuacion2;
+            StartCoroutine(ContarPuntuacion(puntuacionTotal));
+        }
     }
+
 
     void Update(){
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
@@ -107,6 +111,4 @@ public class NavFinal : MonoBehaviour
             }
         }
     }
-
-    
 }
