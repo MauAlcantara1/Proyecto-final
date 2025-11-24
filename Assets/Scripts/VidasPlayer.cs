@@ -14,4 +14,14 @@ public class VidasPlayer : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
     }
+
+    private void UnJugador()
+    {
+        dosJugadores = false;
+    }
+
+    private void DosJugadores()
+    {
+        dosJugadores= true;
+    }
 }

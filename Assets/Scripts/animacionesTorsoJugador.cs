@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class animacionesTorsoJugador : MonoBehaviour
 {
+    [SerializeField] public GameObject jugador;
     private Animator animator;
     public GameObject panelMuerte;
     public SpriteRenderer piernas;
@@ -94,12 +95,13 @@ public class animacionesTorsoJugador : MonoBehaviour
     public void SistemaDeVidas()
     {
         VidasPlayer.vidasJugador1 -= 1;
-
+        ActualizarVisibilidad();
         Debug.Log("Vidas actuales J1: " + vidas);
 
         if (vidas <= 0)
         {
             VidasPlayer.vidasJugador1 = 0;
+
 
             if (VidasPlayer.vidasJugador2 > 0)
             {
@@ -138,5 +140,20 @@ public class animacionesTorsoJugador : MonoBehaviour
         
 
         SceneManager.LoadScene("Final"); 
+    }
+
+    public void ActualizarVisibilidad()
+    {
+        if (jugador != null)
+        {
+            if (VidasPlayer.vidasJugador2 <= 0)
+            {
+                jugador.SetActive(false);
+            }
+            else
+            {
+                jugador.SetActive(true);
+            }
+        }
     }
 }

@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 29865837}
   - component: {fileID: 29865839}
   - component: {fileID: 29865838}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -4341,6 +4341,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4636579521283926421, guid: bb05e11059120654d86da03a93d724bb, type: 3}
+      propertyPath: jugadorDos
+      value: 
+      objectReference: {fileID: 1144675609}
+    - target: {fileID: 4636579521283926421, guid: bb05e11059120654d86da03a93d724bb, type: 3}
+      propertyPath: jugadorDosVidas
+      value: 
+      objectReference: {fileID: 969400444}
+    - target: {fileID: 4636579521283926421, guid: bb05e11059120654d86da03a93d724bb, type: 3}
+      propertyPath: jugadorDosPuntuacion
+      value: 
+      objectReference: {fileID: 969400443}
     - target: {fileID: 5556082447888926960, guid: bb05e11059120654d86da03a93d724bb, type: 3}
       propertyPath: musica
       value: 
@@ -4365,6 +4377,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!1 &969400443 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 203157938853060000, guid: bb05e11059120654d86da03a93d724bb, type: 3}
+  m_PrefabInstance: {fileID: 969400441}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &969400444 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4967315691268478316, guid: bb05e11059120654d86da03a93d724bb, type: 3}
+  m_PrefabInstance: {fileID: 969400441}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1013477611
 GameObject:
   m_ObjectHideFlags: 0
@@ -4748,7 +4770,7 @@ PrefabInstance:
     - target: {fileID: 4596491513191016194, guid: 3dd38b7ef3d50cd44a266534cc2e14a7, type: 3}
       propertyPath: textoPuntuacion1
       value: 
-      objectReference: {fileID: 1583352085}
+      objectReference: {fileID: 969400442}
     - target: {fileID: 4596491513191016194, guid: 3dd38b7ef3d50cd44a266534cc2e14a7, type: 3}
       propertyPath: textoPuntuacion2
       value: 
@@ -5869,6 +5891,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
+--- !u!1 &1144675609 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2858202663286123848, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
+  m_PrefabInstance: {fileID: 1144675608}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1153440415
 PrefabInstance:
   m_ObjectHideFlags: 0

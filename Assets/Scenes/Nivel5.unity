@@ -4933,6 +4933,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4636579521283926421, guid: bb05e11059120654d86da03a93d724bb, type: 3}
+      propertyPath: jugadorDos
+      value: 
+      objectReference: {fileID: 1027782326}
+    - target: {fileID: 4636579521283926421, guid: bb05e11059120654d86da03a93d724bb, type: 3}
+      propertyPath: jugadorDosVidas
+      value: 
+      objectReference: {fileID: 881516759}
+    - target: {fileID: 4636579521283926421, guid: bb05e11059120654d86da03a93d724bb, type: 3}
+      propertyPath: jugadorDosPuntuacion
+      value: 
+      objectReference: {fileID: 881516758}
     - target: {fileID: 5556082447888926960, guid: bb05e11059120654d86da03a93d724bb, type: 3}
       propertyPath: musica
       value: 
@@ -4975,6 +4987,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!1 &881516758 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 203157938853060000, guid: bb05e11059120654d86da03a93d724bb, type: 3}
+  m_PrefabInstance: {fileID: 881516754}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &881516759 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4967315691268478316, guid: bb05e11059120654d86da03a93d724bb, type: 3}
+  m_PrefabInstance: {fileID: 881516754}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &884176774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6488,6 +6510,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
+--- !u!1 &1027782326 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2858202663286123848, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
+  m_PrefabInstance: {fileID: 1027782325}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1046157102
 PrefabInstance:
   m_ObjectHideFlags: 0

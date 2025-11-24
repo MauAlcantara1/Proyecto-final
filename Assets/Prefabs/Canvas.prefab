@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 491331005268741525}
   - component: {fileID: 8454782553449350114}
   m_Layer: 5
-  m_Name: fondoPuntuacion (2)
+  m_Name: fondoPuntuacion JugadorDos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -329,6 +329,57 @@ MonoBehaviour:
   piernas: {fileID: 0}
   muerto: 0
   GameOver: {fileID: 0}
+--- !u!1 &592152978230825317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 71603295846003086}
+  - component: {fileID: 4636579521283926421}
+  m_Layer: 5
+  m_Name: Jugadores
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &71603295846003086
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592152978230825317}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3010338536334842280}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &4636579521283926421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592152978230825317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69c5b43cc37690b4abec1b92adf1025f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  jugadorDos: {fileID: 0}
+  jugadorDosVidas: {fileID: 0}
+  jugadorDosPuntuacion: {fileID: 0}
 --- !u!1 &604693618855010084
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,6 +765,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 71603295846003086}
   - {fileID: 8745568032111760543}
   - {fileID: 6261291144360519130}
   - {fileID: 182175244392641684}
@@ -1290,7 +1342,7 @@ GameObject:
   - component: {fileID: 6318224678794840882}
   - component: {fileID: 984897314863074262}
   m_Layer: 5
-  m_Name: fondoVidas (1)
+  m_Name: fondoVidasJugadorDos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

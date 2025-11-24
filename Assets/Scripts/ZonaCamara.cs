@@ -11,9 +11,9 @@ public class ZonaCamara : MonoBehaviour
         camara = Camera.main.GetComponent<CamaraController>();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D (Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player1") || other.CompareTag("Player2"))
         {
             camara.EstablecerLimites(limiteIzquierdo, limiteDerecho);
         }

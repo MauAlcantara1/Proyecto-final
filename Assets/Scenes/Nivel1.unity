@@ -3783,6 +3783,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4636579521283926421, guid: bb05e11059120654d86da03a93d724bb, type: 3}
+      propertyPath: jugadorDos
+      value: 
+      objectReference: {fileID: 2306876660075474004}
+    - target: {fileID: 4636579521283926421, guid: bb05e11059120654d86da03a93d724bb, type: 3}
+      propertyPath: jugadorDosVidas
+      value: 
+      objectReference: {fileID: 641299993}
+    - target: {fileID: 4636579521283926421, guid: bb05e11059120654d86da03a93d724bb, type: 3}
+      propertyPath: jugadorDosPuntuacion
+      value: 
+      objectReference: {fileID: 641299992}
     - target: {fileID: 6261291144360519130, guid: bb05e11059120654d86da03a93d724bb, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7225921
@@ -3846,6 +3858,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!1 &641299992 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 203157938853060000, guid: bb05e11059120654d86da03a93d724bb, type: 3}
+  m_PrefabInstance: {fileID: 641299990}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &641299993 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4967315691268478316, guid: bb05e11059120654d86da03a93d724bb, type: 3}
+  m_PrefabInstance: {fileID: 641299990}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &676885215
 GameObject:
   m_ObjectHideFlags: 0
@@ -10597,6 +10619,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
+--- !u!1 &2306876660075474004 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2858202663286123848, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
+  m_PrefabInstance: {fileID: 2306876660075474003}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
