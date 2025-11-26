@@ -14,7 +14,6 @@ public class Disparo : MonoBehaviour
     {
         Instantiate(bala, controladorDisparo.position, controladorDisparo.rotation);
 
-        // reproducir sonido
         if (audioSource != null && sfxDisparo != null)
         {
             audioSource.PlayOneShot(sfxDisparo);

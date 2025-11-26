@@ -100,6 +100,7 @@ public class animacionesTorsoJugador2 : MonoBehaviour
 
         if (vidas <= 0)
         {
+            VidasPlayer.vidasJugador2 = 0;
 
             if (VidasPlayer.vidasJugador1 > 0)
             {

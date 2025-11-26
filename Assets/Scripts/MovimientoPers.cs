@@ -1,4 +1,4 @@
-using UnityEngine;
+  using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class MovimientoPers : MonoBehaviour
@@ -61,10 +61,10 @@ public class MovimientoPers : MonoBehaviour
         animPiernas?.ActualizarMovimiento(velocidadAbs);
         animTorso?.ActualizarMovimiento(velocidadAbs);
 
-        if (Keyboard.current.kKey.isPressed)
+        if (Keyboard.current.gKey.isPressed)
             tiempoGolpe = duracionGolpe;
 
-        if (Keyboard.current.kKey.wasPressedThisFrame)
+        if (Keyboard.current.gKey.wasPressedThisFrame)
             tiempoGolpe = duracionGolpe;
 
         if (Keyboard.current.wKey.wasPressedThisFrame)
@@ -73,10 +73,10 @@ public class MovimientoPers : MonoBehaviour
         if (Keyboard.current.wKey.isPressed)
             tiempoArriba = duracionArriba;
 
-        if (Keyboard.current.jKey.wasPressedThisFrame)
+        if (Keyboard.current.fKey.wasPressedThisFrame)
             tiempoDisparo = duracionDisparo;
 
-        if (Keyboard.current.jKey.isPressed)
+        if (Keyboard.current.fKey.isPressed)
             tiempoDisparo = duracionDisparo;
 
         if (tiempoDisparo > 0)

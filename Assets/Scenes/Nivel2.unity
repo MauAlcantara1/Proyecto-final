@@ -735,6 +735,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimarPorDistancia
   jugador: {fileID: 0}
+  jugador1: {fileID: 0}
+  jugador2: {fileID: 0}
   distanciaActivacion: 15
   nombreAnimacion: Tenkiu1
 --- !u!1 &48482848
@@ -4309,6 +4311,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimarPorDistancia
   jugador: {fileID: 0}
+  jugador1: {fileID: 0}
+  jugador2: {fileID: 0}
   distanciaActivacion: 15
   nombreAnimacion: Tenkiu1
 --- !u!1001 &389928811
@@ -5114,6 +5118,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimarPorDistancia
   jugador: {fileID: 0}
+  jugador1: {fileID: 0}
+  jugador2: {fileID: 0}
   distanciaActivacion: 15
   nombreAnimacion: Tenkiu1
 --- !u!1 &485960749
@@ -10383,6 +10389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CamaraController
   objetivo: {fileID: 1560182262}
+  objetivo2: {fileID: 1518838991}
   velocidadCamara: 100000
   offsetX: 6
   toleranciaMovimiento: 0.05
@@ -16151,6 +16158,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2858202663286123848, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
   m_PrefabInstance: {fileID: 1518838989}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1518838991 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8421928194917735273, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
+  m_PrefabInstance: {fileID: 1518838989}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1530504700
 GameObject:
   m_ObjectHideFlags: 0
@@ -16727,6 +16739,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimarPorDistancia
   jugador: {fileID: 0}
+  jugador1: {fileID: 0}
+  jugador2: {fileID: 0}
   distanciaActivacion: 15
   nombreAnimacion: Tenkiu1
 --- !u!114 &1587317548 stripped
@@ -16867,6 +16881,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimarPorDistancia
   jugador: {fileID: 0}
+  jugador1: {fileID: 0}
+  jugador2: {fileID: 0}
   distanciaActivacion: 15
   nombreAnimacion: Tenkiu1
 --- !u!1001 &1599798809
@@ -17300,6 +17316,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimarPorDistancia
   jugador: {fileID: 0}
+  jugador1: {fileID: 0}
+  jugador2: {fileID: 0}
   distanciaActivacion: 15
   nombreAnimacion: Tenkiu1
 --- !u!1001 &1625433691
@@ -19858,6 +19876,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimarPorDistancia
   jugador: {fileID: 0}
+  jugador1: {fileID: 0}
+  jugador2: {fileID: 0}
   distanciaActivacion: 15
   nombreAnimacion: Tenkiu1
 --- !u!1 &1852298706

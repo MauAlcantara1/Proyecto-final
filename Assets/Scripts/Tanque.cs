@@ -215,7 +215,6 @@ public class Tanque : MonoBehaviour
         if (estaMuerto) return;
 
         vidaActual -= cantidad;
-        Debug.Log($"💥 Tanque recibió {cantidad} de daño. Vida restante: {vidaActual}");
 
         if (vidaActual <= 0) Morir();
     }

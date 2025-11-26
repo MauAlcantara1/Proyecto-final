@@ -1,0 +1,1136 @@
+fileFormatVersion: 2
+guid: 74f92cfd1e7842c4fa4546252ea5aae4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5600679630446485986
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_0
+  - first:
+      213: -1439623116423828042
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_1
+  - first:
+      213: -2183450276681531058
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_2
+  - first:
+      213: -8351608337830422113
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_3
+  - first:
+      213: 4782323936499735297
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_4
+  - first:
+      213: 83369276934287322
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_5
+  - first:
+      213: 4473544354514361474
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_6
+  - first:
+      213: -8988950804925454218
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_7
+  - first:
+      213: 2075925238810167358
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_8
+  - first:
+      213: 1428974458843563126
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_9
+  - first:
+      213: -7568879886379794041
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_10
+  - first:
+      213: 6775272579031009524
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_11
+  - first:
+      213: -2626595436563612316
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_12
+  - first:
+      213: 8338347140533404978
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_13
+  - first:
+      213: 6817373120983847558
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_14
+  - first:
+      213: -17901741316873069
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_15
+  - first:
+      213: -9020541260819222498
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_16
+  - first:
+      213: 6215848474182653565
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_17
+  - first:
+      213: -7981170553544143821
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_18
+  - first:
+      213: 1763567266015143500
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_19
+  - first:
+      213: -4204166500372657214
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_20
+  - first:
+      213: -553998083623307493
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_21
+  - first:
+      213: 6373706140737676198
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_22
+  - first:
+      213: 4537914199999087550
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_23
+  - first:
+      213: 7173355838260312254
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_24
+  - first:
+      213: 921074424248668752
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_25
+  - first:
+      213: 4132230726000075294
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_26
+  - first:
+      213: 1000825573867656091
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_27
+  - first:
+      213: 5197434404164728525
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_28
+  - first:
+      213: -6608997563682622705
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_29
+  - first:
+      213: 6154776667898020274
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_30
+  - first:
+      213: -4776574869658466567
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_31
+  - first:
+      213: 5300056722161755677
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_32
+  - first:
+      213: -4156528494959705196
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_33
+  - first:
+      213: 2469618315664881293
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_34
+  - first:
+      213: 6907655236153806363
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_35
+  - first:
+      213: -6302482803238822640
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_36
+  - first:
+      213: -3764845437910443696
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_37
+  - first:
+      213: -9038385790997089026
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_38
+  - first:
+      213: 3074955614474529596
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_39
+  - first:
+      213: 564210255293484133
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_40
+  - first:
+      213: -452318432586208552
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_41
+  - first:
+      213: -2863267747072259239
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_42
+  - first:
+      213: -9037290285789518123
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_43
+  - first:
+      213: 8589985661530883578
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_44
+  - first:
+      213: 25448131504625278
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_45
+  - first:
+      213: -1957027333035943570
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_46
+  - first:
+      213: 1425860747685939122
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_47
+  - first:
+      213: -4149324143236789693
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_48
+  - first:
+      213: 6603212241222037928
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_49
+  - first:
+      213: -2519508037098315360
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_50
+  - first:
+      213: -5294294539891591081
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_51
+  - first:
+      213: -5827809481643164382
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_52
+  - first:
+      213: 1081562430103426769
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_53
+  - first:
+      213: -1839096982426375535
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_54
+  - first:
+      213: 5389685589590193053
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_55
+  - first:
+      213: -5203020625965936657
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_56
+  - first:
+      213: -8239507731114901783
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_57
+  - first:
+      213: -1330257419624702766
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_58
+  - first:
+      213: -9105783396121156645
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_59
+  - first:
+      213: -5230629311338345014
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_60
+  - first:
+      213: 7375079696020755749
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_61
+  - first:
+      213: 5690424027668861564
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_62
+  - first:
+      213: 2771238210083292922
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_63
+  - first:
+      213: -794257887470944012
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_64
+  - first:
+      213: -733437995214413138
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_65
+  - first:
+      213: 3273872961528505455
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_66
+  - first:
+      213: 5176810645069392476
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_67
+  - first:
+      213: 3988655991225573228
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_68
+  - first:
+      213: -8036479762513273848
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_69
+  - first:
+      213: 2177175270891152954
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_70
+  - first:
+      213: 2116765595218151463
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_71
+  - first:
+      213: 4327514763955784013
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_72
+  - first:
+      213: -8242447213486808943
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_73
+  - first:
+      213: -2957466418021677158
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_74
+  - first:
+      213: -7109320837882520030
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_75
+  - first:
+      213: -8027502358514078982
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_76
+  - first:
+      213: -3863035172742537932
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_77
+  - first:
+      213: -8900893659958328425
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_78
+  - first:
+      213: -1500352548148040117
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_79
+  - first:
+      213: -7749937936546778420
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_80
+  - first:
+      213: -1635215099737299423
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_81
+  - first:
+      213: -7872245083639825149
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_82
+  - first:
+      213: 2921282949543987474
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_83
+  - first:
+      213: -6876681342592575817
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_84
+  - first:
+      213: 770923886580673142
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_85
+  - first:
+      213: 6374084714010601468
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_86
+  - first:
+      213: 1281209501511414509
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_87
+  - first:
+      213: -4396474413426821847
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_88
+  - first:
+      213: 4730358222913545383
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_89
+  - first:
+      213: -8107990670608564800
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_90
+  - first:
+      213: -8375872918998341176
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_91
+  - first:
+      213: 6016552035854231621
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_92
+  - first:
+      213: 4891690284914264783
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_93
+  - first:
+      213: -7886107240468666856
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_94
+  - first:
+      213: 464490296966944755
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_95
+  - first:
+      213: 6686814557845741299
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_96
+  - first:
+      213: 6142719294606028951
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_97
+  - first:
+      213: -4916202423315120326
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_98
+  - first:
+      213: 1057126106045331148
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_99
+  - first:
+      213: -6689331750576363866
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_100
+  - first:
+      213: 4952599688129995675
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_101
+  - first:
+      213: -5218074558888742496
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_102
+  - first:
+      213: 4076910467572845083
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_103
+  - first:
+      213: -8095610816294353911
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_104
+  - first:
+      213: 8580740135711264
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_105
+  - first:
+      213: 6023152404331959613
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_106
+  - first:
+      213: -4842141138307402059
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_107
+  - first:
+      213: -8427623527592638599
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_108
+  - first:
+      213: 8097784541508594461
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_109
+  - first:
+      213: 6872925994670816733
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_110
+  - first:
+      213: -8903033696866391681
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_111
+  - first:
+      213: 1273292197069186754
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_112
+  - first:
+      213: 5919456770070363564
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_113
+  - first:
+      213: 237090015983951920
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_114
+  - first:
+      213: -1683769833903600556
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_115
+  - first:
+      213: -322349809170376326
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_116
+  - first:
+      213: -4144378940496772757
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_117
+  - first:
+      213: 9122994269132746586
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_118
+  - first:
+      213: -3319634621383531832
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_119
+  - first:
+      213: -5562239995335048581
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_120
+  - first:
+      213: -2283389913084101632
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_121
+  - first:
+      213: -6800819596239121260
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_122
+  - first:
+      213: 6255845130973465529
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_123
+  - first:
+      213: 1762041517974111838
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_124
+  - first:
+      213: 8977447158599819526
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_125
+  - first:
+      213: 2169579362057604163
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_126
+  - first:
+      213: 8468418758198439356
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_127
+  - first:
+      213: 6898279322991374030
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_128
+  - first:
+      213: -7546872963999599410
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_129
+  - first:
+      213: 4907011976013460217
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_130
+  - first:
+      213: -7740760297217405130
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_131
+  - first:
+      213: -7578928271718767464
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_132
+  - first:
+      213: -8664957989799640444
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_133
+  - first:
+      213: -4639240500024553741
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_134
+  - first:
+      213: 281078416662678282
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_135
+  - first:
+      213: -8228318377589432599
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_136
+  - first:
+      213: 1149983713773899795
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_137
+  - first:
+      213: -2733922452718067106
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_138
+  - first:
+      213: 3210085584055512158
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_139
+  - first:
+      213: -3563234563013844929
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_140
+  - first:
+      213: 4220885372542995033
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_141
+  - first:
+      213: 1121230180156660995
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_142
+  - first:
+      213: 5021067890750985970
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_143
+  - first:
+      213: 1984079954031674479
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_144
+  - first:
+      213: -6386358017614542699
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_145
+  - first:
+      213: 3651464043498172921
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_146
+  - first:
+      213: -1763759562799869560
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_147
+  - first:
+      213: -7162754238259810802
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_148
+  - first:
+      213: 2056320364197811114
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_149
+  - first:
+      213: -6184127194853223574
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_150
+  - first:
+      213: -6302035019160351496
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_151
+  - first:
+      213: 1342599649090769825
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_152
+  - first:
+      213: 6227152514175520495
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_153
+  - first:
+      213: -3159718923008979026
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_154
+  - first:
+      213: 874765439993453506
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_155
+  - first:
+      213: 1047595568933966057
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_156
+  - first:
+      213: 3226685827065557097
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_157
+  - first:
+      213: 5748872439507364520
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_158
+  - first:
+      213: -1121496904394433633
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_159
+  - first:
+      213: -6154174780025118257
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_160
+  - first:
+      213: 3200494232801279254
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_161
+  - first:
+      213: 6880702519504796855
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_162
+  - first:
+      213: 6745974590110894938
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_163
+  - first:
+      213: 7062448830105332450
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_164
+  - first:
+      213: -8094320692562213959
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_165
+  - first:
+      213: -4456086225694135592
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_166
+  - first:
+      213: 738322931516556200
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_167
+  - first:
+      213: -6658940960524613292
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_168
+  - first:
+      213: -9062410258651028305
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_169
+  - first:
+      213: -8903450725768741516
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_170
+  - first:
+      213: -8894030521430230061
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_171
+  - first:
+      213: 3445752603373700271
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_172
+  - first:
+      213: -3471950495699028125
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_173
+  - first:
+      213: 5975269853483466281
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_174
+  - first:
+      213: 5355606354136912965
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_175
+  - first:
+      213: 6103113196946344777
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_176
+  - first:
+      213: -1981084335994677807
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_177
+  - first:
+      213: 581654700047800228
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_178
+  - first:
+      213: 5562168197166276567
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_179
+  - first:
+      213: -4551488306901054531
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_180
+  - first:
+      213: 8943111731024703501
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_181
+  - first:
+      213: 3410520317229568025
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_182
+  - first:
+      213: -3656579999408996758
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_183
+  - first:
+      213: -924914237443881372
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_184
+  - first:
+      213: -3133748216523710880
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_185
+  - first:
+      213: 1878436448816597028
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_186
+  - first:
+      213: -6209814107629263879
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_187
+  - first:
+      213: -4713279030747473915
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_188
+  - first:
+      213: -6986837321470088303
+    second: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_189
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_10
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 553
+        width: 258
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 781cbb058dfe5f690800000000000000
+      internalID: -7568879886379794041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_11
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 553
+        width: 514
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f88691838a960e50800000000000000
+      internalID: 6775272579031009524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_70
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 383
+        width: 306
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a366b3baf51e63e10800000000000000
+      internalID: 2177175270891152954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_139
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 431
+        width: 258
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5c2b38b4d38c8c20800000000000000
+      internalID: 3210085584055512158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_178
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 151
+        width: 1954
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a719423ed3721800800000000000000
+      internalID: 581654700047800228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_185
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 43
+        width: 231
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06e1792b990b284d0800000000000000
+      internalID: -3133748216523710880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_186
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 82
+        width: 69
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4280cd07ffb811a10800000000000000
+      internalID: 1878436448816597028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_187
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 10
+        width: 158
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f36c8958fe42d9a0800000000000000
+      internalID: -6209814107629263879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_188
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 82
+        width: 69
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 508dffc81b1179eb0800000000000000
+      internalID: -4713279030747473915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_189
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 46
+        width: 143
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19b65565974c90f90800000000000000
+      internalID: -6986837321470088303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bdc5ae83dcd1bc648a44b3759812c777
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_0: -5600679630446485986
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_1: -1439623116423828042
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_10: -7568879886379794041
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_100: -6689331750576363866
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_101: 4952599688129995675
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_102: -5218074558888742496
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_103: 4076910467572845083
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_104: -8095610816294353911
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_105: 8580740135711264
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_106: 6023152404331959613
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_107: -4842141138307402059
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_108: -8427623527592638599
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_109: 8097784541508594461
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_11: 6775272579031009524
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_110: 6872925994670816733
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_111: -8903033696866391681
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_112: 1273292197069186754
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_113: 5919456770070363564
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_114: 237090015983951920
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_115: -1683769833903600556
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_116: -322349809170376326
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_117: -4144378940496772757
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_118: 9122994269132746586
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_119: -3319634621383531832
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_12: -2626595436563612316
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_120: -5562239995335048581
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_121: -2283389913084101632
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_122: -6800819596239121260
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_123: 6255845130973465529
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_124: 1762041517974111838
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_125: 8977447158599819526
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_126: 2169579362057604163
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_127: 8468418758198439356
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_128: 6898279322991374030
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_129: -7546872963999599410
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_13: 8338347140533404978
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_130: 4907011976013460217
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_131: -7740760297217405130
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_132: -7578928271718767464
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_133: -8664957989799640444
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_134: -4639240500024553741
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_135: 281078416662678282
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_136: -8228318377589432599
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_137: 1149983713773899795
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_138: -2733922452718067106
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_139: 3210085584055512158
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_14: 6817373120983847558
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_140: -3563234563013844929
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_141: 4220885372542995033
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_142: 1121230180156660995
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_143: 5021067890750985970
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_144: 1984079954031674479
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_145: -6386358017614542699
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_146: 3651464043498172921
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_147: -1763759562799869560
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_148: -7162754238259810802
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_149: 2056320364197811114
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_15: -17901741316873069
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_150: -6184127194853223574
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_151: -6302035019160351496
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_152: 1342599649090769825
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_153: 6227152514175520495
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_154: -3159718923008979026
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_155: 874765439993453506
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_156: 1047595568933966057
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_157: 3226685827065557097
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_158: 5748872439507364520
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_159: -1121496904394433633
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_16: -9020541260819222498
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_160: -6154174780025118257
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_161: 3200494232801279254
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_162: 6880702519504796855
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_163: 6745974590110894938
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_164: 7062448830105332450
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_165: -8094320692562213959
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_166: -4456086225694135592
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_167: 738322931516556200
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_168: -6658940960524613292
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_169: -9062410258651028305
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_17: 6215848474182653565
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_170: -8903450725768741516
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_171: -8894030521430230061
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_172: 3445752603373700271
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_173: -3471950495699028125
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_174: 5975269853483466281
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_175: 5355606354136912965
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_176: 6103113196946344777
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_177: -1981084335994677807
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_178: 581654700047800228
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_179: 5562168197166276567
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_18: -7981170553544143821
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_180: -4551488306901054531
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_181: 8943111731024703501
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_182: 3410520317229568025
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_183: -3656579999408996758
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_184: -924914237443881372
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_185: -3133748216523710880
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_186: 1878436448816597028
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_187: -6209814107629263879
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_188: -4713279030747473915
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_189: -6986837321470088303
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_19: 1763567266015143500
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_2: -2183450276681531058
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_20: -4204166500372657214
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_21: -553998083623307493
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_22: 6373706140737676198
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_23: 4537914199999087550
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_24: 7173355838260312254
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_25: 921074424248668752
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_26: 4132230726000075294
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_27: 1000825573867656091
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_28: 5197434404164728525
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_29: -6608997563682622705
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_3: -8351608337830422113
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_30: 6154776667898020274
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_31: -4776574869658466567
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_32: 5300056722161755677
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_33: -4156528494959705196
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_34: 2469618315664881293
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_35: 6907655236153806363
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_36: -6302482803238822640
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_37: -3764845437910443696
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_38: -9038385790997089026
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_39: 3074955614474529596
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_4: 4782323936499735297
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_40: 564210255293484133
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_41: -452318432586208552
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_42: -2863267747072259239
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_43: -9037290285789518123
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_44: 8589985661530883578
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_45: 25448131504625278
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_46: -1957027333035943570
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_47: 1425860747685939122
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_48: -4149324143236789693
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_49: 6603212241222037928
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_5: 83369276934287322
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_50: -2519508037098315360
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_51: -5294294539891591081
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_52: -5827809481643164382
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_53: 1081562430103426769
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_54: -1839096982426375535
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_55: 5389685589590193053
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_56: -5203020625965936657
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_57: -8239507731114901783
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_58: -1330257419624702766
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_59: -9105783396121156645
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_6: 4473544354514361474
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_60: -5230629311338345014
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_61: 7375079696020755749
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_62: 5690424027668861564
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_63: 2771238210083292922
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_64: -794257887470944012
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_65: -733437995214413138
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_66: 3273872961528505455
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_67: 5176810645069392476
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_68: 3988655991225573228
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_69: -8036479762513273848
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_7: -8988950804925454218
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_70: 2177175270891152954
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_71: 2116765595218151463
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_72: 4327514763955784013
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_73: -8242447213486808943
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_74: -2957466418021677158
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_75: -7109320837882520030
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_76: -8027502358514078982
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_77: -3863035172742537932
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_78: -8900893659958328425
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_79: -1500352548148040117
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_8: 2075925238810167358
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_80: -7749937936546778420
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_81: -1635215099737299423
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_82: -7872245083639825149
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_83: 2921282949543987474
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_84: -6876681342592575817
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_85: 770923886580673142
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_86: 6374084714010601468
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_87: 1281209501511414509
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_88: -4396474413426821847
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_89: 4730358222913545383
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_9: 1428974458843563126
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_90: -8107990670608564800
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_91: -8375872918998341176
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_92: 6016552035854231621
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_93: 4891690284914264783
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_94: -7886107240468666856
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_95: 464490296966944755
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_96: 6686814557845741299
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_97: 6142719294606028951
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_98: -4916202423315120326
+      Neo Geo _ NGCD - Metal Slug - Backgrounds - Mission 6-1_99: 1057126106045331148
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

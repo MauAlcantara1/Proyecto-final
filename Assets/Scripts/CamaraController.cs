@@ -4,6 +4,8 @@ public class CamaraController : MonoBehaviour
 {
     [Header("Objetivo a seguir")]
     public Transform objetivo;
+    public Transform objetivo2;
+    private Transform objetivoVivo;
 
     [Header("Configuración de cámara")]
     public float velocidadCamara = 5f;
@@ -24,16 +26,35 @@ public class CamaraController : MonoBehaviour
     {
         posicionY = transform.position.y;
         posicionZ = transform.position.z;
+        JugadorActivo();
     }
+
+    private void Update()
+    {
+        JugadorActivo(); 
+    }
+
+    private void JugadorActivo()
+    {
+        bool j1Vivo = (objetivo != null && objetivo.gameObject.activeInHierarchy);
+        bool j2Vivo = (objetivo2 != null && objetivo2.gameObject.activeInHierarchy);
+
+        if (j1Vivo)
+            objetivoVivo = objetivo;
+        else if (j2Vivo)
+            objetivoVivo = objetivo2;
+        else
+            objetivoVivo = null; 
+    }
+
 
     private void LateUpdate()
     {
-        if (objetivo == null || congelada) return;
+        if (objetivoVivo == null || congelada) return;
 
         float destinoX = objetivo.position.x + offsetX;
         float diferencia = Mathf.Abs(destinoX - transform.position.x);
 
-        // Solo mover la cámara si la diferencia es mayor a la tolerancia
         if (diferencia > toleranciaMovimiento)
         {
             float nuevaX = Mathf.MoveTowards(

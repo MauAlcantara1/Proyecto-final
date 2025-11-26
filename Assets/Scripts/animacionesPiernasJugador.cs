@@ -1,5 +1,7 @@
 using UnityEngine;
 
+
+
 public class animacionesPiernasJugador : MonoBehaviour
 {
     private Animator animator;

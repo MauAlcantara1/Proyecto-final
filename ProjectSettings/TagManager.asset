@@ -23,6 +23,7 @@ TagManager:
   - escudo
   - Player1
   - Player2
+  - Suelo
   layers:
   - Default
   - TransparentFX

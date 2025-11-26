@@ -14,10 +14,11 @@ public class Balatanque : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.collider.CompareTag("Player1") || other.collider.CompareTag("Player2"))
+        if (other.collider.CompareTag("Player1") || other.collider.CompareTag("Player2") || other.collider.CompareTag("Obstaculo"))
         {
             Destroy(gameObject);
         }
+        
     }
 
 

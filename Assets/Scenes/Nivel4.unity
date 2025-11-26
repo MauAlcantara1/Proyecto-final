@@ -8839,6 +8839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   objetivo: {fileID: 890470979}
+  objetivo2: {fileID: 2124323754}
   offsetX: 6
   offsetY: 3.1
   tiempoSuavizado: 0
@@ -17587,6 +17588,11 @@ PrefabInstance:
 --- !u!1 &2124323753 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2858202663286123848, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
+  m_PrefabInstance: {fileID: 2124323752}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2124323754 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8421928194917735273, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
   m_PrefabInstance: {fileID: 2124323752}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2134919846

@@ -22,7 +22,7 @@ public class Bala : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Obstaculo"))
+        if (other.CompareTag("Obstaculo") || other.CompareTag("Suelo"))
         {
             Debug.Log("Entró con obstáculo");
             Destroy(gameObject);
@@ -32,12 +32,10 @@ public class Bala : MonoBehaviour
         {
             bool impacto = false;
 
-            // --- Oso ---
             EnemOso oso = other.GetComponent<EnemOso>();
             if (oso != null)
             {
                 oso.RecibirDanio(dano);
-                Debug.Log($"[BALA] 💥 Impacto al Oso. Daño enviado: {dano}");
                 impacto = true;
             }
 
@@ -46,7 +44,6 @@ public class Bala : MonoBehaviour
             if (tanque != null)
             {
                 tanque.RecibirDaño(dano);
-                Debug.Log($"[BALA] 💥 Impacto al Tanque. Daño enviado: {dano}");
                 impacto = true;
             }
 
@@ -54,7 +51,6 @@ public class Bala : MonoBehaviour
             if (tanque2 != null)
             {
                 tanque2.RecibirDaño(dano);
-                Debug.Log($"[BALA] 💥 Impacto al Tanque2. Daño enviado: {dano}");
                 impacto = true;
             }
 
@@ -62,7 +58,6 @@ public class Bala : MonoBehaviour
             if (enemYeti != null)
             {
                 enemYeti.RecibirDaño(dano);
-                Debug.Log($"[BALA] 💥 Impacto al Yeti. Daño enviado: {dano}");
                 impacto = true;
             }
 
@@ -70,7 +65,6 @@ public class Bala : MonoBehaviour
             if (escudero != null)
             {
                 escudero.RecibirDaño(dano);
-                Debug.Log($"[BALA] 💥 Impacto al Escudero. Daño enviado: {dano}");
                 impacto = true;
             }
 
@@ -78,15 +72,11 @@ public class Bala : MonoBehaviour
             if (soldado != null)
             {
                 soldado.RecibirDaño(dano);
-                Debug.Log($"[BALA]  Impacto al Soldado. Daño enviado: {dano}");
                 impacto = true;
             }
 
-            // 💣 Si impactó contra un enemigo válido, destruir la bala
             if (impacto)
                 Destroy(gameObject);
-
-        
         }
     }
 }

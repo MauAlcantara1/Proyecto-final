@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class balaSoldado : MonoBehaviour
+public class BalatanqueBola : MonoBehaviour
 {
     [Header("Propiedades")]
     public float velocidad = 10f;
@@ -14,10 +14,11 @@ public class balaSoldado : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.collider.CompareTag("Player1") || other.collider.CompareTag("Player2") || (other.collider.CompareTag("Obstaculo")))
+        if (other.collider.CompareTag("Player1") || other.collider.CompareTag("Player2"))
         {
             Destroy(gameObject);
         }
+        
     }
 
 

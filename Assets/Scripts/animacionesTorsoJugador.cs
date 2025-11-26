@@ -95,18 +95,16 @@ public class animacionesTorsoJugador : MonoBehaviour
     public void SistemaDeVidas()
     {
         VidasPlayer.vidasJugador1 -= 1;
-        ActualizarVisibilidad();
         Debug.Log("Vidas actuales J1: " + vidas);
 
         if (vidas <= 0)
         {
             VidasPlayer.vidasJugador1 = 0;
 
+            jugador.SetActive(true);
 
             if (VidasPlayer.vidasJugador2 > 0)
-            {
                 return;
-            }
 
             if (audioSource != null && GameOver != null)
                 audioSource.PlayOneShot(GameOver);
@@ -116,6 +114,12 @@ public class animacionesTorsoJugador : MonoBehaviour
                 FindObjectOfType<musicaNivel>()?.PausarMusica();
                 panelMuerte.SetActive(true);
             }
+
+            jugador.SetActive(false);
+        }
+        else
+        {
+            ActualizarVisibilidad();
         }
     }
 
@@ -146,7 +150,7 @@ public class animacionesTorsoJugador : MonoBehaviour
     {
         if (jugador != null)
         {
-            if (VidasPlayer.vidasJugador2 <= 0)
+            if (VidasPlayer.vidasJugador1 <= 0)
             {
                 jugador.SetActive(false);
             }

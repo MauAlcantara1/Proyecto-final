@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 6021339187670144851}
   - component: {fileID: 6768130673859775658}
-  - component: {fileID: 4634655696035528048}
   - component: {fileID: 5428755903389349146}
   - component: {fileID: -1382948053533025810}
   - component: {fileID: 6050730704859247708}
   - component: {fileID: 110955766108481259}
+  - component: {fileID: 6701195734263193342}
   m_Layer: 12
   m_Name: Balatanque 1
   m_TagString: "Da\xF1oEnemigo"
@@ -95,21 +95,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4634655696035528048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2708955634872394561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f8f1dca97bfc8842a442887fd7919e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Balatanque
-  velocidad: 10
-  tiempoVida: 5
-  "da\xF1o": 1
 --- !u!58 &5428755903389349146
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -160,7 +145,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 12.09
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 0
   m_GravityScale: 15
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -231,3 +216,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6701195734263193342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2708955634872394561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24e6fbc3d81eff64495d9cab6a578bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  velocidad: 10
+  tiempoVida: 4
+  "da\xF1o": 1

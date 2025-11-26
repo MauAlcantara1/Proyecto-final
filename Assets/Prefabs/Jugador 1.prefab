@@ -166,6 +166,7 @@ GameObject:
   - component: {fileID: 4629762352990473721}
   - component: {fileID: 3378973340895941386}
   - component: {fileID: 9079219991811328174}
+  - component: {fileID: 7424067462828756267}
   m_Layer: 13
   m_Name: torso
   m_TagString: "Da\xF1o"
@@ -283,6 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e14c01ccd1fa8d3428002f2514259c3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  jugador: {fileID: 7860175344245787006}
   panelMuerte: {fileID: 0}
   piernas: {fileID: 8848170330767537437}
   muerto: 0
@@ -400,6 +402,43 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!70 &7424067462828756267
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2683855801299861767}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.00000003576279, y: -0.04508468}
+  m_Size: {x: 0.27, y: 0.36668918}
+  m_Direction: 0
 --- !u!1 &2964982936533064263
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,7 +960,7 @@ Rigidbody2D:
   m_Mass: 12
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 1.2
   m_Material: {fileID: 6200000, guid: 33f65fccde9a93a48996dd2cfb90b171, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -967,8 +1006,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.05581975, y: -0.7934346}
-  m_Size: {x: 0.81896925, y: 1.6778088}
+  m_Offset: {x: -0.05581975, y: -0.7515034}
+  m_Size: {x: 0.81896925, y: 1.5939463}
   m_Direction: 0
 --- !u!114 &4596491513191016194
 MonoBehaviour:

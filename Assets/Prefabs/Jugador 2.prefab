@@ -166,7 +166,7 @@ Rigidbody2D:
   m_Mass: 12
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 1.2
   m_Material: {fileID: 6200000, guid: 33f65fccde9a93a48996dd2cfb90b171, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -243,8 +243,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3211f5180586eb4da80641fcfb61a5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  speed: 4
-  jumpForce: 7.5
+  speed: 5
+  jumpForce: 8.5
   controladorDisparo: {fileID: 5758414364826450879}
   animPiernas: {fileID: 6683335751101882917}
   animTorso: {fileID: 4734712270306700630}
@@ -380,7 +380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Disparo
   controladorDisparo: {fileID: 5758414364826450879}
-  bala: {fileID: 7444384463852843943, guid: 17db775e2f8827544bd006f0d9ef6fa9, type: 3}
+  bala: {fileID: 7444384463852843943, guid: c7124259ea726464a905c42fbf7e11f7, type: 3}
   audioSource: {fileID: 709668142852422126}
   sfxDisparo: {fileID: 8300000, guid: 2df44f671f8c96e45a3f644673e278fc, type: 3}
 --- !u!82 &731744626892436467
@@ -492,6 +492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fa73be9f5614634db30e5fd0362c833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  jugador: {fileID: 2858202663286123848}
   panelMuerte: {fileID: 0}
   piernas: {fileID: 5231091193683251137}
   muerto: 0

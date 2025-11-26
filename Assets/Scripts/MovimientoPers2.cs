@@ -46,7 +46,7 @@ public class MovimientoPers2 : MonoBehaviour
 
         rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
 
-        if (Keyboard.current.numpad0Key.wasPressedThisFrame && isGrounded)
+        if (Keyboard.current.numpad3Key.wasPressedThisFrame && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             isGrounded = false;

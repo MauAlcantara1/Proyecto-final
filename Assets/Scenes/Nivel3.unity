@@ -447,6 +447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CamaraController
   objetivo: {fileID: 1599456666}
+  objetivo2: {fileID: 1144675610}
   velocidadCamara: 1000
   offsetX: 6
   toleranciaMovimiento: 0.05
@@ -5894,6 +5895,11 @@ PrefabInstance:
 --- !u!1 &1144675609 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2858202663286123848, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
+  m_PrefabInstance: {fileID: 1144675608}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1144675610 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8421928194917735273, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
   m_PrefabInstance: {fileID: 1144675608}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1153440415

@@ -3,6 +3,9 @@ using UnityEngine;
 public class CamaraControllerTipo2 : MonoBehaviour
 {
     public Transform objetivo;
+    public Transform objetivo2;
+    private Transform objetivoVivo;
+
 
     public float offsetX = 0f;
     public float offsetY = 0f;
@@ -21,23 +24,40 @@ public class CamaraControllerTipo2 : MonoBehaviour
     public float limiteInferior;
     public float limiteSuperior;
 
-    // Control de transiciones
     private bool suavizarX = false;
     private bool suavizarY = false;
 
-    private void Start()
+    void Start()
     {
         posicionZ = transform.position.z;
+        JugadorActivo();
+    }
+
+    private void Update()
+    {
+        JugadorActivo(); 
+    }
+
+    private void JugadorActivo()
+    {
+        bool j1Vivo = (objetivo != null && objetivo.gameObject.activeInHierarchy);
+        bool j2Vivo = (objetivo2 != null && objetivo2.gameObject.activeInHierarchy);
+
+        if (j1Vivo)
+            objetivoVivo = objetivo;
+        else if (j2Vivo)
+            objetivoVivo = objetivo2;
+        else
+            objetivoVivo = null; 
     }
 
     private void LateUpdate()
     {
-        if (objetivo == null || congelada) return;
+        if (objetivoVivo == null || congelada) return;
 
-        float nuevaX = objetivo.position.x + offsetX;
-        float nuevaY = objetivo.position.y + offsetY;
+        float nuevaX = objetivoVivo.position.x + offsetX;
+        float nuevaY = objetivoVivo.position.y + offsetY;
 
-        // Aplicar límites activos
         if (usarLimites)
             nuevaX = Mathf.Clamp(nuevaX, limiteIzquierdo, limiteDerecho);
 
@@ -57,7 +77,6 @@ public class CamaraControllerTipo2 : MonoBehaviour
             posActual.y = nuevaY;
 
         posActual.z = posicionZ;
-
         transform.position = posActual;
 
         if (Mathf.Abs(transform.position.x - nuevaX) < 0.02f) suavizarX = false;
