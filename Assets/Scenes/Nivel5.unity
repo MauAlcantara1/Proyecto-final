@@ -482,6 +482,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 773579515}
     m_Modifications:
+    - target: {fileID: 6122882395067048228, guid: 32638021f50ad4f41800a50fd923dca7, type: 3}
+      propertyPath: vidaMaxima
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7982004166858815301, guid: 32638021f50ad4f41800a50fd923dca7, type: 3}
       propertyPath: m_Name
       value: soldado
@@ -775,6 +779,10 @@ PrefabInstance:
     - target: {fileID: 7126788731042745203, guid: 5ad03294a8d87b44a812d08837aabc05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8078926902329567604, guid: 5ad03294a8d87b44a812d08837aabc05, type: 3}
+      propertyPath: vidaMaxima
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1454,6 +1462,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8078926902329567604, guid: 5ad03294a8d87b44a812d08837aabc05, type: 3}
+      propertyPath: vidaMaxima
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8078926902329567604, guid: 5ad03294a8d87b44a812d08837aabc05, type: 3}
       propertyPath: distanciaParada
       value: 13.37
       objectReference: {fileID: 0}
@@ -1717,6 +1729,10 @@ PrefabInstance:
     - target: {fileID: 3703143715030086682, guid: 1be288e0c541c964386b413778d432a9, type: 3}
       propertyPath: m_SortingOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080154830789625816, guid: 1be288e0c541c964386b413778d432a9, type: 3}
+      propertyPath: vidaMaxima
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8230867475910586384, guid: 1be288e0c541c964386b413778d432a9, type: 3}
       propertyPath: m_Name
@@ -2461,6 +2477,10 @@ PrefabInstance:
     - target: {fileID: 7312418111587292083, guid: 5ad03294a8d87b44a812d08837aabc05, type: 3}
       propertyPath: m_SortingOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8078926902329567604, guid: 5ad03294a8d87b44a812d08837aabc05, type: 3}
+      propertyPath: vidaMaxima
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3989,6 +4009,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1936585395}
     m_Modifications:
+    - target: {fileID: 7080154830789625816, guid: 1be288e0c541c964386b413778d432a9, type: 3}
+      propertyPath: vidaMaxima
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 8230867475910586384, guid: 1be288e0c541c964386b413778d432a9, type: 3}
       propertyPath: m_Name
       value: Tanque (1)
@@ -4630,6 +4654,10 @@ PrefabInstance:
     - target: {fileID: 7126788731042745203, guid: 5ad03294a8d87b44a812d08837aabc05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8078926902329567604, guid: 5ad03294a8d87b44a812d08837aabc05, type: 3}
+      propertyPath: vidaMaxima
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6477,17 +6505,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jugador 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3209820693030097404, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
+      propertyPath: teclaGolpe
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4734712270306700630, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
       propertyPath: panelMuerte
       value: 
       objectReference: {fileID: 2015220829}
+    - target: {fileID: 5231091193683251137, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5758414364826450879, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.136
+      objectReference: {fileID: 0}
+    - target: {fileID: 5758414364826450879, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.112
+      objectReference: {fileID: 0}
     - target: {fileID: 8421928194917735273, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.53
+      value: -5.4
       objectReference: {fileID: 0}
     - target: {fileID: 8421928194917735273, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.76
+      value: -0.58
       objectReference: {fileID: 0}
     - target: {fileID: 8421928194917735273, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6520,6 +6564,10 @@ PrefabInstance:
     - target: {fileID: 8421928194917735273, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8559813473938969276, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 9219892337664662178, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
       propertyPath: textoPuntuacion3
@@ -7366,6 +7414,10 @@ PrefabInstance:
     - target: {fileID: 7126788731042745203, guid: 5ad03294a8d87b44a812d08837aabc05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8078926902329567604, guid: 5ad03294a8d87b44a812d08837aabc05, type: 3}
+      propertyPath: vidaMaxima
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10431,6 +10483,10 @@ PrefabInstance:
       propertyPath: velocidad
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7080154830789625816, guid: 1be288e0c541c964386b413778d432a9, type: 3}
+      propertyPath: vidaMaxima
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 7261470732285316819, guid: 1be288e0c541c964386b413778d432a9, type: 3}
       propertyPath: m_Constraints
       value: 4
@@ -11502,6 +11558,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1936585395}
     m_Modifications:
+    - target: {fileID: 7080154830789625816, guid: 1be288e0c541c964386b413778d432a9, type: 3}
+      propertyPath: vidaMaxima
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 8230867475910586384, guid: 1be288e0c541c964386b413778d432a9, type: 3}
       propertyPath: m_Name
       value: Tanque (1)
@@ -12071,6 +12131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1936585395}
     m_Modifications:
+    - target: {fileID: 7080154830789625816, guid: 1be288e0c541c964386b413778d432a9, type: 3}
+      propertyPath: vidaMaxima
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 8230867475910586384, guid: 1be288e0c541c964386b413778d432a9, type: 3}
       propertyPath: m_Name
       value: Tanque (3)
@@ -12454,6 +12518,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 773579515}
     m_Modifications:
+    - target: {fileID: 6122882395067048228, guid: 32638021f50ad4f41800a50fd923dca7, type: 3}
+      propertyPath: vidaMaxima
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7982004166858815301, guid: 32638021f50ad4f41800a50fd923dca7, type: 3}
       propertyPath: m_Name
       value: soldado (13)

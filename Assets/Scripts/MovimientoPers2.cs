@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class MovimientoPers2 : MonoBehaviour
 {
     public float speed = 5f;
+    public Key teclaGolpe; 
     public float jumpForce = 10f;
     public Transform controladorDisparo;
     private Rigidbody2D rb;
@@ -46,11 +47,12 @@ public class MovimientoPers2 : MonoBehaviour
 
         rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
 
-        if (Keyboard.current.numpad3Key.wasPressedThisFrame && isGrounded)
+        if (Keyboard.current.rightShiftKey.wasPressedThisFrame && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             isGrounded = false;
         }
+
 
         if (rb.linearVelocity.x < -0.1f)
             transform.localScale = new Vector3(-1, 1, 1);
@@ -61,23 +63,25 @@ public class MovimientoPers2 : MonoBehaviour
         animPiernas?.ActualizarMovimiento(velocidadAbs);
         animTorso?.ActualizarMovimiento(velocidadAbs);
 
-        if (Keyboard.current.numpad2Key.isPressed)
+        if (Keyboard.current[teclaGolpe].wasPressedThisFrame)         
             tiempoGolpe = duracionGolpe;
+            
 
-        if (Keyboard.current.numpad2Key.wasPressedThisFrame)
+        if (Keyboard.current[teclaGolpe].isPressed)
             tiempoGolpe = duracionGolpe;
-
+            
         if (Keyboard.current.upArrowKey.wasPressedThisFrame)
             tiempoArriba = duracionArriba;
 
         if (Keyboard.current.upArrowKey.isPressed)
             tiempoArriba = duracionArriba;
 
-        if (Keyboard.current.numpad1Key.wasPressedThisFrame)
+        if (Keyboard.current.periodKey.wasPressedThisFrame)
             tiempoDisparo = duracionDisparo;
 
-        if (Keyboard.current.numpad1Key.isPressed)
+        if (Keyboard.current.periodKey.isPressed)
             tiempoDisparo = duracionDisparo;
+
 
         if (tiempoDisparo > 0)
             tiempoDisparo -= Time.deltaTime;
