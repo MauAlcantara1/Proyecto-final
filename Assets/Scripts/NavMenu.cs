@@ -12,6 +12,11 @@ public class NavMenu : MonoBehaviour
     private int opcionActual = 1;
     private bool confirmado = false;
 
+    void Start()
+    {
+        ActualizarFlecha();
+    }
+
     void Update()
     {
         if (confirmado) return;
@@ -19,9 +24,13 @@ public class NavMenu : MonoBehaviour
         var kb = Keyboard.current;
 
         if (kb.upArrowKey.wasPressedThisFrame || kb.wKey.wasPressedThisFrame )
-            CambiarOpcion(1);
+        {
+            CambiarOpcion(opcionActual > 1 ? opcionActual - 1 : 3);
+        }
         if (kb.downArrowKey.wasPressedThisFrame || kb.sKey.wasPressedThisFrame)
-            CambiarOpcion(2);
+        {
+            CambiarOpcion(opcionActual < 3 ? opcionActual + 1 : 1);
+        }
 
         if (kb.spaceKey.wasPressedThisFrame || kb.enterKey.wasPressedThisFrame)
             ConfirmarSeleccion();
@@ -38,7 +47,7 @@ public class NavMenu : MonoBehaviour
             CambiarOpcion(1);
     }
 
-    public void ClickSonido()
+     public void ClickTutorial()
     {
         if (opcionActual == 2)
             ConfirmarSeleccion();
@@ -46,18 +55,43 @@ public class NavMenu : MonoBehaviour
             CambiarOpcion(2);
     }
 
+    public void ClickSonido()
+    {
+        if (opcionActual == 3)
+            ConfirmarSeleccion();
+        else
+            CambiarOpcion(3);
+    }
+
+   
+
     private void ConfirmarSeleccion()
     {
-        confirmado = true;
-        if (opcionActual == 1)
-            Niveles();
-        else
-            SonidoOpciones();
+        switch (opcionActual)
+        {
+            case 1: // Niveles
+                Niveles();
+                break;
+            case 2: // Tutorial (Nueva opción)
+                Tutorial();
+                break;
+            case 3: // Sonido
+                SonidoOpciones();
+                break;
+            default:
+                confirmado = false; // Por si acaso
+                break;
+        }
     }
 
     public void Niveles()
     {
         SceneManager.LoadScene("Niveles");
+    }
+
+    public void Tutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
     }
      public void Creditos()
     {
@@ -92,8 +126,11 @@ public class NavMenu : MonoBehaviour
     private void ActualizarFlecha()
     {
         if (opcionActual == 1)
-            flecha.anchoredPosition = new Vector2(flecha.anchoredPosition.x, 45);
+            flecha.anchoredPosition = new Vector2(flecha.anchoredPosition.x, 100);
         else if (opcionActual == 2)
-            flecha.anchoredPosition = new Vector2(flecha.anchoredPosition.x, -100);
+            flecha.anchoredPosition = new Vector2(flecha.anchoredPosition.x, -30);
+        else if (opcionActual == 3)
+            flecha.anchoredPosition = new Vector2(flecha.anchoredPosition.x, -150);
+
     }
 }
