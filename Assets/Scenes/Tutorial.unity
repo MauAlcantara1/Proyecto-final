@@ -950,7 +950,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Primer Jugador SPACE para saltar
 
-    Segundo Jugador "3" para saltar'
+    Segundo Jugador SHIFT para saltar'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0af345bca7fdb971b94c46cf0a6bf1d1, type: 2}
   m_sharedMaterial: {fileID: -3452616318369050816, guid: 0af345bca7fdb971b94c46cf0a6bf1d1, type: 2}
@@ -1015,7 +1015,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -1.6765289, y: 0, z: -1.5438918, w: 0}
+  m_margin: {x: -12.377243, y: -1.7835542, z: -1.5438918, w: -12.484371}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1448,7 +1448,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Primer Jugador G para golpear
 
-    Segundo Jugador 2 para golpear'
+    Segundo Jugador GUION para golpear'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0af345bca7fdb971b94c46cf0a6bf1d1, type: 2}
   m_sharedMaterial: {fileID: -3452616318369050816, guid: 0af345bca7fdb971b94c46cf0a6bf1d1, type: 2}
@@ -2366,7 +2366,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Primer Jugador SPACE para saltar
 
-    Segundo Jugador "3" para saltar'
+    Segundo Jugador SHIFT para saltar'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0af345bca7fdb971b94c46cf0a6bf1d1, type: 2}
   m_sharedMaterial: {fileID: -3452616318369050816, guid: 0af345bca7fdb971b94c46cf0a6bf1d1, type: 2}
@@ -2431,7 +2431,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -1.6765289, y: 0, z: 1.2018051, w: 0}
+  m_margin: {x: -21.29451, y: 0, z: 1.2018051, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3020,7 +3020,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Primer Jugador F para disparar
 
-    Segundo Jugador 1 para disparar'
+    Segundo Jugador PUNTO para disparar'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0af345bca7fdb971b94c46cf0a6bf1d1, type: 2}
   m_sharedMaterial: {fileID: -3452616318369050816, guid: 0af345bca7fdb971b94c46cf0a6bf1d1, type: 2}
@@ -3446,7 +3446,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Primer Jugador G para golpear
 
-    Segundo Jugador 2 para golpear'
+    Segundo Jugador GUION para golpear'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0af345bca7fdb971b94c46cf0a6bf1d1, type: 2}
   m_sharedMaterial: {fileID: -3452616318369050816, guid: 0af345bca7fdb971b94c46cf0a6bf1d1, type: 2}
@@ -4536,7 +4536,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Primer Jugador F para disparar
 
-    Segundo Jugador 1 para disparar'
+    Segundo Jugador PUNTO para disparar'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0af345bca7fdb971b94c46cf0a6bf1d1, type: 2}
   m_sharedMaterial: {fileID: -3452616318369050816, guid: 0af345bca7fdb971b94c46cf0a6bf1d1, type: 2}
@@ -4649,8 +4649,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7, y: 5}
-  m_SizeDelta: {x: 361.7, y: 100}
+  m_AnchoredPosition: {x: 18.13, y: 5}
+  m_SizeDelta: {x: 422.26, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1725325902
 MonoBehaviour:
@@ -4674,7 +4674,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Primer Jugador A-D para moverte
 
-    Segundo Jugador A-D para moverte'
+    Segundo Jugador  Flecha DER-IZQ para
+    moverte'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0af345bca7fdb971b94c46cf0a6bf1d1, type: 2}
   m_sharedMaterial: {fileID: -3452616318369050816, guid: 0af345bca7fdb971b94c46cf0a6bf1d1, type: 2}
@@ -4739,7 +4740,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -1.6765289, y: 0, z: 1.2018051, w: 0}
+  m_margin: {x: -30.966812, y: -70.296394, z: 1.2018051, w: -48.03587}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5096,7 +5097,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -6, y: 5}
-  m_SizeDelta: {x: 361.7, y: 100}
+  m_SizeDelta: {x: 400, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1817809804
 MonoBehaviour:
@@ -5120,7 +5121,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Primer Jugador A-D para moverte
 
-    Segundo Jugador A-D para moverte'
+    Segundo Jugador Flecha DER-IZQ para
+    moverte'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0af345bca7fdb971b94c46cf0a6bf1d1, type: 2}
   m_sharedMaterial: {fileID: -3452616318369050816, guid: 0af345bca7fdb971b94c46cf0a6bf1d1, type: 2}
@@ -5185,7 +5187,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -1.6765289, y: 0, z: -1.5438918, w: 0}
+  m_margin: {x: -26.280365, y: -33.97664, z: -26.148018, w: -9.372856}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
