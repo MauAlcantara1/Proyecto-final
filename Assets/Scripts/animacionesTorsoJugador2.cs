@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class animacionesTorsoJugador2 : MonoBehaviour
 {
+    public GameObject jugadorCompleto;  // ← este es el GameObject que tiene MovimientoPers
+
     [SerializeField] public GameObject jugador;
     private Animator animator;
     public GameObject panelMuerte;
@@ -96,16 +98,13 @@ public class animacionesTorsoJugador2 : MonoBehaviour
     {
         VidasPlayer.vidasJugador2 -= 1;
         ActualizarVisibilidad();
-        Debug.Log("Vidas actuales J2: " + vidas);
 
-        if (vidas <= 0)
+        if (VidasPlayer.vidasJugador2 <= 0)
         {
             VidasPlayer.vidasJugador2 = 0;
-
+            
             if (VidasPlayer.vidasJugador1 > 0)
-            {
                 return;
-            }
 
             if (audioSource != null && GameOver != null)
                 audioSource.PlayOneShot(GameOver);
@@ -115,6 +114,12 @@ public class animacionesTorsoJugador2 : MonoBehaviour
                 FindObjectOfType<musicaNivel>()?.PausarMusica();
                 panelMuerte.SetActive(true);
             }
+
+            jugador.SetActive(false);
+        }
+        else
+        {
+            ActualizarVisibilidad();
         }
     }
 
@@ -147,11 +152,13 @@ public class animacionesTorsoJugador2 : MonoBehaviour
         {
             if (VidasPlayer.vidasJugador2 <= 0)
             {
-                jugador.SetActive(false);
+                jugadorCompleto.SetActive(false);
+                Debug.Log("se desactiva");
             }
             else
             {
-                jugador.SetActive(true);
+                jugadorCompleto.SetActive(true);
+                Debug.Log("se activa");
             }
         }
     }

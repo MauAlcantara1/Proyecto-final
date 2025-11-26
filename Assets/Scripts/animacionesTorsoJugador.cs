@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class animacionesTorsoJugador : MonoBehaviour
 {
+    public GameObject jugadorCompleto;  // ← este es el GameObject que tiene MovimientoPers
+
     [SerializeField] public GameObject jugador;
     private Animator animator;
     public GameObject panelMuerte;
@@ -95,13 +97,12 @@ public class animacionesTorsoJugador : MonoBehaviour
     public void SistemaDeVidas()
     {
         VidasPlayer.vidasJugador1 -= 1;
-        Debug.Log("Vidas actuales J1: " + vidas);
-
-        if (vidas <= 0)
+        ActualizarVisibilidad();
+        
+    
+        if (VidasPlayer.vidasJugador1 <= 0)
         {
             VidasPlayer.vidasJugador1 = 0;
-
-            jugador.SetActive(true);
 
             if (VidasPlayer.vidasJugador2 > 0)
                 return;
@@ -129,7 +130,7 @@ public class animacionesTorsoJugador : MonoBehaviour
         Time.timeScale = 0f;
 
         float tiempo = 0f;
-
+        
         while (tiempo < 5f)
         {
             if (Input.GetKeyDown(KeyCode.Space))
@@ -137,6 +138,7 @@ public class animacionesTorsoJugador : MonoBehaviour
 
             tiempo += Time.unscaledDeltaTime; 
             yield return null;
+            Time.timeScale = 1f; 
         }
 
         Time.timeScale = 1f; 
@@ -153,10 +155,12 @@ public class animacionesTorsoJugador : MonoBehaviour
             if (VidasPlayer.vidasJugador1 <= 0)
             {
                 jugador.SetActive(false);
+                Debug.Log("se desactiva");
             }
             else
             {
                 jugador.SetActive(true);
+                Debug.Log("sigue activo");
             }
         }
     }

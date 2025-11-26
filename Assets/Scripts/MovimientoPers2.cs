@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 
 public class MovimientoPers2 : MonoBehaviour
 {
+    
     public float speed = 5f;
     public Key teclaGolpe; 
     public float jumpForce = 10f;

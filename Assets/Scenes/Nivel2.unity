@@ -2055,6 +2055,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8587230571737497189, guid: 71290e18329bdd84296b03c901a864a5, type: 3}
   m_PrefabInstance: {fileID: 173185207}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &175604541 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7860175344245787006, guid: 3dd38b7ef3d50cd44a266534cc2e14a7, type: 3}
+  m_PrefabInstance: {fileID: 1458515910}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &179493012
 GameObject:
   m_ObjectHideFlags: 0
@@ -2154,7 +2159,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 180639213}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6859,6 +6864,114 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &699683885
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 699683889}
+  - component: {fileID: 699683888}
+  - component: {fileID: 699683887}
+  - component: {fileID: 699683886}
+  m_Layer: 0
+  m_Name: Limites camara
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &699683886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699683885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4009f8b96eb264247b4f8cc9c1402f07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ZonaCamara3
+  limiteSuperior: 0
+  limiteInferior: 0
+--- !u!61 &699683887
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699683885}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.4721058, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.055888385, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &699683888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699683885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e87f41b7cd7c3745ad985ef3942f3b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  limiteIzquierdo: 50
+  limiteDerecho: 84
+--- !u!4 &699683889
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699683885}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -234.4, y: 0.8, z: 0}
+  m_LocalScale: {x: 3.1125, y: 11.205, z: 3.1125}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &702102515
 GameObject:
   m_ObjectHideFlags: 0
@@ -7520,6 +7633,7 @@ Transform:
   - {fileID: 1705524945}
   - {fileID: 1485445836}
   - {fileID: 1798626678}
+  - {fileID: 1725803969}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &774073296
@@ -9344,7 +9458,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912167265}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -10366,9 +10480,9 @@ GameObject:
   - component: {fileID: 987448351}
   - component: {fileID: 987448350}
   - component: {fileID: 987448349}
-  - component: {fileID: 987448348}
   - component: {fileID: 987448354}
   - component: {fileID: 987448353}
+  - component: {fileID: 987448355}
   m_Layer: 15
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -10376,26 +10490,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &987448348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 987448347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24680cf8cd8aa18428ee80fe26a1e303, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CamaraController
-  objetivo: {fileID: 1560182262}
-  objetivo2: {fileID: 1518838991}
-  velocidadCamara: 100000
-  offsetX: 6
-  toleranciaMovimiento: 0.05
-  usarLimites: 0
-  limiteIzquierdo: 0
-  limiteDerecho: 0
 --- !u!114 &987448349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10483,7 +10577,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.1
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -10606,6 +10700,29 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.56311035, y: 12.007962}
   m_EdgeRadius: 0
+--- !u!114 &987448355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987448347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9ed35690043cbc4c89e7e7e66af8d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CamaraControllerTipo2
+  objetivo: {fileID: 1560182262}
+  objetivo2: {fileID: 1518838991}
+  offsetX: 6
+  offsetY: 0
+  tiempoSuavizado: 0
+  usarLimites: 1
+  limiteIzquierdo: -558
+  limiteDerecho: 0
+  usarLimitesY: 1
+  limiteInferior: 0.3
+  limiteSuperior: 0.31
 --- !u!1001 &1001457087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11879,9 +11996,9 @@ GameObject:
   - component: {fileID: 1108644292}
   - component: {fileID: 1108644293}
   - component: {fileID: 1108644294}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Escenario (1)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12581,9 +12698,9 @@ GameObject:
   - component: {fileID: 1229061796}
   - component: {fileID: 1229061798}
   - component: {fileID: 1229061797}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BarricadaC (4)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15108,13 +15225,17 @@ PrefabInstance:
       propertyPath: panelMuerte
       value: 
       objectReference: {fileID: 1727081256}
+    - target: {fileID: 4629762352990473721, guid: 3dd38b7ef3d50cd44a266534cc2e14a7, type: 3}
+      propertyPath: jugadorCompleto
+      value: 
+      objectReference: {fileID: 175604541}
     - target: {fileID: 7417369988130022333, guid: 3dd38b7ef3d50cd44a266534cc2e14a7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -562.21
+      value: -561.5
       objectReference: {fileID: 0}
     - target: {fileID: 7417369988130022333, guid: 3dd38b7ef3d50cd44a266534cc2e14a7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.55
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 7417369988130022333, guid: 3dd38b7ef3d50cd44a266534cc2e14a7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15295,8 +15416,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1468781913}
-  - component: {fileID: 1468781915}
   - component: {fileID: 1468781914}
+  - component: {fileID: 1468781915}
   m_Layer: 0
   m_Name: to (1)
   m_TagString: Untagged
@@ -15374,12 +15495,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1468781912}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffd8e083347aed0469252d005d9e261d, type: 3}
+  m_Script: {fileID: 11500000, guid: d71a343168698644c83b93f235fa5450, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Teleportador
-  destino: {x: 0, y: 0, z: 0}
-  bloquearCamaraAlEntrar: 1
-  liberarCamaraAlLlegar: 1
+  m_EditorClassIdentifier: Assembly-CSharp::TpCaso2
+  destino: {x: -4, y: 0, z: 0}
+  bloquearCamaraAlEntrar: 0
+  liberarCamaraAlLlegar: 0
   fadeOut: {fileID: 744922192}
   retraso: 2
 --- !u!1 &1471477452
@@ -15719,6 +15840,7 @@ GameObject:
   - component: {fileID: 1485445836}
   - component: {fileID: 1485445835}
   - component: {fileID: 1485445834}
+  - component: {fileID: 1485445837}
   m_Layer: 0
   m_Name: Limites camara
   m_TagString: Untagged
@@ -15801,6 +15923,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 764271055}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1485445837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485445833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6307d968ae70b9a48951f589aa8355f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ZonaCamara2
+  limiteDerecho: 50
+  limiteIzquierdo: 84
 --- !u!1 &1493644779
 GameObject:
   m_ObjectHideFlags: 0
@@ -16100,13 +16236,17 @@ PrefabInstance:
       propertyPath: panelMuerte
       value: 
       objectReference: {fileID: 1727081256}
+    - target: {fileID: 4734712270306700630, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
+      propertyPath: jugadorCompleto
+      value: 
+      objectReference: {fileID: 1518838990}
     - target: {fileID: 8421928194917735273, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -563.68
+      value: -563.43
       objectReference: {fileID: 0}
     - target: {fileID: 8421928194917735273, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.01
+      value: -0.16000009
       objectReference: {fileID: 0}
     - target: {fileID: 8421928194917735273, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17102,8 +17242,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1609065957}
-  - component: {fileID: 1609065959}
   - component: {fileID: 1609065958}
+  - component: {fileID: 1609065959}
   m_Layer: 0
   m_Name: to
   m_TagString: Untagged
@@ -17181,12 +17321,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1609065956}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffd8e083347aed0469252d005d9e261d, type: 3}
+  m_Script: {fileID: 11500000, guid: d71a343168698644c83b93f235fa5450, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Teleportador
-  destino: {x: -237.6, y: 0, z: 0}
-  bloquearCamaraAlEntrar: 1
-  liberarCamaraAlLlegar: 1
+  m_EditorClassIdentifier: Assembly-CSharp::TpCaso2
+  destino: {x: -237, y: 0, z: 0}
+  bloquearCamaraAlEntrar: 0
+  liberarCamaraAlLlegar: 0
   fadeOut: {fileID: 744922192}
   retraso: 2
 --- !u!1 &1621231548
@@ -18983,6 +19123,114 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1725803968
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1725803969}
+  - component: {fileID: 1725803971}
+  - component: {fileID: 1725803970}
+  - component: {fileID: 1725803972}
+  m_Layer: 0
+  m_Name: Limites camara (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1725803969
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725803968}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 446.1, y: -4, z: 0}
+  m_LocalScale: {x: 3.1125, y: 11.205, z: 3.1125}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 764271055}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1725803970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725803968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6307d968ae70b9a48951f589aa8355f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ZonaCamara2
+  limiteDerecho: 50
+  limiteIzquierdo: 0
+--- !u!61 &1725803971
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725803968}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.9737915, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.0592597, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &1725803972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725803968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4009f8b96eb264247b4f8cc9c1402f07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ZonaCamara3
+  limiteSuperior: 0.21
+  limiteInferior: 0.2
 --- !u!1 &1727081256 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 251305294957640706, guid: bb05e11059120654d86da03a93d724bb, type: 3}
@@ -19250,8 +19498,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1798626678}
-  - component: {fileID: 1798626680}
   - component: {fileID: 1798626679}
+  - component: {fileID: 1798626680}
   m_Layer: 0
   m_Name: Limites camara (1)
   m_TagString: Untagged
@@ -19329,11 +19577,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1798626677}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e87f41b7cd7c3745ad985ef3942f3b7, type: 3}
+  m_Script: {fileID: 11500000, guid: 6307d968ae70b9a48951f589aa8355f3, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
-  limiteIzquierdo: -274
+  m_EditorClassIdentifier: Assembly-CSharp::ZonaCamara2
   limiteDerecho: -78
+  limiteIzquierdo: -208
 --- !u!1 &1799313454
 GameObject:
   m_ObjectHideFlags: 0
@@ -21302,9 +21550,9 @@ GameObject:
   - component: {fileID: 1964185037}
   - component: {fileID: 1964185036}
   - component: {fileID: 1964185035}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BarricadaC
-  m_TagString: Untagged
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22942,3 +23190,4 @@ SceneRoots:
   - {fileID: 1013487122}
   - {fileID: 1518838989}
   - {fileID: 1458515910}
+  - {fileID: 699683889}

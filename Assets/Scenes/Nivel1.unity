@@ -1986,6 +1986,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &354148498 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7860175344245787006, guid: 3dd38b7ef3d50cd44a266534cc2e14a7, type: 3}
+  m_PrefabInstance: {fileID: 2023535310}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &369472340 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 646916068912767536, guid: bb05e11059120654d86da03a93d724bb, type: 3}
@@ -5850,7 +5855,7 @@ MonoBehaviour:
   limiteIzquierdo: 2
   limiteDerecho: 113.8
   usarLimitesY: 1
-  limiteInferior: 1
+  limiteInferior: 0.81
   limiteSuperior: 0.8
 --- !u!114 &1238702081
 MonoBehaviour:
@@ -9499,6 +9504,10 @@ PrefabInstance:
       propertyPath: panelMuerte
       value: 
       objectReference: {fileID: 1807346218}
+    - target: {fileID: 4629762352990473721, guid: 3dd38b7ef3d50cd44a266534cc2e14a7, type: 3}
+      propertyPath: jugadorCompleto
+      value: 
+      objectReference: {fileID: 354148498}
     - target: {fileID: 7417369988130022333, guid: 3dd38b7ef3d50cd44a266534cc2e14a7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.44
@@ -10565,6 +10574,10 @@ PrefabInstance:
       propertyPath: panelMuerte
       value: 
       objectReference: {fileID: 1807346218}
+    - target: {fileID: 4734712270306700630, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
+      propertyPath: jugadorCompleto
+      value: 
+      objectReference: {fileID: 2306876660075474004}
     - target: {fileID: 8421928194917735273, guid: 6dcbe31cc16aa0a4a84ef2749f7c88c2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.33

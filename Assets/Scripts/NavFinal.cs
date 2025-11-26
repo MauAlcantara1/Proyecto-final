@@ -19,6 +19,7 @@ public class NavFinal : MonoBehaviour
         {
             int puntuacionTotal = VidasPlayer.puntuacion1 + VidasPlayer.puntuacion2;
             StartCoroutine(ContarPuntuacion(puntuacionTotal));
+            Time.timeScale = 1f; 
         }
     }
 
@@ -26,10 +27,7 @@ public class NavFinal : MonoBehaviour
     void Update(){
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            VidasPlayer.vidasJugador1 = 10;
-            VidasPlayer.vidasJugador2 = 10;
-            VidasPlayer.puntuacion1 = 0;
-            VidasPlayer.puntuacion2 = 0;
+            VidasPlayer.AsignarVidas();
             SceneManager.LoadScene("Menu");
         }
     }

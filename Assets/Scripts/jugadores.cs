@@ -9,11 +9,13 @@ public class ControlModoJuegoUI : MonoBehaviour
     private void Start()
     {
         ActualizarOpacidad();
+        VidasPlayer.AsignarVidas();
     }
 
     public void SeleccionarUnJugador()
     {
         VidasPlayer.dosJugadores = false;
+        VidasPlayer.AsignarVidas();
         ActualizarOpacidad();
     }
 
@@ -21,6 +23,7 @@ public class ControlModoJuegoUI : MonoBehaviour
     {
         VidasPlayer.dosJugadores = true;
         ActualizarOpacidad();
+        VidasPlayer.AsignarVidas();
     }
 
     private void ActualizarOpacidad()

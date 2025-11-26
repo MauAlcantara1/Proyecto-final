@@ -73,7 +73,7 @@ public class Tanque : MonoBehaviour
         puntoFinal = puntoInicial + transform.right * 4f;
 
         vidaActual = vidaMaxima;
-        Debug.Log("✅ Tanque iniciado con vida: " + vidaActual);
+        
     }
 
     private void Update()
