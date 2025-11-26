@@ -152,12 +152,12 @@ public class animacionesTorsoJugador2 : MonoBehaviour
         {
             if (VidasPlayer.vidasJugador2 <= 0)
             {
-                jugadorCompleto.SetActive(false);
+                jugador.SetActive(false);
                 Debug.Log("se desactiva");
             }
             else
             {
-                jugadorCompleto.SetActive(true);
+                jugador.SetActive(true);
                 Debug.Log("se activa");
             }
         }
